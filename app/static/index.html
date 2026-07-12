@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PSERS Presales Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+  <header class="top">
+    <div class="brand">
+      <span class="mark" aria-hidden="true"></span>
+      <div>
+        <p class="brand-name">PSERS</p>
+        <p class="brand-sub">Presales Intelligence</p>
+      </div>
+    </div>
+    <p class="status" id="healthStatus">Connecting…</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Match RFP language to capabilities and MSI coverage</h1>
+      <p class="lede">Upload a public-safety radio RFP or paste requirements. The matcher maps shall-statements to the PSERS L1 ontology, then shows Motorola Solutions product coverage.</p>
+    </section>
+
+    <section class="workspace">
+      <div class="panel input-panel">
+        <div class="tabs" role="tablist">
+          <button type="button" class="tab active" data-tab="upload" role="tab" aria-selected="true">Upload PDF</button>
+          <button type="button" class="tab" data-tab="paste" role="tab" aria-selected="false">Paste text</button>
+        </div>
+
+        <div id="pane-upload" class="pane">
+          <label class="drop" id="dropZone">
+            <input type="file" id="pdfInput" accept="application/pdf,.pdf" hidden />
+            <strong>Drop an RFP PDF</strong>
+            <span>or click to browse · max pages configurable below</span>
+            <span class="file-name" id="fileName"></span>
+          </label>
+          <div class="row">
+            <label>Max pages
+              <input type="number" id="maxPages" min="1" max="80" value="20" />
+            </label>
+            <button type="button" class="btn primary" id="runPdf" disabled>Run match</button>
+          </div>
+        </div>
+
+        <div id="pane-paste" class="pane hidden">
+          <textarea id="textInput" rows="10" placeholder="Paste shall-statements or requirements…"></textarea>
+          <div class="row">
+            <button type="button" class="btn ghost" id="loadDemo">Load demo fixture</button>
+            <button type="button" class="btn primary" id="runText">Run match</button>
+          </div>
+        </div>
+
+        <p class="hint" id="runHint"></p>
+      </div>
+
+      <div class="panel summary-panel" id="summaryPanel" hidden>
+        <h2>Results</h2>
+        <div class="metrics" id="metrics"></div>
+        <div class="filters">
+          <button type="button" class="chip active" data-filter="all">All</button>
+          <button type="button" class="chip" data-filter="mapped">Mapped</button>
+          <button type="button" class="chip" data-filter="unmapped">Unmapped</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="results" id="resultsSection" hidden>
+      <div class="split">
+        <div class="panel">
+          <h2>Requirements → L1</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Requirement</th>
+                  <th>Capability</th>
+                  <th>Conf.</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="resultsBody"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="panel">
+          <h2>MSI coverage</h2>
+          <div id="msiBody" class="msi-list"></div>
+          <h2 class="feedback-title">Synonym feedback</h2>
+          <form id="feedbackForm" class="feedback">
+            <label>Phrase
+              <input type="text" id="fbPhrase" required />
+            </label>
+            <label>Capability ID
+              <input type="text" id="fbCap" list="capList" required placeholder="PSERS.INFRA.…" />
+            </label>
+            <datalist id="capList"></datalist>
+            <label>Note
+              <input type="text" id="fbNote" placeholder="Optional" />
+            </label>
+            <div class="row">
+              <button type="submit" class="btn primary" data-action="accept">Save accept</button>
+              <button type="submit" class="btn ghost" data-action="correct">Save correct</button>
+            </div>
+            <p class="hint" id="fbStatus"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>PSERS MVP · LMR vertical · S4 analyst UI · Ontology routes through L1 only</p>
+  </footer>
+  <script src="/static/app.js"></script>
+</body>
+</html>

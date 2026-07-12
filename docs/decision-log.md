@@ -27,9 +27,14 @@
 - Deterministic matcher CLI + FastAPI (`app/match_api.py`).
 - Sample outputs in `ontology/samples/`.
 
+## 2026-07-12 — Sprint 4 completed (analyst UI)
+
+- FastAPI UI at `/` with PDF upload, paste/demo fixture, MSI coverage, synonym feedback JSONL.
+- MVP end-to-end demo path complete for LMR vertical.
+
 ## Pending
 
 - SME review of L1 definitions after Sprint 1 draft
 - SME spot-check of L2 auto_accepted synonyms
-- Sprint 4: analyst UI + polished demo
 - Stronger MSI datasheet citations on L3 rows
+- Post-MVP verticals (CAD/sensors/MCX depth)

@@ -5,6 +5,7 @@ __pycache__/
 *.pyc
 data/rfp/*.pdf
 !.gitkeep
+ontology/l2_feedback.jsonl
 .DS_Store
 dist/
 .next/
