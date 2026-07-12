@@ -2,6 +2,9 @@
 
 Cost-effective MVP: map RFP language → stable capabilities → Motorola Solutions (MSI) product coverage.
 
+**Product spec (authority for next work):** [SPEC.md](SPEC.md) — Phase 2 quality hardening  
+**Feature slices:** [specs/](specs/)
+
 ## Ontology model
 
 - **Root:** `PSERS` — Public Safety Emergency Response System (of Systems)
@@ -14,6 +17,8 @@ See [docs/psers-root.md](docs/psers-root.md) and [docs/decision-log.md](docs/dec
 ## Repo layout
 
 ```
+SPEC.md            # Product spec (Phase 2 authority)
+specs/             # Feature slices for Cursor SDD
 ontology/          # L1 JSON + facets
 sql/               # Postgres DDL
 data/rfp/          # Allowlisted RFP PDFs only
@@ -31,6 +36,7 @@ app/               # Match UI (Sprint 3–4)
 | S2 L2 synonyms (3 RFPs) | **Done** — 492 synonyms + 42 holdout; see [docs/sprint-s2-done.md](docs/sprint-s2-done.md) |
 | S3 MSI L3 + match API | **Done** — 20 MSI products, 123 maps, CLI/API matcher; see [docs/sprint-s3-done.md](docs/sprint-s3-done.md) |
 | S4 UI + demo | **Done** — analyst UI at `/`; see [docs/sprint-s4-done.md](docs/sprint-s4-done.md) |
+| **Phase 2 (SDD)** | **Specified** — see [SPEC.md](SPEC.md); slices `specs/001`–`004` Planned |
 
 See [docs/sprint-s0-s1-done.md](docs/sprint-s0-s1-done.md).
 

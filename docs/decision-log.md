@@ -32,9 +32,16 @@
 - FastAPI UI at `/` with PDF upload, paste/demo fixture, MSI coverage, synonym feedback JSONL.
 - MVP end-to-end demo path complete for LMR vertical.
 
+## 2026-07-12 — Spec-driven development adopted
+
+- Added root [SPEC.md](../SPEC.md) as Phase-2 authority (quality hardening of LMR vertical).
+- Feature slices: `specs/001-ontology-governance.md` … `specs/004-persistence-lite.md`.
+- Implementation of FR-1…FR-4 not started; execute one slice at a time per Cursor agent protocol in SPEC.
+
 ## Pending
 
 - SME review of L1 definitions after Sprint 1 draft
 - SME spot-check of L2 auto_accepted synonyms
 - Stronger MSI datasheet citations on L3 rows
+- Execute Phase-2 slices 001→004 per SPEC
 - Post-MVP verticals (CAD/sensors/MCX depth)
