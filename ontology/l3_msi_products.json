@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "sprint": "S3",
+  "vendor_id": "MSI",
+  "vendor_name": "Motorola Solutions",
+  "counts": {
+    "products": 20
+  },
+  "products": [
+    {
+      "id": "MSI.ASTRO25.SYSTEM",
+      "family": "ASTRO 25",
+      "sku_or_name": "ASTRO 25 P25 System",
+      "form_factor": "infrastructure",
+      "notes": "P25 trunked/conventional core and RFSS ecosystem",
+      "vendor_id": "MSI",
+      "source_url": "https://www.motorolasolutions.com"
+    },
+    {
+      "id": "MSI.ASTRO25.SIMULCAST",
+      "family": "ASTRO 25",
+      "sku_or_name": "ASTRO 25 Simulcast",
+      "form_factor": "infrastructure",
+      "notes": "Wide-area simulcast configuration",
+      "vendor_id": "MSI",
+      "source_url": "https://www.motorolasolutions.com"
+    },
+    {
+      "id": "MSI.ASTRO25.ISSI",
+      "family": "ASTRO 25",
+      "sku_or_name": "ASTRO 25 ISSI Gateway",
+      "form_factor": "infrastructure",
+      "notes": "Inter-RF Subsystem Interface",
+      "vendor_id": "MSI",
+      "source_url": "https://www.motorolasolutions.com"
+    },
+    {
+      "id": "MSI.ASTRO25.KMF",
+      "family": "ASTRO 25",
+      "sku_or_name": "ASTRO Key Management Facility",
+      "form_factor": "infrastructure",
+      "notes": "OTAR / key management",
+      "vendor_id": "MSI",
+      "source_url": "https://www.motorolasolutions.com"
+    },
+    {
+      "id": "MSI.GTR8000",
+      "family": "G-Series RF",
+      "sku_or_name": "GTR 8000 Base Station / Repeater",
+      "form_factor": "site_rf",
+      "notes": "Site base/repeater",
+      "vendor_id": "MSI",
+      "source_url": "https://www.motorolasolutions.com"
+    },
+    {
+      "id": "MSI.APX.PORTABLE",
+      "family": "APX",
+      "sku_or_name": "APX P25 Portable Family",
+      "form_factor": "portable",
+      "notes": "Mission-critical P25 portables",
+      "vendor_id": "MSI",
+      "source_url": "https://www.motorolasolutions.com"
+    },
+    {
+      "id": "MSI.APX.MOBILE",
+      "family": "APX",
+      "sku_or_name": "APX P25 Mobile Family",
+      "form_factor": "mobile",
+      "notes": "Mission-critical P25 mobiles",
+      "vendor_id": "MSI",
+      "source_url": "https://www.motorolasolutions.com"
+    },
+    {
+      "id": "MSI.APX.8000",
+      "family": "APX",
+      "sku_or_name": "APX 8000 All-Band Portable",
+      "form_factor": "portable",
+      "notes": "Multiband portable",
+      "vendor_id": "MSI",
+      "source_url": "https://www.motorolasolutions.com"
+    },
+    {
+      "id": "MSI.APX.NEXT",
+      "family": "APX NEXT",
+      "sku_or_name": "APX NEXT Smart Radio",
+      "form_factor": "portable",
+      "notes": "Broadband-converged P25 smart radio",
+      "vendor_id": "MSI",
+      "source_url": "https://www.motorolasolutions.com"
+    },
+    {
+      "id": "MSI.APX.N_SERIES",
+      "family": "APX N-Series",
+      "sku_or_name": "APX N30/N50/N70 Family",
+      "form_factor": "portable",
+      "notes": "N-series portables",
+      "vendor_id": "MSI",
+      "source_url": "https://www.motorolasolutions.com"
+    },
+    {
+      "id": "MSI.APX.XE",
+      "family": "APX",
+      "sku_or_name": "APX XE Firefighter Portable",
+      "form_factor": "portable",
+      "notes": "Ultra-rugged firefighter form factor",
+      "vendor_id": "MSI",
+      "source_url": "https://www.motorolasolutions.com"
+    },
+    {
+      "id": "MSI.MOTOTRBO.RADIO",
+      "family": "MOTOTRBO",
+      "sku_or_name": "MOTOTRBO Digital Radio Family",
+      "form_factor": "subscriber",
+      "notes": "DMR professional radio",
+      "vendor_id": "MSI",
+      "source_url": "https://www.motorolasolutions.com"
+    },
+    {
+      "id": "MSI.MOTOTRBO.INFRA",
+      "family": "MOTOTRBO",
+      "sku_or_name": "MOTOTRBO Infrastructure",
+      "form_factor": "infrastructure",
+      "notes": "DMR capacity/trunking infra",
+      "vendor_id": "MSI",
+      "source_url": "https://www.motorolasolutions.com"
+    },
+    {
+      "id": "MSI.MCC.CONSOLE",
+      "family": "MCC Consoles",
+      "sku_or_name": "MCC Console Family",
+      "form_factor": "console",
+      "notes": "Dispatch console positions",
+      "vendor_id": "MSI",
+      "source_url": "https://www.motorolasolutions.com"
+    },
+    {
+      "id": "MSI.CC.COMMAND",
+      "family": "CommandCentral",
+      "sku_or_name": "CommandCentral Suite",
+      "form_factor": "platform",
+      "notes": "Command/applications suite (map by module)",
+      "vendor_id": "MSI",
+      "source_url": "https://www.motorolasolutions.com"
+    },
+    {
+      "id": "MSI.SMARTCONNECT",
+      "family": "SmartConnect",
+      "sku_or_name": "SmartConnect LMR-Broadband",
+      "form_factor": "broadband",
+      "notes": "LMR\u2013LTE/broadband PTT bridge features",
+      "vendor_id": "MSI",
+      "source_url": "https://www.motorolasolutions.com"
+    },
+    {
+      "id": "MSI.KVL",
+      "family": "Key Management",
+      "sku_or_name": "KVL Key Variable Loader",
+      "form_factor": "accessory",
+      "notes": "Manual key fill device family",
+      "vendor_id": "MSI",
+      "source_url": "https://www.motorolasolutions.com"
+    },
+    {
+      "id": "MSI.NMS.ASTRO",
+      "family": "ASTRO 25",
+      "sku_or_name": "ASTRO Network Management",
+      "form_factor": "nms",
+      "notes": "Radio system NMS",
+      "vendor_id": "MSI",
+      "source_url": "https://www.motorolasolutions.com"
+    },
+    {
+      "id": "MSI.LOGGING",
+      "family": "Logging",
+      "sku_or_name": "Radio Logging / Recording Solutions",
+      "form_factor": "recording",
+      "notes": "Logging recorder integrations",
+      "vendor_id": "MSI",
+      "source_url": "https://www.motorolasolutions.com"
+    },
+    {
+      "id": "MSI.SERVICES.IMPL",
+      "family": "Services",
+      "sku_or_name": "Implementation & Integration Services",
+      "form_factor": "service",
+      "notes": "Turnkey deploy, cutover, training",
+      "vendor_id": "MSI",
+      "source_url": "https://www.motorolasolutions.com"
+    }
+  ]
+}

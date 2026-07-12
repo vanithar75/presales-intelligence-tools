@@ -1,0 +1,1047 @@
+{
+  "source_file": "erie-trunked-radio-system-2026-018.pdf",
+  "pages_processed": 12,
+  "counts": {
+    "requirements": 103,
+    "mapped": 19,
+    "unmapped": 84,
+    "map_rate": 0.184
+  },
+  "results": [
+    {
+      "requirement": "TO PROVIDE TRUNKED RADIO SYSTEM",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.STD.TRUNKED_OPS",
+          "capability_alias": "LMR.STD.TRUNKED_OPS",
+          "capability_name": "Trunked operation",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.STD.TRUNKED_OPS",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        }
+      ],
+      "page": 1
+    },
+    {
+      "requirement": "4.6.6 Antenna Support Structure Suitability and Design............................................................. 21",
+      "matches": [],
+      "unmapped": true,
+      "page": 2
+    },
+    {
+      "requirement": "Erie County, NY: Trunked Radio Network Infrastructure Requirements \u2013 February 2026 3",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.STD.TRUNKED_OPS",
+          "capability_alias": "LMR.STD.TRUNKED_OPS",
+          "capability_name": "Trunked operation",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.STD.TRUNKED_OPS",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        }
+      ],
+      "page": 3
+    },
+    {
+      "requirement": "5. ECTRN Technical Requirements.......................................................................................................... 27",
+      "matches": [],
+      "unmapped": true,
+      "page": 3
+    },
+    {
+      "requirement": "5.1 Reliability Requirements............................................................................................................. 27",
+      "matches": [],
+      "unmapped": true,
+      "page": 3
+    },
+    {
+      "requirement": "5.2 Network Security........................................................................................................................ 28",
+      "matches": [],
+      "unmapped": true,
+      "page": 3
+    },
+    {
+      "requirement": "5.3 Sustainability and Lifecycle......................................................................................................... 28",
+      "matches": [],
+      "unmapped": true,
+      "page": 3
+    },
+    {
+      "requirement": "5.4 Standards Compliance................................................................................................................ 29",
+      "matches": [],
+      "unmapped": true,
+      "page": 3
+    },
+    {
+      "requirement": "5.5 Radio System Fixed Network Requirements............................................................................... 30",
+      "matches": [],
+      "unmapped": true,
+      "page": 3
+    },
+    {
+      "requirement": "5.5.1 Radio Access Network Functional Requirements............................................................... 30",
+      "matches": [],
+      "unmapped": true,
+      "page": 3
+    },
+    {
+      "requirement": "5.5.2 Base Station Equipment Performance Specifications......................................................... 31",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.SITE.BASE_REPEATER",
+          "capability_alias": "LMR.SITE.BASE_REPEATER",
+          "capability_name": "Base station / repeater",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.SITE.BASE_REPEATER",
+          "product_id": "MSI.GTR8000",
+          "product_name": "GTR 8000 Base Station / Repeater",
+          "family": "G-Series RF",
+          "support_level": "native",
+          "notes": ""
+        }
+      ],
+      "page": 3
+    },
+    {
+      "requirement": "5.5.3 Repeater Performance Specifications................................................................................. 32",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.SITE.BASE_REPEATER",
+          "capability_alias": "LMR.SITE.BASE_REPEATER",
+          "capability_name": "Base station / repeater",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.SITE.BASE_REPEATER",
+          "product_id": "MSI.GTR8000",
+          "product_name": "GTR 8000 Base Station / Repeater",
+          "family": "G-Series RF",
+          "support_level": "native",
+          "notes": ""
+        }
+      ],
+      "page": 3
+    },
+    {
+      "requirement": "5.5.4 Site Routers and Switches................................................................................................... 32",
+      "matches": [],
+      "unmapped": true,
+      "page": 3
+    },
+    {
+      "requirement": "5.5.5 Simulcast Solution: Controllers, GPS, Signal Comparators, Audio Distribution.................. 32",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.DATA.GPS_AVL",
+          "capability_alias": "LMR.DATA.GPS_AVL",
+          "capability_name": "GPS / AVL location",
+          "confidence": 0.92,
+          "method": "seed"
+        },
+        {
+          "capability_id": "PSERS.INFRA.SITE.COMPARATOR",
+          "capability_alias": "LMR.SITE.COMPARATOR",
+          "capability_name": "Simulcast comparator",
+          "confidence": 0.92,
+          "method": "seed"
+        },
+        {
+          "capability_id": "PSERS.INFRA.SITE.SIMULCAST_TRUNKED",
+          "capability_alias": "LMR.SITE.SIMULCAST_TRUNKED",
+          "capability_name": "Trunked simulcast",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.DATA.GPS_AVL",
+          "product_id": "MSI.APX.PORTABLE",
+          "product_name": "APX P25 Portable Family",
+          "family": "APX",
+          "support_level": "native",
+          "notes": "APX location features"
+        },
+        {
+          "capability_id": "PSERS.INFRA.DATA.GPS_AVL",
+          "product_id": "MSI.APX.NEXT",
+          "product_name": "APX NEXT Smart Radio",
+          "family": "APX NEXT",
+          "support_level": "native",
+          "notes": ""
+        },
+        {
+          "capability_id": "PSERS.INFRA.SITE.COMPARATOR",
+          "product_id": "MSI.ASTRO25.SIMULCAST",
+          "product_name": "ASTRO 25 Simulcast",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        },
+        {
+          "capability_id": "PSERS.INFRA.SITE.SIMULCAST_TRUNKED",
+          "product_id": "MSI.ASTRO25.SIMULCAST",
+          "product_name": "ASTRO 25 Simulcast",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        }
+      ],
+      "page": 3
+    },
+    {
+      "requirement": "5.5.6 Antenna Systems................................................................................................................. 33",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.SITE.ANTENNA_SYSTEM",
+          "capability_alias": "LMR.SITE.ANTENNA_SYSTEM",
+          "capability_name": "Antenna system",
+          "confidence": 0.72,
+          "method": "name"
+        }
+      ],
+      "msi_coverage": [],
+      "page": 3
+    },
+    {
+      "requirement": "5.5.7 Equipment Racks................................................................................................................. 33",
+      "matches": [],
+      "unmapped": true,
+      "page": 3
+    },
+    {
+      "requirement": "5.6 Radio Site Equipment Installation............................................................................................... 33",
+      "matches": [],
+      "unmapped": true,
+      "page": 3
+    },
+    {
+      "requirement": "5.6.1 General Installation Requirements..................................................................................... 33",
+      "matches": [],
+      "unmapped": true,
+      "page": 3
+    },
+    {
+      "requirement": "5.6.2 Equipment Installation........................................................................................................ 34",
+      "matches": [],
+      "unmapped": true,
+      "page": 3
+    },
+    {
+      "requirement": "5.6.3 Transmission Lines and Antennas Installation.................................................................... 35",
+      "matches": [],
+      "unmapped": true,
+      "page": 3
+    },
+    {
+      "requirement": "5.7 Other Infrastructure Requirements............................................................................................ 36",
+      "matches": [],
+      "unmapped": true,
+      "page": 3
+    },
+    {
+      "requirement": "5.7.1 Electrical Work.................................................................................................................... 36",
+      "matches": [],
+      "unmapped": true,
+      "page": 3
+    },
+    {
+      "requirement": "5.7.2 Emergency Back-Up Generators and Automatic Transfer Switch (ATS)............................. 36",
+      "matches": [],
+      "unmapped": true,
+      "page": 3
+    },
+    {
+      "requirement": "5.8 Console Sub-System Requirements............................................................................................ 38",
+      "matches": [],
+      "unmapped": true,
+      "page": 3
+    },
+    {
+      "requirement": "5.8.1 Interface to Existing Consoles Via CSSI............................................................................... 39",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.IOP.CSSI",
+          "capability_alias": "LMR.IOP.CSSI",
+          "capability_name": "CSSI console subsystem interface",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.IOP.CSSI",
+          "product_id": "MSI.MCC.CONSOLE",
+          "product_name": "MCC Console Family",
+          "family": "MCC Consoles",
+          "support_level": "native",
+          "notes": ""
+        }
+      ],
+      "page": 3
+    },
+    {
+      "requirement": "5.8.2 New/Replacement Consoles............................................................................................... 39",
+      "matches": [],
+      "unmapped": true,
+      "page": 3
+    },
+    {
+      "requirement": "New Dispatch Consoles Functions and User Interface....................................................................... 40",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.DISP.CONSOLE_POSITIONS",
+          "capability_alias": "LMR.DISP.CONSOLE_POSITIONS",
+          "capability_name": "Dispatch console positions",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.DISP.CONSOLE_POSITIONS",
+          "product_id": "MSI.MCC.CONSOLE",
+          "product_name": "MCC Console Family",
+          "family": "MCC Consoles",
+          "support_level": "native",
+          "notes": ""
+        }
+      ],
+      "page": 3
+    },
+    {
+      "requirement": "New Dispatch Console Patching Requirements.................................................................................. 42",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.DISP.CONSOLE_POSITIONS",
+          "capability_alias": "LMR.DISP.CONSOLE_POSITIONS",
+          "capability_name": "Dispatch console positions",
+          "confidence": 0.92,
+          "method": "seed"
+        },
+        {
+          "capability_id": "PSERS.INFRA.DISP.CONSOLE_PATCH",
+          "capability_alias": "LMR.DISP.CONSOLE_PATCH",
+          "capability_name": "Console patching",
+          "confidence": 0.72,
+          "method": "name"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.DISP.CONSOLE_POSITIONS",
+          "product_id": "MSI.MCC.CONSOLE",
+          "product_name": "MCC Console Family",
+          "family": "MCC Consoles",
+          "support_level": "native",
+          "notes": ""
+        },
+        {
+          "capability_id": "PSERS.INFRA.DISP.CONSOLE_PATCH",
+          "product_id": "MSI.MCC.CONSOLE",
+          "product_name": "MCC Console Family",
+          "family": "MCC Consoles",
+          "support_level": "native",
+          "notes": ""
+        }
+      ],
+      "page": 3
+    },
+    {
+      "requirement": "New Dispatch Console Availability...................................................................................................... 42",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.DISP.CONSOLE_POSITIONS",
+          "capability_alias": "LMR.DISP.CONSOLE_POSITIONS",
+          "capability_name": "Dispatch console positions",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.DISP.CONSOLE_POSITIONS",
+          "product_id": "MSI.MCC.CONSOLE",
+          "product_name": "MCC Console Family",
+          "family": "MCC Consoles",
+          "support_level": "native",
+          "notes": ""
+        }
+      ],
+      "page": 3
+    },
+    {
+      "requirement": "New Dispatch Console Training Requirements.................................................................................. 43",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.DISP.CONSOLE_POSITIONS",
+          "capability_alias": "LMR.DISP.CONSOLE_POSITIONS",
+          "capability_name": "Dispatch console positions",
+          "confidence": 0.92,
+          "method": "seed"
+        },
+        {
+          "capability_id": "PSERS.INFRA.LIFE.TRAINING",
+          "capability_alias": "LMR.LIFE.TRAINING",
+          "capability_name": "User & tech training",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.DISP.CONSOLE_POSITIONS",
+          "product_id": "MSI.MCC.CONSOLE",
+          "product_name": "MCC Console Family",
+          "family": "MCC Consoles",
+          "support_level": "native",
+          "notes": ""
+        },
+        {
+          "capability_id": "PSERS.INFRA.LIFE.TRAINING",
+          "product_id": "MSI.SERVICES.IMPL",
+          "product_name": "Implementation & Integration Services",
+          "family": "Services",
+          "support_level": "native",
+          "notes": ""
+        }
+      ],
+      "page": 3
+    },
+    {
+      "requirement": "5.8.3 Remote Dispatch Capability................................................................................................ 43",
+      "matches": [],
+      "unmapped": true,
+      "page": 3
+    },
+    {
+      "requirement": "5.9 Backup Control Stations.............................................................................................................. 43",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.SUB.CONTROL_STATION",
+          "capability_alias": "LMR.SUB.CONTROL_STATION",
+          "capability_name": "Control station",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.SUB.CONTROL_STATION",
+          "product_id": "MSI.APX.MOBILE",
+          "product_name": "APX P25 Mobile Family",
+          "family": "APX",
+          "support_level": "native",
+          "notes": "Control station configs"
+        }
+      ],
+      "page": 3
+    },
+    {
+      "requirement": "5.10 Optional Interfaces..................................................................................................................... 45",
+      "matches": [],
+      "unmapped": true,
+      "page": 3
+    },
+    {
+      "requirement": "5.10.1 IP Based Coverage Extension.............................................................................................. 45",
+      "matches": [],
+      "unmapped": true,
+      "page": 3
+    },
+    {
+      "requirement": "5.10.2 Other Push To Talk Services Interface................................................................................ 45",
+      "matches": [],
+      "unmapped": true,
+      "page": 3
+    },
+    {
+      "requirement": "5.10.3 Push To Talk Over Broadband Service................................................................................ 45",
+      "matches": [],
+      "unmapped": true,
+      "page": 3
+    },
+    {
+      "requirement": "13. Warranty and On-Going Maintenance Support.................................................................................. 59",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.LIFE.WARRANTY",
+          "capability_alias": "LMR.LIFE.WARRANTY",
+          "capability_name": "Warranty terms",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.LIFE.WARRANTY",
+          "product_id": "MSI.SERVICES.IMPL",
+          "product_name": "Implementation & Integration Services",
+          "family": "Services",
+          "support_level": "native",
+          "notes": ""
+        }
+      ],
+      "page": 4
+    },
+    {
+      "requirement": "13.1 Warranty Period and Support Criteria........................................................................................ 59",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.LIFE.WARRANTY",
+          "capability_alias": "LMR.LIFE.WARRANTY",
+          "capability_name": "Warranty terms",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.LIFE.WARRANTY",
+          "product_id": "MSI.SERVICES.IMPL",
+          "product_name": "Implementation & Integration Services",
+          "family": "Services",
+          "support_level": "native",
+          "notes": ""
+        }
+      ],
+      "page": 4
+    },
+    {
+      "requirement": "13.2 General Maintenance and Support Requirements..................................................................... 60",
+      "matches": [],
+      "unmapped": true,
+      "page": 4
+    },
+    {
+      "requirement": "13.3 Software and Firmware Support................................................................................................. 61",
+      "matches": [],
+      "unmapped": true,
+      "page": 4
+    },
+    {
+      "requirement": "13.4.2 Technical and On-Call Support Service............................................................................... 62",
+      "matches": [],
+      "unmapped": true,
+      "page": 4
+    },
+    {
+      "requirement": "14.20 Warranty and Ongoing Support Services................................................................................ 73",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.LIFE.WARRANTY",
+          "capability_alias": "LMR.LIFE.WARRANTY",
+          "capability_name": "Warranty terms",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.LIFE.WARRANTY",
+          "product_id": "MSI.SERVICES.IMPL",
+          "product_name": "Implementation & Integration Services",
+          "family": "Services",
+          "support_level": "native",
+          "notes": ""
+        }
+      ],
+      "page": 5
+    },
+    {
+      "requirement": "networks, it is anticipated that many of these local agencies will transition to the new system.",
+      "matches": [],
+      "unmapped": true,
+      "page": 6
+    },
+    {
+      "requirement": "fire paging systems must remain operational throughout the transition to the new system and",
+      "matches": [],
+      "unmapped": true,
+      "page": 6
+    },
+    {
+      "requirement": "build out multiple simulcast cells that support the County operations, and the City of Buffalo. Upon",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.SITE.SIMULCAST_TRUNKED",
+          "capability_alias": "LMR.SITE.SIMULCAST_TRUNKED",
+          "capability_name": "Trunked simulcast",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.SITE.SIMULCAST_TRUNKED",
+          "product_id": "MSI.ASTRO25.SIMULCAST",
+          "product_name": "ASTRO 25 Simulcast",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        }
+      ],
+      "page": 6
+    },
+    {
+      "requirement": "Existing fire paging systems must remain operational throughout the transition to the new system and",
+      "matches": [],
+      "unmapped": true,
+      "page": 6
+    },
+    {
+      "requirement": "following the transition. Additionally, other existing analog systems will also remain in place to support",
+      "matches": [],
+      "unmapped": true,
+      "page": 6
+    },
+    {
+      "requirement": "to be part of ECTRN. These additional sites (to be identified) must still be maintained and incorporated",
+      "matches": [],
+      "unmapped": true,
+      "page": 6
+    },
+    {
+      "requirement": "infrastructure provided via this RFP must integrate with the existing and/or upgraded backhaul",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.BH.IP_TRANSPORT",
+          "capability_alias": "LMR.BH.IP_TRANSPORT",
+          "capability_name": "IP transport network",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.BH.IP_TRANSPORT",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": "IP transport for ASTRO sites"
+        }
+      ],
+      "page": 7
+    },
+    {
+      "requirement": "The County currently operates an extensive microwave backhaul network to support its current",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.BH.IP_TRANSPORT",
+          "capability_alias": "LMR.BH.IP_TRANSPORT",
+          "capability_name": "IP transport network",
+          "confidence": 0.92,
+          "method": "seed"
+        },
+        {
+          "capability_id": "PSERS.INFRA.BH.MICROWAVE_BH",
+          "capability_alias": "LMR.BH.MICROWAVE_BH",
+          "capability_name": "Microwave backhaul",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.BH.IP_TRANSPORT",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": "IP transport for ASTRO sites"
+        },
+        {
+          "capability_id": "PSERS.INFRA.BH.MICROWAVE_BH",
+          "product_id": "MSI.SERVICES.IMPL",
+          "product_name": "Implementation & Integration Services",
+          "family": "Services",
+          "support_level": "partner",
+          "notes": "Often partner microwave; MSI integrates"
+        }
+      ],
+      "page": 7
+    },
+    {
+      "requirement": "The infrastructure provided via this RFP must integrate with the existing and/or upgraded backhaul",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.BH.IP_TRANSPORT",
+          "capability_alias": "LMR.BH.IP_TRANSPORT",
+          "capability_name": "IP transport network",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.BH.IP_TRANSPORT",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": "IP transport for ASTRO sites"
+        }
+      ],
+      "page": 7
+    },
+    {
+      "requirement": "submission of a proposal, attachments, and additional information shall not entitle the",
+      "matches": [],
+      "unmapped": true,
+      "page": 7
+    },
+    {
+      "requirement": "officers, employees or agents, shall not be binding against Erie County of Erie, its elected",
+      "matches": [],
+      "unmapped": true,
+      "page": 7
+    },
+    {
+      "requirement": "term of the contract shall be for a three (3) year period commencing approximately July 30th, 2026,",
+      "matches": [],
+      "unmapped": true,
+      "page": 8
+    },
+    {
+      "requirement": "shall be for a three (3) year period commencing approximately July 30th, 2026,",
+      "matches": [],
+      "unmapped": true,
+      "page": 8
+    },
+    {
+      "requirement": "any proposal to arrive beyond the stated deadline. To be considered, proposals MUST",
+      "matches": [],
+      "unmapped": true,
+      "page": 8
+    },
+    {
+      "requirement": "Proposing firms should understand that to provide for this open and transparent process,",
+      "matches": [],
+      "unmapped": true,
+      "page": 8
+    },
+    {
+      "requirement": "SHALL ACCRUE TO ANY PROPOSER BY THE FACT THAT A PROPOSAL HAS BEEN SELECTED BY ERIE",
+      "matches": [],
+      "unmapped": true,
+      "page": 8
+    },
+    {
+      "requirement": "The term of the contract shall be for a three (3) year period commencing approximately July 30th, 2026,",
+      "matches": [],
+      "unmapped": true,
+      "page": 8
+    },
+    {
+      "requirement": "the proposer and Erie County, the proposer will be required to provide proof of the insurance coverage described in Schedule \u201cB\u201d.",
+      "matches": [],
+      "unmapped": true,
+      "page": 9
+    },
+    {
+      "requirement": "of Erie County, the Consultant shall indemnify and hold harmless Erie County, its officers,",
+      "matches": [],
+      "unmapped": true,
+      "page": 9
+    },
+    {
+      "requirement": "in amount and form shall not be deemed acceptable until approved by Erie County Attorney",
+      "matches": [],
+      "unmapped": true,
+      "page": 9
+    },
+    {
+      "requirement": "The Consultant shall provide Erie County with at least one copy of each deliverable",
+      "matches": [],
+      "unmapped": true,
+      "page": 9
+    },
+    {
+      "requirement": "shall provide Erie County with at least one copy of each deliverable.",
+      "matches": [],
+      "unmapped": true,
+      "page": 9
+    },
+    {
+      "requirement": "shall become and remain the property of Erie County.",
+      "matches": [],
+      "unmapped": true,
+      "page": 9
+    },
+    {
+      "requirement": "negligence of Erie County, the Consultant shall indemnify and hold harmless Erie County, its officers,",
+      "matches": [],
+      "unmapped": true,
+      "page": 9
+    },
+    {
+      "requirement": "(b) to provide defense for and defend, at its sole expense, any and all claims, demands or causes of",
+      "matches": [],
+      "unmapped": true,
+      "page": 9
+    },
+    {
+      "requirement": "will be required to provide proof of the insurance coverage described in Schedule \u201cB\u201d. Insurance",
+      "matches": [],
+      "unmapped": true,
+      "page": 9
+    },
+    {
+      "requirement": "coverage in amount and form shall not be deemed acceptable until approved by Erie County Attorney.",
+      "matches": [],
+      "unmapped": true,
+      "page": 9
+    },
+    {
+      "requirement": "rights. The Consultant shall provide Erie County with at least one copy of each deliverable.",
+      "matches": [],
+      "unmapped": true,
+      "page": 9
+    },
+    {
+      "requirement": "data, shall become and remain the property of Erie County. The Consultant may retain copies of such",
+      "matches": [],
+      "unmapped": true,
+      "page": 9
+    },
+    {
+      "requirement": "State of New York and Erie County of Erie, and that said laws have not been violated and shall not be",
+      "matches": [],
+      "unmapped": true,
+      "page": 9
+    },
+    {
+      "requirement": "the proposer represents and warrants that it is familiar with all federal, state and local laws and regulations and will conform to said laws and regulations.",
+      "matches": [],
+      "unmapped": true,
+      "page": 10
+    },
+    {
+      "requirement": "proposers must disclose with their proposals the name of any officer, director or agent who is also an",
+      "matches": [],
+      "unmapped": true,
+      "page": 10
+    },
+    {
+      "requirement": "shall be no conflicts in existence during the term of any contract with Erie County",
+      "matches": [],
+      "unmapped": true,
+      "page": 10
+    },
+    {
+      "requirement": "a conflict shall be grounds for termination of a contract",
+      "matches": [],
+      "unmapped": true,
+      "page": 10
+    },
+    {
+      "requirement": "shall make such records available, upon request, to Erie County\u2019s Division of Equal",
+      "matches": [],
+      "unmapped": true,
+      "page": 10
+    },
+    {
+      "requirement": "shall be no conflicts in existence during the term of any contract with Erie County.",
+      "matches": [],
+      "unmapped": true,
+      "page": 10
+    },
+    {
+      "requirement": "shall be grounds for termination of a contract.",
+      "matches": [],
+      "unmapped": true,
+      "page": 10
+    },
+    {
+      "requirement": "shall have the right to use or disclose such information as provided in the agreement, unless",
+      "matches": [],
+      "unmapped": true,
+      "page": 10
+    },
+    {
+      "requirement": "shall comply with Executive Order13 (2014), and the",
+      "matches": [],
+      "unmapped": true,
+      "page": 10
+    },
+    {
+      "requirement": "All proposers must disclose with their proposals the name of any officer, director or agent who is also an",
+      "matches": [],
+      "unmapped": true,
+      "page": 10
+    },
+    {
+      "requirement": "employee of Erie County of Erie. Further, all proposers must disclose the name of any County employee",
+      "matches": [],
+      "unmapped": true,
+      "page": 10
+    },
+    {
+      "requirement": "There shall be no conflicts in existence during the term of any contract with Erie County. The existence",
+      "matches": [],
+      "unmapped": true,
+      "page": 10
+    },
+    {
+      "requirement": "of a conflict shall be grounds for termination of a contract.",
+      "matches": [],
+      "unmapped": true,
+      "page": 10
+    },
+    {
+      "requirement": "under the New York Freedom of Information Law shall:",
+      "matches": [],
+      "unmapped": true,
+      "page": 10
+    },
+    {
+      "requirement": "During the term of this Contract, the Consultant shall comply with Executive Order13 (2014), and the",
+      "matches": [],
+      "unmapped": true,
+      "page": 10
+    },
+    {
+      "requirement": "Consultant shall make such records available, upon request, to Erie County\u2019s Division of Equal",
+      "matches": [],
+      "unmapped": true,
+      "page": 10
+    },
+    {
+      "requirement": "proposals must state the period for which the proposal shall remain in effect (i",
+      "matches": [],
+      "unmapped": true,
+      "page": 11
+    },
+    {
+      "requirement": "shall have the right, upon reasonable notice and at",
+      "matches": [],
+      "unmapped": true,
+      "page": 11
+    },
+    {
+      "requirement": "shall be made by March 20th, 2025 via e-mail to",
+      "matches": [],
+      "unmapped": true,
+      "page": 11
+    },
+    {
+      "requirement": "Employment Opportunity for review. Erie County shall have the right, upon reasonable notice and at",
+      "matches": [],
+      "unmapped": true,
+      "page": 11
+    },
+    {
+      "requirement": "All proposals must state the period for which the proposal shall remain in effect (i.e. how much time",
+      "matches": [],
+      "unmapped": true,
+      "page": 11
+    },
+    {
+      "requirement": "does Erie County have to accept or reject the proposal under the terms proposed). Such period shall not",
+      "matches": [],
+      "unmapped": true,
+      "page": 11
+    },
+    {
+      "requirement": "All firms wishing to participate in this process must register with Jerry Whittington & Kevin Hughes in",
+      "matches": [],
+      "unmapped": true,
+      "page": 11
+    },
+    {
+      "requirement": "Any requests for RFP interpretations or clarifications shall be made by March 20th, 2025 via e-mail to",
+      "matches": [],
+      "unmapped": true,
+      "page": 11
+    },
+    {
+      "requirement": "shall submit the following documents in response to this RFP:",
+      "matches": [],
+      "unmapped": true,
+      "page": 12
+    },
+    {
+      "requirement": "Cover Letter: Proposals shall contain the following in a cover letter:",
+      "matches": [],
+      "unmapped": true,
+      "page": 12
+    },
+    {
+      "requirement": "shall be comprehensive and shall",
+      "matches": [],
+      "unmapped": true,
+      "page": 12
+    },
+    {
+      "requirement": "Respondents shall submit the following documents in response to this RFP:",
+      "matches": [],
+      "unmapped": true,
+      "page": 12
+    },
+    {
+      "requirement": "o A statement to the effect that the proposal shall remain valid for a period of not less than",
+      "matches": [],
+      "unmapped": true,
+      "page": 12
+    },
+    {
+      "requirement": "Response to the technical and statement of work (SOW) requirements shall be comprehensive and shall",
+      "matches": [],
+      "unmapped": true,
+      "page": 12
+    },
+    {
+      "requirement": "When completing the Compliance Matrix, the Respondent shall use a response of \u201cC,\u201d \u201cN,\u201d or \u201cA\u201d in the",
+      "matches": [],
+      "unmapped": true,
+      "page": 12
+    }
+  ],
+  "note": "Truncated to first 200 requirement rows for sample artifact"
+}

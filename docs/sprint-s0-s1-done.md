@@ -29,6 +29,6 @@ python -c "import json; print(json.load(open('ontology/l1_capabilities.json',enc
 
 ## Not in S0/S1
 
-- L2 synonym harvest (Sprint 2)
+- L2 synonym harvest (Sprint 2) — **completed separately; see sprint-s2-done.md**
 - MSI L3 mappings (Sprint 3)
 - Match UI (Sprint 4)

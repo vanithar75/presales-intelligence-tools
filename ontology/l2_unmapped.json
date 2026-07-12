@@ -1,0 +1,3510 @@
+{
+  "schema_version": "1.0",
+  "sprint": "S2",
+  "counts": {
+    "unmapped_phrases": 3640,
+    "sample_size": 500
+  },
+  "phrases": [
+    {
+      "phrase": "2.6.2 Waveguide Support........................................................................................ 80",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 4,
+      "phrase_id": "74faef9fc005"
+    },
+    {
+      "phrase": "6.4 Lifecycle Support.......................................................................................... 117",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 5,
+      "phrase_id": "01618b2b2956"
+    },
+    {
+      "phrase": "requirements of the desired system. While not a design, these specifications provide",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 6,
+      "phrase_id": "71f8f9008dfc"
+    },
+    {
+      "phrase": "a series of disparate radio systems that provide voice communications for police,",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 6,
+      "phrase_id": "04492f97797c"
+    },
+    {
+      "phrase": "system shall be entirely owned by Jackson County and maintained by the ECSO, and shall operate as a countywide system.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 7,
+      "phrase_id": "fec4e16c6d4f"
+    },
+    {
+      "phrase": "The new shared system shall be entirely owned by Jackson County",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 7,
+      "phrase_id": "1a19eff5552a"
+    },
+    {
+      "phrase": "maintained by the ECSO, and shall operate as a countywide system",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 7,
+      "phrase_id": "3c371a1c71f8"
+    },
+    {
+      "phrase": "The new system shall provide mobile and portable on-street radio coverage",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 7,
+      "phrase_id": "9ef8fc767c4f"
+    },
+    {
+      "phrase": "The Selected Vendor shall comply with the applicable portions of the following",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 7,
+      "phrase_id": "f299e26c9f0a"
+    },
+    {
+      "phrase": "shall be entirely owned by Jackson County",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 7,
+      "phrase_id": "0018f69b9f14"
+    },
+    {
+      "phrase": "shall operate as a countywide system.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 7,
+      "phrase_id": "331f1901bdfe"
+    },
+    {
+      "phrase": "shall provide mobile and portable on-street radio coverage",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 7,
+      "phrase_id": "eb2c7165dc6d"
+    },
+    {
+      "phrase": "shall support operations",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 7,
+      "phrase_id": "fcb08d30949b"
+    },
+    {
+      "phrase": "shall comply with the applicable portions of the following",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 7,
+      "phrase_id": "bace5b70d13e"
+    },
+    {
+      "phrase": "that will provide first responders real time operable and interoperable voice and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 7,
+      "phrase_id": "25c2a7d316e3"
+    },
+    {
+      "phrase": "operations. The new shared system shall be entirely owned by Jackson County",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 7,
+      "phrase_id": "d5e8a9dc1eba"
+    },
+    {
+      "phrase": "and maintained by the ECSO, and shall operate as a countywide system.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 7,
+      "phrase_id": "75b69b935ad5"
+    },
+    {
+      "phrase": "F. The integrated public safety wireless communication system shall consist of:",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 7,
+      "phrase_id": "efa2dfdf8990"
+    },
+    {
+      "phrase": "H. The new system shall provide mobile and portable on-street radio coverage",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 7,
+      "phrase_id": "8e2293014c3c"
+    },
+    {
+      "phrase": "I. The existing radio systems described in Section 1.1.B shall support operations",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 7,
+      "phrase_id": "81ad6e9825aa"
+    },
+    {
+      "phrase": "A. The Selected Vendor shall comply with the applicable portions of the following",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 7,
+      "phrase_id": "659523022686"
+    },
+    {
+      "phrase": "The Selected Vendor shall comply with industry best practices for system",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 8,
+      "phrase_id": "9757868d8f4e"
+    },
+    {
+      "phrase": "The Selected Vendor shall comply with the following security standards and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 8,
+      "phrase_id": "82a71b77566e"
+    },
+    {
+      "phrase": "shall comply with industry best practices for system",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 8,
+      "phrase_id": "bfb5d452a977"
+    },
+    {
+      "phrase": "shall comply with the following security standards and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 8,
+      "phrase_id": "d6c04d3b2b4e"
+    },
+    {
+      "phrase": "B. The Selected Vendor shall comply with industry best practices for system",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 8,
+      "phrase_id": "3d66aed52ef4"
+    },
+    {
+      "phrase": "4. Other contractor / industry standard - the Selected Vendor shall provide to",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 8,
+      "phrase_id": "0578f62f7fbd"
+    },
+    {
+      "phrase": "A. The Selected Vendor shall comply with the following security standards and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 8,
+      "phrase_id": "2bde166effcf"
+    },
+    {
+      "phrase": "Routing and switching equipment shall employ Open Systems Interconnection",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 9,
+      "phrase_id": "ac19b148fa58"
+    },
+    {
+      "phrase": "The system shall utilize secure protocols (SNMPv2, SNMPv3, SSHv2 and HTTPS)",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 9,
+      "phrase_id": "f3cb4835fed1"
+    },
+    {
+      "phrase": "The Selected Vendor shall supply, install, and configure virtual private network",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 9,
+      "phrase_id": "0794c8d57831"
+    },
+    {
+      "phrase": "The Selected Vendor shall supply, install, and configure firewall protection systems",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 9,
+      "phrase_id": "3fe91cdaea89"
+    },
+    {
+      "phrase": "The Selected Vendor shall supply, install, and configure anti -virus and anti",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 9,
+      "phrase_id": "8ff8cfbd9b7e"
+    },
+    {
+      "phrase": "The Selected Vendor shall provide operating system patches for all supplied",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 9,
+      "phrase_id": "1baf30631cff"
+    },
+    {
+      "phrase": "shall provide operating system patches for all supplied",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 9,
+      "phrase_id": "04839638c3e0"
+    },
+    {
+      "phrase": "B. Routing and switching equipment shall employ Open Systems Interconnection",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 9,
+      "phrase_id": "e776d08e431f"
+    },
+    {
+      "phrase": "C. The system shall utilize secure protocols (SNMPv2, SNMPv3, SSHv2 and HTTPS)",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 9,
+      "phrase_id": "31a58a427581"
+    },
+    {
+      "phrase": "D. The Selected Vendor shall supply, install, and configure virtual private network",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 9,
+      "phrase_id": "9015e4d9a073"
+    },
+    {
+      "phrase": "E. The Selected Vendor shall supply, install, and configure firewall protection systems",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 9,
+      "phrase_id": "fea938d4a26b"
+    },
+    {
+      "phrase": "F. The Selected Vendor shall supply, install, and configure anti -virus and anti",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 9,
+      "phrase_id": "9176334f6dd2"
+    },
+    {
+      "phrase": "G. The Selected Vendor shall provide operating system patches for all supplied",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 9,
+      "phrase_id": "257208d7d872"
+    },
+    {
+      "phrase": "system components, the Selected Vendor will work with the ECSO to determine an agreeable solution.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 10,
+      "phrase_id": "8716ee3b85e2"
+    },
+    {
+      "phrase": "shall be no more than one version and/or 8 weeks older than the Software",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 10,
+      "phrase_id": "494a9f0d45b4"
+    },
+    {
+      "phrase": "The system shall comply with applicable TIA-102 (P25) standards as published at",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 10,
+      "phrase_id": "0a6f75f9e797"
+    },
+    {
+      "phrase": "The system shall support dual mode operation:",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 10,
+      "phrase_id": "00a8e07c518d"
+    },
+    {
+      "phrase": "All infrastructure shall be equipped and implemented to dynamically support",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 10,
+      "phrase_id": "5b23aab72584"
+    },
+    {
+      "phrase": "The Selected Vendor shall provide a P25 technology solution capable of operating",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 10,
+      "phrase_id": "59452246797f"
+    },
+    {
+      "phrase": "The radio system must be capable of redundancy in all asp ects of operation",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 10,
+      "phrase_id": "74941c3a41c2"
+    },
+    {
+      "phrase": "shall become applicable.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 10,
+      "phrase_id": "f88cc0b4ce34"
+    },
+    {
+      "phrase": "shall comply with applicable TIA-102 (P25) standards as published at",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 10,
+      "phrase_id": "9eea10865701"
+    },
+    {
+      "phrase": "shall support dual mode operation:",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 10,
+      "phrase_id": "78c2aa31c9f4"
+    },
+    {
+      "phrase": "shall be equipped and implemented to dynamically support",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 10,
+      "phrase_id": "dadbe69d53a0"
+    },
+    {
+      "phrase": "shall provide a P25 technology solution capable of operating",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 10,
+      "phrase_id": "183c42cdc2d2"
+    },
+    {
+      "phrase": "must be capable of redundancy in all asp ects of operation",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 10,
+      "phrase_id": "8dcedf656ab4"
+    },
+    {
+      "phrase": "provided shall be no more than one version and/or 8 weeks older than the Software",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 10,
+      "phrase_id": "5f135c7fcba4"
+    },
+    {
+      "phrase": "and regulations, then the more stringent of the two shall become applicable.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 10,
+      "phrase_id": "944c4ed204bc"
+    },
+    {
+      "phrase": "Section 1.1.1 and/or Section 1.1.2, the Selected Vendor shall list all deviations for",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 10,
+      "phrase_id": "d55677ff8ad8"
+    },
+    {
+      "phrase": "A. The system shall comply with applicable TIA-102 (P25) standards as published at",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 10,
+      "phrase_id": "6d3e8595d795"
+    },
+    {
+      "phrase": "B. The system shall support dual mode operation:",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 10,
+      "phrase_id": "55fcc15c804c"
+    },
+    {
+      "phrase": "2. All infrastructure shall be equipped and implemented to dynamically support",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 10,
+      "phrase_id": "e4aeec0c9a09"
+    },
+    {
+      "phrase": "C. The Selected Vendor shall provide a P25 technology solution capable of operating",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 10,
+      "phrase_id": "81c72ae307b9"
+    },
+    {
+      "phrase": "A. The radio system must be capable of redundancy in all asp ects of operation",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 10,
+      "phrase_id": "8778d550bdbc"
+    },
+    {
+      "phrase": "equipment, the primary core shall be located at 400 Pech Rd, Central Point OR, 97502, and the secondary core shall be located Roxy Ann Peak, Jackson County.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 11,
+      "phrase_id": "1d37d16beac9"
+    },
+    {
+      "phrase": "network node (core site or location of on- line distributed control equipment) shall not reduce system functionality.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 11,
+      "phrase_id": "6f0e73bc82a8"
+    },
+    {
+      "phrase": "The radio system shall provide the following minimum features and capabilities:",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 11,
+      "phrase_id": "ef67e08b9353"
+    },
+    {
+      "phrase": "separate physical locations and shall not be located at",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 11,
+      "phrase_id": "5a6e80a040c4"
+    },
+    {
+      "phrase": "control equipment) shall not reduce system functionality",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 11,
+      "phrase_id": "127b6db174bf"
+    },
+    {
+      "phrase": "shall provide the following minimum features and capabilities:",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 11,
+      "phrase_id": "ead41a9d020d"
+    },
+    {
+      "phrase": "shall be located Roxy Ann Peak, Jackson County.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 11,
+      "phrase_id": "e83e06680f75"
+    },
+    {
+      "phrase": "B. The radio system shall provide the following minimum features and capabilities:",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 11,
+      "phrase_id": "7198db5577d2"
+    },
+    {
+      "phrase": "geographically separate physical locations and shall not be located at",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 11,
+      "phrase_id": "506f362aadab"
+    },
+    {
+      "phrase": "distributed control equipment) shall not reduce system functionality.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 11,
+      "phrase_id": "4810fa2bb6b2"
+    },
+    {
+      "phrase": "The system shall be capable of automatic activation of failure modes in the event",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 12,
+      "phrase_id": "08744de356c1"
+    },
+    {
+      "phrase": "shall be redundant or protected",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 12,
+      "phrase_id": "4ec2d5f23363"
+    },
+    {
+      "phrase": "shall be capable of automatic activation of failure modes in the event",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 12,
+      "phrase_id": "70b6c6d6ae5a"
+    },
+    {
+      "phrase": "C. Any network element critical to normal operation shall be redundant or protected",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 12,
+      "phrase_id": "0047cee4cb6e"
+    },
+    {
+      "phrase": "D. The system shall be capable of automatic activation of failure modes in the event",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 12,
+      "phrase_id": "73f04474eae7"
+    },
+    {
+      "phrase": "The system shall be c apable of providing talkgroups with end-to -end AES",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 13,
+      "phrase_id": "99b7d8f51ba1"
+    },
+    {
+      "phrase": "As an OPTION, the system shall include all new hardware and software to support",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 13,
+      "phrase_id": "5ef9bb9517bb"
+    },
+    {
+      "phrase": "shall be c apable of providing talkgroups with end-to -end AES",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 13,
+      "phrase_id": "76a80dfde12c"
+    },
+    {
+      "phrase": "shall include all new hardware and software to support",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 13,
+      "phrase_id": "2e88aafc67c8"
+    },
+    {
+      "phrase": "shall allow a talkgroup from another P25 system that is",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 13,
+      "phrase_id": "7f89841e49f6"
+    },
+    {
+      "phrase": "E. The system shall be c apable of providing talkgroups with end-to -end AES",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 13,
+      "phrase_id": "e9f3a86ce6f6"
+    },
+    {
+      "phrase": "A. As an OPTION, the system shall include all new hardware and software to support",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 13,
+      "phrase_id": "dff7076a5987"
+    },
+    {
+      "phrase": "The system shall support interoperability with conventional (non-trunked) systems",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 14,
+      "phrase_id": "32142490a1e4"
+    },
+    {
+      "phrase": "shall allow a talkgroup from another P2 5 system that is",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 14,
+      "phrase_id": "6c1bd415ecb1"
+    },
+    {
+      "phrase": "shall support interoperability with conventional (non-trunked) systems",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 14,
+      "phrase_id": "9e7ad429875d"
+    },
+    {
+      "phrase": "E. The system shall support interoperability with conventional (non-trunked) systems",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 14,
+      "phrase_id": "929302db9ed3"
+    },
+    {
+      "phrase": "to provide a minimum level of interoperable communications between agencies",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 14,
+      "phrase_id": "22e23f17bf01"
+    },
+    {
+      "phrase": "The system shall provide 95% talk -in and talk -out coverage to the mobile and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 15,
+      "phrase_id": "a609803f8764"
+    },
+    {
+      "phrase": "shall provide 95% talk -in and talk -out coverage to the mobile and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 15,
+      "phrase_id": "6eee75a63016"
+    },
+    {
+      "phrase": "F. The system shall provide 95% talk -in and talk -out coverage to the mobile and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 15,
+      "phrase_id": "0e9fa54993fd"
+    },
+    {
+      "phrase": "G. Coverage design, implementation, and testing for the system shall adhere to",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 15,
+      "phrase_id": "0728a1825768"
+    },
+    {
+      "phrase": "the Selected Vendor shall test the system to that level.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 16,
+      "phrase_id": "0e81d903339b"
+    },
+    {
+      "phrase": "height and gain shall be the maximum as permitted by the Regional",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 16,
+      "phrase_id": "6dee15aa3d01"
+    },
+    {
+      "phrase": "shall be the maximum as permitted by the Regional",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 16,
+      "phrase_id": "9be5d3d6a8f7"
+    },
+    {
+      "phrase": "shall be responsible for the redesign of the receiver",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 16,
+      "phrase_id": "f8a79608addd"
+    },
+    {
+      "phrase": "H. The following standard radio configurations shall govern talk -in and talk -out",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 16,
+      "phrase_id": "425e890e5d76"
+    },
+    {
+      "phrase": "antenna height and gain shall be the maximum as permitted by the Regional",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 16,
+      "phrase_id": "c9fa7fb8c179"
+    },
+    {
+      "phrase": "system to rectify the deficiency and provide the required coverage at no additional",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 16,
+      "phrase_id": "dd76d9f01fd5"
+    },
+    {
+      "phrase": "from the ECSO, utilizing Bit Error Rate (BER) testing. The Selected Vendor shall",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 16,
+      "phrase_id": "c67c74942aa4"
+    },
+    {
+      "phrase": "Likewise, the Selected Vendor shall test the system to that level.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 16,
+      "phrase_id": "c6c286fc76b6"
+    },
+    {
+      "phrase": "purposes, the Selected Vendor shall divide the service area into grids and test the",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 16,
+      "phrase_id": "a5ac3300ffe0"
+    },
+    {
+      "phrase": "The Selected Vendor shall include a detailed description of the propagation models",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 17,
+      "phrase_id": "d502d2bb5f3a"
+    },
+    {
+      "phrase": "The Selected Vendor shall include coverage statistics that account for geographic,",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 17,
+      "phrase_id": "da691185ded9"
+    },
+    {
+      "phrase": "The Selected Vendor shall submit both talk -out and talk -in system composite",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 17,
+      "phrase_id": "7128592cf883"
+    },
+    {
+      "phrase": "All maps shall clearly delineate the difference between areas predicted to be equal",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 17,
+      "phrase_id": "561ff167fee2"
+    },
+    {
+      "phrase": "shall include a detailed description of the propagation models",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 17,
+      "phrase_id": "d775438f9648"
+    },
+    {
+      "phrase": "shall include coverage statistics that account for geographic,",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 17,
+      "phrase_id": "8e123be16bb8"
+    },
+    {
+      "phrase": "shall be clearly labeled and shall show system gain",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 17,
+      "phrase_id": "bd3f8d9668fb"
+    },
+    {
+      "phrase": "shall be provided in two formats:",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 17,
+      "phrase_id": "67a545b9ad65"
+    },
+    {
+      "phrase": "A. The Selected Vendor shall include a detailed description of the propagation models",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 17,
+      "phrase_id": "d0cb226b8ab6"
+    },
+    {
+      "phrase": "B. The Selected Vendor shall include coverage statistics that account for geographic,",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 17,
+      "phrase_id": "dc0a895e5a9e"
+    },
+    {
+      "phrase": "C. The Selected Vendor shall submit both talk -out and talk -in system composite",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 17,
+      "phrase_id": "c95a983021e9"
+    },
+    {
+      "phrase": "D. The Selected Vendor shall submit both talk -out and talk -in system composite",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 17,
+      "phrase_id": "86ca1286b79c"
+    },
+    {
+      "phrase": "E. The Selected Vendor shall submit both talk -out and talk -in system composite",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 17,
+      "phrase_id": "3e15561a2ab5"
+    },
+    {
+      "phrase": "G. All maps shall clearly delineate the difference between areas predicted to be equal",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 17,
+      "phrase_id": "7c5e1b69845f"
+    },
+    {
+      "phrase": "All maps shall include a background layer suitable for the ECSO's reference (e",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 18,
+      "phrase_id": "e15a00068ce9"
+    },
+    {
+      "phrase": "Link budgets shall be provided, clearly defining the following minimum information,",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 18,
+      "phrase_id": "578f6b4bbc82"
+    },
+    {
+      "phrase": "The Selected Vendor shall use 30-meter United States Geologic Survey (USGS),",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 18,
+      "phrase_id": "f28ebe4754a5"
+    },
+    {
+      "phrase": "shall include a background layer suitable for the ECSO's reference (e.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 18,
+      "phrase_id": "1753d639f34c"
+    },
+    {
+      "phrase": "shall be provided, clearly defining the following minimum information,",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 18,
+      "phrase_id": "edf9db578656"
+    },
+    {
+      "phrase": "J. All maps shall include a background layer suitable for the ECSO's reference (e.g.,",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 18,
+      "phrase_id": "1d7d5bab6523"
+    },
+    {
+      "phrase": "K. Link budgets shall be provided, clearly defining the following minimum information,",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 18,
+      "phrase_id": "e95e0e70ddbc"
+    },
+    {
+      "phrase": "L. The Selected Vendor shall use 30-meter United States Geologic Survey (USGS),",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 18,
+      "phrase_id": "a5171e37b45c"
+    },
+    {
+      "phrase": "The system shall use existing ECSO, City of Ashland, and City of Medford sites to",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 19,
+      "phrase_id": "189c9e9020ca"
+    },
+    {
+      "phrase": "The Selected Vendor shall, with the approval of the ECSO, choose the sites",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 19,
+      "phrase_id": "47f2d0305506"
+    },
+    {
+      "phrase": "or City of Medford, they shall conduct mandatory site visits at those sites",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 19,
+      "phrase_id": "06ef71c56df3"
+    },
+    {
+      "phrase": "A. The system shall use existing ECSO, City of Ashland, and City of Medford sites to",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 19,
+      "phrase_id": "212859064c8b"
+    },
+    {
+      "phrase": "C. The Selected Vendor shall, with the approval of the ECSO, choose the sites",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 19,
+      "phrase_id": "6aaed5c849f6"
+    },
+    {
+      "phrase": "necessary to provide the desired coverage.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 19,
+      "phrase_id": "066560749c78"
+    },
+    {
+      "phrase": "Ashland or City of Medford, they shall conduct mandatory site visits at those sites",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 19,
+      "phrase_id": "748ccddf2785"
+    },
+    {
+      "phrase": "F. If the Selected Vendor selects sites owned by others, the Selected Vendor shall",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 19,
+      "phrase_id": "5dcbb77b1d92"
+    },
+    {
+      "phrase": "conduct due-diligence and provide as letters from the site owner(s) that state:",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 19,
+      "phrase_id": "03afcf6ad1ed"
+    },
+    {
+      "phrase": "The Selected Vendor shall disclose all assumptions and calculations to the ECSO",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 20,
+      "phrase_id": "269014b89e1e"
+    },
+    {
+      "phrase": "The Selected Vendor shall include the necessary radio system hardware and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 20,
+      "phrase_id": "c21e50cafd47"
+    },
+    {
+      "phrase": "All control components shall be expandable with all necessary hardware and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 20,
+      "phrase_id": "00e141b8b8b3"
+    },
+    {
+      "phrase": "shall be expandable to support 1",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 20,
+      "phrase_id": "d5d5882b1342"
+    },
+    {
+      "phrase": "shall include the necessary radio system hardware and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 20,
+      "phrase_id": "25e1e8cdd98b"
+    },
+    {
+      "phrase": "shall be expandable with all necessary hardware and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 20,
+      "phrase_id": "bfe8e75a9233"
+    },
+    {
+      "phrase": "shall be considered one radio",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 20,
+      "phrase_id": "65fda167ee72"
+    },
+    {
+      "phrase": "shall be expandable to support 1.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 20,
+      "phrase_id": "7766399cbb37"
+    },
+    {
+      "phrase": "B. For system sizing purposes, the Selected Vendor shall assume all subscriber units",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 20,
+      "phrase_id": "6b7a3fe085e6"
+    },
+    {
+      "phrase": "D. The Selected Vendor shall disclose all assumptions and calculations to the ECSO",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 20,
+      "phrase_id": "efd260c2ed79"
+    },
+    {
+      "phrase": "F. The Selected Vendor shall include the necessary radio system hardware and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 20,
+      "phrase_id": "3e9096504402"
+    },
+    {
+      "phrase": "software (including licenses) to support the projec ted subscriber unit growth.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 20,
+      "phrase_id": "3d21aafb1f6a"
+    },
+    {
+      "phrase": "G. All control components shall be expandable with all necessary hardware and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 20,
+      "phrase_id": "74b671fb02d6"
+    },
+    {
+      "phrase": "software to support the following levels of capacity:",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 20,
+      "phrase_id": "79068ca16805"
+    },
+    {
+      "phrase": "components shall be expandable to support 1.25 times \"X\" channels)",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 20,
+      "phrase_id": "6a5b75b93aeb"
+    },
+    {
+      "phrase": "requirements for coverage, then the control components shall be expandable",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 20,
+      "phrase_id": "d05ca7dfaaf7"
+    },
+    {
+      "phrase": "to support 1.25 times \"Y\" sites)",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 20,
+      "phrase_id": "b2d0bb8ee464"
+    },
+    {
+      "phrase": "All control components shall be expandable to support expansion from the initial",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 21,
+      "phrase_id": "4f7df1ae3bff"
+    },
+    {
+      "phrase": "The Selected Vendor shall describe the maximum number of radio subsystems,",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 21,
+      "phrase_id": "fd271126ae3a"
+    },
+    {
+      "phrase": "The Selected Vendor shall be responsible for all frequency research, support, and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 21,
+      "phrase_id": "633c21097a70"
+    },
+    {
+      "phrase": "The Selected Vendor shall be responsible tracking all radio frequency coordination",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 21,
+      "phrase_id": "ba8ad59558d7"
+    },
+    {
+      "phrase": "The Selected Vendor shall be responsible for all rework and/or resubmission of",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 21,
+      "phrase_id": "12b8567277c0"
+    },
+    {
+      "phrase": "shall be expandable to support expansion from the initial",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 21,
+      "phrase_id": "1b698c7d95c6"
+    },
+    {
+      "phrase": "shall provide all FCC and coordination modifications and applicable forms to the ECSO",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 21,
+      "phrase_id": "eb563b1a7315"
+    },
+    {
+      "phrase": "shall be responsible for all frequency research, support, and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 21,
+      "phrase_id": "cfa29bdc8af8"
+    },
+    {
+      "phrase": "shall be responsible tracking all radio frequency coordination",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 21,
+      "phrase_id": "acb7bca6e04b"
+    },
+    {
+      "phrase": "shall be responsible for all rework and/or resubmission of",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 21,
+      "phrase_id": "dd701dde6045"
+    },
+    {
+      "phrase": "H. All control components shall be expandable to support expansion from the initial",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 21,
+      "phrase_id": "5798fd61bd33"
+    },
+    {
+      "phrase": "I. The Selected Vendor shall describe the maximum number of radio subsystems,",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 21,
+      "phrase_id": "d58ebaa1914c"
+    },
+    {
+      "phrase": "and will provide all current licensing information to the Selected Vendor following",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 21,
+      "phrase_id": "7f81ddac22a6"
+    },
+    {
+      "phrase": "C. Following approval of the preliminary design phase, the Selected Vendor shall",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 21,
+      "phrase_id": "b361309e1f68"
+    },
+    {
+      "phrase": "provide all FCC and coordination modifications and applicable forms to the ECSO",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 21,
+      "phrase_id": "a3bf86769fdf"
+    },
+    {
+      "phrase": "D. The Selected Vendor shall be responsible for all frequency research, support, and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 21,
+      "phrase_id": "e72c0a40a180"
+    },
+    {
+      "phrase": "preparation necessary. The ECSO shall execute and submit all forms following",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 21,
+      "phrase_id": "6790b4603c08"
+    },
+    {
+      "phrase": "E. The Selected Vendor shall be responsible tracking all radio frequency coordination",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 21,
+      "phrase_id": "7ca59ac2415d"
+    },
+    {
+      "phrase": "F. The Selected Vendor shall be responsible for all rework and/or resubmission of",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 21,
+      "phrase_id": "3bfaf2250846"
+    },
+    {
+      "phrase": "The Selected Vendor shall complete Federal Aviation Administration (FAA) forms",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 22,
+      "phrase_id": "c2d59ddd6f14"
+    },
+    {
+      "phrase": "All supplied electronic equipment shall have monitor/alarm interfaces to provide",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 22,
+      "phrase_id": "007dab00bf98"
+    },
+    {
+      "phrase": "DAQ objective shall be minimized inside the service area",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 22,
+      "phrase_id": "1a01156a16e4"
+    },
+    {
+      "phrase": "All alignment and adjustments shall be automated (e",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 22,
+      "phrase_id": "c0c95ecc911b"
+    },
+    {
+      "phrase": "shall have monitor/alarm interfaces to provide",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 22,
+      "phrase_id": "97748a3ffcc6"
+    },
+    {
+      "phrase": "shall be minimized inside the service area.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 22,
+      "phrase_id": "d604817b5935"
+    },
+    {
+      "phrase": "shall operate without the need for manual optimization and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 22,
+      "phrase_id": "72c9e0497797"
+    },
+    {
+      "phrase": "shall be automated (e.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 22,
+      "phrase_id": "546bf60801d5"
+    },
+    {
+      "phrase": "G. The Selected Vendor shall complete Federal Aviation Administration (FAA) forms",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 22,
+      "phrase_id": "8e0d10710955"
+    },
+    {
+      "phrase": "B. All supplied electronic equipment shall have monitor/alarm interfaces to provide",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 22,
+      "phrase_id": "8070ceda4d84"
+    },
+    {
+      "phrase": "the DAQ objective shall be minimized inside the service area.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 22,
+      "phrase_id": "ab44104e7d79"
+    },
+    {
+      "phrase": "E. All alignment and adjustments shall be automated (e.g., signal conditioning",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 22,
+      "phrase_id": "00c65f0e8719"
+    },
+    {
+      "phrase": "shall include redundant voters located at",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 23,
+      "phrase_id": "bfb92e784174"
+    },
+    {
+      "phrase": "must operate in the temperature",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 23,
+      "phrase_id": "3b3c56bb95d8"
+    },
+    {
+      "phrase": "shall comply with appropriate Part 90 and Part",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 23,
+      "phrase_id": "77612350a512"
+    },
+    {
+      "phrase": "shall comply with appropriate TIA 102 and similar",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 23,
+      "phrase_id": "66a73eed2169"
+    },
+    {
+      "phrase": "1. Be solid state in design and function and must operate in the temperature",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 23,
+      "phrase_id": "cc1ee5abebf6"
+    },
+    {
+      "phrase": "1. Provide the required guaranteed coverage",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 23,
+      "phrase_id": "bb47d8233fd3"
+    },
+    {
+      "phrase": "Antennas shall be selected to perform in and endure the anticipated environmental",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 24,
+      "phrase_id": "4f16ec880d26"
+    },
+    {
+      "phrase": "Structural survivability of antennas shall meet specification based on ANSI/TIA",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 24,
+      "phrase_id": "f31b34439fce"
+    },
+    {
+      "phrase": "Transmission line type and length shall be appropriate given the radio band, to",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 24,
+      "phrase_id": "db5cc46fac83"
+    },
+    {
+      "phrase": "The Selected Vendor shall analyze all transmitters at each site for intermodulation",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 24,
+      "phrase_id": "ee3742998a58"
+    },
+    {
+      "phrase": "Transmitters at each site shall meet FCC Maximum Permissible Exposure (MPE)",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 24,
+      "phrase_id": "f2a061033555"
+    },
+    {
+      "phrase": "The Selected Vendor shall mitigate causal and occupational exposure at locations",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 24,
+      "phrase_id": "663d184ebeee"
+    },
+    {
+      "phrase": "As an OPTION, the Selected Vendor shall supply a smartphone/broadband device",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 24,
+      "phrase_id": "3d6e421e7f78"
+    },
+    {
+      "phrase": "shall be equipped with dual amplifiers, and a by-pass mode of operation.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 24,
+      "phrase_id": "cf5263d66cf9"
+    },
+    {
+      "phrase": "shall be selected to perform in and endure the anticipated environmental",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 24,
+      "phrase_id": "ba85c59300d6"
+    },
+    {
+      "phrase": "shall meet specification based on ANSI/TIA",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 24,
+      "phrase_id": "4d49de71e96a"
+    },
+    {
+      "phrase": "shall be appropriate given the radio band, to",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 24,
+      "phrase_id": "7f1187a33373"
+    },
+    {
+      "phrase": "shall meet FCC Maximum Permissible Exposure (MPE)",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 24,
+      "phrase_id": "cedbaf865129"
+    },
+    {
+      "phrase": "shall be approved in advance by",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 24,
+      "phrase_id": "9e13d2c37c07"
+    },
+    {
+      "phrase": "D. Antennas shall be selected to perform in and endure the anticipated environmental",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 24,
+      "phrase_id": "53d279741f6e"
+    },
+    {
+      "phrase": "conditions. High-elevation mountain, desert, and salt air locations shall be taken",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 24,
+      "phrase_id": "6188e0854f16"
+    },
+    {
+      "phrase": "E. Structural survivability of antennas shall meet specification based on ANSI/TIA",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 24,
+      "phrase_id": "8cd5ddf79b7c"
+    },
+    {
+      "phrase": "F. Transmission line type and length shall be appropriate given the radio band, to",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 24,
+      "phrase_id": "b1ca9508756a"
+    },
+    {
+      "phrase": "provide the required coverage.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 24,
+      "phrase_id": "4e7a7f6e7592"
+    },
+    {
+      "phrase": "A. The Selected Vendor shall analyze all transmitters at each site for intermodulation",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 24,
+      "phrase_id": "f0d04485eabc"
+    },
+    {
+      "phrase": "shall resolve the issue without degrading system coverage or perf ormance for a",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 24,
+      "phrase_id": "db480a4f1e0b"
+    },
+    {
+      "phrase": "C. Transmitters at each site shall meet FCC Maximum Permissible Exposure (MPE)",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 24,
+      "phrase_id": "c206a8c0deb5"
+    },
+    {
+      "phrase": "D. The Selected Vendor shall mitigate causal and occupational exposure at locations",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 24,
+      "phrase_id": "5752927656ce"
+    },
+    {
+      "phrase": "1. Fencing, signage, and/or other techniques shall be approved in advance by",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 24,
+      "phrase_id": "010edf7a55e7"
+    },
+    {
+      "phrase": "A. As an OPTION, the Selected Vendor shall supply a smartphone/broadband device",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 24,
+      "phrase_id": "d093dee0e605"
+    },
+    {
+      "phrase": "The SPBBI system shall provide Push-to -Talk (PTT) communications operating",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 25,
+      "phrase_id": "ee83f8599c8d"
+    },
+    {
+      "phrase": "The SPBBI system must support both carrier-integrated PTT over cellular (PTToC)",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 25,
+      "phrase_id": "6a0113e88975"
+    },
+    {
+      "phrase": "The SPBBI system shall support management of the following features and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 25,
+      "phrase_id": "5b1b1593e63d"
+    },
+    {
+      "phrase": "The SPBBI system server hardware shall be implemented using high-reliability",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 25,
+      "phrase_id": "0bdabf58f292"
+    },
+    {
+      "phrase": "The SPBBI system shall support reporting and display of location information for",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 25,
+      "phrase_id": "7becfb44d22f"
+    },
+    {
+      "phrase": "The SPBBI system shall provide an interface to an audio recording and retention",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 25,
+      "phrase_id": "1a1cd4f2d9a8"
+    },
+    {
+      "phrase": "The SPBBI system shall employ compliant open standards for encryption and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 25,
+      "phrase_id": "2a8ae9a3a432"
+    },
+    {
+      "phrase": "The SPBBI system shall include the necessary hardware, software, and licensing",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 25,
+      "phrase_id": "f78bdd8be3fb"
+    },
+    {
+      "phrase": "shall provide Push-to -Talk (PTT) communications operating",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 25,
+      "phrase_id": "d4ebd61909ac"
+    },
+    {
+      "phrase": "must support both carrier-integrated PTT over cellular (PTToC)",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 25,
+      "phrase_id": "f12f82ca0aed"
+    },
+    {
+      "phrase": "shall support management of the following features and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 25,
+      "phrase_id": "809a830851ee"
+    },
+    {
+      "phrase": "shall be implemented using high-reliability",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 25,
+      "phrase_id": "07372e7e735c"
+    },
+    {
+      "phrase": "shall support reporting and display of location information for",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 25,
+      "phrase_id": "8ebbbb9756ff"
+    },
+    {
+      "phrase": "shall provide an interface to an audio recording and retention",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 25,
+      "phrase_id": "800f04b047b0"
+    },
+    {
+      "phrase": "shall include the necessary hardware, software, and licensing",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 25,
+      "phrase_id": "a27699be314e"
+    },
+    {
+      "phrase": "B. The SPBBI system shall provide Push-to -Talk (PTT) communications operating",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 25,
+      "phrase_id": "8a4a3e758ba6"
+    },
+    {
+      "phrase": "C. The SPBBI system must support both carrier-integrated PTT over cellular (PTToC)",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 25,
+      "phrase_id": "7021f4e5e427"
+    },
+    {
+      "phrase": "D. The SPBBI system shall support management of the following features and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 25,
+      "phrase_id": "2634ed2fe1ba"
+    },
+    {
+      "phrase": "E. The SPBBI system server hardware shall be implemented using high-reliability",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 25,
+      "phrase_id": "e25ad99c96ef"
+    },
+    {
+      "phrase": "F. The SPBBI system shall support reporting and display of location information for",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 25,
+      "phrase_id": "5f676bddf871"
+    },
+    {
+      "phrase": "G. The SPBBI system shall provide an interface to an audio recording and retention",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 25,
+      "phrase_id": "34fb205bd07d"
+    },
+    {
+      "phrase": "H. The SPBBI system shall employ compliant open standards for encryption and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 25,
+      "phrase_id": "ac769c7b5994"
+    },
+    {
+      "phrase": "I. The SPBBI system shall include the necessary hardware, software, and licensing",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 25,
+      "phrase_id": "142ca8682c46"
+    },
+    {
+      "phrase": "The SPBBI system shall provide end -to-end, 256- bit AES encryption from P25",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 26,
+      "phrase_id": "cff76646af76"
+    },
+    {
+      "phrase": "The SPBBI system shall have the following capacity and scaling features and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 26,
+      "phrase_id": "af6005b2d901"
+    },
+    {
+      "phrase": "The SPBBI system shall support Android\u2122, Windows \u00ae, and iOS\u2122 mobile",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 26,
+      "phrase_id": "61c60e9b7c23"
+    },
+    {
+      "phrase": "The SPBBI system shall support Android\u2122, Windows \u00ae, and iOS\u2122 tablet and/or",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 26,
+      "phrase_id": "98607ba64fb6"
+    },
+    {
+      "phrase": "The SPBBI system shall support managed group and PTT communications",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 26,
+      "phrase_id": "0bf03cc253fa"
+    },
+    {
+      "phrase": "The system shall include any gateway and server equipment required to enable",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 26,
+      "phrase_id": "90e24036a801"
+    },
+    {
+      "phrase": "The Selected Vendor shall define the full feature set provided by the proposed",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 26,
+      "phrase_id": "2e3dfcb88e20"
+    },
+    {
+      "phrase": "shall provide end -to-end, 256- bit AES encryption from P25",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 26,
+      "phrase_id": "ea7713aa3544"
+    },
+    {
+      "phrase": "shall have the following capacity and scaling features and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 26,
+      "phrase_id": "8016ae9990f2"
+    },
+    {
+      "phrase": "shall support Android\u2122, Windows \u00ae, and iOS\u2122 mobile",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 26,
+      "phrase_id": "3390aa5d052f"
+    },
+    {
+      "phrase": "shall support Android\u2122, Windows \u00ae, and iOS\u2122 tablet and/or",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 26,
+      "phrase_id": "0383f6c7c30a"
+    },
+    {
+      "phrase": "shall support managed group and PTT communications",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 26,
+      "phrase_id": "d4028a34063b"
+    },
+    {
+      "phrase": "shall include any gateway and server equipment required to enable",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 26,
+      "phrase_id": "9aaf03289a90"
+    },
+    {
+      "phrase": "J. The SPBBI system shall provide end -to-end, 256- bit AES encryption from P25",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 26,
+      "phrase_id": "9da696da9109"
+    },
+    {
+      "phrase": "K. The SPBBI system shall have the following capacity and scaling features and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 26,
+      "phrase_id": "f70ac7f11d3c"
+    },
+    {
+      "phrase": "L. The SPBBI system shall support Android\u2122, Windows \u00ae, and iOS\u2122 mobile",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 26,
+      "phrase_id": "8d500e8ac5ed"
+    },
+    {
+      "phrase": "M. The SPBBI system shall support Android\u2122, Windows \u00ae, and iOS\u2122 tablet and/or",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 26,
+      "phrase_id": "0cf285d58e48"
+    },
+    {
+      "phrase": "N. The SPBBI system shall support managed group and PTT communications",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 26,
+      "phrase_id": "3b093eb87989"
+    },
+    {
+      "phrase": "A. The system shall include any gateway and server equipment required to enable",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 26,
+      "phrase_id": "2a9384660272"
+    },
+    {
+      "phrase": "B. The Selected Vendor shall define the full feature set provided by the proposed",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 26,
+      "phrase_id": "5bfe56f105ae"
+    },
+    {
+      "phrase": "The system shall support 2,000 active units reporting location once every 5",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 27,
+      "phrase_id": "c0c3b2301990"
+    },
+    {
+      "phrase": "This interface shall provide access to all location data generated by the user units",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 27,
+      "phrase_id": "20ae2f2f4b00"
+    },
+    {
+      "phrase": "This interface shall allow the executi on of commands related to the collection of",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 27,
+      "phrase_id": "63a0cd7cccaa"
+    },
+    {
+      "phrase": "shall support 2,000 active units reporting location once every 5",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 27,
+      "phrase_id": "64b075f0ac31"
+    },
+    {
+      "phrase": "shall provide access to all location data generated by the user units",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 27,
+      "phrase_id": "cc9b1e89279d"
+    },
+    {
+      "phrase": "shall allow the executi on of commands related to the collection of",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 27,
+      "phrase_id": "0ffaa7a56e7a"
+    },
+    {
+      "phrase": "shall be configured for MHSB operation.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 27,
+      "phrase_id": "b64fe91ab96c"
+    },
+    {
+      "phrase": "shall include transmitter, receiver, modem, power",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 27,
+      "phrase_id": "836898e01eb0"
+    },
+    {
+      "phrase": "C. The system shall support 2,000 active units reporting location once every 5",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 27,
+      "phrase_id": "fc993126eb09"
+    },
+    {
+      "phrase": "E. This interface shall provide access to all location data generated by the user units",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 27,
+      "phrase_id": "5d3b4ba36565"
+    },
+    {
+      "phrase": "F. This interface shall allow the executi on of commands related to the collection of",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 27,
+      "phrase_id": "19a7d91cfc1b"
+    },
+    {
+      "phrase": "associated interconnections to provide a complete and functional system.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 27,
+      "phrase_id": "3d294b002a0e"
+    },
+    {
+      "phrase": "The radio shall deliver two-frequency, full duplex operation",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 28,
+      "phrase_id": "c92c587bb431"
+    },
+    {
+      "phrase": "The Selected Vendor shall indicate packet latency and jit ter performance of the",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 28,
+      "phrase_id": "43c91ae0be4b"
+    },
+    {
+      "phrase": "failure of one router shall not affect the performance of the overall network or",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 28,
+      "phrase_id": "30d7d496d6da"
+    },
+    {
+      "phrase": "At a minimum, payload encryption shall be fully compatible with AES and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 28,
+      "phrase_id": "dd63c026d9ea"
+    },
+    {
+      "phrase": "The AES algorithm shall support 128- or 256-bit symmetric keys, via a",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 28,
+      "phrase_id": "dcf6c48072ac"
+    },
+    {
+      "phrase": "The Selected Vendor shall test all RF paths to demonst rate proper antenna",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 28,
+      "phrase_id": "0c9ffa9b04ae"
+    },
+    {
+      "phrase": "shall deliver two-frequency, full duplex operation.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 28,
+      "phrase_id": "49863bd29f8f"
+    },
+    {
+      "phrase": "shall be designed to",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 28,
+      "phrase_id": "230825075621"
+    },
+    {
+      "phrase": "shall be licensed in frequency bands regulated by 47 CFR, Part",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 28,
+      "phrase_id": "e8f1df96bea6"
+    },
+    {
+      "phrase": "shall be fully compatible with AES and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 28,
+      "phrase_id": "c79176b4a410"
+    },
+    {
+      "phrase": "shall support 128- or 256-bit symmetric keys, via a",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 28,
+      "phrase_id": "359773e8f439"
+    },
+    {
+      "phrase": "H. The radio shall deliver two-frequency, full duplex operation. Space diversity",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 28,
+      "phrase_id": "e099e612a30d"
+    },
+    {
+      "phrase": "dispatch, and system management signaling and shall also include at least 50%",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 28,
+      "phrase_id": "b67a965e0cbf"
+    },
+    {
+      "phrase": "J. The Selected Vendor shall indicate packet latency and jit ter performance of the",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 28,
+      "phrase_id": "35b168604ff7"
+    },
+    {
+      "phrase": "redundant routers that support the MHSB spurs or dual paths for loop-based sites.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 28,
+      "phrase_id": "b2dd8017237f"
+    },
+    {
+      "phrase": "The failure of one router shall not affect the performance of the overall network or",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 28,
+      "phrase_id": "bf8769744791"
+    },
+    {
+      "phrase": "(ms) in the case of a path or device failure. The Selected Vendor shall describe",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 28,
+      "phrase_id": "c791d324359d"
+    },
+    {
+      "phrase": "1. At a minimum, payload encryption shall be fully compatible with AES and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 28,
+      "phrase_id": "9c446490eb76"
+    },
+    {
+      "phrase": "2. The AES algorithm shall support 128- or 256-bit symmetric keys, via a",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 28,
+      "phrase_id": "b2f5de221b72"
+    },
+    {
+      "phrase": "P. The Selected Vendor shall test all RF paths to demonst rate proper antenna",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 28,
+      "phrase_id": "7ec1408ca800"
+    },
+    {
+      "phrase": "The Selected Vendor shall conduct physical path surveys to assure that all",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 29,
+      "phrase_id": "dad2d2782eee"
+    },
+    {
+      "phrase": "The Selected Vendor shall provide modified antenna centerline mounting height",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 29,
+      "phrase_id": "2dcaa2170867"
+    },
+    {
+      "phrase": "The Selected Vendor shall include fade margin calculations, showing the",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 29,
+      "phrase_id": "5d899da23f16"
+    },
+    {
+      "phrase": "The Selected Vendor shall include radomes in their designs as a requirement for",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 29,
+      "phrase_id": "6793f36e37ae"
+    },
+    {
+      "phrase": "shall be used in accordance with FCC Part 101",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 29,
+      "phrase_id": "75fb9ca844f0"
+    },
+    {
+      "phrase": "The Selected Vendor shall include in their design a management system with",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 29,
+      "phrase_id": "341fd69a946b"
+    },
+    {
+      "phrase": "shall provide modified antenna centerline mounting height",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 29,
+      "phrase_id": "fa74ce64722d"
+    },
+    {
+      "phrase": "shall include fade margin calculations, showing the",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 29,
+      "phrase_id": "1e487f6e4757"
+    },
+    {
+      "phrase": "shall include radomes in their designs as a requirement for",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 29,
+      "phrase_id": "47d3fd5e2900"
+    },
+    {
+      "phrase": "shall be type accepted for licensing",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 29,
+      "phrase_id": "3e03a06bfbc1"
+    },
+    {
+      "phrase": "shall be compatible with the radio frequency bands and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 29,
+      "phrase_id": "6a6df1c44f39"
+    },
+    {
+      "phrase": "shall be used in accordance with FCC Part 101.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 29,
+      "phrase_id": "8a3297d71541"
+    },
+    {
+      "phrase": "shall meet the minimum wind speed with ice and design ice",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 29,
+      "phrase_id": "ecccb746ca2e"
+    },
+    {
+      "phrase": "shall be supplied as",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 29,
+      "phrase_id": "ff3212073155"
+    },
+    {
+      "phrase": "shall include in their design a management system with",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 29,
+      "phrase_id": "893a15e58a31"
+    },
+    {
+      "phrase": "B. The Selected Vendor shall conduct physical path surveys to assure that all",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 29,
+      "phrase_id": "0a52b66d36b8"
+    },
+    {
+      "phrase": "C. The Selected Vendor shall provide modified antenna centerline mounting height",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 29,
+      "phrase_id": "a96fb4c80560"
+    },
+    {
+      "phrase": "D. The Selected Vendor shall include fade margin calculations, showing the",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 29,
+      "phrase_id": "f830d21a5b4e"
+    },
+    {
+      "phrase": "E. The Selected Vendor shall include radomes in their designs as a requirement for",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 29,
+      "phrase_id": "43a6adbd087c"
+    },
+    {
+      "phrase": "antennas shall be used in accordance with FCC Part 101.115.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 29,
+      "phrase_id": "33178c8b2bba"
+    },
+    {
+      "phrase": "C. All mounting brackets, connectors and other hardware shall be supplied as",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 29,
+      "phrase_id": "37e4cd214fae"
+    },
+    {
+      "phrase": "falling ice. If a dish is within 30 feet of the top of the tower, no ice shield shall be",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 29,
+      "phrase_id": "34e9c803e55b"
+    },
+    {
+      "phrase": "A. The Selected Vendor shall include in their design a management system with",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 29,
+      "phrase_id": "2532d681c530"
+    },
+    {
+      "phrase": "consoles shall be compatible with the proposed radio system.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 30,
+      "phrase_id": "b91e5b00558b"
+    },
+    {
+      "phrase": "consoles shall directly interface with the system core.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 30,
+      "phrase_id": "634a07057ac3"
+    },
+    {
+      "phrase": "The system shall be capable of remotely monitoring equipment status",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 30,
+      "phrase_id": "aac79ef5b651"
+    },
+    {
+      "phrase": "The overall network shall have a common end-to -end management and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 30,
+      "phrase_id": "9bd4d25a9a9f"
+    },
+    {
+      "phrase": "Automated error checking shall be included to prevent typical configuration",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 30,
+      "phrase_id": "e2367007bebe"
+    },
+    {
+      "phrase": "The management tool shall perform automated backups of all device",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 30,
+      "phrase_id": "6c02be4e9463"
+    },
+    {
+      "phrase": "The management tool shall support a hierarchical user authorization mechanism",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 30,
+      "phrase_id": "45f7bfd9545f"
+    },
+    {
+      "phrase": "shall directly interface with the system core",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 30,
+      "phrase_id": "d3c0dd913289"
+    },
+    {
+      "phrase": "shall be capable of remotely monitoring equipment status",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 30,
+      "phrase_id": "c231da4b6e19"
+    },
+    {
+      "phrase": "shall be fully compatible with the integrated",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 30,
+      "phrase_id": "2cf8eb7054a0"
+    },
+    {
+      "phrase": "shall have a common end-to -end management and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 30,
+      "phrase_id": "3642559e1941"
+    },
+    {
+      "phrase": "shall be able to support building an end-to -end path without requiring manual",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 30,
+      "phrase_id": "44ffcf487bbb"
+    },
+    {
+      "phrase": "shall be included to prevent typical configuration",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 30,
+      "phrase_id": "1e1e1dee40fb"
+    },
+    {
+      "phrase": "shall perform automated backups of all device",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 30,
+      "phrase_id": "54645a32dfa7"
+    },
+    {
+      "phrase": "shall support a hierarchical user authorization mechanism",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 30,
+      "phrase_id": "9504b79d9b52"
+    },
+    {
+      "phrase": "shall be compatible with the proposed radio system.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 30,
+      "phrase_id": "181b619c4956"
+    },
+    {
+      "phrase": "shall be capable of:",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 30,
+      "phrase_id": "fe8f816f6a09"
+    },
+    {
+      "phrase": "network. The system shall be capable of remotely monitoring equipment status",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 30,
+      "phrase_id": "ceaf6343adcc"
+    },
+    {
+      "phrase": "C. The overall network shall have a common end-to -end management and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 30,
+      "phrase_id": "236b84f0c079"
+    },
+    {
+      "phrase": "D. Automated error checking shall be included to prevent typical configuration",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 30,
+      "phrase_id": "1981a9b64fc4"
+    },
+    {
+      "phrase": "problems such as oversubscription of a link. The tool shall alert the user when such",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 30,
+      "phrase_id": "eb1e34e8a893"
+    },
+    {
+      "phrase": "E. The management tool shall perform automated backups of all device",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 30,
+      "phrase_id": "dd4458749c02"
+    },
+    {
+      "phrase": "F. The management tool shall support a hierarchical user authorization mechanism",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 30,
+      "phrase_id": "a46265e9b34d"
+    },
+    {
+      "phrase": "digital exchange of information shall be in accordance with the standards",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 31,
+      "phrase_id": "6b2316e7e872"
+    },
+    {
+      "phrase": "The console system shall meet all P25 standards including Console Sub-System",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 31,
+      "phrase_id": "7f6bcd5c6c10"
+    },
+    {
+      "phrase": "consoles must be stand-alone and not dependent on other consoles to",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 31,
+      "phrase_id": "b6f79146f32a"
+    },
+    {
+      "phrase": "consoles must retain the ability to access and use all local conventional",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 31,
+      "phrase_id": "3f3ee303fcd2"
+    },
+    {
+      "phrase": "The backup solution shall allow users to change channels/talkgroups at",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 31,
+      "phrase_id": "3f1bd66c7df4"
+    },
+    {
+      "phrase": "The backup solution shall be capable of operation in trunking and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 31,
+      "phrase_id": "4f0b6c577398"
+    },
+    {
+      "phrase": "The backup solution shall have the capability of initiating a private radio call",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 31,
+      "phrase_id": "71fd6e7c81ac"
+    },
+    {
+      "phrase": "The backup solution shall be capable of operating with a 6-wire headset and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 31,
+      "phrase_id": "a80e460185bf"
+    },
+    {
+      "phrase": "shall provide a standard interface allowing the automated",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 31,
+      "phrase_id": "ac2ea61f0e25"
+    },
+    {
+      "phrase": "shall be in accordance with the standards",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 31,
+      "phrase_id": "dd3b06102d3f"
+    },
+    {
+      "phrase": "shall meet all P25 standards including Console Sub-System",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 31,
+      "phrase_id": "d59cf8f8d396"
+    },
+    {
+      "phrase": "shall support processing of supplementary data",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 31,
+      "phrase_id": "a8bcf01e506c"
+    },
+    {
+      "phrase": "must be stand-alone and not dependent on other consoles to",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 31,
+      "phrase_id": "048d68454be7"
+    },
+    {
+      "phrase": "shall allow users to change channels/talkgroups at",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 31,
+      "phrase_id": "8f3194547ea3"
+    },
+    {
+      "phrase": "shall be capable of operation in trunking and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 31,
+      "phrase_id": "78e20ec9601c"
+    },
+    {
+      "phrase": "shall have the capability of initiating a private radio call.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 31,
+      "phrase_id": "dafd86c62799"
+    },
+    {
+      "phrase": "shall be capable of operating with a 6-wire headset and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 31,
+      "phrase_id": "a9ac197ef851"
+    },
+    {
+      "phrase": "6. Support the capability to affiliate with at least one valid trunked talkgroup",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 31,
+      "phrase_id": "22f0166ee64f"
+    },
+    {
+      "phrase": "The digital exchange of information shall be in accordance with the standards",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 31,
+      "phrase_id": "e490a914cd0b"
+    },
+    {
+      "phrase": "E. The console system shall meet all P25 standards including Console Sub-System",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 31,
+      "phrase_id": "239b1d3442e8"
+    },
+    {
+      "phrase": "radio system and support P25 mandatory features.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 31,
+      "phrase_id": "153fa39dc0c7"
+    },
+    {
+      "phrase": "The consoles must be stand-alone and not dependent on other consoles to",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 31,
+      "phrase_id": "679f8aa4abfb"
+    },
+    {
+      "phrase": "2. The backup solution shall allow users to change channels/talkgroups at",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 31,
+      "phrase_id": "7f57352ffa29"
+    },
+    {
+      "phrase": "3. The backup solution shall be capable of operation in trunking and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 31,
+      "phrase_id": "b972fea64457"
+    },
+    {
+      "phrase": "4. The backup solution shall have the capability of initiating a private radio call.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 31,
+      "phrase_id": "b4feb603b60a"
+    },
+    {
+      "phrase": "5. The backup solution shall be capable of operating with a 6-wire headset and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 31,
+      "phrase_id": "5be1ccd0634b"
+    },
+    {
+      "phrase": "The console system shall employ red undant hot standby cards, power supplies,",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "d17e86ed89f5"
+    },
+    {
+      "phrase": "The console system shall meet the following trunked requirements:",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "4309623c5dfa"
+    },
+    {
+      "phrase": "The console system shall allow patching among any combination of:",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "324eb238c502"
+    },
+    {
+      "phrase": "Current patching capabilities must be maintained through migration",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "d9020e08153e"
+    },
+    {
+      "phrase": "The console system shall allow the selection of multiple talkgroups and/or",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "58c213998dd9"
+    },
+    {
+      "phrase": "The console system shall provide the ability to hear field units while dispatch",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "c44b7b8aeb9c"
+    },
+    {
+      "phrase": "The console system shall meet the following conventional requirements:",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "d34c5a3c400c"
+    },
+    {
+      "phrase": "The console system shall have the ability to enable or disable the repeat",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "7ebbfa8a9e74"
+    },
+    {
+      "phrase": "The console system shall allow the selection of the desired transmit",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "175d9540ed6a"
+    },
+    {
+      "phrase": "The Selected Vendor shall provide a display monitor with 20\" or larger",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "f35d646c3c02"
+    },
+    {
+      "phrase": "Console shall be capable of displaying all dispatching functions on a single",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "832dc0a01848"
+    },
+    {
+      "phrase": "Console shall allow authorized personnel to determine which functions are",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "59406d13dca9"
+    },
+    {
+      "phrase": "shall meet the following trunked requirements:",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "616631a26b89"
+    },
+    {
+      "phrase": "shall allow patching among any combination of:",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "d16a45347c40"
+    },
+    {
+      "phrase": "must be maintained through migration.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "720b1728cb58"
+    },
+    {
+      "phrase": "shall allow the selection of multiple talkgroups and/or",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "76df1e457b60"
+    },
+    {
+      "phrase": "shall provide the ability to hear field units while dispatch",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "4231cd270074"
+    },
+    {
+      "phrase": "shall meet the following conventional requirements:",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "2461794a17f3"
+    },
+    {
+      "phrase": "shall have the ability to enable or disable the repeat",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "aae11e29125b"
+    },
+    {
+      "phrase": "shall allow the selection of the desired transmit",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "279c430b298c"
+    },
+    {
+      "phrase": "shall operate 24 hours a day, 7 days",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "51d29b0a2428"
+    },
+    {
+      "phrase": "shall provide a display monitor with 20\" or larger",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "74df6c79dc04"
+    },
+    {
+      "phrase": "shall be capable of displaying all dispatching functions on a single",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "41b8e6acbceb"
+    },
+    {
+      "phrase": "shall allow authorized personnel to determine which functions are",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "08e7a9ab3ca9"
+    },
+    {
+      "phrase": "L. The console system shall employ red undant hot standby cards, power supplies,",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "315a0b33ae76"
+    },
+    {
+      "phrase": "M. The console system shall meet the following trunked requirements:",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "4ea1dfa41d40"
+    },
+    {
+      "phrase": "1. The console system shall allow patching among any combination of:",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "35d2fca6e9b6"
+    },
+    {
+      "phrase": "system. Current patching capabilities must be maintained through migration.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "e53c04504d33"
+    },
+    {
+      "phrase": "2. The console system shall allow the selection of multiple talkgroups and/or",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "4d6ea731abf6"
+    },
+    {
+      "phrase": "3. The console system shall provide the ability to hear field units while dispatch",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "e54450d966e5"
+    },
+    {
+      "phrase": "N. The console system shall meet the following conventional requirements:",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "2c4014a5687b"
+    },
+    {
+      "phrase": "1. The console system shall have the ability to enable or disable the repeat",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "55b360de60da"
+    },
+    {
+      "phrase": "2. The console system shall allow the selection of the desired transmit",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "aaaa9bc0176f"
+    },
+    {
+      "phrase": "2. The Selected Vendor shall provide a display monitor with 20\" or larger",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "beeef48950f6"
+    },
+    {
+      "phrase": "3. Console shall be capable of displaying all dispatching functions on a single",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "69d98ced88ea"
+    },
+    {
+      "phrase": "4. Console shall allow authorized personnel to determine which functions are",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 32,
+      "phrase_id": "822106f6df30"
+    },
+    {
+      "phrase": "Console shall provide an individual unit ID and text alias readout for calling",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "c79f8f64223e"
+    },
+    {
+      "phrase": "Console dispatch position shall be fully functional using a standard 101- key",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "3ccb120e9d26"
+    },
+    {
+      "phrase": "Operators shall be able to perform console functions by positioning a screen",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "da72e82d59c9"
+    },
+    {
+      "phrase": "Console dispatch position shall be fully functional using a standard 2-button",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "6e4b6b42c11f"
+    },
+    {
+      "phrase": "Each operator position shall have a heavy-duty footswitch to allow operators",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "e494e59b443c"
+    },
+    {
+      "phrase": "All computers supplied shall be based on current production processors",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "076f9bebaa56"
+    },
+    {
+      "phrase": "All computers supplied shall include a currently supported operating system",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "8f51b446b933"
+    },
+    {
+      "phrase": "All computers supplied shall be certified for the latest released version of",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "752be0765481"
+    },
+    {
+      "phrase": "Equipment shall enable operators to acoustically cross-mute channels to",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "54535e5c58fd"
+    },
+    {
+      "phrase": "Equipment shall have the ability to decrypt and encrypt secure voice",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "c6afef3275fb"
+    },
+    {
+      "phrase": "A distinctive icon shall signify encrypted channels",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "4875fecee0d8"
+    },
+    {
+      "phrase": "Each operator position shall have the ability t o utilize both a headset (wired",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "44688900ca37"
+    },
+    {
+      "phrase": "Each operator position shall support a single headset capable of both",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "a469ab1ef299"
+    },
+    {
+      "phrase": "shall provide an individual unit ID and text alias readout for calling",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "c993e145001a"
+    },
+    {
+      "phrase": "shall be compatible with standard PC",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "34d167a87be8"
+    },
+    {
+      "phrase": "shall be fully functional using a standard 101- key",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "f59c30149f5d"
+    },
+    {
+      "phrase": "shall be able to perform console functions by positioning a screen",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "9a1c89f298b4"
+    },
+    {
+      "phrase": "shall be compatible with",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "1aefd8445b68"
+    },
+    {
+      "phrase": "shall be fully functional using a standard 2-button",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "84e77e9204aa"
+    },
+    {
+      "phrase": "shall have a heavy-duty footswitch to allow operators",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "94fd6e6c2176"
+    },
+    {
+      "phrase": "shall be based on current production processors.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "9ff36db89f19"
+    },
+    {
+      "phrase": "shall include a currently supported operating system.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "166d98483df8"
+    },
+    {
+      "phrase": "shall be certified for the latest released version of",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "7a35679c8802"
+    },
+    {
+      "phrase": "shall enable operators to acoustically cross-mute channels to",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "542bc2bd8192"
+    },
+    {
+      "phrase": "shall have the ability to decrypt and encrypt secure voice",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "ac492fd1a20c"
+    },
+    {
+      "phrase": "shall have the ability t o utilize both a headset (wired",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "695ef35e5135"
+    },
+    {
+      "phrase": "shall support a single headset capable of both",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "913b2c6930e5"
+    },
+    {
+      "phrase": "5. Console shall provide an individual unit ID and text alias readout for calling",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "4c1ce6fbc458"
+    },
+    {
+      "phrase": "7. Console dispatch position shall be fully functional using a standard 101- key",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "c3baf693388b"
+    },
+    {
+      "phrase": "8. Operators shall be able to perform console functions by positioning a screen",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "1fcda73c7808"
+    },
+    {
+      "phrase": "9. Console dispatch position mouse/pointer interface shall be compatible with",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "cb13415ecf90"
+    },
+    {
+      "phrase": "10. Console dispatch position shall be fully functional using a standard 2-button",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "58e8826b17a3"
+    },
+    {
+      "phrase": "11. Each operator position shall have a heavy-duty footswitch to allow operators",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "603d0f6e0617"
+    },
+    {
+      "phrase": "12. All computers supplied shall be based on current production processors.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "055d44b2ea3b"
+    },
+    {
+      "phrase": "13. All computers supplied shall include a currently supported operating system.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "e4950aac2911"
+    },
+    {
+      "phrase": "14. All computers supplied shall be certified for the latest released version of",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "83a93704f6be"
+    },
+    {
+      "phrase": "17. Equipment shall enable operators to acoustically cross-mute channels to",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "bc4242743b22"
+    },
+    {
+      "phrase": "18. Equipment shall have the ability to decrypt and encrypt secure voice",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "17802fe19776"
+    },
+    {
+      "phrase": "communications. A distinctive icon shall signify encrypted channels.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "88c085b9f47e"
+    },
+    {
+      "phrase": "19. Each operator position shall have the ability t o utilize both a headset (wired",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "1e2b24332a46"
+    },
+    {
+      "phrase": "20. Each operator position shall support a single headset capable of both",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 33,
+      "phrase_id": "3dac3e3699d0"
+    },
+    {
+      "phrase": "Playback shall be available on the operator position",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "e3b66ab29c32"
+    },
+    {
+      "phrase": "An audio level meter shall be provided showing the level of transmitted voice",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "c96f865abf3e"
+    },
+    {
+      "phrase": "level meter shall also indicate the level of receive audio present on the",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "ea79d3bffd74"
+    },
+    {
+      "phrase": "Operator positions shall have the ability to independently set each",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "577aefd97d63"
+    },
+    {
+      "phrase": "Operator positions shall have the ability to mute or un-mute audio from unselected",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "71ff33c226c0"
+    },
+    {
+      "phrase": "Selected audio and unselected audio shall be presented from separate speakers",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "b126bab7322b"
+    },
+    {
+      "phrase": "Operator positions shall have the ability to select multiple channels/talkgroups for",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "1f7ae03288fb"
+    },
+    {
+      "phrase": "Operator positions shall have the ability to patch two or more conventional",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "858254141592"
+    },
+    {
+      "phrase": "Operator positions shall be equipped such that a minimum of eight simultaneous",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "f6bf66fcb898"
+    },
+    {
+      "phrase": "shall provide an interface to provide",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "0d4aa6d3f951"
+    },
+    {
+      "phrase": "shall be available on the operator position.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "e05d11e813ec"
+    },
+    {
+      "phrase": "shall be reconfigurable",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "713e8037d9a1"
+    },
+    {
+      "phrase": "shall be provided showing the level of transmitted voice.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "49b0abaf90c7"
+    },
+    {
+      "phrase": "shall have the ability to independently set each",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "8fb79adfdf7e"
+    },
+    {
+      "phrase": "shall have the ability to mute or un-mute audio from unselected",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "3911bf08ee8e"
+    },
+    {
+      "phrase": "shall be presented from separate speakers.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "211f75d93baf"
+    },
+    {
+      "phrase": "shall have the ability to select multiple channels/talkgroups for",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "c183a242bc2d"
+    },
+    {
+      "phrase": "shall have the ability to patch two or more conventional",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "989f695526c8"
+    },
+    {
+      "phrase": "shall be equipped such that a minimum of eight simultaneous",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "8f93b7a4dfc6"
+    },
+    {
+      "phrase": "shall provide an audible alert, provide",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "70f46f9710e4"
+    },
+    {
+      "phrase": "shall have the ability to initiate and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "e47e51d53d63"
+    },
+    {
+      "phrase": "b. Playback shall be available on the operator position.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "a0bc43bb9d0e"
+    },
+    {
+      "phrase": "capable of operating on multiple frequencies and/or modes shall be reconfigurable",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "f42ea4947118"
+    },
+    {
+      "phrase": "C. An audio level meter shall be provided showing the level of transmitted voice. The",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "81d5e01bcba7"
+    },
+    {
+      "phrase": "audio level meter shall also indicate the level of receive audio present on the",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "5138d79c9ad9"
+    },
+    {
+      "phrase": "D. Operator positions shall have the ability to independently set each",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "523121b52e40"
+    },
+    {
+      "phrase": "E. Operator positions shall have the ability to mute or un-mute audio from unselected",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "b3c40d4050bd"
+    },
+    {
+      "phrase": "channels/talkgroups. The operator's monitor shall indicate muted audio status.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "30719d392959"
+    },
+    {
+      "phrase": "F. Selected audio and unselected audio shall be presented from separate speakers.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "a7f1bb57ef41"
+    },
+    {
+      "phrase": "G. Operator positions shall have the ability to select multiple channels/talkgroups for",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "576ca5f66d1e"
+    },
+    {
+      "phrase": "H. Operator positions shall have the ability to patch two or more conventional",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "a45660d0c1f1"
+    },
+    {
+      "phrase": "I. Operator positions shall be equipped such that a minimum of eight simultaneous",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "2c6a9ea7ded0"
+    },
+    {
+      "phrase": "patches shall be available.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 34,
+      "phrase_id": "2d48b2f2ca69"
+    },
+    {
+      "phrase": "operator position and it shall allow the operator to hear select audio via a",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 35,
+      "phrase_id": "b7a43aecb5ec"
+    },
+    {
+      "phrase": "A headset plug inserted into the jack shall automatically disconnect the",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 35,
+      "phrase_id": "1885a378433a"
+    },
+    {
+      "phrase": "One wired headset shall be provided for each dispatch operator position and it",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 35,
+      "phrase_id": "0aee947b901c"
+    },
+    {
+      "phrase": "The new radio system shall interface with the existing CAD system providing the",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 35,
+      "phrase_id": "8e4a56819aa9"
+    },
+    {
+      "phrase": "shall have the ability to activate or",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 35,
+      "phrase_id": "3db3d6a64f56"
+    },
+    {
+      "phrase": "shall have the ability to acknowledge",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 35,
+      "phrase_id": "6c8df645b382"
+    },
+    {
+      "phrase": "shall support new features and screen configurations",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 35,
+      "phrase_id": "a81b10165262"
+    },
+    {
+      "phrase": "shall support the capability to program, store, retrieve, and",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 35,
+      "phrase_id": "7cc40c6734ab"
+    },
+    {
+      "phrase": "shall be provided for eac h",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 35,
+      "phrase_id": "b2b5b6ff834c"
+    },
+    {
+      "phrase": "shall allow the operator to hear select audio via a",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 35,
+      "phrase_id": "ba3a04033d1c"
+    },
+    {
+      "phrase": "shall be provided for each dispatch operator position and it",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 35,
+      "phrase_id": "ac85a565cffb"
+    },
+    {
+      "phrase": "shall allow the operator to hear select audio via a headset and allow the operator",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 35,
+      "phrase_id": "305d3e727a33"
+    },
+    {
+      "phrase": "C. Operator positions display configurations and alias database shall be stored",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 35,
+      "phrase_id": "f069bbf469a1"
+    },
+    {
+      "phrase": "A. Two headset jacks, configurable for 4 -wire or 6-wire, shall be provided for eac h",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 35,
+      "phrase_id": "c46d5e16c0b2"
+    },
+    {
+      "phrase": "dispatch operator position and it shall allow the operator to hear select audio via a",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 35,
+      "phrase_id": "34849cb9a21b"
+    },
+    {
+      "phrase": "2. A headset plug inserted into the jack shall automatically disconnect the",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 35,
+      "phrase_id": "359ab05b96fb"
+    },
+    {
+      "phrase": "B. One wired headset shall be provided for each dispatch operator position and it",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 35,
+      "phrase_id": "25e2ffe9000d"
+    },
+    {
+      "phrase": "A. The new radio system shall interface with the existing CAD system providing the",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 35,
+      "phrase_id": "2fd56fce6795"
+    },
+    {
+      "phrase": "This interface shall allow the CAD system to monitor and control portions of the",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 36,
+      "phrase_id": "9cb5cd8fc059"
+    },
+    {
+      "phrase": "The interface shall allow the CAD system to execute commands upon the trunking",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 36,
+      "phrase_id": "a2671bdd3d6c"
+    },
+    {
+      "phrase": "The Selected Vendor shall provide an IP-based networked P25 compatible, digital",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 36,
+      "phrase_id": "085d9bd1b95a"
+    },
+    {
+      "phrase": "shall allow the CAD system to monitor and control portions of the",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 36,
+      "phrase_id": "060ae978ffa0"
+    },
+    {
+      "phrase": "shall allow the exchange of the following information:",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 36,
+      "phrase_id": "8f0f8fb6e5af"
+    },
+    {
+      "phrase": "shall allow the CAD system to execute commands upon the trunking",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 36,
+      "phrase_id": "32568723d778"
+    },
+    {
+      "phrase": "shall provide an IP-based networked P25 compatible, digital",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 36,
+      "phrase_id": "02f28c565a40"
+    },
+    {
+      "phrase": "shall meet or exceed all applicable FCC, IEEE, TIA",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 36,
+      "phrase_id": "9e31177c5765"
+    },
+    {
+      "phrase": "shall provide the ability to log / record the following:",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 36,
+      "phrase_id": "0b781e109411"
+    },
+    {
+      "phrase": "B. This interface shall allow the CAD system to monitor and control portions of the",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 36,
+      "phrase_id": "c51924dde51c"
+    },
+    {
+      "phrase": "D. The interface shall allow the CAD system to execute commands upon the trunking",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 36,
+      "phrase_id": "06fdae953ab5"
+    },
+    {
+      "phrase": "A. The Selected Vendor shall provide an IP-based networked P25 compatible, digital",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 36,
+      "phrase_id": "6a678b07ea05"
+    },
+    {
+      "phrase": "system shall interface directly with the P25 system.",
+      "source_doc_id": "ecso-jackson-2019",
+      "source_file": "ecso-jackson-p25-functional-spec.pdf",
+      "page": 37,
+      "phrase_id": "b84bc40d8df6"
+    }
+  ]
+}

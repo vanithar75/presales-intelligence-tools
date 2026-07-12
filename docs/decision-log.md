@@ -15,8 +15,21 @@
 - L1 catalog generated: **192** LMR draft capabilities + **32** stubs = **224** total in `ontology/l1_capabilities.json`.
 - Human SME review still required before marking L1 `published`.
 
+## 2026-07-12 — Sprint 2 completed (L2 synonyms)
+
+- Deterministic PDF harvest + seed/name matching (no LLM) via `ingest/extract_l2_synonyms.py`.
+- **492** main synonyms, **42** holdout, **58** L1 capabilities covered; top-15 alias coverage **13/15**.
+- Status `auto_accepted` pending SME spot-check.
+
+## 2026-07-12 — Sprint 3 completed (MSI L3 + match API)
+
+- 20 MSI products; 123 product↔capability mappings (116 L1 caps).
+- Deterministic matcher CLI + FastAPI (`app/match_api.py`).
+- Sample outputs in `ontology/samples/`.
+
 ## Pending
 
 - SME review of L1 definitions after Sprint 1 draft
-- Confirm RFP PDF download licenses (public procurement docs)
-- Sprint 2: synonym harvest from the 3 RFPs
+- SME spot-check of L2 auto_accepted synonyms
+- Sprint 4: analyst UI + polished demo
+- Stronger MSI datasheet citations on L3 rows

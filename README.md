@@ -28,8 +28,8 @@ app/               # Match UI (Sprint 3–4)
 |--------|--------|
 | S0 Scaffold + PSERS root | **Done** |
 | S1 Solid LMR L1 + stubs | **Done (draft)** — 192 LMR + 32 stubs; SME publish lock pending |
-| S2 L2 synonyms (3 RFPs) | Deferred |
-| S3 MSI L3 + match API | Deferred |
+| S2 L2 synonyms (3 RFPs) | **Done** — 492 synonyms + 42 holdout; see [docs/sprint-s2-done.md](docs/sprint-s2-done.md) |
+| S3 MSI L3 + match API | **Done** — 20 MSI products, 123 maps, CLI/API matcher; see [docs/sprint-s3-done.md](docs/sprint-s3-done.md) |
 | S4 UI + demo | Deferred |
 
 See [docs/sprint-s0-s1-done.md](docs/sprint-s0-s1-done.md).
@@ -37,8 +37,10 @@ See [docs/sprint-s0-s1-done.md](docs/sprint-s0-s1-done.md).
 ## Quick start (ontology only)
 
 ```bash
-python ontology/validate_l1.py
-python -c "import json; d=json.load(open('ontology/l1_capabilities.json',encoding='utf-8')); print(d['counts'])"
+py -3.12 ontology/validate_l1.py
+py -3.12 ontology/validate_l2.py
+py -3.12 ontology/validate_l3.py
+py -3.12 ingest/match_rfp.py ontology/samples/demo_requirements.txt
 ```
 
 ## Scope lock (MVP)

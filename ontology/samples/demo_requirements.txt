@@ -1,0 +1,10 @@
+The radio system shall provide a geo-redundant core with no single point of failure.
+The system shall support P25 Phase 2 TDMA trunked simulcast operation.
+Subscriber units shall support AES-256 encryption and Over-the-air rekeying (OTAR).
+The Contractor shall provide ISSI connectivity to partner P25 systems.
+Portable coverage shall meet DAQ 3.4 with 95% area coverage objectives.
+The NMS shall provide unified real-time monitoring of radio and backhaul equipment.
+Dispatch console positions shall support emergency alarm display and talkgroup patching.
+APX-class multiband portables shall be proposed for law enforcement users.
+The solution shall support SmartConnect-class LMR to LTE broadband PTT bridging.
+Grade of Service shall be less than or equal to 1 percent.

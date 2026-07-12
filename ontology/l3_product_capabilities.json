@@ -1,0 +1,1120 @@
+{
+  "schema_version": "1.0",
+  "sprint": "S3",
+  "vendor_id": "MSI",
+  "counts": {
+    "mappings": 123,
+    "capabilities_mapped": 116,
+    "products_used": 19,
+    "missing_aliases": []
+  },
+  "mappings": [
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.STD.P25_PHASE1",
+      "capability_alias": "LMR.STD.P25_PHASE1",
+      "support_level": "native",
+      "notes": "ASTRO 25 Phase 1",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.STD.P25_PHASE2",
+      "capability_alias": "LMR.STD.P25_PHASE2",
+      "support_level": "native",
+      "notes": "ASTRO 25 Phase 2",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.STD.DUAL_MODE_FDMA_TDMA",
+      "capability_alias": "LMR.STD.DUAL_MODE_FDMA_TDMA",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.STD.TRUNKED_OPS",
+      "capability_alias": "LMR.STD.TRUNKED_OPS",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.STD.CONVENTIONAL_OPS",
+      "capability_alias": "LMR.STD.CONVENTIONAL_OPS",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.STD.P25_CAP",
+      "capability_alias": "LMR.STD.P25_CAP",
+      "support_level": "native",
+      "notes": "CAP-tested configurations",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.MOTOTRBO.RADIO",
+      "capability_id": "PSERS.INFRA.STD.DMR_TIER2",
+      "capability_alias": "LMR.STD.DMR_TIER2",
+      "support_level": "native",
+      "notes": "MOTOTRBO DMR",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.MOTOTRBO.INFRA",
+      "capability_id": "PSERS.INFRA.STD.DMR_TIER3",
+      "capability_alias": "LMR.STD.DMR_TIER3",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.CORE.GEO_REDUNDANT_CORE",
+      "capability_alias": "LMR.CORE.GEO_REDUNDANT_CORE",
+      "support_level": "native",
+      "notes": "Geo-redundant ASTRO cores",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.CORE.NO_SPOF",
+      "capability_alias": "LMR.CORE.NO_SPOF",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.CORE.CENTRALIZED_CORE",
+      "capability_alias": "LMR.CORE.CENTRALIZED_CORE",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.CORE.DISTRIBUTED_CORE",
+      "capability_alias": "LMR.CORE.DISTRIBUTED_CORE",
+      "support_level": "option",
+      "notes": "Architecture-dependent",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.CORE.FAILSOFT",
+      "capability_alias": "LMR.CORE.FAILSOFT",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.CORE.SITE_TRUNKING",
+      "capability_alias": "LMR.CORE.SITE_TRUNKING",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.CORE.TRANSPARENT_ROAMING",
+      "capability_alias": "LMR.CORE.TRANSPARENT_ROAMING",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.CORE.DYNAMIC_REGROUP",
+      "capability_alias": "LMR.CORE.DYNAMIC_REGROUP",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.CORE.SYSTEM_WIDE_CALL",
+      "capability_alias": "LMR.CORE.SYSTEM_WIDE_CALL",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.CORE.FAULT_TOLERANT_CONTROL",
+      "capability_alias": "LMR.CORE.FAULT_TOLERANT_CONTROL",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.NMS.ASTRO",
+      "capability_id": "PSERS.INFRA.CORE.BACKUP_RESTORE",
+      "capability_alias": "LMR.CORE.BACKUP_RESTORE",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SIMULCAST",
+      "capability_id": "PSERS.INFRA.SITE.SIMULCAST_TRUNKED",
+      "capability_alias": "LMR.SITE.SIMULCAST_TRUNKED",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.GTR8000",
+      "capability_id": "PSERS.INFRA.SITE.BASE_REPEATER",
+      "capability_alias": "LMR.SITE.BASE_REPEATER",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SIMULCAST",
+      "capability_id": "PSERS.INFRA.SITE.COMPARATOR",
+      "capability_alias": "LMR.SITE.COMPARATOR",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SIMULCAST",
+      "capability_id": "PSERS.INFRA.SITE.VOTING_RECEIVER",
+      "capability_alias": "LMR.SITE.VOTING_RECEIVER",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SIMULCAST",
+      "capability_id": "PSERS.INFRA.SITE.SIMULCAST_TIMING",
+      "capability_alias": "LMR.SITE.SIMULCAST_TIMING",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.GTR8000",
+      "capability_id": "PSERS.INFRA.SITE.TTA",
+      "capability_alias": "LMR.SITE.TTA",
+      "support_level": "option",
+      "notes": "Site RF optioning",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.NMS.ASTRO",
+      "capability_id": "PSERS.INFRA.SITE.SITE_ALARMS",
+      "capability_alias": "LMR.SITE.SITE_ALARMS",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.SERVICES.IMPL",
+      "capability_id": "PSERS.INFRA.SITE.SITE_GROUNDING",
+      "capability_alias": "LMR.SITE.SITE_GROUNDING",
+      "support_level": "partner",
+      "notes": "R56-class practices via services/install",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.COV.DAQ_3_4",
+      "capability_alias": "LMR.COV.DAQ_3_4",
+      "support_level": "native",
+      "notes": "Design/test to DAQ targets",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.COV.COV_95_AREA",
+      "capability_alias": "LMR.COV.COV_95_AREA",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.COV.GOS_1PCT",
+      "capability_alias": "LMR.COV.GOS_1PCT",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.COV.PORTABLE_IN_BUILDING",
+      "capability_alias": "LMR.COV.PORTABLE_IN_BUILDING",
+      "support_level": "native",
+      "notes": "Design-dependent",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.SERVICES.IMPL",
+      "capability_id": "PSERS.INFRA.COV.COVERAGE_TESTING",
+      "capability_alias": "LMR.COV.COVERAGE_TESTING",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.SERVICES.IMPL",
+      "capability_id": "PSERS.INFRA.COV.COVERAGE_GUARANTEE",
+      "capability_alias": "LMR.COV.COVERAGE_GUARANTEE",
+      "support_level": "option",
+      "notes": "Contractual",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.SERVICES.IMPL",
+      "capability_id": "PSERS.INFRA.COV.COVERAGE_MAPS",
+      "capability_alias": "LMR.COV.COVERAGE_MAPS",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.COV.GROWTH_SUBSCRIBERS",
+      "capability_alias": "LMR.COV.GROWTH_SUBSCRIBERS",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.VOICE.GROUP_CALL",
+      "capability_alias": "LMR.VOICE.GROUP_CALL",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.VOICE.PRIVATE_CALL",
+      "capability_alias": "LMR.VOICE.PRIVATE_CALL",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.VOICE.EMERGENCY_ALARM",
+      "capability_alias": "LMR.VOICE.EMERGENCY_ALARM",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.VOICE.EMERGENCY_CALL",
+      "capability_alias": "LMR.VOICE.EMERGENCY_CALL",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.VOICE.PTT_ID",
+      "capability_alias": "LMR.VOICE.PTT_ID",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.VOICE.CALL_ALERT",
+      "capability_alias": "LMR.VOICE.CALL_ALERT",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.VOICE.VOICE_OVER_DATA",
+      "capability_alias": "LMR.VOICE.VOICE_OVER_DATA",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.VOICE.RADIO_CHECK",
+      "capability_alias": "LMR.VOICE.RADIO_CHECK",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.VOICE.UNIT_INHIBIT",
+      "capability_alias": "LMR.VOICE.UNIT_INHIBIT",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.PORTABLE",
+      "capability_id": "PSERS.INFRA.DATA.GPS_AVL",
+      "capability_alias": "LMR.DATA.GPS_AVL",
+      "support_level": "native",
+      "notes": "APX location features",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.NEXT",
+      "capability_id": "PSERS.INFRA.DATA.GPS_AVL",
+      "capability_alias": "LMR.DATA.GPS_AVL",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.DATA.TEXT_MESSAGING",
+      "capability_alias": "LMR.DATA.TEXT_MESSAGING",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.PORTABLE",
+      "capability_id": "PSERS.INFRA.DATA.OTAP",
+      "capability_alias": "LMR.DATA.OTAP",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.SMARTCONNECT",
+      "capability_id": "PSERS.INFRA.DATA.OTAP",
+      "capability_alias": "LMR.DATA.OTAP",
+      "support_level": "option",
+      "notes": "Broadband programming path",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.SEC.AES256",
+      "capability_alias": "LMR.SEC.AES256",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.PORTABLE",
+      "capability_id": "PSERS.INFRA.SEC.AES256",
+      "capability_alias": "LMR.SEC.AES256",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.KMF",
+      "capability_id": "PSERS.INFRA.SEC.OTAR",
+      "capability_alias": "LMR.SEC.OTAR",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.PORTABLE",
+      "capability_id": "PSERS.INFRA.SEC.OTAR",
+      "capability_alias": "LMR.SEC.OTAR",
+      "support_level": "native",
+      "notes": "OTAR-capable APX",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.KMF",
+      "capability_id": "PSERS.INFRA.SEC.KMF",
+      "capability_alias": "LMR.SEC.KMF",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.KVL",
+      "capability_id": "PSERS.INFRA.SEC.KVL",
+      "capability_alias": "LMR.SEC.KVL",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.PORTABLE",
+      "capability_id": "PSERS.INFRA.SEC.MULTI_KEY",
+      "capability_alias": "LMR.SEC.MULTI_KEY",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.PORTABLE",
+      "capability_id": "PSERS.INFRA.SEC.FIPS",
+      "capability_alias": "LMR.SEC.FIPS",
+      "support_level": "option",
+      "notes": "Model/config dependent",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.MCC.CONSOLE",
+      "capability_id": "PSERS.INFRA.SEC.END_TO_END_CONSOLE",
+      "capability_alias": "LMR.SEC.END_TO_END_CONSOLE",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.ISSI",
+      "capability_id": "PSERS.INFRA.IOP.ISSI",
+      "capability_alias": "LMR.IOP.ISSI",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.MCC.CONSOLE",
+      "capability_id": "PSERS.INFRA.IOP.CSSI",
+      "capability_alias": "LMR.IOP.CSSI",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.MCC.CONSOLE",
+      "capability_id": "PSERS.INFRA.IOP.MUTUAL_AID_PATCH",
+      "capability_alias": "LMR.IOP.MUTUAL_AID_PATCH",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.IOP.CONVENTIONAL_GATEWAY",
+      "capability_alias": "LMR.IOP.CONVENTIONAL_GATEWAY",
+      "support_level": "option",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.IOP.CAD_INTERFACE",
+      "capability_alias": "LMR.IOP.CAD_INTERFACE",
+      "support_level": "option",
+      "notes": "CAD integrations via suite/partners",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.SMARTCONNECT",
+      "capability_id": "PSERS.INFRA.IOP.LMR_MCX_IWF_TOUCH",
+      "capability_alias": "LMR.IOP.LMR_MCX_IWF_TOUCH",
+      "support_level": "option",
+      "notes": "Broadband bridge class; full 3GPP IWF varies",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.MCC.CONSOLE",
+      "capability_id": "PSERS.INFRA.DISP.CONSOLE_POSITIONS",
+      "capability_alias": "LMR.DISP.CONSOLE_POSITIONS",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.MCC.CONSOLE",
+      "capability_id": "PSERS.INFRA.DISP.CONSOLE_IP",
+      "capability_alias": "LMR.DISP.CONSOLE_IP",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.MCC.CONSOLE",
+      "capability_id": "PSERS.INFRA.DISP.CONSOLE_PATCH",
+      "capability_alias": "LMR.DISP.CONSOLE_PATCH",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.LOGGING",
+      "capability_id": "PSERS.INFRA.DISP.LOGGING_RECORDER",
+      "capability_alias": "LMR.DISP.LOGGING_RECORDER",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.MCC.CONSOLE",
+      "capability_id": "PSERS.INFRA.DISP.INSTANT_RECALL",
+      "capability_alias": "LMR.DISP.INSTANT_RECALL",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.MCC.CONSOLE",
+      "capability_id": "PSERS.INFRA.DISP.CONSOLE_EMERG_DISPLAY",
+      "capability_alias": "LMR.DISP.CONSOLE_EMERG_DISPLAY",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.MCC.CONSOLE",
+      "capability_id": "PSERS.INFRA.DISP.BACKUP_DISPATCH",
+      "capability_alias": "LMR.DISP.BACKUP_DISPATCH",
+      "support_level": "option",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.SERVICES.IMPL",
+      "capability_id": "PSERS.INFRA.BH.MICROWAVE_BH",
+      "capability_alias": "LMR.BH.MICROWAVE_BH",
+      "support_level": "partner",
+      "notes": "Often partner microwave; MSI integrates",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.SERVICES.IMPL",
+      "capability_id": "PSERS.INFRA.BH.FIBER_BH",
+      "capability_alias": "LMR.BH.FIBER_BH",
+      "support_level": "partner",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.BH.IP_TRANSPORT",
+      "capability_alias": "LMR.BH.IP_TRANSPORT",
+      "support_level": "native",
+      "notes": "IP transport for ASTRO sites",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.SERVICES.IMPL",
+      "capability_id": "PSERS.INFRA.BH.PATH_DIVERSITY",
+      "capability_alias": "LMR.BH.PATH_DIVERSITY",
+      "support_level": "option",
+      "notes": "Design-dependent",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.NMS.ASTRO",
+      "capability_id": "PSERS.INFRA.BH.BH_NMS_INTEGRATION",
+      "capability_alias": "LMR.BH.BH_NMS_INTEGRATION",
+      "support_level": "option",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.NMS.ASTRO",
+      "capability_id": "PSERS.INFRA.NMS.UNIFIED_NMS",
+      "capability_alias": "LMR.NMS.UNIFIED_NMS",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.NMS.ASTRO",
+      "capability_id": "PSERS.INFRA.NMS.REALTIME_MONITOR",
+      "capability_alias": "LMR.NMS.REALTIME_MONITOR",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.NMS.ASTRO",
+      "capability_id": "PSERS.INFRA.NMS.REMOTE_CONFIG",
+      "capability_alias": "LMR.NMS.REMOTE_CONFIG",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.NMS.ASTRO",
+      "capability_id": "PSERS.INFRA.NMS.PERFORMANCE_REPORTS",
+      "capability_alias": "LMR.NMS.PERFORMANCE_REPORTS",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.SERVICES.IMPL",
+      "capability_id": "PSERS.INFRA.NMS.SOFTWARE_PATCHING",
+      "capability_alias": "LMR.NMS.SOFTWARE_PATCHING",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.PORTABLE",
+      "capability_id": "PSERS.INFRA.SUB.PORTABLE_GENERAL",
+      "capability_alias": "LMR.SUB.PORTABLE_GENERAL",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.MOBILE",
+      "capability_id": "PSERS.INFRA.SUB.MOBILE_GENERAL",
+      "capability_alias": "LMR.SUB.MOBILE_GENERAL",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.MOBILE",
+      "capability_id": "PSERS.INFRA.SUB.CONTROL_STATION",
+      "capability_alias": "LMR.SUB.CONTROL_STATION",
+      "support_level": "native",
+      "notes": "Control station configs",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.8000",
+      "capability_id": "PSERS.INFRA.SUB.MULTIBAND_PORTABLE",
+      "capability_alias": "LMR.SUB.MULTIBAND_PORTABLE",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.NEXT",
+      "capability_id": "PSERS.INFRA.SUB.MULTIBAND_PORTABLE",
+      "capability_alias": "LMR.SUB.MULTIBAND_PORTABLE",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.MOBILE",
+      "capability_id": "PSERS.INFRA.SUB.MULTIBAND_MOBILE",
+      "capability_alias": "LMR.SUB.MULTIBAND_MOBILE",
+      "support_level": "native",
+      "notes": "All-band mobile options",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.PORTABLE",
+      "capability_id": "PSERS.INFRA.SUB.TIER_LAW",
+      "capability_alias": "LMR.SUB.TIER_LAW",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.XE",
+      "capability_id": "PSERS.INFRA.SUB.TIER_FIRE",
+      "capability_alias": "LMR.SUB.TIER_FIRE",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.PORTABLE",
+      "capability_id": "PSERS.INFRA.SUB.TIER_PUBLIC_SERVICE",
+      "capability_alias": "LMR.SUB.TIER_PUBLIC_SERVICE",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.MOTOTRBO.RADIO",
+      "capability_id": "PSERS.INFRA.SUB.TIER_PUBLIC_SERVICE",
+      "capability_alias": "LMR.SUB.TIER_PUBLIC_SERVICE",
+      "support_level": "native",
+      "notes": "Non-mission-critical tier option",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.PORTABLE",
+      "capability_id": "PSERS.INFRA.SUB.ACCESSORIES",
+      "capability_alias": "LMR.SUB.ACCESSORIES",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.MOBILE",
+      "capability_id": "PSERS.INFRA.SUB.VEHICLE_INSTALL",
+      "capability_alias": "LMR.SUB.VEHICLE_INSTALL",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.SERVICES.IMPL",
+      "capability_id": "PSERS.INFRA.SUB.PROGRAMMING_TEMPLATES",
+      "capability_alias": "LMR.SUB.PROGRAMMING_TEMPLATES",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.NEXT",
+      "capability_id": "PSERS.INFRA.SUB.WIFI_SU",
+      "capability_alias": "LMR.SUB.WIFI_SU",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.NEXT",
+      "capability_id": "PSERS.INFRA.SUB.BT_SU",
+      "capability_alias": "LMR.SUB.BT_SU",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.PORTABLE",
+      "capability_id": "PSERS.INFRA.RUG.MILSTD_810",
+      "capability_alias": "LMR.RUG.MILSTD_810",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.XE",
+      "capability_id": "PSERS.INFRA.RUG.XE_FIREFIGHTER",
+      "capability_alias": "LMR.RUG.XE_FIREFIGHTER",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.PORTABLE",
+      "capability_id": "PSERS.INFRA.RUG.IP_RATING",
+      "capability_alias": "LMR.RUG.IP_RATING",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.PORTABLE",
+      "capability_id": "PSERS.INFRA.RUG.LOUD_AUDIO",
+      "capability_alias": "LMR.RUG.LOUD_AUDIO",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.XE",
+      "capability_id": "PSERS.INFRA.RUG.GLOVE_UI",
+      "capability_alias": "LMR.RUG.GLOVE_UI",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.PORTABLE",
+      "capability_id": "PSERS.INFRA.RUG.HAZLOC",
+      "capability_alias": "LMR.RUG.HAZLOC",
+      "support_level": "option",
+      "notes": "IS models",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.SMARTCONNECT",
+      "capability_id": "PSERS.INFRA.BB.LTE_PTT_BRIDGE",
+      "capability_alias": "LMR.BB.LTE_PTT_BRIDGE",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.NEXT",
+      "capability_id": "PSERS.INFRA.BB.LTE_PTT_BRIDGE",
+      "capability_alias": "LMR.BB.LTE_PTT_BRIDGE",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.NEXT",
+      "capability_id": "PSERS.INFRA.BB.FIRSTNET_READY",
+      "capability_alias": "LMR.BB.FIRSTNET_READY",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.NEXT",
+      "capability_id": "PSERS.INFRA.BB.SMART_LOCATE",
+      "capability_alias": "LMR.BB.SMART_LOCATE",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.NEXT",
+      "capability_id": "PSERS.INFRA.BB.SMART_PROGRAMMING",
+      "capability_alias": "LMR.BB.SMART_PROGRAMMING",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.NEXT",
+      "capability_id": "PSERS.INFRA.BB.CONVERGED_DEVICE",
+      "capability_alias": "LMR.BB.CONVERGED_DEVICE",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.NEXT",
+      "capability_id": "PSERS.INFRA.BB.WIFI_CONNECTIVITY",
+      "capability_alias": "LMR.BB.WIFI_CONNECTIVITY",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.SERVICES.IMPL",
+      "capability_id": "PSERS.INFRA.LIFE.TURNKEY_IMPL",
+      "capability_alias": "LMR.LIFE.TURNKEY_IMPL",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.SERVICES.IMPL",
+      "capability_id": "PSERS.INFRA.LIFE.CUTOVER_PLAN",
+      "capability_alias": "LMR.LIFE.CUTOVER_PLAN",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.SERVICES.IMPL",
+      "capability_id": "PSERS.INFRA.LIFE.ACCEPTANCE_TEST",
+      "capability_alias": "LMR.LIFE.ACCEPTANCE_TEST",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.SERVICES.IMPL",
+      "capability_id": "PSERS.INFRA.LIFE.TRAINING",
+      "capability_alias": "LMR.LIFE.TRAINING",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.SERVICES.IMPL",
+      "capability_id": "PSERS.INFRA.LIFE.WARRANTY",
+      "capability_alias": "LMR.LIFE.WARRANTY",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.SERVICES.IMPL",
+      "capability_id": "PSERS.INFRA.LIFE.SPARES",
+      "capability_alias": "LMR.LIFE.SPARES",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.SERVICES.IMPL",
+      "capability_id": "PSERS.INFRA.LIFE.MAINT_SLA",
+      "capability_alias": "LMR.LIFE.MAINT_SLA",
+      "support_level": "option",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.SERVICES.IMPL",
+      "capability_id": "PSERS.INFRA.LIFE.DOCUMENTATION",
+      "capability_alias": "LMR.LIFE.DOCUMENTATION",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.SERVICES.IMPL",
+      "capability_id": "PSERS.INFRA.LIFE.PROJECT_MGMT",
+      "capability_alias": "LMR.LIFE.PROJECT_MGMT",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.APX.8000",
+      "capability_id": "PSERS.INFRA.RF.MULTIBAND_SU",
+      "capability_alias": "LMR.RF.MULTIBAND_SU",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.RF.BAND_700",
+      "capability_alias": "LMR.RF.BAND_700",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.RF.BAND_800",
+      "capability_alias": "LMR.RF.BAND_800",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.RF.BAND_UHF",
+      "capability_alias": "LMR.RF.BAND_UHF",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.ASTRO25.SYSTEM",
+      "capability_id": "PSERS.INFRA.RF.BAND_VHF",
+      "capability_alias": "LMR.RF.BAND_VHF",
+      "support_level": "native",
+      "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    }
+  ]
+}

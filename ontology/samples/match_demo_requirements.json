@@ -1,0 +1,965 @@
+{
+  "source_file": "demo_requirements.txt",
+  "pages_processed": 1,
+  "counts": {
+    "requirements": 29,
+    "mapped": 25,
+    "unmapped": 4,
+    "map_rate": 0.862
+  },
+  "results": [
+    {
+      "requirement": "The radio system shall provide a geo-redundant core with no single point of failure.",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.CORE.GEO_REDUNDANT_CORE",
+          "capability_alias": "LMR.CORE.GEO_REDUNDANT_CORE",
+          "capability_name": "Geo-redundant core",
+          "confidence": 0.92,
+          "method": "seed"
+        },
+        {
+          "capability_id": "PSERS.INFRA.CORE.NO_SPOF",
+          "capability_alias": "LMR.CORE.NO_SPOF",
+          "capability_name": "No single point of failure",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.CORE.GEO_REDUNDANT_CORE",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": "Geo-redundant ASTRO cores"
+        },
+        {
+          "capability_id": "PSERS.INFRA.CORE.NO_SPOF",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "requirement": "The system shall support P25 Phase 2 TDMA trunked simulcast operation.",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.SITE.SIMULCAST_TRUNKED",
+          "capability_alias": "LMR.SITE.SIMULCAST_TRUNKED",
+          "capability_name": "Trunked simulcast",
+          "confidence": 0.92,
+          "method": "seed"
+        },
+        {
+          "capability_id": "PSERS.INFRA.STD.P25_PHASE2",
+          "capability_alias": "LMR.STD.P25_PHASE2",
+          "capability_name": "P25 Phase 2 TDMA",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.SITE.SIMULCAST_TRUNKED",
+          "product_id": "MSI.ASTRO25.SIMULCAST",
+          "product_name": "ASTRO 25 Simulcast",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        },
+        {
+          "capability_id": "PSERS.INFRA.STD.P25_PHASE2",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": "ASTRO 25 Phase 2"
+        }
+      ]
+    },
+    {
+      "requirement": "Subscriber units shall support AES-256 encryption and Over-the-air rekeying (OTAR).",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.SEC.AES256",
+          "capability_alias": "LMR.SEC.AES256",
+          "capability_name": "AES-256 voice encryption",
+          "confidence": 0.92,
+          "method": "seed"
+        },
+        {
+          "capability_id": "PSERS.INFRA.SEC.OTAR",
+          "capability_alias": "LMR.SEC.OTAR",
+          "capability_name": "Over-the-air rekeying",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.SEC.AES256",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        },
+        {
+          "capability_id": "PSERS.INFRA.SEC.AES256",
+          "product_id": "MSI.APX.PORTABLE",
+          "product_name": "APX P25 Portable Family",
+          "family": "APX",
+          "support_level": "native",
+          "notes": ""
+        },
+        {
+          "capability_id": "PSERS.INFRA.SEC.OTAR",
+          "product_id": "MSI.ASTRO25.KMF",
+          "product_name": "ASTRO Key Management Facility",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        },
+        {
+          "capability_id": "PSERS.INFRA.SEC.OTAR",
+          "product_id": "MSI.APX.PORTABLE",
+          "product_name": "APX P25 Portable Family",
+          "family": "APX",
+          "support_level": "native",
+          "notes": "OTAR-capable APX"
+        }
+      ]
+    },
+    {
+      "requirement": "The Contractor shall provide ISSI connectivity to partner P25 systems.",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.IOP.ISSI",
+          "capability_alias": "LMR.IOP.ISSI",
+          "capability_name": "ISSI inter-RFSS interface",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.IOP.ISSI",
+          "product_id": "MSI.ASTRO25.ISSI",
+          "product_name": "ASTRO 25 ISSI Gateway",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "requirement": "The NMS shall provide unified real-time monitoring of radio and backhaul equipment.",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.BH.IP_TRANSPORT",
+          "capability_alias": "LMR.BH.IP_TRANSPORT",
+          "capability_name": "IP transport network",
+          "confidence": 0.92,
+          "method": "seed"
+        },
+        {
+          "capability_id": "PSERS.INFRA.NMS.REALTIME_MONITOR",
+          "capability_alias": "LMR.NMS.REALTIME_MONITOR",
+          "capability_name": "Real-time monitoring",
+          "confidence": 0.92,
+          "method": "seed"
+        },
+        {
+          "capability_id": "PSERS.INFRA.NMS.UNIFIED_NMS",
+          "capability_alias": "LMR.NMS.UNIFIED_NMS",
+          "capability_name": "Unified network management",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.BH.IP_TRANSPORT",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": "IP transport for ASTRO sites"
+        },
+        {
+          "capability_id": "PSERS.INFRA.NMS.REALTIME_MONITOR",
+          "product_id": "MSI.NMS.ASTRO",
+          "product_name": "ASTRO Network Management",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        },
+        {
+          "capability_id": "PSERS.INFRA.NMS.UNIFIED_NMS",
+          "product_id": "MSI.NMS.ASTRO",
+          "product_name": "ASTRO Network Management",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "requirement": "console positions shall support emergency alarm display and talkgroup patching.",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.DISP.CONSOLE_POSITIONS",
+          "capability_alias": "LMR.DISP.CONSOLE_POSITIONS",
+          "capability_name": "Dispatch console positions",
+          "confidence": 0.92,
+          "method": "seed"
+        },
+        {
+          "capability_id": "PSERS.INFRA.VOICE.EMERGENCY_ALARM",
+          "capability_alias": "LMR.VOICE.EMERGENCY_ALARM",
+          "capability_name": "Emergency alarm",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.DISP.CONSOLE_POSITIONS",
+          "product_id": "MSI.MCC.CONSOLE",
+          "product_name": "MCC Console Family",
+          "family": "MCC Consoles",
+          "support_level": "native",
+          "notes": ""
+        },
+        {
+          "capability_id": "PSERS.INFRA.VOICE.EMERGENCY_ALARM",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "requirement": "radio system shall provide a geo-redundant core with no single point of failure",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.CORE.GEO_REDUNDANT_CORE",
+          "capability_alias": "LMR.CORE.GEO_REDUNDANT_CORE",
+          "capability_name": "Geo-redundant core",
+          "confidence": 0.92,
+          "method": "seed"
+        },
+        {
+          "capability_id": "PSERS.INFRA.CORE.NO_SPOF",
+          "capability_alias": "LMR.CORE.NO_SPOF",
+          "capability_name": "No single point of failure",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.CORE.GEO_REDUNDANT_CORE",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": "Geo-redundant ASTRO cores"
+        },
+        {
+          "capability_id": "PSERS.INFRA.CORE.NO_SPOF",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "requirement": "system shall support P25 Phase 2 TDMA trunked simulcast operation",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.SITE.SIMULCAST_TRUNKED",
+          "capability_alias": "LMR.SITE.SIMULCAST_TRUNKED",
+          "capability_name": "Trunked simulcast",
+          "confidence": 0.92,
+          "method": "seed"
+        },
+        {
+          "capability_id": "PSERS.INFRA.STD.P25_PHASE2",
+          "capability_alias": "LMR.STD.P25_PHASE2",
+          "capability_name": "P25 Phase 2 TDMA",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.SITE.SIMULCAST_TRUNKED",
+          "product_id": "MSI.ASTRO25.SIMULCAST",
+          "product_name": "ASTRO 25 Simulcast",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        },
+        {
+          "capability_id": "PSERS.INFRA.STD.P25_PHASE2",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": "ASTRO 25 Phase 2"
+        }
+      ]
+    },
+    {
+      "requirement": "units shall support AES-256 encryption and Over-the-air rekeying (OTAR)",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.SEC.AES256",
+          "capability_alias": "LMR.SEC.AES256",
+          "capability_name": "AES-256 voice encryption",
+          "confidence": 0.92,
+          "method": "seed"
+        },
+        {
+          "capability_id": "PSERS.INFRA.SEC.OTAR",
+          "capability_alias": "LMR.SEC.OTAR",
+          "capability_name": "Over-the-air rekeying",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.SEC.AES256",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        },
+        {
+          "capability_id": "PSERS.INFRA.SEC.AES256",
+          "product_id": "MSI.APX.PORTABLE",
+          "product_name": "APX P25 Portable Family",
+          "family": "APX",
+          "support_level": "native",
+          "notes": ""
+        },
+        {
+          "capability_id": "PSERS.INFRA.SEC.OTAR",
+          "product_id": "MSI.ASTRO25.KMF",
+          "product_name": "ASTRO Key Management Facility",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        },
+        {
+          "capability_id": "PSERS.INFRA.SEC.OTAR",
+          "product_id": "MSI.APX.PORTABLE",
+          "product_name": "APX P25 Portable Family",
+          "family": "APX",
+          "support_level": "native",
+          "notes": "OTAR-capable APX"
+        }
+      ]
+    },
+    {
+      "requirement": "Contractor shall provide ISSI connectivity to partner P25 systems",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.IOP.ISSI",
+          "capability_alias": "LMR.IOP.ISSI",
+          "capability_name": "ISSI inter-RFSS interface",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.IOP.ISSI",
+          "product_id": "MSI.ASTRO25.ISSI",
+          "product_name": "ASTRO 25 ISSI Gateway",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "requirement": "coverage shall meet DAQ 3",
+      "matches": [],
+      "unmapped": true
+    },
+    {
+      "requirement": "NMS shall provide unified real-time monitoring of radio and backhaul equipment",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.BH.IP_TRANSPORT",
+          "capability_alias": "LMR.BH.IP_TRANSPORT",
+          "capability_name": "IP transport network",
+          "confidence": 0.92,
+          "method": "seed"
+        },
+        {
+          "capability_id": "PSERS.INFRA.NMS.REALTIME_MONITOR",
+          "capability_alias": "LMR.NMS.REALTIME_MONITOR",
+          "capability_name": "Real-time monitoring",
+          "confidence": 0.92,
+          "method": "seed"
+        },
+        {
+          "capability_id": "PSERS.INFRA.NMS.UNIFIED_NMS",
+          "capability_alias": "LMR.NMS.UNIFIED_NMS",
+          "capability_name": "Unified network management",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.BH.IP_TRANSPORT",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": "IP transport for ASTRO sites"
+        },
+        {
+          "capability_id": "PSERS.INFRA.NMS.REALTIME_MONITOR",
+          "product_id": "MSI.NMS.ASTRO",
+          "product_name": "ASTRO Network Management",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        },
+        {
+          "capability_id": "PSERS.INFRA.NMS.UNIFIED_NMS",
+          "product_id": "MSI.NMS.ASTRO",
+          "product_name": "ASTRO Network Management",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "requirement": "console positions shall support emergency alarm display and talkgroup patching",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.DISP.CONSOLE_POSITIONS",
+          "capability_alias": "LMR.DISP.CONSOLE_POSITIONS",
+          "capability_name": "Dispatch console positions",
+          "confidence": 0.92,
+          "method": "seed"
+        },
+        {
+          "capability_id": "PSERS.INFRA.VOICE.EMERGENCY_ALARM",
+          "capability_alias": "LMR.VOICE.EMERGENCY_ALARM",
+          "capability_name": "Emergency alarm",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.DISP.CONSOLE_POSITIONS",
+          "product_id": "MSI.MCC.CONSOLE",
+          "product_name": "MCC Console Family",
+          "family": "MCC Consoles",
+          "support_level": "native",
+          "notes": ""
+        },
+        {
+          "capability_id": "PSERS.INFRA.VOICE.EMERGENCY_ALARM",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "requirement": "solution shall support SmartConnect-class LMR to LTE broadband PTT bridging",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.BB.LTE_PTT_BRIDGE",
+          "capability_alias": "LMR.BB.LTE_PTT_BRIDGE",
+          "capability_name": "LMR\u2013LTE PTT bridge",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.BB.LTE_PTT_BRIDGE",
+          "product_id": "MSI.SMARTCONNECT",
+          "product_name": "SmartConnect LMR-Broadband",
+          "family": "SmartConnect",
+          "support_level": "native",
+          "notes": ""
+        },
+        {
+          "capability_id": "PSERS.INFRA.BB.LTE_PTT_BRIDGE",
+          "product_id": "MSI.APX.NEXT",
+          "product_name": "APX NEXT Smart Radio",
+          "family": "APX NEXT",
+          "support_level": "native",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "requirement": "of Service shall be less than or equal to 1 percent",
+      "matches": [],
+      "unmapped": true
+    },
+    {
+      "requirement": "shall provide a geo-redundant core with no single point of failure.",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.CORE.GEO_REDUNDANT_CORE",
+          "capability_alias": "LMR.CORE.GEO_REDUNDANT_CORE",
+          "capability_name": "Geo-redundant core",
+          "confidence": 0.92,
+          "method": "seed"
+        },
+        {
+          "capability_id": "PSERS.INFRA.CORE.NO_SPOF",
+          "capability_alias": "LMR.CORE.NO_SPOF",
+          "capability_name": "No single point of failure",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.CORE.GEO_REDUNDANT_CORE",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": "Geo-redundant ASTRO cores"
+        },
+        {
+          "capability_id": "PSERS.INFRA.CORE.NO_SPOF",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "requirement": "shall support P25 Phase 2 TDMA trunked simulcast operation.",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.SITE.SIMULCAST_TRUNKED",
+          "capability_alias": "LMR.SITE.SIMULCAST_TRUNKED",
+          "capability_name": "Trunked simulcast",
+          "confidence": 0.92,
+          "method": "seed"
+        },
+        {
+          "capability_id": "PSERS.INFRA.STD.P25_PHASE2",
+          "capability_alias": "LMR.STD.P25_PHASE2",
+          "capability_name": "P25 Phase 2 TDMA",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.SITE.SIMULCAST_TRUNKED",
+          "product_id": "MSI.ASTRO25.SIMULCAST",
+          "product_name": "ASTRO 25 Simulcast",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        },
+        {
+          "capability_id": "PSERS.INFRA.STD.P25_PHASE2",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": "ASTRO 25 Phase 2"
+        }
+      ]
+    },
+    {
+      "requirement": "shall support AES-256 encryption and Over-the-air rekeying (OTAR).",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.SEC.AES256",
+          "capability_alias": "LMR.SEC.AES256",
+          "capability_name": "AES-256 voice encryption",
+          "confidence": 0.92,
+          "method": "seed"
+        },
+        {
+          "capability_id": "PSERS.INFRA.SEC.OTAR",
+          "capability_alias": "LMR.SEC.OTAR",
+          "capability_name": "Over-the-air rekeying",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.SEC.AES256",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        },
+        {
+          "capability_id": "PSERS.INFRA.SEC.AES256",
+          "product_id": "MSI.APX.PORTABLE",
+          "product_name": "APX P25 Portable Family",
+          "family": "APX",
+          "support_level": "native",
+          "notes": ""
+        },
+        {
+          "capability_id": "PSERS.INFRA.SEC.OTAR",
+          "product_id": "MSI.ASTRO25.KMF",
+          "product_name": "ASTRO Key Management Facility",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        },
+        {
+          "capability_id": "PSERS.INFRA.SEC.OTAR",
+          "product_id": "MSI.APX.PORTABLE",
+          "product_name": "APX P25 Portable Family",
+          "family": "APX",
+          "support_level": "native",
+          "notes": "OTAR-capable APX"
+        }
+      ]
+    },
+    {
+      "requirement": "shall provide ISSI connectivity to partner P25 systems.",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.IOP.ISSI",
+          "capability_alias": "LMR.IOP.ISSI",
+          "capability_name": "ISSI inter-RFSS interface",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.IOP.ISSI",
+          "product_id": "MSI.ASTRO25.ISSI",
+          "product_name": "ASTRO 25 ISSI Gateway",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "requirement": "shall provide unified real-time monitoring of radio and backhaul equipment.",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.BH.IP_TRANSPORT",
+          "capability_alias": "LMR.BH.IP_TRANSPORT",
+          "capability_name": "IP transport network",
+          "confidence": 0.92,
+          "method": "seed"
+        },
+        {
+          "capability_id": "PSERS.INFRA.NMS.REALTIME_MONITOR",
+          "capability_alias": "LMR.NMS.REALTIME_MONITOR",
+          "capability_name": "Real-time monitoring",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.BH.IP_TRANSPORT",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": "IP transport for ASTRO sites"
+        },
+        {
+          "capability_id": "PSERS.INFRA.NMS.REALTIME_MONITOR",
+          "product_id": "MSI.NMS.ASTRO",
+          "product_name": "ASTRO Network Management",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "requirement": "shall support emergency alarm display and talkgroup patching.",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.VOICE.EMERGENCY_ALARM",
+          "capability_alias": "LMR.VOICE.EMERGENCY_ALARM",
+          "capability_name": "Emergency alarm",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.VOICE.EMERGENCY_ALARM",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "requirement": "shall be proposed for law enforcement users.",
+      "matches": [],
+      "unmapped": true
+    },
+    {
+      "requirement": "shall support SmartConnect-class LMR to LTE broadband PTT bridging.",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.BB.LTE_PTT_BRIDGE",
+          "capability_alias": "LMR.BB.LTE_PTT_BRIDGE",
+          "capability_name": "LMR\u2013LTE PTT bridge",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.BB.LTE_PTT_BRIDGE",
+          "product_id": "MSI.SMARTCONNECT",
+          "product_name": "SmartConnect LMR-Broadband",
+          "family": "SmartConnect",
+          "support_level": "native",
+          "notes": ""
+        },
+        {
+          "capability_id": "PSERS.INFRA.BB.LTE_PTT_BRIDGE",
+          "product_id": "MSI.APX.NEXT",
+          "product_name": "APX NEXT Smart Radio",
+          "family": "APX NEXT",
+          "support_level": "native",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "requirement": "shall be less than or equal to 1 percent.",
+      "matches": [],
+      "unmapped": true
+    },
+    {
+      "requirement": "Portable coverage shall meet DAQ 3.4 with 95% area coverage objectives.",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.COV.COV_95_AREA",
+          "capability_alias": "LMR.COV.COV_95_AREA",
+          "capability_name": "95% area coverage",
+          "confidence": 0.92,
+          "method": "seed"
+        },
+        {
+          "capability_id": "PSERS.INFRA.COV.DAQ_3_4",
+          "capability_alias": "LMR.COV.DAQ_3_4",
+          "capability_name": "DAQ 3.4 delivered audio",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.COV.COV_95_AREA",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        },
+        {
+          "capability_id": "PSERS.INFRA.COV.DAQ_3_4",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": "Design/test to DAQ targets"
+        }
+      ]
+    },
+    {
+      "requirement": "Dispatch console positions shall support emergency alarm display and talkgroup patching.",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.DISP.CONSOLE_POSITIONS",
+          "capability_alias": "LMR.DISP.CONSOLE_POSITIONS",
+          "capability_name": "Dispatch console positions",
+          "confidence": 0.92,
+          "method": "seed"
+        },
+        {
+          "capability_id": "PSERS.INFRA.VOICE.EMERGENCY_ALARM",
+          "capability_alias": "LMR.VOICE.EMERGENCY_ALARM",
+          "capability_name": "Emergency alarm",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.DISP.CONSOLE_POSITIONS",
+          "product_id": "MSI.MCC.CONSOLE",
+          "product_name": "MCC Console Family",
+          "family": "MCC Consoles",
+          "support_level": "native",
+          "notes": ""
+        },
+        {
+          "capability_id": "PSERS.INFRA.VOICE.EMERGENCY_ALARM",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "requirement": "APX-class multiband portables shall be proposed for law enforcement users.",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.SUB.MULTIBAND_PORTABLE",
+          "capability_alias": "LMR.SUB.MULTIBAND_PORTABLE",
+          "capability_name": "Multiband portable",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.SUB.MULTIBAND_PORTABLE",
+          "product_id": "MSI.APX.8000",
+          "product_name": "APX 8000 All-Band Portable",
+          "family": "APX",
+          "support_level": "native",
+          "notes": ""
+        },
+        {
+          "capability_id": "PSERS.INFRA.SUB.MULTIBAND_PORTABLE",
+          "product_id": "MSI.APX.NEXT",
+          "product_name": "APX NEXT Smart Radio",
+          "family": "APX NEXT",
+          "support_level": "native",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "requirement": "The solution shall support SmartConnect-class LMR to LTE broadband PTT bridging.",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.BB.LTE_PTT_BRIDGE",
+          "capability_alias": "LMR.BB.LTE_PTT_BRIDGE",
+          "capability_name": "LMR\u2013LTE PTT bridge",
+          "confidence": 0.92,
+          "method": "seed"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.BB.LTE_PTT_BRIDGE",
+          "product_id": "MSI.SMARTCONNECT",
+          "product_name": "SmartConnect LMR-Broadband",
+          "family": "SmartConnect",
+          "support_level": "native",
+          "notes": ""
+        },
+        {
+          "capability_id": "PSERS.INFRA.BB.LTE_PTT_BRIDGE",
+          "product_id": "MSI.APX.NEXT",
+          "product_name": "APX NEXT Smart Radio",
+          "family": "APX NEXT",
+          "support_level": "native",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "requirement": "Grade of Service shall be less than or equal to 1 percent.",
+      "unmapped": false,
+      "matches": [
+        {
+          "capability_id": "PSERS.INFRA.COV.GOS_1PCT",
+          "capability_alias": "LMR.COV.GOS_1PCT",
+          "capability_name": "Grade of Service \u22641%",
+          "confidence": 0.92,
+          "method": "seed"
+        },
+        {
+          "capability_id": "PSERS.INFRA.SITE.MULTICAST",
+          "capability_alias": "LMR.SITE.MULTICAST",
+          "capability_name": "Multicast / multi-cast sites",
+          "confidence": 0.679,
+          "method": "l2_overlap"
+        }
+      ],
+      "msi_coverage": [
+        {
+          "capability_id": "PSERS.INFRA.COV.GOS_1PCT",
+          "product_id": "MSI.ASTRO25.SYSTEM",
+          "product_name": "ASTRO 25 P25 System",
+          "family": "ASTRO 25",
+          "support_level": "native",
+          "notes": ""
+        }
+      ]
+    }
+  ],
+  "note": "Truncated to first 200 requirement rows for sample artifact"
+}
