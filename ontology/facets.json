@@ -1,0 +1,40 @@
+{
+  "root": "PSERS",
+  "version": "0.1.0-s0",
+  "stack_classes": [
+    {"code": "INFRA", "name": "Infrastructure"},
+    {"code": "SENS", "name": "Sensors"},
+    {"code": "PLAT", "name": "Platforms"},
+    {"code": "APP", "name": "Applications"},
+    {"code": "SVC", "name": "Services"},
+    {"code": "XCUT", "name": "CrossCutting"}
+  ],
+  "mission_tags": [
+    "detect",
+    "call_take",
+    "locate",
+    "dispatch",
+    "respond",
+    "coordinate",
+    "inform",
+    "after_action"
+  ],
+  "lmr_domains": [
+    {"code": "STD", "name": "Standards & access modes"},
+    {"code": "RF", "name": "Spectrum & RF bands"},
+    {"code": "CORE", "name": "Core architecture"},
+    {"code": "SITE", "name": "RF sites & equipment"},
+    {"code": "COV", "name": "Coverage & capacity"},
+    {"code": "VOICE", "name": "Voice call services"},
+    {"code": "DATA", "name": "Data & location"},
+    {"code": "SEC", "name": "Security & key management"},
+    {"code": "IOP", "name": "Interoperability interfaces"},
+    {"code": "DISP", "name": "Dispatch & recording"},
+    {"code": "BH", "name": "Backhaul"},
+    {"code": "NMS", "name": "Network management"},
+    {"code": "SUB", "name": "Subscriber form factors"},
+    {"code": "RUG", "name": "Ruggedization & UX"},
+    {"code": "BB", "name": "Broadband convergence"},
+    {"code": "LIFE", "name": "Delivery & lifecycle"}
+  ]
+}

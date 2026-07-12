@@ -1,0 +1,3188 @@
+{
+  "schema_version": "1.0",
+  "root": "PSERS",
+  "sprint": "S1",
+  "generated_by": "ontology/generate_l1.py",
+  "counts": {
+    "total": 224,
+    "lmr_draft": 192,
+    "stubs": 32
+  },
+  "capabilities": [
+    {
+      "id": "PSERS.INFRA.STD.P25_PHASE1",
+      "alias": "LMR.STD.P25_PHASE1",
+      "name": "P25 Phase 1 FDMA",
+      "definition": "Support Project 25 Phase 1 FDMA common air interface operation.",
+      "stack_class": "INFRA",
+      "domain": "STD",
+      "mission_tags": [
+        "respond",
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": "2.1.1.1"
+    },
+    {
+      "id": "PSERS.INFRA.STD.P25_PHASE2",
+      "alias": "LMR.STD.P25_PHASE2",
+      "name": "P25 Phase 2 TDMA",
+      "definition": "Support Project 25 Phase 2 TDMA common air interface operation.",
+      "stack_class": "INFRA",
+      "domain": "STD",
+      "mission_tags": [
+        "respond",
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": "2.1.1.2"
+    },
+    {
+      "id": "PSERS.INFRA.STD.DUAL_MODE_FDMA_TDMA",
+      "alias": "LMR.STD.DUAL_MODE_FDMA_TDMA",
+      "name": "Dual-mode FDMA/TDMA",
+      "definition": "Operate in both P25 Phase 1 and Phase 2 modes as required.",
+      "stack_class": "INFRA",
+      "domain": "STD",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.STD.CONVENTIONAL_OPS",
+      "alias": "LMR.STD.CONVENTIONAL_OPS",
+      "name": "Conventional operation",
+      "definition": "Support conventional (non-trunked) P25/analog operation.",
+      "stack_class": "INFRA",
+      "domain": "STD",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.STD.TRUNKED_OPS",
+      "alias": "LMR.STD.TRUNKED_OPS",
+      "name": "Trunked operation",
+      "definition": "Support trunked system control and voice/data services.",
+      "stack_class": "INFRA",
+      "domain": "STD",
+      "mission_tags": [
+        "respond",
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.STD.ANALOG_INTEROP",
+      "alias": "LMR.STD.ANALOG_INTEROP",
+      "name": "Analog FM interoperability",
+      "definition": "Support analog FM on designated interoperability channels.",
+      "stack_class": "INFRA",
+      "domain": "STD",
+      "mission_tags": [
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.STD.DMR_TIER2",
+      "alias": "LMR.STD.DMR_TIER2",
+      "name": "DMR Tier II conventional",
+      "definition": "Support DMR Tier II where specified for campus/utility use.",
+      "stack_class": "INFRA",
+      "domain": "STD",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.STD.DMR_TIER3",
+      "alias": "LMR.STD.DMR_TIER3",
+      "name": "DMR Tier III trunked",
+      "definition": "Support DMR Tier III trunking where specified.",
+      "stack_class": "INFRA",
+      "domain": "STD",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.STD.P25_CAP",
+      "alias": "LMR.STD.P25_CAP",
+      "name": "P25 CAP compliance",
+      "definition": "Equipment tested under P25 CAP where required in the RFP.",
+      "stack_class": "INFRA",
+      "domain": "STD",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.STD.TIA102_SUITE",
+      "alias": "LMR.STD.TIA102_SUITE",
+      "name": "TIA-102 standards suite",
+      "definition": "Conform to applicable TIA-102 documents for claimed features.",
+      "stack_class": "INFRA",
+      "domain": "STD",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.STD.COMMON_CHANNEL_OPS",
+      "alias": "LMR.STD.COMMON_CHANNEL_OPS",
+      "name": "Common channel operation",
+      "definition": "Support P25 common/interoperability channel operation.",
+      "stack_class": "INFRA",
+      "domain": "STD",
+      "mission_tags": [
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": "2.1.1.3"
+    },
+    {
+      "id": "PSERS.INFRA.STD.MIXED_FLEET",
+      "alias": "LMR.STD.MIXED_FLEET",
+      "name": "Mixed Phase 1/2 fleet",
+      "definition": "Infrastructure supports mixed Phase 1 and Phase 2 subscribers.",
+      "stack_class": "INFRA",
+      "domain": "STD",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.RF.BAND_VHF",
+      "alias": "LMR.RF.BAND_VHF",
+      "name": "VHF operation",
+      "definition": "Operate in VHF public-safety band allocations as licensed.",
+      "stack_class": "INFRA",
+      "domain": "RF",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.RF.BAND_UHF",
+      "alias": "LMR.RF.BAND_UHF",
+      "name": "UHF operation",
+      "definition": "Operate in UHF public-safety band allocations as licensed.",
+      "stack_class": "INFRA",
+      "domain": "RF",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.RF.BAND_700",
+      "alias": "LMR.RF.BAND_700",
+      "name": "700 MHz operation",
+      "definition": "Operate in 700 MHz public-safety allocations.",
+      "stack_class": "INFRA",
+      "domain": "RF",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.RF.BAND_800",
+      "alias": "LMR.RF.BAND_800",
+      "name": "800 MHz operation",
+      "definition": "Operate in 800 MHz public-safety allocations.",
+      "stack_class": "INFRA",
+      "domain": "RF",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.RF.BAND_900",
+      "alias": "LMR.RF.BAND_900",
+      "name": "900 MHz operation",
+      "definition": "Operate in 900 MHz allocations where licensed.",
+      "stack_class": "INFRA",
+      "domain": "RF",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.RF.MULTIBAND_SU",
+      "alias": "LMR.RF.MULTIBAND_SU",
+      "name": "Multiband subscriber",
+      "definition": "Subscriber unit operates across multiple LMR bands (e.g. VHF/UHF/7/800).",
+      "stack_class": "INFRA",
+      "domain": "RF",
+      "mission_tags": [
+        "respond",
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.RF.CHANNEL_CAPACITY",
+      "alias": "LMR.RF.CHANNEL_CAPACITY",
+      "name": "Channel capacity planning",
+      "definition": "Provide channel counts meeting stated GoS and growth assumptions.",
+      "stack_class": "INFRA",
+      "domain": "RF",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.RF.FCC_IOP_CHANNELS",
+      "alias": "LMR.RF.FCC_IOP_CHANNELS",
+      "name": "FCC interoperability channels",
+      "definition": "Support designated FCC interoperability channels.",
+      "stack_class": "INFRA",
+      "domain": "RF",
+      "mission_tags": [
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.RF.NARROWBAND",
+      "alias": "LMR.RF.NARROWBAND",
+      "name": "Narrowband compliance",
+      "definition": "Meet applicable narrowband channel spacing requirements.",
+      "stack_class": "INFRA",
+      "domain": "RF",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.RF.FREQUENCY_REUSE",
+      "alias": "LMR.RF.FREQUENCY_REUSE",
+      "name": "Frequency reuse design",
+      "definition": "Support frequency reuse / simulcast planning assumptions in design.",
+      "stack_class": "INFRA",
+      "domain": "RF",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.CORE.CENTRALIZED_CORE",
+      "alias": "LMR.CORE.CENTRALIZED_CORE",
+      "name": "Centralized core",
+      "definition": "System uses geographically redundant centralized core controllers.",
+      "stack_class": "INFRA",
+      "domain": "CORE",
+      "mission_tags": [
+        "dispatch",
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.CORE.DISTRIBUTED_CORE",
+      "alias": "LMR.CORE.DISTRIBUTED_CORE",
+      "name": "Distributed core",
+      "definition": "System uses distributed architecture where sites can assume core functions.",
+      "stack_class": "INFRA",
+      "domain": "CORE",
+      "mission_tags": [
+        "dispatch",
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.CORE.GEO_REDUNDANT_CORE",
+      "alias": "LMR.CORE.GEO_REDUNDANT_CORE",
+      "name": "Geo-redundant core",
+      "definition": "Primary and secondary cores at geographically separate locations.",
+      "stack_class": "INFRA",
+      "domain": "CORE",
+      "mission_tags": [
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.CORE.NO_SPOF",
+      "alias": "LMR.CORE.NO_SPOF",
+      "name": "No single point of failure",
+      "definition": "No single failure of control-plane equipment disables system-wide voice.",
+      "stack_class": "INFRA",
+      "domain": "CORE",
+      "mission_tags": [
+        "respond",
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.CORE.FAILSOFT",
+      "alias": "LMR.CORE.FAILSOFT",
+      "name": "Failsoft / site trunking",
+      "definition": "Graceful degradation to site trunking or conventional failsoft on core loss.",
+      "stack_class": "INFRA",
+      "domain": "CORE",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.CORE.SITE_TRUNKING",
+      "alias": "LMR.CORE.SITE_TRUNKING",
+      "name": "Site trunking mode",
+      "definition": "Continue local trunked operation when wide-area links fail.",
+      "stack_class": "INFRA",
+      "domain": "CORE",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.CORE.SYSTEM_WIDE_CALL",
+      "alias": "LMR.CORE.SYSTEM_WIDE_CALL",
+      "name": "System-wide group call",
+      "definition": "Support system-wide group call to all SUs in a trunked system.",
+      "stack_class": "INFRA",
+      "domain": "CORE",
+      "mission_tags": [
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.CORE.BACKUP_RESTORE",
+      "alias": "LMR.CORE.BACKUP_RESTORE",
+      "name": "Backup and restore",
+      "definition": "Backup/restore of critical system configuration and databases.",
+      "stack_class": "INFRA",
+      "domain": "CORE",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.CORE.OWNERSHIP_CORE",
+      "alias": "LMR.CORE.OWNERSHIP_CORE",
+      "name": "Agency-owned core",
+      "definition": "Agency owns/operates primary and redundant core equipment where required.",
+      "stack_class": "INFRA",
+      "domain": "CORE",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.CORE.TRANSPARENT_ROAMING",
+      "alias": "LMR.CORE.TRANSPARENT_ROAMING",
+      "name": "Transparent site roaming",
+      "definition": "Automatic intra-system roaming across sites.",
+      "stack_class": "INFRA",
+      "domain": "CORE",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.CORE.FAULT_TOLERANT_CONTROL",
+      "alias": "LMR.CORE.FAULT_TOLERANT_CONTROL",
+      "name": "Fault-tolerant system control",
+      "definition": "Redundant controllers with no SPOF in control network.",
+      "stack_class": "INFRA",
+      "domain": "CORE",
+      "mission_tags": [
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.CORE.DYNAMIC_REGROUP",
+      "alias": "LMR.CORE.DYNAMIC_REGROUP",
+      "name": "Dynamic regrouping",
+      "definition": "Merge/unmerge talkgroups dynamically for incidents.",
+      "stack_class": "INFRA",
+      "domain": "CORE",
+      "mission_tags": [
+        "coordinate",
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SITE.BASE_REPEATER",
+      "alias": "LMR.SITE.BASE_REPEATER",
+      "name": "Base station / repeater",
+      "definition": "P25-capable base station or repeater at RF sites.",
+      "stack_class": "INFRA",
+      "domain": "SITE",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SITE.COMPARATOR",
+      "alias": "LMR.SITE.COMPARATOR",
+      "name": "Simulcast comparator",
+      "definition": "Audio/data comparator for simulcast voting.",
+      "stack_class": "INFRA",
+      "domain": "SITE",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SITE.VOTING_RECEIVER",
+      "alias": "LMR.SITE.VOTING_RECEIVER",
+      "name": "Receiver voting",
+      "definition": "Voted receive for improved talk-in performance.",
+      "stack_class": "INFRA",
+      "domain": "SITE",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SITE.SIMULCAST_TRUNKED",
+      "alias": "LMR.SITE.SIMULCAST_TRUNKED",
+      "name": "Trunked simulcast",
+      "definition": "Simulcast transmission across multiple sites for wide-area coverage.",
+      "stack_class": "INFRA",
+      "domain": "SITE",
+      "mission_tags": [
+        "respond",
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SITE.MULTICAST",
+      "alias": "LMR.SITE.MULTICAST",
+      "name": "Multicast / multi-cast sites",
+      "definition": "Support multicast site configurations where specified.",
+      "stack_class": "INFRA",
+      "domain": "SITE",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SITE.TTA",
+      "alias": "LMR.SITE.TTA",
+      "name": "Tower top amplifier",
+      "definition": "Tower-top amplifiers to improve uplink sensitivity.",
+      "stack_class": "INFRA",
+      "domain": "SITE",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SITE.ANTENNA_SYSTEM",
+      "alias": "LMR.SITE.ANTENNA_SYSTEM",
+      "name": "Antenna system",
+      "definition": "Site antenna systems meeting design gain and pattern assumptions.",
+      "stack_class": "INFRA",
+      "domain": "SITE",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SITE.SITE_ALARMS",
+      "alias": "LMR.SITE.SITE_ALARMS",
+      "name": "Site environmental alarms",
+      "definition": "Monitor site power, HVAC, intrusion, and RF alarms.",
+      "stack_class": "INFRA",
+      "domain": "SITE",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SITE.RFSS",
+      "alias": "LMR.SITE.RFSS",
+      "name": "RF subsystem (RFSS)",
+      "definition": "P25 RF Subsystem as defined in TIA-102.",
+      "stack_class": "INFRA",
+      "domain": "SITE",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SITE.EXPRESS_SINGLE_SITE",
+      "alias": "LMR.SITE.EXPRESS_SINGLE_SITE",
+      "name": "Single-site trunked package",
+      "definition": "Factory-packaged single-site trunked system option.",
+      "stack_class": "INFRA",
+      "domain": "SITE",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SITE.SITE_GROUNDING",
+      "alias": "LMR.SITE.SITE_GROUNDING",
+      "name": "Site grounding & lightning",
+      "definition": "Grounding/bonding per public-safety site standards (e.g. R56-class).",
+      "stack_class": "INFRA",
+      "domain": "SITE",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SITE.CHANNEL_BANK",
+      "alias": "LMR.SITE.CHANNEL_BANK",
+      "name": "Site channel equipment",
+      "definition": "Sufficient channel equipment for design traffic load.",
+      "stack_class": "INFRA",
+      "domain": "SITE",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SITE.RECEIVER_SITE",
+      "alias": "LMR.SITE.RECEIVER_SITE",
+      "name": "Receive-only sites",
+      "definition": "Optional receive-only sites for talk-in improvement.",
+      "stack_class": "INFRA",
+      "domain": "SITE",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SITE.SIMULCAST_TIMING",
+      "alias": "LMR.SITE.SIMULCAST_TIMING",
+      "name": "Simulcast timing/GPS sync",
+      "definition": "GPS or equivalent sync for simulcast timing integrity.",
+      "stack_class": "INFRA",
+      "domain": "SITE",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.COV.DAQ_3_4",
+      "alias": "LMR.COV.DAQ_3_4",
+      "name": "DAQ 3.4 delivered audio",
+      "definition": "Coverage designed/tested to DAQ 3.4 (or equivalent) where specified.",
+      "stack_class": "INFRA",
+      "domain": "COV",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.COV.COV_95_AREA",
+      "alias": "LMR.COV.COV_95_AREA",
+      "name": "95% area coverage",
+      "definition": "Meet stated percent geographic area coverage objective.",
+      "stack_class": "INFRA",
+      "domain": "COV",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.COV.COV_95_POP",
+      "alias": "LMR.COV.COV_95_POP",
+      "name": "Population coverage",
+      "definition": "Meet stated population coverage objective.",
+      "stack_class": "INFRA",
+      "domain": "COV",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.COV.COV_ROADS",
+      "alias": "LMR.COV.COV_ROADS",
+      "name": "Major road coverage",
+      "definition": "Coverage statistics for major roads as specified.",
+      "stack_class": "INFRA",
+      "domain": "COV",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.COV.MOBILE_ON_STREET",
+      "alias": "LMR.COV.MOBILE_ON_STREET",
+      "name": "Mobile on-street coverage",
+      "definition": "Mobile radio on-street coverage in service area.",
+      "stack_class": "INFRA",
+      "domain": "COV",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.COV.PORTABLE_ON_STREET",
+      "alias": "LMR.COV.PORTABLE_ON_STREET",
+      "name": "Portable on-street coverage",
+      "definition": "Portable on-street coverage in defined service area.",
+      "stack_class": "INFRA",
+      "domain": "COV",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.COV.PORTABLE_IN_BUILDING",
+      "alias": "LMR.COV.PORTABLE_IN_BUILDING",
+      "name": "Portable in-building coverage",
+      "definition": "In-building portable coverage in designated zones.",
+      "stack_class": "INFRA",
+      "domain": "COV",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.COV.GOS_1PCT",
+      "alias": "LMR.COV.GOS_1PCT",
+      "name": "Grade of Service \u22641%",
+      "definition": "Traffic design for GoS less than or equal to 1% (or RFP value).",
+      "stack_class": "INFRA",
+      "domain": "COV",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.COV.GROWTH_SUBSCRIBERS",
+      "alias": "LMR.COV.GROWTH_SUBSCRIBERS",
+      "name": "Subscriber growth allowance",
+      "definition": "Capacity includes stated annual subscriber growth.",
+      "stack_class": "INFRA",
+      "domain": "COV",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.COV.COVERAGE_GUARANTEE",
+      "alias": "LMR.COV.COVERAGE_GUARANTEE",
+      "name": "Coverage guarantee",
+      "definition": "Contractual coverage guarantee with remediation.",
+      "stack_class": "INFRA",
+      "domain": "COV",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.COV.COVERAGE_TESTING",
+      "alias": "LMR.COV.COVERAGE_TESTING",
+      "name": "Coverage acceptance testing",
+      "definition": "Formal coverage testing with agency witnesses.",
+      "stack_class": "INFRA",
+      "domain": "COV",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.COV.COVERAGE_MAPS",
+      "alias": "LMR.COV.COVERAGE_MAPS",
+      "name": "Predictive coverage maps",
+      "definition": "Provide design coverage maps with stated assumptions.",
+      "stack_class": "INFRA",
+      "domain": "COV",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.VOICE.GROUP_CALL",
+      "alias": "LMR.VOICE.GROUP_CALL",
+      "name": "Group call",
+      "definition": "Talkgroup / group voice call service.",
+      "stack_class": "INFRA",
+      "domain": "VOICE",
+      "mission_tags": [
+        "respond",
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.VOICE.PRIVATE_CALL",
+      "alias": "LMR.VOICE.PRIVATE_CALL",
+      "name": "Private / individual call",
+      "definition": "Unit-to-unit private call.",
+      "stack_class": "INFRA",
+      "domain": "VOICE",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.VOICE.EMERGENCY_ALARM",
+      "alias": "LMR.VOICE.EMERGENCY_ALARM",
+      "name": "Emergency alarm",
+      "definition": "Emergency alarm from SU to console/system.",
+      "stack_class": "INFRA",
+      "domain": "VOICE",
+      "mission_tags": [
+        "respond",
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.VOICE.EMERGENCY_CALL",
+      "alias": "LMR.VOICE.EMERGENCY_CALL",
+      "name": "Emergency call",
+      "definition": "Emergency voice call with priority handling.",
+      "stack_class": "INFRA",
+      "domain": "VOICE",
+      "mission_tags": [
+        "respond",
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.VOICE.PTT_ID",
+      "alias": "LMR.VOICE.PTT_ID",
+      "name": "PTT-ID / talker ID",
+      "definition": "Transport talker ID to receiving units/consoles.",
+      "stack_class": "INFRA",
+      "domain": "VOICE",
+      "mission_tags": [
+        "dispatch",
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.VOICE.CALL_ALERT",
+      "alias": "LMR.VOICE.CALL_ALERT",
+      "name": "Call alert / paging",
+      "definition": "Call alert or paging function to a unit.",
+      "stack_class": "INFRA",
+      "domain": "VOICE",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.VOICE.PRIORITY_LEVELS",
+      "alias": "LMR.VOICE.PRIORITY_LEVELS",
+      "name": "User/talkgroup priority",
+      "definition": "Priority levels for users and talkgroups.",
+      "stack_class": "INFRA",
+      "domain": "VOICE",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.VOICE.VOICE_OVER_DATA",
+      "alias": "LMR.VOICE.VOICE_OVER_DATA",
+      "name": "Voice priority over data",
+      "definition": "Voice traffic prioritized over data on shared resources.",
+      "stack_class": "INFRA",
+      "domain": "VOICE",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.VOICE.ANNOUNCEMENT_GROUP",
+      "alias": "LMR.VOICE.ANNOUNCEMENT_GROUP",
+      "name": "Announcement group call",
+      "definition": "Call addressed to an announcement group of talkgroups.",
+      "stack_class": "INFRA",
+      "domain": "VOICE",
+      "mission_tags": [
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.VOICE.BROADCAST_CALL",
+      "alias": "LMR.VOICE.BROADCAST_CALL",
+      "name": "Broadcast call",
+      "definition": "One-way broadcast group call without hang time.",
+      "stack_class": "INFRA",
+      "domain": "VOICE",
+      "mission_tags": [
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.VOICE.ALL_CALL",
+      "alias": "LMR.VOICE.ALL_CALL",
+      "name": "All call",
+      "definition": "All-call to units on channel/system as defined.",
+      "stack_class": "INFRA",
+      "domain": "VOICE",
+      "mission_tags": [
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.VOICE.BUSY_LOCKOUT",
+      "alias": "LMR.VOICE.BUSY_LOCKOUT",
+      "name": "Busy channel lockout",
+      "definition": "Polite/busy lockout behavior on conventional channels.",
+      "stack_class": "INFRA",
+      "domain": "VOICE",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.VOICE.RADIO_CHECK",
+      "alias": "LMR.VOICE.RADIO_CHECK",
+      "name": "Radio check",
+      "definition": "Determine if a specific SU is available on the system.",
+      "stack_class": "INFRA",
+      "domain": "VOICE",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.VOICE.UNIT_INHIBIT",
+      "alias": "LMR.VOICE.UNIT_INHIBIT",
+      "name": "Unit inhibit / de-authorize",
+      "definition": "Inhibit or de-authorize a subscriber unit.",
+      "stack_class": "INFRA",
+      "domain": "VOICE",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.VOICE.SITE_RESTRICTION",
+      "alias": "LMR.VOICE.SITE_RESTRICTION",
+      "name": "Site/talkgroup restriction",
+      "definition": "Restrict SUs/talkgroups to particular sites or resources.",
+      "stack_class": "INFRA",
+      "domain": "VOICE",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.VOICE.SURVEILLANCE_MODE",
+      "alias": "LMR.VOICE.SURVEILLANCE_MODE",
+      "name": "Surveillance mode",
+      "definition": "Surveillance / silent mode of operation for SUs.",
+      "stack_class": "INFRA",
+      "domain": "VOICE",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.VOICE.HANGTIME",
+      "alias": "LMR.VOICE.HANGTIME",
+      "name": "Repeater hangtime control",
+      "definition": "Configurable conventional repeater hangtime.",
+      "stack_class": "INFRA",
+      "domain": "VOICE",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.VOICE.PSTN_INTERCONNECT",
+      "alias": "LMR.VOICE.PSTN_INTERCONNECT",
+      "name": "PSTN interconnect",
+      "definition": "Telephone interconnect calls (full-duplex where required).",
+      "stack_class": "INFRA",
+      "domain": "VOICE",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.VOICE.DTMF_OVERDIAL",
+      "alias": "LMR.VOICE.DTMF_OVERDIAL",
+      "name": "DTMF overdial",
+      "definition": "Digital DTMF overdial support for interconnect.",
+      "stack_class": "INFRA",
+      "domain": "VOICE",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.VOICE.STATUS_PRIORITY",
+      "alias": "LMR.VOICE.STATUS_PRIORITY",
+      "name": "Status and message priority",
+      "definition": "Prioritized status/predefined messages relative to voice.",
+      "stack_class": "INFRA",
+      "domain": "VOICE",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.DATA.TEXT_MESSAGING",
+      "alias": "LMR.DATA.TEXT_MESSAGING",
+      "name": "Text messaging",
+      "definition": "Text messages between units/consoles.",
+      "stack_class": "INFRA",
+      "domain": "DATA",
+      "mission_tags": [
+        "respond",
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.DATA.STATUS_MESSAGING",
+      "alias": "LMR.DATA.STATUS_MESSAGING",
+      "name": "Status / predefined messages",
+      "definition": "Preprogrammed status or data messages.",
+      "stack_class": "INFRA",
+      "domain": "DATA",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.DATA.GPS_AVL",
+      "alias": "LMR.DATA.GPS_AVL",
+      "name": "GPS / AVL location",
+      "definition": "Geo-location reporting from subscriber units.",
+      "stack_class": "INFRA",
+      "domain": "DATA",
+      "mission_tags": [
+        "locate",
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.DATA.MDT_DATA",
+      "alias": "LMR.DATA.MDT_DATA",
+      "name": "Mobile data terminal data",
+      "definition": "MDT/host data communications over LMR data services.",
+      "stack_class": "INFRA",
+      "domain": "DATA",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.DATA.HOST_DATA_IF",
+      "alias": "LMR.DATA.HOST_DATA_IF",
+      "name": "Fixed host data interface",
+      "definition": "Fixed host data interface (Ed/A-class) as applicable.",
+      "stack_class": "INFRA",
+      "domain": "DATA",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.DATA.DATA_SPEED_MIN",
+      "alias": "LMR.DATA.DATA_SPEED_MIN",
+      "name": "Minimum data throughput",
+      "definition": "Meet minimum data speed requirements where specified.",
+      "stack_class": "INFRA",
+      "domain": "DATA",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.DATA.OTAP",
+      "alias": "LMR.DATA.OTAP",
+      "name": "Over-the-air programming",
+      "definition": "Remote programming/configuration of subscriber units.",
+      "stack_class": "INFRA",
+      "domain": "DATA",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.DATA.LOCATION_ON_PTT",
+      "alias": "LMR.DATA.LOCATION_ON_PTT",
+      "name": "Location with PTT",
+      "definition": "Location update correlated with PTT/voice activity.",
+      "stack_class": "INFRA",
+      "domain": "DATA",
+      "mission_tags": [
+        "locate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.DATA.DATA_ROAMING",
+      "alias": "LMR.DATA.DATA_ROAMING",
+      "name": "Data roaming tracking",
+      "definition": "Track units for data/OTAR resource management across sites.",
+      "stack_class": "INFRA",
+      "domain": "DATA",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.DATA.PACKET_DATA",
+      "alias": "LMR.DATA.PACKET_DATA",
+      "name": "Packet data service",
+      "definition": "IP/packet data service on the radio system where offered.",
+      "stack_class": "INFRA",
+      "domain": "DATA",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SEC.AES256",
+      "alias": "LMR.SEC.AES256",
+      "name": "AES-256 voice encryption",
+      "definition": "AES-256 end-to-end voice encryption for talkgroups/units.",
+      "stack_class": "INFRA",
+      "domain": "SEC",
+      "mission_tags": [
+        "respond",
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SEC.MULTI_KEY",
+      "alias": "LMR.SEC.MULTI_KEY",
+      "name": "Multi-key encryption",
+      "definition": "Store and select multiple encryption keys in SU/infrastructure.",
+      "stack_class": "INFRA",
+      "domain": "SEC",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SEC.OTAR",
+      "alias": "LMR.SEC.OTAR",
+      "name": "Over-the-air rekeying",
+      "definition": "OTAR key management to fielded subscriber units.",
+      "stack_class": "INFRA",
+      "domain": "SEC",
+      "mission_tags": [
+        "respond",
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SEC.KMF",
+      "alias": "LMR.SEC.KMF",
+      "name": "Key management facility",
+      "definition": "KMF/KNL infrastructure for key lifecycle.",
+      "stack_class": "INFRA",
+      "domain": "SEC",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SEC.KVL",
+      "alias": "LMR.SEC.KVL",
+      "name": "Key fill device / KVL",
+      "definition": "Key fill device interface for manual/local keyload.",
+      "stack_class": "INFRA",
+      "domain": "SEC",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SEC.FIPS",
+      "alias": "LMR.SEC.FIPS",
+      "name": "FIPS cryptographic modules",
+      "definition": "FIPS-validated crypto modules where required.",
+      "stack_class": "INFRA",
+      "domain": "SEC",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SEC.CONTROL_CH_ENC",
+      "alias": "LMR.SEC.CONTROL_CH_ENC",
+      "name": "Control channel encryption",
+      "definition": "Encrypted control channel / link protection as offered.",
+      "stack_class": "INFRA",
+      "domain": "SEC",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SEC.DES_LEGACY",
+      "alias": "LMR.SEC.DES_LEGACY",
+      "name": "Legacy DES support",
+      "definition": "DES or Encryption Lite only if explicitly required for migration.",
+      "stack_class": "INFRA",
+      "domain": "SEC",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SEC.END_TO_END_CONSOLE",
+      "alias": "LMR.SEC.END_TO_END_CONSOLE",
+      "name": "Console end-to-end encrypt",
+      "definition": "Encrypted path including consoles and logging recorders.",
+      "stack_class": "INFRA",
+      "domain": "SEC",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SEC.AUTH_SU",
+      "alias": "LMR.SEC.AUTH_SU",
+      "name": "Subscriber authentication",
+      "definition": "Authenticate SUs before granting system services.",
+      "stack_class": "INFRA",
+      "domain": "SEC",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SEC.SECURE_NMS",
+      "alias": "LMR.SEC.SECURE_NMS",
+      "name": "Secure NMS access",
+      "definition": "Authenticated/authorized access to network management.",
+      "stack_class": "INFRA",
+      "domain": "SEC",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SEC.KEY_COUNT",
+      "alias": "LMR.SEC.KEY_COUNT",
+      "name": "Large key capacity",
+      "definition": "SU key storage capacity meeting agency policy.",
+      "stack_class": "INFRA",
+      "domain": "SEC",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.IOP.ISSI",
+      "alias": "LMR.IOP.ISSI",
+      "name": "ISSI inter-RFSS interface",
+      "definition": "P25 Inter-RF Subsystem Interface for multi-system interconnect.",
+      "stack_class": "INFRA",
+      "domain": "IOP",
+      "mission_tags": [
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.IOP.CSSI",
+      "alias": "LMR.IOP.CSSI",
+      "name": "CSSI console subsystem interface",
+      "definition": "P25 Console Subsystem Interface.",
+      "stack_class": "INFRA",
+      "domain": "IOP",
+      "mission_tags": [
+        "dispatch",
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.IOP.CONVENTIONAL_GATEWAY",
+      "alias": "LMR.IOP.CONVENTIONAL_GATEWAY",
+      "name": "Conventional gateway",
+      "definition": "Interop with conventional systems via gateway/patch.",
+      "stack_class": "INFRA",
+      "domain": "IOP",
+      "mission_tags": [
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.IOP.MUTUAL_AID_PATCH",
+      "alias": "LMR.IOP.MUTUAL_AID_PATCH",
+      "name": "Mutual-aid console patch",
+      "definition": "Console-initiated patches across systems/talkgroups.",
+      "stack_class": "INFRA",
+      "domain": "IOP",
+      "mission_tags": [
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.IOP.AGENCY_ROAMING",
+      "alias": "LMR.IOP.AGENCY_ROAMING",
+      "name": "Inter-agency roaming",
+      "definition": "Roaming of authorized users across partner systems.",
+      "stack_class": "INFRA",
+      "domain": "IOP",
+      "mission_tags": [
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.IOP.FIXED_STATION_IF",
+      "alias": "LMR.IOP.FIXED_STATION_IF",
+      "name": "Fixed station interface",
+      "definition": "Standard fixed station interfaces as applicable.",
+      "stack_class": "INFRA",
+      "domain": "IOP",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.IOP.CAI_INTEROP",
+      "alias": "LMR.IOP.CAI_INTEROP",
+      "name": "CAI interoperability",
+      "definition": "Common Air Interface interoperability across compliant vendors.",
+      "stack_class": "INFRA",
+      "domain": "IOP",
+      "mission_tags": [
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.IOP.VHF_PAGING_IOP",
+      "alias": "LMR.IOP.VHF_PAGING_IOP",
+      "name": "VHF paging/interop channel",
+      "definition": "VHF analog interoperability and/or paging channel support.",
+      "stack_class": "INFRA",
+      "domain": "IOP",
+      "mission_tags": [
+        "inform",
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.IOP.CAD_INTERFACE",
+      "alias": "LMR.IOP.CAD_INTERFACE",
+      "name": "CAD interface touchpoint",
+      "definition": "Interface from radio/console subsystem to CAD (deep CAD is PLAT stub).",
+      "stack_class": "INFRA",
+      "domain": "IOP",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.IOP.LMR_MCX_IWF_TOUCH",
+      "alias": "LMR.IOP.LMR_MCX_IWF_TOUCH",
+      "name": "LMR\u2013MCX interworking touchpoint",
+      "definition": "Capability to interwork with MCX via IWF-class bridging (see XCUT stub).",
+      "stack_class": "INFRA",
+      "domain": "IOP",
+      "mission_tags": [
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.DISP.CONSOLE_POSITIONS",
+      "alias": "LMR.DISP.CONSOLE_POSITIONS",
+      "name": "Dispatch console positions",
+      "definition": "Operator positions for dispatch on the radio system.",
+      "stack_class": "INFRA",
+      "domain": "DISP",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.DISP.CONSOLE_PATCH",
+      "alias": "LMR.DISP.CONSOLE_PATCH",
+      "name": "Console patching",
+      "definition": "Patch talkgroups/channels from console.",
+      "stack_class": "INFRA",
+      "domain": "DISP",
+      "mission_tags": [
+        "dispatch",
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.DISP.INSTANT_RECALL",
+      "alias": "LMR.DISP.INSTANT_RECALL",
+      "name": "Instant recall recorder",
+      "definition": "Short-term instant recall of dispatch audio.",
+      "stack_class": "INFRA",
+      "domain": "DISP",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.DISP.LOGGING_RECORDER",
+      "alias": "LMR.DISP.LOGGING_RECORDER",
+      "name": "Logging recorder",
+      "definition": "Long-term logging of radio/console audio.",
+      "stack_class": "INFRA",
+      "domain": "DISP",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.DISP.END_TO_END_LOGGING",
+      "alias": "LMR.DISP.END_TO_END_LOGGING",
+      "name": "Encrypted logging path",
+      "definition": "Logging of encrypted calls per agency policy.",
+      "stack_class": "INFRA",
+      "domain": "DISP",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.DISP.CONSOLE_MULTI_SELECT",
+      "alias": "LMR.DISP.CONSOLE_MULTI_SELECT",
+      "name": "Multi-select / simo select",
+      "definition": "Monitor/select multiple talkgroups simultaneously.",
+      "stack_class": "INFRA",
+      "domain": "DISP",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.DISP.CONSOLE_EMERG_DISPLAY",
+      "alias": "LMR.DISP.CONSOLE_EMERG_DISPLAY",
+      "name": "Emergency display",
+      "definition": "Prominent emergency alarm/call display at console.",
+      "stack_class": "INFRA",
+      "domain": "DISP",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.DISP.CONSOLE_ALIAS",
+      "alias": "LMR.DISP.CONSOLE_ALIAS",
+      "name": "Unit alias display",
+      "definition": "Display unit aliases/IDs at console.",
+      "stack_class": "INFRA",
+      "domain": "DISP",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.DISP.MDC_OR_CAD_LINK",
+      "alias": "LMR.DISP.MDC_OR_CAD_LINK",
+      "name": "MDC/CAD screen pop",
+      "definition": "Screen pop or CAD notification on radio events.",
+      "stack_class": "INFRA",
+      "domain": "DISP",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.DISP.BACKUP_DISPATCH",
+      "alias": "LMR.DISP.BACKUP_DISPATCH",
+      "name": "Backup dispatch location",
+      "definition": "Capability to operate dispatch from alternate site.",
+      "stack_class": "INFRA",
+      "domain": "DISP",
+      "mission_tags": [
+        "dispatch",
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.DISP.CONSOLE_IP",
+      "alias": "LMR.DISP.CONSOLE_IP",
+      "name": "IP console architecture",
+      "definition": "IP-based console subsystem.",
+      "stack_class": "INFRA",
+      "domain": "DISP",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.DISP.SUPERVISOR_POSITION",
+      "alias": "LMR.DISP.SUPERVISOR_POSITION",
+      "name": "Supervisor console features",
+      "definition": "Supervisor monitoring and control features.",
+      "stack_class": "INFRA",
+      "domain": "DISP",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.DISP.TONE_SIGNALING",
+      "alias": "LMR.DISP.TONE_SIGNALING",
+      "name": "Tone signaling / alerts",
+      "definition": "Generate/receive tone sequences as required.",
+      "stack_class": "INFRA",
+      "domain": "DISP",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.DISP.RADIO_DISPATCH_WORKFLOW",
+      "alias": "LMR.DISP.RADIO_DISPATCH_WORKFLOW",
+      "name": "Radio-centric dispatch workflow",
+      "definition": "Workflow support for radio dispatch independent of full CAD.",
+      "stack_class": "INFRA",
+      "domain": "DISP",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.BH.MICROWAVE_BH",
+      "alias": "LMR.BH.MICROWAVE_BH",
+      "name": "Microwave backhaul",
+      "definition": "Microwave links between sites/dispatch.",
+      "stack_class": "INFRA",
+      "domain": "BH",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.BH.FIBER_BH",
+      "alias": "LMR.BH.FIBER_BH",
+      "name": "Fiber backhaul",
+      "definition": "Fiber connectivity for RF sites and cores.",
+      "stack_class": "INFRA",
+      "domain": "BH",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.BH.IP_TRANSPORT",
+      "alias": "LMR.BH.IP_TRANSPORT",
+      "name": "IP transport network",
+      "definition": "IP backhaul transporting P25 site/core traffic.",
+      "stack_class": "INFRA",
+      "domain": "BH",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.BH.PATH_DIVERSITY",
+      "alias": "LMR.BH.PATH_DIVERSITY",
+      "name": "Path diversity",
+      "definition": "Diverse routes to avoid single backhaul cut.",
+      "stack_class": "INFRA",
+      "domain": "BH",
+      "mission_tags": [
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.BH.RING_TOPOLOGY",
+      "alias": "LMR.BH.RING_TOPOLOGY",
+      "name": "Ring / protected topology",
+      "definition": "Protected ring or equivalent backhaul resilience.",
+      "stack_class": "INFRA",
+      "domain": "BH",
+      "mission_tags": [
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.BH.BH_CAPACITY",
+      "alias": "LMR.BH.BH_CAPACITY",
+      "name": "Backhaul capacity sizing",
+      "definition": "Bandwidth sized for voice, data, NMS, and growth.",
+      "stack_class": "INFRA",
+      "domain": "BH",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.BH.BH_NMS_INTEGRATION",
+      "alias": "LMR.BH.BH_NMS_INTEGRATION",
+      "name": "Backhaul in unified NMS",
+      "definition": "Backhaul alarms visible in system NMS.",
+      "stack_class": "INFRA",
+      "domain": "BH",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.BH.SITE_CONNECTIVITY_SLA",
+      "alias": "LMR.BH.SITE_CONNECTIVITY_SLA",
+      "name": "Site link availability",
+      "definition": "Meet stated site connectivity availability targets.",
+      "stack_class": "INFRA",
+      "domain": "BH",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.BH.LEASED_VS_OWNED",
+      "alias": "LMR.BH.LEASED_VS_OWNED",
+      "name": "Owned or leased transport",
+      "definition": "Support agency-owned or leased transport models.",
+      "stack_class": "INFRA",
+      "domain": "BH",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.BH.SYNC_DISTRIBUTION",
+      "alias": "LMR.BH.SYNC_DISTRIBUTION",
+      "name": "Timing distribution over BH",
+      "definition": "Distribute sync/timing as required for simulcast.",
+      "stack_class": "INFRA",
+      "domain": "BH",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.NMS.UNIFIED_NMS",
+      "alias": "LMR.NMS.UNIFIED_NMS",
+      "name": "Unified network management",
+      "definition": "Single NMS spanning radio, backhaul, and site alarms.",
+      "stack_class": "INFRA",
+      "domain": "NMS",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.NMS.REALTIME_MONITOR",
+      "alias": "LMR.NMS.REALTIME_MONITOR",
+      "name": "Real-time monitoring",
+      "definition": "Real-time status of sites, channels, and cores.",
+      "stack_class": "INFRA",
+      "domain": "NMS",
+      "mission_tags": [
+        "dispatch",
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.NMS.REMOTE_CONFIG",
+      "alias": "LMR.NMS.REMOTE_CONFIG",
+      "name": "Remote configuration",
+      "definition": "Remote configuration of network elements.",
+      "stack_class": "INFRA",
+      "domain": "NMS",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.NMS.SNMP_ALARMS",
+      "alias": "LMR.NMS.SNMP_ALARMS",
+      "name": "SNMP / alarm forwarding",
+      "definition": "Standard alarm interfaces to NOC tools.",
+      "stack_class": "INFRA",
+      "domain": "NMS",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.NMS.CONFIG_BACKUP",
+      "alias": "LMR.NMS.CONFIG_BACKUP",
+      "name": "Configuration backup",
+      "definition": "Automated backup of element configurations.",
+      "stack_class": "INFRA",
+      "domain": "NMS",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.NMS.AUDIT_LOGS",
+      "alias": "LMR.NMS.AUDIT_LOGS",
+      "name": "Management audit logs",
+      "definition": "Audit trail of administrative actions.",
+      "stack_class": "INFRA",
+      "domain": "NMS",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.NMS.PERFORMANCE_REPORTS",
+      "alias": "LMR.NMS.PERFORMANCE_REPORTS",
+      "name": "Performance reporting",
+      "definition": "Traffic/usage/performance reports.",
+      "stack_class": "INFRA",
+      "domain": "NMS",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.NMS.HIERARCHICAL_NMS",
+      "alias": "LMR.NMS.HIERARCHICAL_NMS",
+      "name": "Hierarchical NMS",
+      "definition": "Hierarchical managers rolling into enterprise view.",
+      "stack_class": "INFRA",
+      "domain": "NMS",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.NMS.USER_ADMIN",
+      "alias": "LMR.NMS.USER_ADMIN",
+      "name": "User & role administration",
+      "definition": "Role-based admin of system users/talkgroups.",
+      "stack_class": "INFRA",
+      "domain": "NMS",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.NMS.SOFTWARE_PATCHING",
+      "alias": "LMR.NMS.SOFTWARE_PATCHING",
+      "name": "OS/application patching",
+      "definition": "Vendor-supported patching of supplied servers/OS.",
+      "stack_class": "INFRA",
+      "domain": "NMS",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SUB.PORTABLE_GENERAL",
+      "alias": "LMR.SUB.PORTABLE_GENERAL",
+      "name": "Portable subscriber",
+      "definition": "Handheld portable radio meeting baseline P25 requirements.",
+      "stack_class": "INFRA",
+      "domain": "SUB",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SUB.MOBILE_GENERAL",
+      "alias": "LMR.SUB.MOBILE_GENERAL",
+      "name": "Mobile subscriber",
+      "definition": "Vehicle mobile radio meeting baseline requirements.",
+      "stack_class": "INFRA",
+      "domain": "SUB",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SUB.CONTROL_STATION",
+      "alias": "LMR.SUB.CONTROL_STATION",
+      "name": "Control station",
+      "definition": "Desktop/control station radio option.",
+      "stack_class": "INFRA",
+      "domain": "SUB",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SUB.TIER_LAW",
+      "alias": "LMR.SUB.TIER_LAW",
+      "name": "Law enforcement tier radio",
+      "definition": "Higher-tier portable/mobile for law enforcement feature set.",
+      "stack_class": "INFRA",
+      "domain": "SUB",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SUB.TIER_FIRE",
+      "alias": "LMR.SUB.TIER_FIRE",
+      "name": "Fire / XE tier radio",
+      "definition": "Firefighter ultra-rugged portable tier.",
+      "stack_class": "INFRA",
+      "domain": "SUB",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SUB.TIER_PUBLIC_SERVICE",
+      "alias": "LMR.SUB.TIER_PUBLIC_SERVICE",
+      "name": "Public service tier radio",
+      "definition": "Public works/service tier radio.",
+      "stack_class": "INFRA",
+      "domain": "SUB",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SUB.MULTIBAND_PORTABLE",
+      "alias": "LMR.SUB.MULTIBAND_PORTABLE",
+      "name": "Multiband portable",
+      "definition": "All-band or multi-band portable option.",
+      "stack_class": "INFRA",
+      "domain": "SUB",
+      "mission_tags": [
+        "respond",
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SUB.MULTIBAND_MOBILE",
+      "alias": "LMR.SUB.MULTIBAND_MOBILE",
+      "name": "Multiband mobile",
+      "definition": "All-band or multi-band mobile option.",
+      "stack_class": "INFRA",
+      "domain": "SUB",
+      "mission_tags": [
+        "respond",
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SUB.ACCESSORIES",
+      "alias": "LMR.SUB.ACCESSORIES",
+      "name": "Audio accessories",
+      "definition": "Speaker mics, headsets, remote speaker options.",
+      "stack_class": "INFRA",
+      "domain": "SUB",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SUB.VEHICLE_INSTALL",
+      "alias": "LMR.SUB.VEHICLE_INSTALL",
+      "name": "Vehicle installation kit",
+      "definition": "Mounts, cabling, antennas for mobiles.",
+      "stack_class": "INFRA",
+      "domain": "SUB",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SUB.BATTERY_OPTIONS",
+      "alias": "LMR.SUB.BATTERY_OPTIONS",
+      "name": "Battery options",
+      "definition": "Duty-cycle appropriate battery options.",
+      "stack_class": "INFRA",
+      "domain": "SUB",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SUB.PROGRAMMING_TEMPLATES",
+      "alias": "LMR.SUB.PROGRAMMING_TEMPLATES",
+      "name": "Programming templates",
+      "definition": "Agency programming templates and codeplugs.",
+      "stack_class": "INFRA",
+      "domain": "SUB",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SUB.FLEET_MIX",
+      "alias": "LMR.SUB.FLEET_MIX",
+      "name": "Mixed fleet tiers",
+      "definition": "Support concurrent tiers in one fleet.",
+      "stack_class": "INFRA",
+      "domain": "SUB",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SUB.WIFI_SU",
+      "alias": "LMR.SUB.WIFI_SU",
+      "name": "Wi-Fi capable subscriber",
+      "definition": "SU Wi-Fi for OTAP/data where offered.",
+      "stack_class": "INFRA",
+      "domain": "SUB",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SUB.BT_SU",
+      "alias": "LMR.SUB.BT_SU",
+      "name": "Bluetooth accessories",
+      "definition": "Bluetooth audio accessory support.",
+      "stack_class": "INFRA",
+      "domain": "SUB",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.SUB.SENSOR_PORTS",
+      "alias": "LMR.SUB.SENSOR_PORTS",
+      "name": "External sensor/data ports",
+      "definition": "Interfaces for peripherals as specified.",
+      "stack_class": "INFRA",
+      "domain": "SUB",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.RUG.MILSTD_810",
+      "alias": "LMR.RUG.MILSTD_810",
+      "name": "MIL-STD-810 ruggedization",
+      "definition": "Meet stated MIL-STD-810 methods (shock, vibe, rain, etc.).",
+      "stack_class": "INFRA",
+      "domain": "RUG",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.RUG.IP_RATING",
+      "alias": "LMR.RUG.IP_RATING",
+      "name": "IP dust/water rating",
+      "definition": "Meet stated IP rating for portables.",
+      "stack_class": "INFRA",
+      "domain": "RUG",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.RUG.XE_FIREFIGHTER",
+      "alias": "LMR.RUG.XE_FIREFIGHTER",
+      "name": "Firefighter ultra-rugged",
+      "definition": "XE/ultra-rugged firefighter form factor and glove UI.",
+      "stack_class": "INFRA",
+      "domain": "RUG",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.RUG.LOUD_AUDIO",
+      "alias": "LMR.RUG.LOUD_AUDIO",
+      "name": "High-power / loud audio",
+      "definition": "High audio output for noisy environments.",
+      "stack_class": "INFRA",
+      "domain": "RUG",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.RUG.GLOVE_UI",
+      "alias": "LMR.RUG.GLOVE_UI",
+      "name": "Glove-friendly UI",
+      "definition": "Controls operable with gloved hands.",
+      "stack_class": "INFRA",
+      "domain": "RUG",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.RUG.DISPLAY_NIGHT",
+      "alias": "LMR.RUG.DISPLAY_NIGHT",
+      "name": "Day/night display",
+      "definition": "Readable display in bright/low light.",
+      "stack_class": "INFRA",
+      "domain": "RUG",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.RUG.TOP_DISPLAY",
+      "alias": "LMR.RUG.TOP_DISPLAY",
+      "name": "Top/secondary display",
+      "definition": "Secondary display for channel/status.",
+      "stack_class": "INFRA",
+      "domain": "RUG",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.RUG.EMERG_BUTTON",
+      "alias": "LMR.RUG.EMERG_BUTTON",
+      "name": "Dedicated emergency control",
+      "definition": "Dedicated emergency button meeting ergonomic reqs.",
+      "stack_class": "INFRA",
+      "domain": "RUG",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.RUG.TEMP_RANGE",
+      "alias": "LMR.RUG.TEMP_RANGE",
+      "name": "Operating temperature range",
+      "definition": "Meet environmental temperature specifications.",
+      "stack_class": "INFRA",
+      "domain": "RUG",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.RUG.HAZLOC",
+      "alias": "LMR.RUG.HAZLOC",
+      "name": "Hazardous location rating",
+      "definition": "Intrinsically safe / hazloc options where required.",
+      "stack_class": "INFRA",
+      "domain": "RUG",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.BB.LTE_PTT_BRIDGE",
+      "alias": "LMR.BB.LTE_PTT_BRIDGE",
+      "name": "LMR\u2013LTE PTT bridge",
+      "definition": "Broadband PTT bridging to LMR talkgroups (SmartConnect-class).",
+      "stack_class": "INFRA",
+      "domain": "BB",
+      "mission_tags": [
+        "respond",
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.BB.FIRSTNET_READY",
+      "alias": "LMR.BB.FIRSTNET_READY",
+      "name": "FirstNet / public safety LTE ready",
+      "definition": "Operate with public-safety LTE services where offered.",
+      "stack_class": "INFRA",
+      "domain": "BB",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.BB.WIFI_CONNECTIVITY",
+      "alias": "LMR.BB.WIFI_CONNECTIVITY",
+      "name": "Wi-Fi connectivity on SU",
+      "definition": "SU connects to Wi-Fi for apps/OTAP.",
+      "stack_class": "INFRA",
+      "domain": "BB",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.BB.MODEM_TETHER",
+      "alias": "LMR.BB.MODEM_TETHER",
+      "name": "Data modem tethering",
+      "definition": "Tether to approved routers/modems for data.",
+      "stack_class": "INFRA",
+      "domain": "BB",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.BB.SMART_LOCATE",
+      "alias": "LMR.BB.SMART_LOCATE",
+      "name": "Broadband-enhanced location",
+      "definition": "Enhanced location via broadband path when available.",
+      "stack_class": "INFRA",
+      "domain": "BB",
+      "mission_tags": [
+        "locate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.BB.SMART_PROGRAMMING",
+      "alias": "LMR.BB.SMART_PROGRAMMING",
+      "name": "Broadband OTAP/programming",
+      "definition": "Programming via broadband path.",
+      "stack_class": "INFRA",
+      "domain": "BB",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.BB.CONVERGED_DEVICE",
+      "alias": "LMR.BB.CONVERGED_DEVICE",
+      "name": "Converged LMR+broadband device",
+      "definition": "Single device hosting LMR and broadband applications.",
+      "stack_class": "INFRA",
+      "domain": "BB",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.BB.PTT_APP_INTEROP",
+      "alias": "LMR.BB.PTT_APP_INTEROP",
+      "name": "Broadband PTT app interop",
+      "definition": "Interop with approved broadband PTT clients.",
+      "stack_class": "INFRA",
+      "domain": "BB",
+      "mission_tags": [
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.LIFE.TURNKEY_IMPL",
+      "alias": "LMR.LIFE.TURNKEY_IMPL",
+      "name": "Turnkey implementation",
+      "definition": "Design, furnish, install, test, and commission as turnkey.",
+      "stack_class": "INFRA",
+      "domain": "LIFE",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.LIFE.CUTOVER_PLAN",
+      "alias": "LMR.LIFE.CUTOVER_PLAN",
+      "name": "Cutover / migration plan",
+      "definition": "Phased cutover preserving operations on legacy systems.",
+      "stack_class": "INFRA",
+      "domain": "LIFE",
+      "mission_tags": [
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.LIFE.ACCEPTANCE_TEST",
+      "alias": "LMR.LIFE.ACCEPTANCE_TEST",
+      "name": "Acceptance testing",
+      "definition": "Formal ATP with agency sign-off.",
+      "stack_class": "INFRA",
+      "domain": "LIFE",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.LIFE.TRAINING",
+      "alias": "LMR.LIFE.TRAINING",
+      "name": "User & tech training",
+      "definition": "Training for end users, dispatchers, and technicians.",
+      "stack_class": "INFRA",
+      "domain": "LIFE",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.LIFE.WARRANTY",
+      "alias": "LMR.LIFE.WARRANTY",
+      "name": "Warranty terms",
+      "definition": "Meet stated warranty duration and scope.",
+      "stack_class": "INFRA",
+      "domain": "LIFE",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.LIFE.SPARES",
+      "alias": "LMR.LIFE.SPARES",
+      "name": "Spare parts kit",
+      "definition": "Recommended spares provisioning.",
+      "stack_class": "INFRA",
+      "domain": "LIFE",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.LIFE.MAINT_SLA",
+      "alias": "LMR.LIFE.MAINT_SLA",
+      "name": "Maintenance SLA",
+      "definition": "Ongoing maintenance service levels.",
+      "stack_class": "INFRA",
+      "domain": "LIFE",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.LIFE.DOCUMENTATION",
+      "alias": "LMR.LIFE.DOCUMENTATION",
+      "name": "As-built documentation",
+      "definition": "As-built drawings, configs, and manuals.",
+      "stack_class": "INFRA",
+      "domain": "LIFE",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.LIFE.PROJECT_MGMT",
+      "alias": "LMR.LIFE.PROJECT_MGMT",
+      "name": "Project management",
+      "definition": "Dedicated PM and schedule reporting.",
+      "stack_class": "INFRA",
+      "domain": "LIFE",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.LIFE.FCC_LICENSING_SUPPORT",
+      "alias": "LMR.LIFE.FCC_LICENSING_SUPPORT",
+      "name": "Licensing support",
+      "definition": "Support for frequency coordination/licensing tasks.",
+      "stack_class": "INFRA",
+      "domain": "LIFE",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.LIFE.COVERAGE_REMEDIATION",
+      "alias": "LMR.LIFE.COVERAGE_REMEDIATION",
+      "name": "Coverage remediation",
+      "definition": "Remediate coverage shortfalls at no added cost if guaranteed.",
+      "stack_class": "INFRA",
+      "domain": "LIFE",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.LIFE.LIFECYCLE_OBSOLESCENCE",
+      "alias": "LMR.LIFE.LIFECYCLE_OBSOLESCENCE",
+      "name": "Obsolescence / roadmap notice",
+      "definition": "Vendor notice of product obsolescence and migration path.",
+      "stack_class": "INFRA",
+      "domain": "LIFE",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "LMR",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.CALL_HANDLING",
+      "alias": null,
+      "name": "NG911 call handling",
+      "definition": "Receive and process emergency calls in NG911/i3 environment.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take"
+      ],
+      "status": "stub",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.EIDO_EXCHANGE",
+      "alias": null,
+      "name": "EIDO incident exchange",
+      "definition": "Exchange Emergency Incident Data Objects with authorized FEs.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take",
+        "dispatch",
+        "coordinate"
+      ],
+      "status": "stub",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.TEXT_TO_911",
+      "alias": null,
+      "name": "Text-to-911",
+      "definition": "Support SMS/text emergency contacts where deployed.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take"
+      ],
+      "status": "stub",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.MULTIMEDIA",
+      "alias": null,
+      "name": "Multimedia to PSAP",
+      "definition": "Accept multimedia (e.g. images/video) per NG911 capabilities.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take"
+      ],
+      "status": "stub",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.ALI_AML",
+      "alias": null,
+      "name": "Location for callers",
+      "definition": "Acquire caller location (ALI/AML/civic/geodetic).",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "locate",
+        "call_take"
+      ],
+      "status": "stub",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.INCIDENT_CREATE",
+      "alias": null,
+      "name": "CAD incident creation",
+      "definition": "Create and update incidents in Computer-Aided Dispatch.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "stub",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.UNIT_STATUS",
+      "alias": null,
+      "name": "CAD unit status",
+      "definition": "Track unit status and assignments in CAD.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch",
+        "respond"
+      ],
+      "status": "stub",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.RECOMMENDATION",
+      "alias": null,
+      "name": "CAD unit recommendation",
+      "definition": "Recommend units based on location/type/priority.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "stub",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.CAD_TO_CAD",
+      "alias": null,
+      "name": "CAD-to-CAD exchange",
+      "definition": "Exchange incident/unit data with partner CAD systems.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "coordinate"
+      ],
+      "status": "stub",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.AVL_DISPLAY",
+      "alias": null,
+      "name": "CAD AVL map display",
+      "definition": "Display unit AVL on CAD maps.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "locate",
+        "dispatch"
+      ],
+      "status": "stub",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.RMS.INCIDENT_REPORT",
+      "alias": null,
+      "name": "RMS incident reporting",
+      "definition": "Records management for incident reports and evidence metadata.",
+      "stack_class": "PLAT",
+      "domain": "RMS",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "stub",
+      "vertical": "RMS",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.GIS.COMMON_MAP",
+      "alias": null,
+      "name": "Common operational map",
+      "definition": "Shared GIS/map layers for dispatch and field.",
+      "stack_class": "PLAT",
+      "domain": "GIS",
+      "mission_tags": [
+        "locate",
+        "coordinate"
+      ],
+      "status": "stub",
+      "vertical": "GIS",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.VMS.VIDEO_MANAGEMENT",
+      "alias": null,
+      "name": "Video management system",
+      "definition": "Manage and retrieve agency video streams/recordings.",
+      "stack_class": "PLAT",
+      "domain": "VMS",
+      "mission_tags": [
+        "detect",
+        "coordinate"
+      ],
+      "status": "stub",
+      "vertical": "VIDEO",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.APP.FIELD.MOBILE_CAD",
+      "alias": null,
+      "name": "Field mobile CAD client",
+      "definition": "Mobile application for field CAD workflow.",
+      "stack_class": "APP",
+      "domain": "FIELD",
+      "mission_tags": [
+        "respond",
+        "dispatch"
+      ],
+      "status": "stub",
+      "vertical": "FIELD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.APP.FIELD.MDT",
+      "alias": null,
+      "name": "Mobile data terminal app",
+      "definition": "In-vehicle MDT application suite.",
+      "stack_class": "APP",
+      "domain": "FIELD",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "stub",
+      "vertical": "FIELD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.APP.ALERT.MASS_NOTIFY",
+      "alias": null,
+      "name": "Mass notification",
+      "definition": "Outbound public/employee mass notification.",
+      "stack_class": "APP",
+      "domain": "ALERT",
+      "mission_tags": [
+        "inform"
+      ],
+      "status": "stub",
+      "vertical": "ALERT",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.APP.ALERT.IPAWS",
+      "alias": null,
+      "name": "IPAWS alerting",
+      "definition": "Originate/relay IPAWS/CAP alerts.",
+      "stack_class": "APP",
+      "domain": "ALERT",
+      "mission_tags": [
+        "inform"
+      ],
+      "status": "stub",
+      "vertical": "ALERT",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.APP.EOC.SIT_AWARENESS",
+      "alias": null,
+      "name": "EOC situational awareness",
+      "definition": "EOC common operating picture / sitrep tools.",
+      "stack_class": "APP",
+      "domain": "EOC",
+      "mission_tags": [
+        "coordinate"
+      ],
+      "status": "stub",
+      "vertical": "EOC",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.SENS.VIDEO.FIXED_CCTV",
+      "alias": null,
+      "name": "Fixed CCTV camera",
+      "definition": "Fixed camera sensor contributing video observations.",
+      "stack_class": "SENS",
+      "domain": "VIDEO",
+      "mission_tags": [
+        "detect"
+      ],
+      "status": "stub",
+      "vertical": "VIDEO",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.SENS.VIDEO.LIVE_SHARE",
+      "alias": null,
+      "name": "Live video share to ops",
+      "definition": "Share live video into CAD/EOC/console workflows.",
+      "stack_class": "SENS",
+      "domain": "VIDEO",
+      "mission_tags": [
+        "coordinate",
+        "detect"
+      ],
+      "status": "stub",
+      "vertical": "VIDEO",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.SENS.VIDEO.BODYWORN",
+      "alias": null,
+      "name": "Body-worn camera",
+      "definition": "Body-worn camera capture and evidence workflow.",
+      "stack_class": "SENS",
+      "domain": "VIDEO",
+      "mission_tags": [
+        "respond",
+        "after_action"
+      ],
+      "status": "stub",
+      "vertical": "VIDEO",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.SENS.UAS.DISPATCHABLE_AIRCRAFT",
+      "alias": null,
+      "name": "Dispatchable UAS/drone",
+      "definition": "Drone as a dispatchable aerial sensor/unit.",
+      "stack_class": "SENS",
+      "domain": "UAS",
+      "mission_tags": [
+        "detect",
+        "respond"
+      ],
+      "status": "stub",
+      "vertical": "UAS",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.SENS.IOT.GUNSHOT",
+      "alias": null,
+      "name": "Gunshot detection",
+      "definition": "Acoustic gunshot detection feeding incidents.",
+      "stack_class": "SENS",
+      "domain": "IOT",
+      "mission_tags": [
+        "detect"
+      ],
+      "status": "stub",
+      "vertical": "IOT",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.SENS.IOT.ALPR",
+      "alias": null,
+      "name": "Automated license plate reader",
+      "definition": "ALPR reads as observations linked to incidents.",
+      "stack_class": "SENS",
+      "domain": "IOT",
+      "mission_tags": [
+        "detect",
+        "locate"
+      ],
+      "status": "stub",
+      "vertical": "IOT",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.SENS.IOT.ENVIRONMENTAL",
+      "alias": null,
+      "name": "Environmental smart-city sensor",
+      "definition": "Environmental/IoT sensors enriching situational awareness.",
+      "stack_class": "SENS",
+      "domain": "IOT",
+      "mission_tags": [
+        "detect"
+      ],
+      "status": "stub",
+      "vertical": "IOT",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.MCX.MCPTT",
+      "alias": null,
+      "name": "MCPTT group voice",
+      "definition": "3GPP Mission-Critical Push-to-Talk group voice.",
+      "stack_class": "INFRA",
+      "domain": "MCX",
+      "mission_tags": [
+        "respond",
+        "coordinate"
+      ],
+      "status": "stub",
+      "vertical": "MCX",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.MCX.MCVIDEO",
+      "alias": null,
+      "name": "MCVideo",
+      "definition": "3GPP Mission-Critical Video service.",
+      "stack_class": "INFRA",
+      "domain": "MCX",
+      "mission_tags": [
+        "respond",
+        "coordinate"
+      ],
+      "status": "stub",
+      "vertical": "MCX",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.MCX.MCDATA",
+      "alias": null,
+      "name": "MCData",
+      "definition": "3GPP Mission-Critical Data service.",
+      "stack_class": "INFRA",
+      "domain": "MCX",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "stub",
+      "vertical": "MCX",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.MCX.MCPTT_EMERG",
+      "alias": null,
+      "name": "MCPTT emergency calling",
+      "definition": "MCX emergency calling / priority preemption behaviors.",
+      "stack_class": "INFRA",
+      "domain": "MCX",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "stub",
+      "vertical": "MCX",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.XCUT.IOP.LMR_MCX_IWF",
+      "alias": null,
+      "name": "LMR\u2013MCX Interworking Function",
+      "definition": "Interworking function bridging LMR and MCX domains.",
+      "stack_class": "XCUT",
+      "domain": "IOP",
+      "mission_tags": [
+        "coordinate"
+      ],
+      "status": "stub",
+      "vertical": "IOP",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.XCUT.SEC.ENTERPRISE_IAM",
+      "alias": null,
+      "name": "Enterprise identity for PS apps",
+      "definition": "SSO/IAM across CAD/mobile/command applications.",
+      "stack_class": "XCUT",
+      "domain": "SEC",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "stub",
+      "vertical": "SEC",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.XCUT.LOC.INDOOR_LOCATION",
+      "alias": null,
+      "name": "Indoor location services",
+      "definition": "Indoor caller/unit location beyond outdoor GNSS.",
+      "stack_class": "XCUT",
+      "domain": "LOC",
+      "mission_tags": [
+        "locate"
+      ],
+      "status": "stub",
+      "vertical": "LOC",
+      "p25_ref": null
+    }
+  ]
+}

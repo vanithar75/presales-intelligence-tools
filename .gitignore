@@ -1,0 +1,11 @@
+node_modules/
+.env
+.venv/
+__pycache__/
+*.pyc
+data/rfp/*.pdf
+!.gitkeep
+.DS_Store
+dist/
+.next/
+*.log
