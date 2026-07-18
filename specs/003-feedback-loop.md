@@ -1,6 +1,6 @@
 # 003 — Feedback loop
 
-**Status:** Planned  
+**Status:** Done  
 **SPEC refs:** FR-3  
 **Owner:** engineering  
 
@@ -32,11 +32,11 @@ Sprint 4 appends analyst feedback to `ontology/l2_feedback.jsonl` only. Phase 2 
 
 ## Acceptance tests
 
-- [ ] POST `/api/feedback/synonym` with `accept` writes JSONL **and** review queue entry
-- [ ] Publish CLI increases `l2_synonyms.json` synonym count when given a novel phrase
-- [ ] Re-running publish on same phrase does not duplicate
-- [ ] `validate_l2.py` OK after publish
-- [ ] Reject path does not appear in published L2
+- [x] POST `/api/feedback/synonym` with `accept` writes JSONL **and** review queue entry
+- [x] Publish CLI increases `l2_synonyms.json` synonym count when given a novel phrase
+- [x] Re-running publish on same phrase does not duplicate
+- [x] `validate_l2.py` OK after publish
+- [x] Reject path does not appear in published L2
 
 ## Implementation notes (files)
 
@@ -45,7 +45,8 @@ Sprint 4 appends analyst feedback to `ontology/l2_feedback.jsonl` only. Phase 2 
 - [ontology/l2_synonyms.json](../ontology/l2_synonyms.json)
 - New: `ontology/l2_review_queue.json`, `ingest/publish_l2_feedback.py`
 - Ensure `l2_feedback.jsonl` remains gitignored; consider committing empty `l2_review_queue.json` skeleton `{ "items": [] }`
+- Write-up: [docs/sprint-p2-003-done.md](../docs/sprint-p2-003-done.md)
 
 ## Status
 
-Planned — not started.
+Done — 2026-07-12. L2 synonyms **493** after first feedback publish.

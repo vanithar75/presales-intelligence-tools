@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "sprint": "S3",
+  "sprint": "P5-032",
   "vendor_id": "MSI",
   "counts": {
-    "mappings": 123,
-    "capabilities_mapped": 116,
+    "mappings": 209,
+    "capabilities_mapped": 166,
     "products_used": 19,
     "missing_aliases": []
   },
@@ -1113,6 +1113,780 @@
       "capability_alias": "LMR.RF.BAND_VHF",
       "support_level": "native",
       "notes": "",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.INCIDENT_CREATE",
+      "capability_alias": "CAD.INCIDENT_CREATE",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (enrichment)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.UNIT_STATUS",
+      "capability_alias": "CAD.UNIT_STATUS",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (enrichment)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.RECOMMENDATION",
+      "capability_alias": "CAD.RECOMMENDATION",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (enrichment)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.CAD_TO_CAD",
+      "capability_alias": "CAD.CAD_TO_CAD",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (enrichment)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.AVL_DISPLAY",
+      "capability_alias": "CAD.AVL_DISPLAY",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (enrichment)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.APP.FIELD.MOBILE_CAD",
+      "capability_alias": "CAD.MOBILE_CLIENT",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (enrichment)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.CALL_TYPE",
+      "capability_alias": "CAD.CALL_TYPE",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (enrichment)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.PRIORITY_SOP",
+      "capability_alias": "CAD.PRIORITY_SOP",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (enrichment)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.CALL_STACK",
+      "capability_alias": "CAD.CALL_STACK",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (enrichment)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.MULTI_AGENCY",
+      "capability_alias": "CAD.MULTI_AGENCY",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (enrichment)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.COMMAND_VIEW",
+      "capability_alias": "CAD.COMMAND_VIEW",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (enrichment)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.RADIO_INTEGRATION",
+      "capability_alias": "CAD.RADIO_INTEGRATION",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (enrichment)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.FIRE_RUN_CARD",
+      "capability_alias": "CAD.FIRE_RUN_CARD",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (enrichment)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.EMS_PROTOCOL",
+      "capability_alias": "CAD.EMS_PROTOCOL",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (enrichment)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.FAILOVER_DR",
+      "capability_alias": "CAD.FAILOVER_DR",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (enrichment)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.ALARM_INTERFACE",
+      "capability_alias": "CAD.ALARM_INTERFACE",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (enrichment)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.UNIT_CHAT",
+      "capability_alias": "CAD.UNIT_CHAT",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (enrichment)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.STATUS_MONITOR",
+      "capability_alias": "CAD.STATUS_MONITOR",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (enrichment)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.MAP_LAYERS",
+      "capability_alias": "CAD.MAP_LAYERS",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (enrichment)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.DUPLICATE_CHECK",
+      "capability_alias": "CAD.DUPLICATE_CHECK",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (enrichment)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.CALL_HANDLING",
+      "capability_alias": "NG911.CALL_HANDLING",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.TEXT_TO_911",
+      "capability_alias": "NG911.TEXT_TO_911",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.MULTIMEDIA",
+      "capability_alias": "NG911.MULTIMEDIA",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.ALI_AML",
+      "capability_alias": "NG911.ALI_AML",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.ESRP_ROUTING",
+      "capability_alias": "NG911.ESRP_ROUTING",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.ECRF_LVF",
+      "capability_alias": "NG911.ECRF_LVF",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.EIDO_EXCHANGE",
+      "capability_alias": "NG911.EIDO_EXCHANGE",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.QUEUE_ACD",
+      "capability_alias": "NG911.QUEUE_ACD",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.CALL_RECORDING",
+      "capability_alias": "NG911.CALL_RECORDING",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.PSAP_FAILOVER",
+      "capability_alias": "NG911.PSAP_FAILOVER",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.WIRELESS_PHASE2",
+      "capability_alias": "NG911.WIRELESS_PHASE2",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.ADDITIONAL_DATA",
+      "capability_alias": "NG911.ADDITIONAL_DATA",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.TTY_RTT",
+      "capability_alias": "NG911.TTY_RTT",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.TRANSFER_CONF",
+      "capability_alias": "NG911.TRANSFER_CONF",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.CAD_HANDOFF",
+      "capability_alias": "NG911.CAD_HANDOFF",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.SENS.VIDEO.FIXED_CCTV",
+      "capability_alias": "VIDEO.FIXED_CCTV",
+      "support_level": "native",
+      "notes": "CommandCentral / Aware-class sensor & video integration (Phase 5 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.SENS.VIDEO.LIVE_SHARE",
+      "capability_alias": "VIDEO.LIVE_SHARE",
+      "support_level": "native",
+      "notes": "CommandCentral / Aware-class sensor & video integration (Phase 5 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.SENS.VIDEO.BODYWORN",
+      "capability_alias": "VIDEO.BODYWORN",
+      "support_level": "native",
+      "notes": "CommandCentral / Aware-class sensor & video integration (Phase 5 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.VMS.VIDEO_MANAGEMENT",
+      "capability_alias": "VIDEO.VMS",
+      "support_level": "native",
+      "notes": "CommandCentral / Aware-class sensor & video integration (Phase 5 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.SENS.VIDEO.VMS_SEARCH",
+      "capability_alias": "VIDEO.VMS_SEARCH",
+      "support_level": "native",
+      "notes": "CommandCentral / Aware-class sensor & video integration (Phase 5 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.SENS.VIDEO.PSAP_LIVESTREAM",
+      "capability_alias": "VIDEO.PSAP_LIVESTREAM",
+      "support_level": "native",
+      "notes": "CommandCentral / Aware-class sensor & video integration (Phase 5 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.SENS.VIDEO.BODYWORN_EVIDENCE",
+      "capability_alias": "VIDEO.BODYWORN_EVIDENCE",
+      "support_level": "native",
+      "notes": "CommandCentral / Aware-class sensor & video integration (Phase 5 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.SENS.IOT.ALPR",
+      "capability_alias": "IOT.ALPR",
+      "support_level": "option",
+      "notes": "CommandCentral / Aware-class sensor & video integration (Phase 5 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.SENS.IOT.ALPR_HOTLIST",
+      "capability_alias": "IOT.ALPR_HOTLIST",
+      "support_level": "option",
+      "notes": "CommandCentral / Aware-class sensor & video integration (Phase 5 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.SENS.IOT.GUNSHOT",
+      "capability_alias": "IOT.GUNSHOT",
+      "support_level": "option",
+      "notes": "CommandCentral / Aware-class sensor & video integration (Phase 5 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.SENS.IOT.GUNSHOT_CAD",
+      "capability_alias": "IOT.GUNSHOT_CAD",
+      "support_level": "option",
+      "notes": "CommandCentral / Aware-class sensor & video integration (Phase 5 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.SENS.IOT.SENSOR_FUSION",
+      "capability_alias": "IOT.SENSOR_FUSION",
+      "support_level": "option",
+      "notes": "CommandCentral / Aware-class sensor & video integration (Phase 5 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.SENS.UAS.DISPATCHABLE_AIRCRAFT",
+      "capability_alias": "UAS.DISPATCHABLE_AIRCRAFT",
+      "support_level": "option",
+      "notes": "CommandCentral / Aware-class sensor & video integration (Phase 5 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.SENS.UAS.DRONE_DOWNLINK",
+      "capability_alias": "UAS.DRONE_DOWNLINK",
+      "support_level": "option",
+      "notes": "CommandCentral / Aware-class sensor & video integration (Phase 5 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.SENS.UAS.DRONE_GEO_FENCE",
+      "capability_alias": "UAS.DRONE_GEO_FENCE",
+      "support_level": "option",
+      "notes": "CommandCentral / Aware-class sensor & video integration (Phase 5 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.TOW_IMPOUND",
+      "capability_alias": "CAD.TOW_IMPOUND",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.TRAFFIC_STOP",
+      "capability_alias": "CAD.TRAFFIC_STOP",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.PURSUIT",
+      "capability_alias": "CAD.PURSUIT",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.EVIDENCE_NOTE",
+      "capability_alias": "CAD.EVIDENCE_NOTE",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.MEDIA_HOLD",
+      "capability_alias": "CAD.MEDIA_HOLD",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.TRAINING_MODE",
+      "capability_alias": "CAD.TRAINING_MODE",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.RBAC",
+      "capability_alias": "CAD.RBAC",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.CALLBACK_OT",
+      "capability_alias": "CAD.CALLBACK_OT",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.VEHICLE_ASSIGN",
+      "capability_alias": "CAD.VEHICLE_ASSIGN",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.CIT_FLAG",
+      "capability_alias": "CAD.CIT_FLAG",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.JUVENILE_FLAG",
+      "capability_alias": "CAD.JUVENILE_FLAG",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.GEO_FENCE_ALERT",
+      "capability_alias": "CAD.GEO_FENCE_ALERT",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.INCIDENT_CLONE",
+      "capability_alias": "CAD.INCIDENT_CLONE",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.SUPERVISOR_OVERRIDE",
+      "capability_alias": "CAD.SUPERVISOR_OVERRIDE",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.WEATHER_ROAD",
+      "capability_alias": "CAD.WEATHER_ROAD",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.SKILL_RECOMMEND",
+      "capability_alias": "CAD.SKILL_RECOMMEND",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.SCHEDULED_EVENT",
+      "capability_alias": "CAD.SCHEDULED_EVENT",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.QUARANTINE_HOLD",
+      "capability_alias": "CAD.QUARANTINE_HOLD",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.SHIFT_HANDOFF",
+      "capability_alias": "CAD.SHIFT_HANDOFF",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.PERSON_ALERT",
+      "capability_alias": "CAD.PERSON_ALERT",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.JAIL_COURT_IFACE",
+      "capability_alias": "CAD.JAIL_COURT_IFACE",
+      "support_level": "native",
+      "notes": "CommandCentral suite CAD module coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.LANGUAGE_INTERP",
+      "capability_alias": "NG911.LANGUAGE_INTERP",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.BCF_BORDER",
+      "capability_alias": "NG911.BCF_BORDER",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.I3_LOGGING",
+      "capability_alias": "NG911.I3_LOGGING",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.MISDIAL_FILTER",
+      "capability_alias": "NG911.MISDIAL_FILTER",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.MULTI_LINE",
+      "capability_alias": "NG911.MULTI_LINE",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.LOCATION_DISCREP",
+      "capability_alias": "NG911.LOCATION_DISCREP",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.SILENT_CALL_PROTO",
+      "capability_alias": "NG911.SILENT_CALL_PROTO",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.RTT_TRANSFER",
+      "capability_alias": "NG911.RTT_TRANSFER",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.MEDIA_RETENTION",
+      "capability_alias": "NG911.MEDIA_RETENTION",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.ESRP_CONGESTION",
+      "capability_alias": "NG911.ESRP_CONGESTION",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.LEGACY_SR_BRIDGE",
+      "capability_alias": "NG911.LEGACY_SR_BRIDGE",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.ORPHAN_CALL",
+      "capability_alias": "NG911.ORPHAN_CALL",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.POISON_TRANSFER",
+      "capability_alias": "NG911.POISON_TRANSFER",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.BCF_TLS_SRTP",
+      "capability_alias": "NG911.BCF_TLS_SRTP",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.ABANDONED_CB_POLICY",
+      "capability_alias": "NG911.ABANDONED_CB_POLICY",
+      "support_level": "native",
+      "notes": "CommandCentral NG911/PSAP call-handling coverage (Phase 6 Lite)",
       "source_url": "https://www.motorolasolutions.com",
       "status": "draft"
     }

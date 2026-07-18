@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "source": "Phase 6 Lite NG911 wave2 publish priority",
+  "description": "Remaining NG911 drafts + Phase 6 call-handling deepen batch.",
+  "aliases": [
+    "NG911.LANGUAGE_INTERP",
+    "NG911.BCF_BORDER",
+    "NG911.I3_LOGGING",
+    "NG911.MISDIAL_FILTER",
+    "NG911.MULTI_LINE",
+    "NG911.LOCATION_DISCREP",
+    "NG911.SILENT_CALL_PROTO",
+    "NG911.RTT_TRANSFER",
+    "NG911.MEDIA_RETENTION",
+    "NG911.ESRP_CONGESTION",
+    "NG911.LEGACY_SR_BRIDGE",
+    "NG911.ORPHAN_CALL",
+    "NG911.POISON_TRANSFER",
+    "NG911.BCF_TLS_SRTP",
+    "NG911.ABANDONED_CB_POLICY"
+  ]
+}

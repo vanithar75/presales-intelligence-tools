@@ -198,6 +198,30 @@ th { color: var(--muted); font-weight: 500; position: sticky; top: 0; background
 .feedback { display: grid; gap: 0.55rem; }
 .feedback .row { margin-top: 0.2rem; }
 
+.queue-section {
+  margin: 0 1.25rem 2rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.queue-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+.queue-status {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.queue-status.pending { color: var(--accent-ink); }
+.queue-status.published { color: var(--ok); }
+.queue-status.rejected { color: var(--muted); }
+
 h2 { margin: 0; font-family: var(--serif); font-size: 1.15rem; font-weight: 600; }
 
 footer {

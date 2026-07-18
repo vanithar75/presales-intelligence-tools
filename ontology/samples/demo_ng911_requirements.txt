@@ -1,0 +1,28 @@
+The PSAP shall receive and process emergency calls in an NG911/i3 environment.
+The system shall support Text-to-911 SMS emergency contacts.
+Multimedia images and video shall be accepted to the PSAP per NG911 capabilities.
+Caller location shall be acquired via ALI/AML civic and geodetic methods.
+Emergency calls shall be routed via ESRP according to location and policy.
+The solution shall query ECRF and validate location via LVF.
+Abandoned and silent 911 calls shall be detected and processed.
+TTY and real-time text (RTT) shall be supported for accessible emergency calling.
+Language interpretation shall be conferenced for non-English emergency callers.
+Emergency calls shall transfer and conference to secondary PSAPs.
+A 911 call queue / ACD shall distribute calls across call-takers.
+Emergency call recording with retention controls shall be provided.
+Wireless Phase II handset location shall be acquired for mobile 911 callers.
+Additional Data Repository (ADR) caller data shall display to call-takers.
+PSAP failover and overflow to alternate PSAPs shall be supported.
+EIDO incident data objects shall exchange with authorized functional elements.
+Automatic crash notification / telematics shall deliver into the PSAP.
+NG911 call data shall hand off into CAD for dispatch.
+Location discrepancies between reported, ALI/AML, and verified locations shall be resolved.
+Silent-call protocol shall apply staged verification for open-line 911 calls.
+RTT transfer shall move real-time text sessions between PSAPs without dropping media.
+NG911 multimedia retention policy shall retain image/video per legal hold.
+ESRP congestion shall trigger alternate routing and overflow policies.
+Legacy selective-router trunks shall bridge into the NG911 i3 call path.
+Orphaned or stranded emergency sessions shall be recovered after FE failure.
+Poison control specialty transfer shall retain caller location.
+BCF shall enforce TLS signaling and SRTP media security.
+Abandoned-call callback policy shall configure attempts, timers, and disposition.

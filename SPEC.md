@@ -1,9 +1,9 @@
 # PSERS Presales Intelligence — Product SPEC
 
-**Status:** Active (Phase 2)  
-**Version:** 0.2.0-spec  
-**Last updated:** 2026-07-12  
-**Authority:** This file is the source of truth for Phase-2 implementation. Feature slices live under [`specs/`](specs/).
+**Status:** Active (Phase 6 Lite complete — CAD + NG911 deepen shipped)  
+**Version:** 0.6.0-spec  
+**Last updated:** 2026-07-18  
+**Authority:** This file is the source of truth through Phase 6 Lite. Feature slices live under [`specs/`](specs/). Next expansion requires amending this SPEC.
 
 ---
 
@@ -31,18 +31,18 @@ Presales / bid analyst preparing responses for public-safety LMR (Land Mobile Ra
 
 ---
 
-## 2. As-built baseline (MVP freeze — S0–S4)
+## 2. As-built baseline (MVP freeze — S0–S4 + Phase 2)
 
-Do not re-litigate MVP scope. Agents must treat the following as current truth.
+Do not re-litigate MVP or Phase 2 scope. Agents must treat the following as current truth.
 
 | Layer | Current state | Location |
 |-------|---------------|----------|
-| L1 | 192 LMR `draft` + 32 stubs = 224 | [ontology/l1_capabilities.json](ontology/l1_capabilities.json) |
-| L2 | 492 synonyms + 42 holdout; `auto_accepted` | [ontology/l2_synonyms.json](ontology/l2_synonyms.json), [ontology/l2_synonyms_holdout.json](ontology/l2_synonyms_holdout.json) |
-| L3 | 20 MSI products, 123 mappings, 116 caps | [ontology/l3_msi_products.json](ontology/l3_msi_products.json), [ontology/l3_product_capabilities.json](ontology/l3_product_capabilities.json) |
+| L1 | **181** `published` + drafts + 13 stubs = 319 | [ontology/l1_capabilities.json](ontology/l1_capabilities.json) |
+| L2 | 493 synonyms + 42 holdout; includes `analyst_accepted` from feedback | [ontology/l2_synonyms.json](ontology/l2_synonyms.json), [ontology/l2_synonyms_holdout.json](ontology/l2_synonyms_holdout.json) |
+| L3 | 20 MSI products, 209 mappings, 202 caps | [ontology/l3_msi_products.json](ontology/l3_msi_products.json), [ontology/l3_product_capabilities.json](ontology/l3_product_capabilities.json) |
 | Match | Deterministic seeds + L2 overlap + name | [ingest/matcher.py](ingest/matcher.py) |
 | UI/API | FastAPI + static analyst UI | [app/match_api.py](app/match_api.py), [app/static/](app/static/) |
-| Schema | Postgres DDL present; unused at runtime | [sql/schema.sql](sql/schema.sql) |
+| Schema | Postgres DDL + optional import CLI; runtime still JSON | [sql/schema.sql](sql/schema.sql), [ingest/load_postgres.py](ingest/load_postgres.py) |
 | RFP corpus | 3 allowlisted PDFs (gitignored binaries) | [data/rfp/README.md](data/rfp/README.md) |
 
 ### MVP scope locks (still in force unless this SPEC is amended)
@@ -50,86 +50,147 @@ Do not re-litigate MVP scope. Agents must treat the following as current truth.
 - No broad RFP web crawl
 - L2 corpus = ECSO Jackson + Erie trunked 2026 + Erie subscriber 2026 only
 - L3 = MSI only
-- CAD / NG911 / Sensors / MCX = stub IDs only
+- CAD = Phase 4 + Phase 6 deepen; NG911 = Phase 6 call-handling deepen; Sensors = Phase 5 Lite (shipped); MCX = stub IDs only
 
-### Explicit non-goals (deferred past Phase 2)
+### Explicit non-goals (deferred past Phase 6 Lite)
 
 - Multi-vendor competitive matrix (L3Harris, Tait, etc.)
 - EIDO/IDX runtime bus
 - Proposal narrative generation / pricing BOM
 - Auth, multi-tenant SaaS, SOC2
-- Deep CAD / sensor / MCX ontology trees (Phase 3+)
+- Deep MCX ontology trees (Sensors shipped in Phase 5; MCX still deferred)
 
 ---
 
-## 3. Phase 2 — Quality hardening (LMR vertical)
+## 3. Phase 2 — Quality hardening (complete)
 
-**Goal:** Make the existing loop trustworthy for bid-desk use before expanding verticals.
+**Status:** Done — slices [001](specs/001-ontology-governance.md)–[004](specs/004-persistence-lite.md).
+
+Do not re-open Phase 2 FR-1…FR-4 unless a regression is found. See §6 for completed DoD.
+
+---
+
+## 4. Phase 3 Lite — LMR deepen (Cursor-budget aware)
+
+**Goal:** Raise LMR bid-desk trust without expanding verticals. Deterministic only; no LLM; no new RFP PDFs; do not run `generate_l1.py` (it resets publish).
 
 ```mermaid
 flowchart LR
-  Spec["SPEC Phase2"] --> G1["FR1 Ontology governance"]
-  Spec --> G2["FR2 Match quality"]
-  Spec --> G3["FR3 Feedback into L2"]
-  Spec --> G4["FR4 Persistence lite"]
-  G1 --> DoD["Phase2 DoD"]
-  G2 --> DoD
-  G3 --> DoD
-  G4 --> DoD
+  Spec["SPEC Phase3 Lite"] --> P1["FR-P3.1 Publish wave2"]
+  Spec --> P2["FR-P3.2 Match lift"]
+  Spec --> P3["FR-P3.3 Review queue UI"]
+  Spec --> P4["FR-P3.4 Freeze"]
+  P1 --> DoD["Phase3 Lite DoD"]
+  P2 --> DoD
+  P3 --> DoD
+  P4 --> DoD
 ```
 
-### FR-1 Ontology governance
+### FR-P3.1 Publish wave 2
 
 | ID | Requirement |
 |----|-------------|
-| FR-1.1 | Support promoting L1 capabilities from `draft` → `published` (and `deprecated` when needed) |
-| FR-1.2 | Maintain an explicit **top-50 bid-desk** capability list (below) as the SME publish priority set |
-| FR-1.3 | After publish batch: bump ontology catalog version metadata and log in [docs/decision-log.md](docs/decision-log.md) |
-| FR-1.4 | Stubs remain `stub`; do not silently publish stub verticals |
+| FR-P3.1.1 | Curated priority file `ontology/top50_wave2.json` (≥25 LMR aliases not in top-50) |
+| FR-P3.1.2 | `publish_l1.py --priority-file` supports wave2 without changing top-50 default |
+| FR-P3.1.3 | After publish: ≥ **75** L1 capabilities `published`; stubs refused; decision-log entry |
 
-**Feature slice:** [specs/001-ontology-governance.md](specs/001-ontology-governance.md)
+**Feature slice:** [specs/010-publish-wave2.md](specs/010-publish-wave2.md)
 
-### FR-2 Match quality
-
-| ID | Requirement |
-|----|-------------|
-| FR-2.1 | Harden TOC / boilerplate filtering in phrase harvest |
-| FR-2.2 | Provide eval harness using holdout synonyms + mid-document RFP windows |
-| FR-2.3 | **Target A:** demo fixture map rate **≥ 80%** (regression guard) |
-| FR-2.4 | **Target B:** mid-doc 20-page window on Erie trunked **or** ECSO functional spec → shall-map rate **≥ 50%** |
-| FR-2.5 | Prefer deterministic improvements; LLM only behind explicit `--llm` flag (default off) |
-
-**Mid-doc window definition:** pages **21–40** inclusive of `erie-trunked-radio-system-2026-018.pdf` (primary); fallback pages **21–40** of `ecso-jackson-p25-functional-spec.pdf`.
-
-**Feature slice:** [specs/002-match-quality.md](specs/002-match-quality.md)
-
-### FR-3 Feedback loop
+### FR-P3.2 Match quality lift
 
 | ID | Requirement |
 |----|-------------|
-| FR-3.1 | UI feedback (`accept` / `correct` / `reject`) continues to append audit JSONL |
-| FR-3.2 | `accept` and `correct` also upsert into a staged review file `ontology/l2_review_queue.json` |
-| FR-3.3 | Provide a publish path from review queue → `l2_synonyms.json` (CLI or API) with dedupe |
-| FR-3.4 | Rejected items recorded but not merged into L2 |
+| FR-P3.2.1 | Mid-doc Erie pages 21–40 shall-map rate **≥ 0.60** |
+| FR-P3.2.2 | Demo fixture map rate **≥ 0.80** (regression) |
+| FR-P3.2.3 | Improvements via deterministic seeds / curated L2 only (no `--llm`, no new PDFs) |
 
-**Feature slice:** [specs/003-feedback-loop.md](specs/003-feedback-loop.md)
+**Feature slice:** [specs/011-match-lift.md](specs/011-match-lift.md)
 
-### FR-4 Persistence lite
+### FR-P3.3 Review queue UI
 
 | ID | Requirement |
 |----|-------------|
-| FR-4.1 | CLI to load L1/L2/L3 JSON into Postgres per [sql/schema.sql](sql/schema.sql) |
-| FR-4.2 | Runtime API **defaults to JSON files** (no breaking change) |
-| FR-4.3 | Import is idempotent (upsert by primary keys) |
-| FR-4.4 | Document connection via `DATABASE_URL` env; never commit credentials |
+| FR-P3.3.1 | `GET /api/review-queue` lists staged items |
+| FR-P3.3.2 | `POST /api/review-queue/publish` merges pending accept/correct (dry-run supported) |
+| FR-P3.3.3 | Analyst UI panel to view queue and publish |
 
-**Feature slice:** [specs/004-persistence-lite.md](specs/004-persistence-lite.md)
+**Feature slice:** [specs/012-review-queue-ui.md](specs/012-review-queue-ui.md)
+
+### FR-P3.4 Freeze
+
+| ID | Requirement |
+|----|-------------|
+| FR-P3.4.1 | Specs 010–013 Status Done; README sprint row; decision-log freeze |
+| FR-P3.4.2 | Explicit stop: next expansion needs SPEC amendment |
+
+**Feature slice:** [specs/013-phase3-freeze.md](specs/013-phase3-freeze.md)
+
+### Cost rules (hard)
+
+- One `specs/01x` slice per agent session when possible
+- Prefer Auto/Composer; keep on-demand LLM off
+- Stop after slice 012 if usage is tight (013 is optional polish)
 
 ---
 
-## 4. Top-50 bid-desk capabilities (publish priority)
+## 4b. Phase 4 Lite — CAD foundation (Cursor-budget aware)
 
-Aliases below map to full `PSERS.INFRA.*` IDs via L1 `alias` field. SME publish priority for FR-1:
+**Goal:** First vertical expansion — solidify CAD from stubs into a bid-desk-usable draft/published set with deterministic match seeds. Do not regenerate L1; do not expand NG911/Sensors/MCX.
+
+```mermaid
+flowchart LR
+  Spec["SPEC Phase4 Lite"] --> Q1["FR-P4.1 CAD ontology"]
+  Spec --> Q2["FR-P4.2 CAD match"]
+  Spec --> Q3["FR-P4.3 CAD publish"]
+  Spec --> Q4["FR-P4.4 Freeze"]
+  Q1 --> DoD4["Phase4 Lite DoD"]
+  Q2 --> DoD4
+  Q3 --> DoD4
+  Q4 --> DoD4
+```
+
+### FR-P4.1 CAD ontology expand
+
+| ID | Requirement |
+|----|-------------|
+| FR-P4.1.1 | Promote existing CAD stubs → `draft` with `CAD.*` aliases; append to ≥ **25** CAD caps |
+| FR-P4.1.2 | Append/promote only — never run `generate_l1.py`; LMR published ≥ 75 preserved |
+| FR-P4.1.3 | Keep non-CAD stubs so stub count remains ≥ 20 |
+
+**Feature slice:** [specs/020-cad-ontology.md](specs/020-cad-ontology.md)
+
+### FR-P4.2 CAD match + demo eval
+
+| ID | Requirement |
+|----|-------------|
+| FR-P4.2.1 | Deterministic CAD seeds; `demo_cad_requirements.txt` |
+| FR-P4.2.2 | `cad_demo` eval suite map rate ≥ **0.80** |
+| FR-P4.2.3 | LMR demo ≥ 0.80 and mid-doc ≥ 0.60 still pass |
+
+**Feature slice:** [specs/021-cad-match.md](specs/021-cad-match.md)
+
+### FR-P4.3 CAD publish top-N
+
+| ID | Requirement |
+|----|-------------|
+| FR-P4.3.1 | `ontology/top15_cad.json` priority file |
+| FR-P4.3.2 | ≥ **15** CAD capabilities `published` via `publish_l1.py --priority-file` |
+
+**Feature slice:** [specs/022-cad-publish.md](specs/022-cad-publish.md)
+
+### FR-P4.4 Freeze
+
+| ID | Requirement |
+|----|-------------|
+| FR-P4.4.1 | Specs 020–023 Done; README; decision-log; stop note for NG911/Sensors/MCX |
+
+**Feature slice:** [specs/023-phase4-freeze.md](specs/023-phase4-freeze.md)
+
+---
+
+## 5. Top-50 bid-desk capabilities (publish priority — Phase 2)
+
+Aliases below map to full `PSERS.INFRA.*` IDs via L1 `alias` field. Wave 2 lives in [ontology/top50_wave2.json](ontology/top50_wave2.json).
 
 1. `LMR.STD.P25_PHASE1`
 2. `LMR.STD.P25_PHASE2`
@@ -184,7 +245,7 @@ Aliases below map to full `PSERS.INFRA.*` IDs via L1 `alias` field. SME publish 
 
 ---
 
-## 5. Non-functional requirements
+## 6. Non-functional requirements
 
 | ID | Requirement |
 |----|-------------|
@@ -192,42 +253,147 @@ Aliases below map to full `PSERS.INFRA.*` IDs via L1 `alias` field. SME publish 
 | NFR-2 | Allowlisted RFP corpus unchanged unless SPEC amended |
 | NFR-3 | No secrets in git; `data/rfp/*.pdf` and feedback runtime files stay gitignored as configured |
 | NFR-4 | Validators `validate_l1.py` / `validate_l2.py` / `validate_l3.py` must remain green |
-| NFR-5 | Prefer small PRs / slices aligned to `specs/00x-*.md` |
+| NFR-5 | Prefer small PRs / slices aligned to `specs/00x-*.md` / `specs/01x-*.md` |
 
 ---
 
-## 6. Phase-2 Definition of Done
+## 7. Phase-2 Definition of Done (complete)
 
-- [ ] `py -3.12 ontology/validate_l1.py` → OK  
-- [ ] `py -3.12 ontology/validate_l2.py` → OK  
-- [ ] `py -3.12 ontology/validate_l3.py` → OK  
-- [ ] ≥ **50** L1 capabilities from the top-50 list marked `published`  
-- [ ] Eval harness exists and reports demo map-rate ≥ 80% and mid-doc map-rate ≥ 50% (or documents gap with issue filed in decision-log)  
-- [ ] Feedback `accept`/`correct` updates staged L2 review queue; publish path merges into L2 with test  
-- [ ] Postgres import CLI works against local DB when `DATABASE_URL` set  
-- [ ] Each completed slice flips **Status → Done** in its `specs/00x-*.md`  
-- [ ] README points here as next-work authority  
+- [x] `py -3.12 ontology/validate_l1.py` → OK  
+- [x] `py -3.12 ontology/validate_l2.py` → OK  
+- [x] `py -3.12 ontology/validate_l3.py` → OK  
+- [x] ≥ **50** L1 capabilities from the top-50 list marked `published`  
+- [x] Eval harness exists and reports demo map-rate ≥ 80% and mid-doc map-rate ≥ 50% (or documents gap with issue filed in decision-log)  
+- [x] Feedback `accept`/`correct` updates staged L2 review queue; publish path merges into L2 with test  
+- [x] Postgres import CLI works against local DB when `DATABASE_URL` set  
+- [x] Each completed slice flips **Status → Done** in its `specs/00x-*.md`  
+- [x] README points here as next-work authority  
 
 ---
 
-## 7. Cursor agent protocol
+## 8. Phase 3 Lite Definition of Done
 
-1. Read this `SPEC.md` and the single relevant [`specs/00x-*.md`](specs/) slice.  
+- [x] ≥ **75** L1 capabilities `published` (wave2 ≥25 new)
+- [x] Mid-doc map rate ≥ **0.60**; demo ≥ **0.80**
+- [x] Review queue visible + publishable from UI
+- [x] Validators green
+- [x] Specs 010–013 Status Done; README sprint row; decision-log freeze
+- [x] Deferred themes (CAD / multi-vendor / crawl / proposal) still deferred
+
+---
+
+## 8b. Phase 4 Lite Definition of Done
+
+- [x] ≥ **25** CAD-vertical capabilities at `draft` or `published`
+- [x] ≥ **15** CAD capabilities `published`
+- [x] `cad_demo` map rate ≥ **0.80**; LMR demo ≥ 0.80; LMR mid-doc ≥ 0.60
+- [x] LMR published count still ≥ **75**
+- [x] Validators green; specs 020–023 Done; README + decision-log freeze
+- [x] NG911 / Sensors / MCX / multi-vendor / crawl still deferred
+
+---
+
+## 8c. Phase 5 Lite — Sensors foundation (Cursor-budget aware)
+
+**Goal:** First Sensors vertical expand (VIDEO/IOT/UAS + VMS) with deterministic match seeds. Do not expand MCX. Do not regenerate L1.
+
+### FR-P5.1 Sensors ontology
+
+| ID | Requirement |
+|----|-------------|
+| FR-P5.1.1 | Promote VIDEO/IOT/UAS (+ VMS) stubs → draft with aliases; append to ≥ **18** sensor caps |
+| FR-P5.1.2 | `validate_l1.py` stub floor ≥ **10** |
+| FR-P5.1.3 | Never run `generate_l1.py` |
+
+**Feature slice:** [specs/030-sensors-ontology.md](specs/030-sensors-ontology.md)
+
+### FR-P5.2 Sensors match
+
+| ID | Requirement |
+|----|-------------|
+| FR-P5.2.1 | Deterministic sensor seeds; `sensors_demo` ≥ **0.80** |
+| FR-P5.2.2 | LMR/CAD/NG911 demos and LMR mid-doc still pass |
+
+**Feature slice:** [specs/031-sensors-match.md](specs/031-sensors-match.md)
+
+### FR-P5.3 Sensors publish
+
+| ID | Requirement |
+|----|-------------|
+| FR-P5.3.1 | ≥ **15** sensor capabilities published |
+| FR-P5.3.2 | Light MSI L3 maps; decision-log stop (MCX deferred) |
+
+**Feature slice:** [specs/032-sensors-publish.md](specs/032-sensors-publish.md)
+
+### Phase 5 Lite Definition of Done
+
+- [x] ≥ 18 sensor-related caps; ≥ 15 published
+- [x] `sensors_demo` ≥ 0.80; existing suites pass
+- [x] Validators green (stubs ≥ 10)
+- [x] Specs 030–032 Done; MCX still deferred
+
+---
+
+## 8d. Phase 6 Lite — CAD + NG911 deepen (Cursor-budget aware)
+
+**Goal:** Deepen the PSAP loop (NG911 call take → CAD handoff → unit status). Do not re-open Sensors. Do not expand MCX. Do not regenerate L1.
+
+### FR-P6.1 CAD + NG911 ontology wave
+
+| ID | Requirement |
+|----|-------------|
+| FR-P6.1.1 | Append CAD drafts to ≥ **55** CAD-related caps via `expand_cad_l1.py` |
+| FR-P6.1.2 | Append NG911 drafts to ≥ **35** NG911 caps via `expand_ng911_l1.py` |
+| FR-P6.1.3 | Never run `generate_l1.py`; Sensors/MCX unchanged |
+
+**Feature slice:** [specs/040-cad-ng911-ontology.md](specs/040-cad-ng911-ontology.md)
+
+### FR-P6.2 Match + PSAP loop eval
+
+| ID | Requirement |
+|----|-------------|
+| FR-P6.2.1 | Deterministic seeds for new aliases; expand CAD/NG911 demos |
+| FR-P6.2.2 | `psap_loop` suite ≥ **0.80**; existing LMR/CAD/NG911/sensors suites pass |
+
+**Feature slice:** [specs/041-cad-ng911-match.md](specs/041-cad-ng911-match.md)
+
+### FR-P6.3 Publish + L3 + stop
+
+| ID | Requirement |
+|----|-------------|
+| FR-P6.3.1 | CAD published ≥ **45**; NG911 published ≥ **28** |
+| FR-P6.3.2 | CommandCentral L3 maps for newly published IDs; decision-log stop (MCX deferred) |
+
+**Feature slice:** [specs/042-cad-ng911-publish.md](specs/042-cad-ng911-publish.md)
+
+### Phase 6 Lite Definition of Done
+
+- [x] CAD ≥ 55 caps; CAD published ≥ 45 (**56** / **56**)
+- [x] NG911 ≥ 35 caps; NG911 published ≥ 28 (**35** / **35**)
+- [x] `cad_demo`, `ng911_demo`, `psap_loop` ≥ 0.80; LMR + sensors suites pass
+- [x] Validators green; specs 040–042 Done; MCX still deferred
+
+---
+
+## 9. Cursor agent protocol
+
+1. Read this `SPEC.md` and the single relevant [`specs/04x-*.md`](specs/) slice.  
 2. Implement **only** that slice.  
 3. Update the slice checklist / Status.  
 4. Run validators touched by the change.  
-5. Do **not** expand into Phase-3 verticals or deferred non-goals without amending this SPEC.  
-6. Prefer Auto/Composer; keep on-demand spend disabled unless the user enables it.
+5. Do **not** expand into MCX / multi-vendor without amending this SPEC.  
+6. Prefer Auto/Composer; keep on-demand spend disabled unless the user enables it.  
+7. Cost: one slice per session; never run `generate_l1.py`.
 
-**Recommended order:** `001` → `002` → `003` → `004`.
+**Recommended order:** `040` → `041` → `042`.
 
 ---
 
-## 8. Appendix — Phase 3+ (out of scope now)
+## 10. Appendix — still out of scope
 
-- Deep CAD / NG911 / Sensors / MCX capability trees  
+- Deep MCX capability trees  
 - Multi-vendor L3  
 - Broader RFP corpus / crawl  
 - Proposal generation, pricing, SSO  
 
-When ready, amend this SPEC with a Phase-3 section and new `specs/01x-*.md` slices.
+When ready, amend this SPEC with new slices beyond 042.

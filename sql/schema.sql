@@ -46,6 +46,10 @@ CREATE TABLE IF NOT EXISTS synonym (
   created_at    TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
+-- Idempotent import key (Phase-2 / specs/004)
+CREATE UNIQUE INDEX IF NOT EXISTS uq_synonym_cap_phrase
+  ON synonym (capability_id, phrase);
+
 CREATE INDEX IF NOT EXISTS idx_synonym_phrase ON synonym USING gin (to_tsvector('english', phrase));
 CREATE INDEX IF NOT EXISTS idx_synonym_cap ON synonym (capability_id);
 

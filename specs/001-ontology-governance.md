@@ -1,6 +1,6 @@
 # 001 — Ontology governance
 
-**Status:** Planned  
+**Status:** Done  
 **SPEC refs:** FR-1, Phase-2 DoD (published top-50)  
 **Owner:** SME + engineering  
 
@@ -29,19 +29,19 @@ L1 capabilities shipped in Sprint 1 as `status: draft`. Bid-desk use needs a gov
 
 ## Acceptance tests
 
-- [ ] Running publish on top-50 results in ≥50 L1 rows with `status=published` (exact count = successfully resolved aliases)
-- [ ] `validate_l1.py` still OK after publish
-- [ ] Attempting to publish a stub ID fails or skips with clear message
-- [ ] `docs/decision-log.md` has a publish batch entry
-- [ ] Checklist doc exists
+- [x] Running publish on top-50 results in ≥50 L1 rows with `status=published` (exact count = successfully resolved aliases)
+- [x] `validate_l1.py` still OK after publish
+- [x] Attempting to publish a stub ID fails or skips with clear message
+- [x] `docs/decision-log.md` has a publish batch entry
+- [x] Checklist doc exists
 
 ## Implementation notes (files)
 
 - [ontology/l1_capabilities.json](../ontology/l1_capabilities.json)
-- [ontology/generate_l1.py](../ontology/generate_l1.py) (optional: preserve published status on regenerate — if regenerate wipes status, document “publish after regenerate”)
+- [ontology/generate_l1.py](../ontology/generate_l1.py) — regenerate resets status; re-run publish after regenerate
 - New: `ontology/publish_l1.py`, `ontology/top50_bid_desk.json`, `docs/l1-publish-checklist.md`
 - [docs/decision-log.md](../docs/decision-log.md)
 
 ## Status
 
-Planned — not started.
+Done — 2026-07-12. Catalog `schema_version` **1.1**, sprint **P2-001**, **50** published.

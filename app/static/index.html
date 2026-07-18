@@ -114,10 +114,36 @@
         </div>
       </div>
     </section>
+
+    <section class="queue-section panel" id="queuePanel">
+      <div class="queue-head">
+        <h2>L2 review queue</h2>
+        <div class="row">
+          <button type="button" class="btn ghost" id="refreshQueue">Refresh</button>
+          <button type="button" class="btn ghost" id="dryPublishQueue">Dry-run publish</button>
+          <button type="button" class="btn primary" id="publishQueue">Publish pending</button>
+        </div>
+      </div>
+      <p class="hint" id="queueCounts">Loading queue…</p>
+      <p class="hint" id="queuePublishStatus"></p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Status</th>
+              <th>Action</th>
+              <th>Phrase</th>
+              <th>Capability</th>
+            </tr>
+          </thead>
+          <tbody id="queueBody"></tbody>
+        </table>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>PSERS MVP · LMR vertical · S4 analyst UI · Ontology routes through L1 only</p>
+    <p>PSERS MVP · LMR vertical · Phase 3 Lite · Ontology routes through L1 only</p>
   </footer>
   <script src="/static/app.js"></script>
 </body>

@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "source": "Phase 5 Lite Sensors publish priority",
+  "description": "First Sensors publish batch (VIDEO/IOT/UAS + VMS).",
+  "aliases": [
+    "VIDEO.FIXED_CCTV",
+    "VIDEO.LIVE_SHARE",
+    "VIDEO.BODYWORN",
+    "VIDEO.VMS",
+    "VIDEO.VMS_SEARCH",
+    "VIDEO.PSAP_LIVESTREAM",
+    "VIDEO.BODYWORN_EVIDENCE",
+    "IOT.ALPR",
+    "IOT.ALPR_HOTLIST",
+    "IOT.GUNSHOT",
+    "IOT.GUNSHOT_CAD",
+    "IOT.SENSOR_FUSION",
+    "UAS.DISPATCHABLE_AIRCRAFT",
+    "UAS.DRONE_DOWNLINK",
+    "UAS.DRONE_GEO_FENCE"
+  ]
+}

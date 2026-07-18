@@ -1,4 +1,9 @@
-"""Generate Sprint-1 L1 capability catalog (LMR deep + PSERS stubs)."""
+"""Generate Sprint-1 L1 capability catalog (LMR deep + PSERS stubs).
+
+WARNING: Regenerating overwrites ontology/l1_capabilities.json and resets
+status fields to draft/stub. After regenerate, re-run ontology/publish_l1.py
+(see docs/l1-publish-checklist.md). Published status is not preserved.
+"""
 from __future__ import annotations
 
 import json

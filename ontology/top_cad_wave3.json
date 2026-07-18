@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "source": "Phase 6 Lite CAD wave3 publish priority",
+  "description": "Remaining CAD drafts + Phase 6 wave3 deepen batch.",
+  "aliases": [
+    "CAD.TOW_IMPOUND",
+    "CAD.TRAFFIC_STOP",
+    "CAD.PURSUIT",
+    "CAD.EVIDENCE_NOTE",
+    "CAD.MEDIA_HOLD",
+    "CAD.TRAINING_MODE",
+    "CAD.RBAC",
+    "CAD.CALLBACK_OT",
+    "CAD.VEHICLE_ASSIGN",
+    "CAD.CIT_FLAG",
+    "CAD.JUVENILE_FLAG",
+    "CAD.GEO_FENCE_ALERT",
+    "CAD.INCIDENT_CLONE",
+    "CAD.SUPERVISOR_OVERRIDE",
+    "CAD.WEATHER_ROAD",
+    "CAD.SKILL_RECOMMEND",
+    "CAD.SCHEDULED_EVENT",
+    "CAD.QUARANTINE_HOLD",
+    "CAD.SHIFT_HANDOFF",
+    "CAD.PERSON_ALERT",
+    "CAD.JAIL_COURT_IFACE"
+  ]
+}

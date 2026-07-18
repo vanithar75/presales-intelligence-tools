@@ -21,14 +21,17 @@ from pydantic import BaseModel, Field
 ROOT = Path(__file__).resolve().parents[1]
 STATIC = Path(__file__).resolve().parent / "static"
 FEEDBACK = ROOT / "ontology" / "l2_feedback.jsonl"
+REVIEW_QUEUE = ROOT / "ontology" / "l2_review_queue.json"
 SAMPLES = ROOT / "ontology" / "samples"
 
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+from ingest.extract_l2_synonyms import normalize_key  # noqa: E402
 from ingest.matcher import match_pdf, match_text, _load_ontology  # noqa: E402
+from ingest.publish_l2_feedback import load_review_queue, publish_review_queue  # noqa: E402
 
-app = FastAPI(title="PSERS Presales Intelligence", version="0.4.0")
+app = FastAPI(title="PSERS Presales Intelligence", version="0.5.0")
 
 
 class TextMatchRequest(BaseModel):
@@ -43,9 +46,88 @@ class SynonymFeedback(BaseModel):
     action: str = Field(default="accept", pattern="^(accept|correct|reject)$")
 
 
+def _upsert_review_queue(record: dict) -> dict:
+    """Upsert accept/correct into review queue; reject stored but never publishable."""
+    REVIEW_QUEUE.parent.mkdir(parents=True, exist_ok=True)
+    if REVIEW_QUEUE.exists():
+        doc = json.loads(REVIEW_QUEUE.read_text(encoding="utf-8"))
+    else:
+        doc = {"schema_version": "1.0", "items": []}
+    items: list[dict] = list(doc.get("items") or [])
+    phrase = record["phrase"]
+    cid = record["capability_id"]
+    action = record["action"]
+    key = (normalize_key(phrase), cid, action)
+
+    queue_item = {
+        "phrase": phrase,
+        "capability_id": cid,
+        "capability_alias": record.get("capability_alias"),
+        "action": action,
+        "ts": record["ts"],
+        "note": record.get("note") or "",
+        "source": "analyst_ui",
+        "status": "pending" if action in ("accept", "correct") else "rejected",
+    }
+
+    replaced = False
+    for i, existing in enumerate(items):
+        ek = (
+            normalize_key(existing.get("phrase", "")),
+            existing.get("capability_id"),
+            existing.get("action"),
+        )
+        if ek == key:
+            # Keep published status if already merged; otherwise refresh
+            if existing.get("status") == "published" and action in ("accept", "correct"):
+                queue_item["status"] = "published"
+                queue_item["published_at"] = existing.get("published_at")
+                queue_item["publish_note"] = existing.get("publish_note", "already_published")
+            items[i] = queue_item
+            replaced = True
+            break
+    if not replaced:
+        items.append(queue_item)
+
+    doc["schema_version"] = doc.get("schema_version") or "1.0"
+    doc["items"] = items
+    doc["updated_at"] = record["ts"]
+    REVIEW_QUEUE.write_text(json.dumps(doc, indent=2) + "\n", encoding="utf-8")
+    return queue_item
+
+
 @app.get("/health")
 def health():
-    return {"status": "ok", "sprint": "S4", "ui": True}
+    return {"status": "ok", "sprint": "P3-012", "ui": True}
+
+
+@app.get("/api/review-queue")
+def get_review_queue():
+    doc = load_review_queue(REVIEW_QUEUE)
+    items = list(doc.get("items") or [])
+    counts = {"pending": 0, "published": 0, "rejected": 0, "other": 0}
+    for it in items:
+        st = it.get("status") or "pending"
+        if st in counts:
+            counts[st] += 1
+        else:
+            counts["other"] += 1
+    return {
+        "schema_version": doc.get("schema_version", "1.0"),
+        "updated_at": doc.get("updated_at"),
+        "counts": counts,
+        "items": items,
+        "queue_path": "ontology/l2_review_queue.json",
+    }
+
+
+@app.post("/api/review-queue/publish")
+def publish_review_queue_endpoint(dry_run: bool = False):
+    try:
+        summary = publish_review_queue(dry_run=dry_run, queue_path=REVIEW_QUEUE)
+    except FileNotFoundError as e:
+        raise HTTPException(status_code=404, detail=str(e)) from e
+    return {"ok": True, "summary": summary}
 
 
 @app.get("/api/capabilities")
@@ -121,7 +203,17 @@ def synonym_feedback(body: SynonymFeedback):
     }
     with FEEDBACK.open("a", encoding="utf-8") as f:
         f.write(json.dumps(record) + "\n")
-    return {"ok": True, "saved": record}
+
+    queued = None
+    # Accept/correct → review queue; reject also recorded in queue (never published)
+    queued = _upsert_review_queue(record)
+
+    return {
+        "ok": True,
+        "saved": record,
+        "queued": queued,
+        "queue_path": "ontology/l2_review_queue.json",
+    }
 
 
 @app.get("/api/demo/fixture")

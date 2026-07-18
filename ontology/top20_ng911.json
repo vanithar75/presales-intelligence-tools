@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "source": "NG911 emergency call handling publish priority",
+  "description": "First NG911 publish batch — call handling focus.",
+  "aliases": [
+    "NG911.CALL_HANDLING",
+    "NG911.EIDO_EXCHANGE",
+    "NG911.TEXT_TO_911",
+    "NG911.MULTIMEDIA",
+    "NG911.ALI_AML",
+    "NG911.SIP_CALL_CONTROL",
+    "NG911.ESRP_ROUTING",
+    "NG911.ECRF_LVF",
+    "NG911.CALLBACK",
+    "NG911.ABANDONED_CALL",
+    "NG911.TTY_RTT",
+    "NG911.TRANSFER_CONF",
+    "NG911.QUEUE_ACD",
+    "NG911.CALL_RECORDING",
+    "NG911.WIRELESS_PHASE2",
+    "NG911.PSAP_FAILOVER",
+    "NG911.ADDITIONAL_DATA",
+    "NG911.CAD_HANDOFF",
+    "NG911.TELEM_911",
+    "NG911.POLICY_ROUTING"
+  ]
+}

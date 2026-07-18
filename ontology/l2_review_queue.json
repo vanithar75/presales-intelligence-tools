@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "description": "Staged analyst feedback for L2 publish (specs/003). Accept/correct only merge via ingest/publish_l2_feedback.py.",
+  "items": [
+    {
+      "phrase": "P2-003 TEST: The radio system shall provide a geo-redundant core for feedback-loop verification only.",
+      "capability_id": "PSERS.INFRA.CORE.GEO_REDUNDANT_CORE",
+      "capability_alias": "LMR.CORE.GEO_REDUNDANT_CORE",
+      "action": "accept",
+      "ts": "2026-07-12T10:26:57.593990+00:00",
+      "note": "slice 003 test",
+      "source": "analyst_ui",
+      "status": "published",
+      "published_at": "2026-07-12T10:27:08.244592+00:00",
+      "publish_note": "merged"
+    },
+    {
+      "phrase": "P2-003 REJECT: This nonsense phrase shall never merge into L2 catalog.",
+      "capability_id": "PSERS.INFRA.CORE.GEO_REDUNDANT_CORE",
+      "capability_alias": "LMR.CORE.GEO_REDUNDANT_CORE",
+      "action": "reject",
+      "ts": "2026-07-12T10:26:57.599976+00:00",
+      "note": "should not publish",
+      "source": "analyst_ui",
+      "status": "rejected"
+    }
+  ],
+  "updated_at": "2026-07-12T10:26:57.599976+00:00"
+}

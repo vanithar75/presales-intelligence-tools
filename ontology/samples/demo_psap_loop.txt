@@ -1,0 +1,10 @@
+The PSAP shall receive and process emergency calls in an NG911/i3 environment.
+Caller location shall be acquired via ALI/AML civic and geodetic methods.
+Abandoned and silent 911 calls shall be detected and processed.
+Location discrepancies between reported and verified locations shall be resolved.
+NG911 call data shall hand off into CAD for dispatch.
+The CAD system shall create and update incidents in Computer-Aided Dispatch.
+Dispatchers shall track unit status and assignments in CAD.
+The system shall recommend units based on location, type, and priority.
+CAD shall display unit AVL on the dispatch map.
+Secure messaging shall be available between dispatch and field units.

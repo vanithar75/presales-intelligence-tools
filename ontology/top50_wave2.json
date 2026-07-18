@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "source": "SPEC.md Phase 3 Lite FR-P3.1 — second bid-desk publish wave",
+  "description": "LMR draft aliases not in top50_bid_desk.json. SME publish priority for wave 2.",
+  "aliases": [
+    "LMR.STD.ANALOG_INTEROP",
+    "LMR.STD.DMR_TIER2",
+    "LMR.STD.DMR_TIER3",
+    "LMR.STD.TIA102_SUITE",
+    "LMR.STD.COMMON_CHANNEL_OPS",
+    "LMR.STD.MIXED_FLEET",
+    "LMR.RF.BAND_VHF",
+    "LMR.RF.BAND_UHF",
+    "LMR.RF.BAND_700",
+    "LMR.RF.BAND_800",
+    "LMR.RF.BAND_900",
+    "LMR.RF.MULTIBAND_SU",
+    "LMR.RF.CHANNEL_CAPACITY",
+    "LMR.RF.FCC_IOP_CHANNELS",
+    "LMR.RF.NARROWBAND",
+    "LMR.RF.FREQUENCY_REUSE",
+    "LMR.CORE.SYSTEM_WIDE_CALL",
+    "LMR.CORE.BACKUP_RESTORE",
+    "LMR.CORE.FAULT_TOLERANT_CONTROL",
+    "LMR.SITE.MULTICAST",
+    "LMR.SITE.ANTENNA_SYSTEM",
+    "LMR.SITE.SITE_ALARMS",
+    "LMR.SITE.SITE_GROUNDING",
+    "LMR.COV.COV_95_POP",
+    "LMR.COV.MOBILE_ON_STREET"
+  ]
+}

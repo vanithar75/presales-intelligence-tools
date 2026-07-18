@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "source": "SPEC.md Phase 4 Lite FR-P4.3 — CAD publish priority",
+  "description": "CAD bid-desk publish set for Phase 4 Lite. Aliases resolve via L1 alias field.",
+  "aliases": [
+    "CAD.INCIDENT_CREATE",
+    "CAD.UNIT_STATUS",
+    "CAD.RECOMMENDATION",
+    "CAD.CAD_TO_CAD",
+    "CAD.AVL_DISPLAY",
+    "CAD.MOBILE_CLIENT",
+    "CAD.CALL_TYPE",
+    "CAD.PRIORITY_SOP",
+    "CAD.PREMISE_HAZARD",
+    "CAD.CALL_STACK",
+    "CAD.UNIT_RECOMMEND_GEO",
+    "CAD.BOLO_MESSAGE",
+    "CAD.MULTI_AGENCY",
+    "CAD.RADIO_INTEGRATION",
+    "CAD.COMMAND_VIEW"
+  ]
+}

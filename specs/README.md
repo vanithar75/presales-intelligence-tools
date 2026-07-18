@@ -4,20 +4,20 @@ Product authority: [`../SPEC.md`](../SPEC.md).
 
 ## How to use with Cursor
 
-1. Open `SPEC.md` and pick the next open slice (recommended order below).
-2. Ask the agent: *Implement `specs/00x-….md` only; follow SPEC Phase 2.*
-3. Agent updates the slice **Status** and checkboxes when done.
-4. Do not start the next slice until validators for the current slice pass.
+1. Open `SPEC.md` and pick the next open slice.
+2. Ask the agent: *Implement `specs/04x-….md` only; Phase 6 Lite CAD+NG911; no LLM; no generate_l1; no MCX; no Sensors rework.*
+3. Agent updates Status when done.
 
 ## Slice index
 
 | ID | File | Status | Depends on |
 |----|------|--------|------------|
-| 001 | [001-ontology-governance.md](001-ontology-governance.md) | Planned | — |
-| 002 | [002-match-quality.md](002-match-quality.md) | Planned | 001 helpful, not hard |
-| 003 | [003-feedback-loop.md](003-feedback-loop.md) | Planned | — |
-| 004 | [004-persistence-lite.md](004-persistence-lite.md) | Planned | — |
+| 001–004 | Phase 2 | Done | — |
+| 010–013 | Phase 3 Lite | Done | — |
+| 020–023 | Phase 4 Lite CAD | Done | — |
+| 030–032 | Phase 5 Lite Sensors | Done | — |
+| 040 | [040-cad-ng911-ontology.md](040-cad-ng911-ontology.md) | Done | Phase 5 |
+| 041 | [041-cad-ng911-match.md](041-cad-ng911-match.md) | Done | 040 |
+| 042 | [042-cad-ng911-publish.md](042-cad-ng911-publish.md) | Done | 040–041 |
 
-## Slice template (for future specs)
-
-Each file must include: Context, Requirements, Out of scope, Acceptance tests, Implementation notes, Status.
+**Stop here:** Phase 6 Lite CAD+NG911 complete. MCX / multi-vendor / broader corpus require a new SPEC amendment.

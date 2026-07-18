@@ -1,0 +1,20 @@
+The agency shall deploy fixed CCTV cameras contributing video observations.
+Live video shall be shared into CAD and EOC workflows.
+Body-worn cameras shall support capture and evidence workflow.
+A video management system (VMS) shall manage agency video streams and recordings.
+Operators shall search and retrieve recorded video by time, camera, and incident.
+Video retention, hold, and purge policies shall be enforced.
+PTZ camera control shall be available from ops workstations.
+Ops shall display multi-camera layouts on a video wall.
+Body-worn evidence shall support upload, classification, and chain of custody.
+Live video shall stream into the PSAP/CAD for situational awareness.
+ALPR shall provide license plate reads linked to incidents.
+ALPR hotlist matching shall alert ops in near real time.
+Gunshot detection shall feed acoustic alerts into operations.
+Gunshot alerts shall create or enrich CAD incidents.
+Sensor alerts shall route to the correct ops queue by policy.
+Traffic and roadway sensors shall enrich incident awareness.
+Multi-sensor fusion shall correlate video, ALPR, and gunshot events.
+Dispatchable UAS/drones shall operate as aerial sensors/units.
+Drone video downlink shall display in ops/CAD workflows.
+UAS geo-fence and airspace constraints shall be enforced.

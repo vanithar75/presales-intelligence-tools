@@ -1,6 +1,6 @@
 # 004 — Persistence lite
 
-**Status:** Planned  
+**Status:** Done  
 **SPEC refs:** FR-4, NFR-3  
 **Owner:** engineering  
 
@@ -29,19 +29,19 @@
 
 ## Acceptance tests
 
-- [ ] With a local Postgres and `DATABASE_URL`, import completes exit 0
-- [ ] Row counts roughly match JSON (`capabilities` ≈ 224, products = 20, mappings ≥ 100, synonyms ≥ 400)
-- [ ] Second import exits 0 without unique-constraint failures
-- [ ] App match still works with JSON when DB is down
-- [ ] Docs describe the flow
+- [x] With a local Postgres and `DATABASE_URL`, import completes exit 0
+- [x] Row counts roughly match JSON (`capabilities` ≈ 224, products = 20, mappings ≥ 100, synonyms ≥ 400)
+- [x] Second import exits 0 without unique-constraint failures
+- [x] App match still works with JSON when DB is down
+- [x] Docs describe the flow
 
 ## Implementation notes (files)
 
-- [sql/schema.sql](../sql/schema.sql) — extend only if import needs columns (prefer fit existing)
+- [sql/schema.sql](../sql/schema.sql) — added `uq_synonym_cap_phrase` for synonym upserts
 - New: `ingest/load_postgres.py`, `docs/postgres.md`
-- [requirements.txt](../requirements.txt) — add `psycopg[binary]` or `psycopg2-binary` if used
-- [ontology/l1_capabilities.json](../ontology/l1_capabilities.json), L2/L3 JSON inputs
+- [requirements.txt](../requirements.txt) — `psycopg[binary]`
+- Verified against Docker `postgres:16` (224 caps / 493 syn / 20 products / 123 maps)
 
 ## Status
 
-Planned — not started.
+Done — 2026-07-12.

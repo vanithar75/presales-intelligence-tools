@@ -144,7 +144,180 @@ SEED_PHRASES: list[tuple[str, str]] = [
     (r"grounding|lightning\s+protect|r56", "LMR.SITE.SITE_GROUNDING"),
     (r"site\s+alarm|environmental\s+alarm", "LMR.SITE.SITE_ALARMS"),
     (r"gps\s+sync|simulcast\s+timing", "LMR.SITE.SIMULCAST_TIMING"),
+    # Phase-2 FR-2 seeds (mid-doc Erie hardening)
+    (r"antenna\s+support\s+structure|antenna\s+loading|antenna\s+system|\bantennas?\b", "LMR.SITE.ANTENNA_SYSTEM"),
+    (r"feed\s*lines?|transmission\s+lines?", "LMR.SITE.ANTENNA_SYSTEM"),
+    (r"rf\s+filter|noise\s+floor|\binterfer|high rf environments|rf carrying|constant impedance|pim rated", "LMR.SITE.ANTENNA_SYSTEM"),
+    (r"tower\s+space|antenna\s+mount|existing towers|mounting of antennas|radiation pattern", "LMR.SITE.ANTENNA_SYSTEM"),
+    (r"fault\s*toleran|equipment\s+redundan|redundan(cy|cies)", "LMR.CORE.FAULT_TOLERANT_CONTROL"),
+    (r"single\s+system\s+device\s+fails|any\s+single\s+.*fails|failure modes", "LMR.CORE.NO_SPOF"),
+    (r"availability of\s*99|99\.999|five\s*nines", "LMR.CORE.FAULT_TOLERANT_CONTROL"),
+    (r"bypass\s+mode", "LMR.CORE.FAILSOFT"),
+    (r"reliability requirements", "LMR.CORE.FAULT_TOLERANT_CONTROL"),
+    (r"as[- ]?built|site documentation|documentation shall|maintenance manuals?", "LMR.LIFE.DOCUMENTATION"),
+    (r"training mode", "LMR.LIFE.TRAINING"),
+    (r"console equipment", "LMR.DISP.CONSOLE_POSITIONS"),
+    (r"supervisory consoles?", "LMR.DISP.CONSOLE_POSITIONS"),
+    (r"conventional\s+radio\s+interface", "LMR.DISP.CONSOLE_POSITIONS"),
+    (r"installation\s+plan|design review|work and installation plan", "LMR.LIFE.PROJECT_MGMT"),
+    (r"hot[- ]?swappable|modular architecture", "LMR.CORE.FAULT_TOLERANT_CONTROL"),
+    (r"software and firmware|\bfirmware\b", "LMR.NMS.SOFTWARE_PATCHING"),
+    (r"anti[- ]?virus|firewall|\bdmz\b|intrusion|username and password", "LMR.NMS.USER_ADMIN"),
+    (r"ten\s*\(\s*10\s*\)\s*years|supportable and expandable|end-of-life|end-of-support", "LMR.LIFE.LIFECYCLE_OBSOLESCENCE"),
+    (r"support and maintenance services", "LMR.LIFE.MAINT_SLA"),
+    (r"radio access network", "LMR.STD.TRUNKED_OPS"),
+    (r"simple network management protocol|\bsnmp\b", "LMR.NMS.SNMP_ALARMS"),
+    (r"ethernet interface|ip-based equipment", "LMR.BH.IP_TRANSPORT"),
+    (r"interconnected into a common network", "LMR.CORE.TRANSPARENT_ROAMING"),
+    (r"fcc type accepted", "LMR.STD.P25_CAP"),
+    (r"end-to-end delay|350\s*ms", "LMR.VOICE.GROUP_CALL"),
+    (r"co-located|adversely impact any other communications", "LMR.RF.FCC_IOP_CHANNELS"),
+    (r"without degradation within the environmental", "LMR.RUG.MILSTD_810"),
+    (r"receivers,\s*transmitters|terminated circulators", "LMR.SITE.BASE_REPEATER"),
+    # Phase-3 Lite FR-P3.2 seeds (mid-doc Erie lift toward ≥0.60)
+    (r"standby\s+generator|engine\s+generator|\bgenerators?\b|automatic\s+transfer|\bats\b", "LMR.SITE.SITE_ALARMS"),
+    (r"\bups\b|uninterruptible\s+power|power\s+line\s+surges?", "LMR.SITE.SITE_ALARMS"),
+    (r"starting\s+batter|battery\s+(rack|charger|cable)s?", "LMR.SITE.SITE_ALARMS"),
+    (r"\bhvac\b|failures?\s+of\s+cooling|cooling\s+(system|equipment)", "LMR.SITE.SITE_ALARMS"),
+    (r"19.?(\"|''|inch)?.{0,20}rack|open[- ]face\s+racks?|equipment\s+shall\s+be\s+mounted", "LMR.SITE.BASE_REPEATER"),
+    (r"ip\s+address(ing)?\s+plan|network\s+time\s+protocol|\bntp\b", "LMR.BH.SYNC_DISTRIBUTION"),
+    (r"multi[- ]?couplers?|passive\s+components|terminated\s+circulators?", "LMR.SITE.ANTENNA_SYSTEM"),
+    (r"weatherproof\s+jacket|copper\s+conductor|one\s+continuous\s+length", "LMR.SITE.ANTENNA_SYSTEM"),
+    (r"equal\s+output\s+power|output\s+power\s+across\s+all\s+channels", "LMR.SITE.BASE_REPEATER"),
+    (r"remotely\s+perform", "LMR.NMS.REMOTE_CONFIG"),
+    (r"switching\s+and\s+routing|cots\s+servers,\s*routers", "LMR.BH.IP_TRANSPORT"),
+    (r"installation\s+services\s+shall|installed\s+in\s+accordance\s+with|tools,\s*equipment,\s*and\s*software\s+required\s+to\s+perform\s+the\s+installation", "LMR.LIFE.PROJECT_MGMT"),
+    (r"local,\s*state\s+and\s+federal", "LMR.LIFE.PROJECT_MGMT"),
+    (r"test\s+port\s+and\s+line|amplifiers?,?\s*if\s+employed", "LMR.SITE.TTA"),
+    (r"appropriate\s+impedance|cable[- ]type\s+and\s+mate", "LMR.SITE.ANTENNA_SYSTEM"),
+    (r"replace\s+and/or\s+reuse|existing\s+equipment\s+and\s+components", "LMR.LIFE.TURNKEY_IMPL"),
+    (r"county\s+network\s+only\s+via|align\s+the\s+ectrn\s+ip", "LMR.BH.IP_TRANSPORT"),
+    # Phase-4 Lite FR-P4.2 CAD seeds
+    (r"computer[- ]?aided\s+dispatch|\bcad\s+system\b|cad\s+shall", "CAD.INCIDENT_CREATE"),
+    (r"create\s+(and\s+update\s+)?incidents?|incident\s+creation", "CAD.INCIDENT_CREATE"),
+    (r"unit\s+status|status\s+and\s+assignments?", "CAD.UNIT_STATUS"),
+    (r"unit\s+recommendation|recommend\s+units?", "CAD.RECOMMENDATION"),
+    (r"cad[- ]to[- ]cad|partner\s+cad", "CAD.CAD_TO_CAD"),
+    (r"avl\s+(on\s+)?(cad\s+)?map|cad\s+map\s+display|display\s+unit\s+avl", "CAD.AVL_DISPLAY"),
+    (r"mobile\s+cad|field\s+cad\s+client", "CAD.MOBILE_CLIENT"),
+    (r"call\s*/?\s*incident\s+types?|call\s+and\s+incident\s+types?|incident\s+natures?", "CAD.CALL_TYPE"),
+    (r"priority\s+levels?|standard\s+operating\s+procedures?|\bsops?\b", "CAD.PRIORITY_SOP"),
+    (r"premise\s+(hazard|history)|officer[- ]safety\s+notes?", "CAD.PREMISE_HAZARD"),
+    (r"call\s+stack|pending\s+(call|incident)\s+queue", "CAD.CALL_STACK"),
+    (r"closest\s+unit|geo[- ]?aware\s+unit", "CAD.UNIT_RECOMMEND_GEO"),
+    (r"\bolo\b|be\s+on\s+the\s+lookout|broadcast\s+messages?\s+to\s+units", "CAD.BOLO_MESSAGE"),
+    (r"roster\s+and\s+schedule|on[- ]duty\s+schedule", "CAD.ROSTER_SCHEDULE"),
+    (r"cad[-–]?rms|records\s+management.*(cad|interface)|interface.*\brms\b", "CAD.RMS_INTERFACE"),
+    (r"ng911.*(cad|intake)|psap\s+call\s+data\s+into\s+cad", "CAD.NG911_TOUCH"),
+    (r"cad\s+audit|audit\s+trail\s+of\s+cad", "CAD.AUDIT_LOG"),
+    (r"cad\s+map\s+layers?|gis\s+layers?.{0,40}cad", "CAD.MAP_LAYERS"),
+    (r"rip[- ]and[- ]run|timed\s+(alert|reminder)s?", "CAD.TIMED_ALERT"),
+    (r"multi[- ]agency\s+incident", "CAD.MULTI_AGENCY"),
+    (r"resource\s+typing|type\s+and\s+filter\s+resources", "CAD.RESOURCE_TYPE"),
+    (r"shift\s+briefing|pass[- ]on\s+notes?", "CAD.SHIFT_BRIEF"),
+    (r"person\s*/?\s*vehicle\s+query|query\s+person", "CAD.PERSON_QUERY"),
+    (r"unit\s+status\s+(board|monitor)|status\s+monitor\s+wall", "CAD.STATUS_MONITOR"),
+    (r"incident\s+history\s+search|historical\s+incidents?", "CAD.INCIDENT_HISTORY"),
+    (r"cad[-–]?radio\s+integration|radio/console\s+events?.{0,30}cad|cad.{0,30}radio\s+events?", "CAD.RADIO_INTEGRATION"),
+    (r"command\s+view|supervisory\s+cad", "CAD.COMMAND_VIEW"),
+    # CAD enrichment wave 2
+    (r"duplicate\s+(call|incident)|related\s+calls?", "CAD.DUPLICATE_CHECK"),
+    (r"tow\s+request|impound", "CAD.TOW_IMPOUND"),
+    (r"warrant\s+check|wants\s+and\s+warrants|\bncic\b", "CAD.WARRANT_CHECK"),
+    (r"mutual\s+aid\s+request", "CAD.MUTUAL_AID_REQ"),
+    (r"run\s+cards?|fire\s+pre[- ]?plans?|hydrant\s+info", "CAD.FIRE_RUN_CARD"),
+    (r"ems\s+protocol|triage\s+guidance|medical\s+priority\s+dispatch", "CAD.EMS_PROTOCOL"),
+    (r"hospital\s+diversion|bed\s+status|hospital\s+capacity", "CAD.HOSPITAL_STATUS"),
+    (r"traffic\s+stop|citation\s+workflow", "CAD.TRAFFIC_STOP"),
+    (r"\bpursuits?\b|vehicle\s+chase", "CAD.PURSUIT"),
+    (r"evidence\s+notes?|property\s+notes?\s+linked", "CAD.EVIDENCE_NOTE"),
+    (r"media\s+hold|\bpio\b\s+notes?", "CAD.MEDIA_HOLD"),
+    (r"cad\s+training(\s+mode)?|training\s+mode\s+that\s+does\s+not\s+affect\s+live|simulation\s+mode", "CAD.TRAINING_MODE"),
+    (r"cad\s+failover|disaster[- ]recovery.{0,20}cad|cad.{0,20}disaster[- ]recovery", "CAD.FAILOVER_DR"),
+    (r"role[- ]based\s+access.{0,20}cad|cad.{0,20}role[- ]based", "CAD.RBAC"),
+    (r"callback\s+roster|overtime\s+roster", "CAD.CALLBACK_OT"),
+    (r"vehicle\s+assignment|assign\s+(vehicles?|apparatus)", "CAD.VEHICLE_ASSIGN"),
+    (r"alarm\s+monitoring|burglar\s+alarm.{0,20}cad|alarm.{0,20}into\s+cad|alarm\s+monitoring\s+events?", "CAD.ALARM_INTERFACE"),
+    (r"secure\s+messaging|unit[-–]dispatch\s+(chat|messaging)|messaging.{0,40}(dispatch|field\s+units)", "CAD.UNIT_CHAT"),
+    (r"incident\s+history|search\s+historical", "CAD.INCIDENT_HISTORY"),
+    (r"map\s+layers?|gis\s+layers?", "CAD.MAP_LAYERS"),
+    (r"status\s+board|status\s+monitor", "CAD.STATUS_MONITOR"),
+    (r"roster|on[- ]duty\s+schedule", "CAD.ROSTER_SCHEDULE"),
+    (r"\bcit\b|mental[- ]health\s+flags?|crisis\s+intervention\s+team", "CAD.CIT_FLAG"),
+    (r"juvenile\s+(subject\s+)?flags?|age[- ]sensitive\s+handling", "CAD.JUVENILE_FLAG"),
+    (r"geo[- ]?fence|zone\s+alerts?", "CAD.GEO_FENCE_ALERT"),
+    (r"clone\s+(or\s+split\s+)?incidents?|incident\s+(clone|split)", "CAD.INCIDENT_CLONE"),
+    (r"supervisor\s+override|override\s+(priority|assignment|sop)", "CAD.SUPERVISOR_OVERRIDE"),
+    (r"jail\s*/?\s*court|court\s+appearance\s+touch|booking.{0,20}(jail|court)", "CAD.JAIL_COURT_IFACE"),
+    (r"weather.{0,20}road\s+closure|road[- ]closure\s+layers?|weather\s+and\s+road", "CAD.WEATHER_ROAD"),
+    (r"skill[- ]based\s+(unit\s+)?recommend|certified\s+skills?.{0,30}(unit|recommend)", "CAD.SKILL_RECOMMEND"),
+    (r"scheduled\s+(or\s+planned\s+)?events?|planned\s+events?\s+with\s+pre[- ]?assigned", "CAD.SCHEDULED_EVENT"),
+    (r"quarantine\s+(or\s+information[- ]?)?hold|information[- ]hold", "CAD.QUARANTINE_HOLD"),
+    (r"dispatcher\s+shift\s+handoff|shift\s+handoff\s+of\s+active\s+incidents", "CAD.SHIFT_HANDOFF"),
+    (r"person[- ]of[- ]interest|watchlist\s+hit", "CAD.PERSON_ALERT"),
+    # NG911 emergency call handling
+    (r"ng[- ]?911\s*/?\s*i3|ng911/i3|next\s+generation\s+9\s*1\s*1|ng911\s+call\s+handling|process\s+emergency\s+calls?.{0,40}ng911", "NG911.CALL_HANDLING"),
+    (r"receive\s+and\s+process\s+emergency\s+calls?", "NG911.CALL_HANDLING"),
+    (r"\beido\b|emergency\s+incident\s+data\s+object", "NG911.EIDO_EXCHANGE"),
+    (r"text[- ]to[- ]911|sms\s+emergency|\btext\s+911\b", "NG911.TEXT_TO_911"),
+    (r"multimedia\s+(images?|video)|images?\s+and\s+video.{0,40}psap|ng911\s+multimedia", "NG911.MULTIMEDIA"),
+    (r"\bali\b|\baml\b|caller\s+location|civic\s+(and\s+)?geodetic", "NG911.ALI_AML"),
+    (r"sip\s+(call\s+)?control|emergency\s+sip\s+session", "NG911.SIP_CALL_CONTROL"),
+    (r"\besrp\b|emergency\s+services\s+routing|routed\s+via\s+esrp", "NG911.ESRP_ROUTING"),
+    (r"\becrf\b|\blvf\b|location\s+validation", "NG911.ECRF_LVF"),
+    (r"policy\s+routing|ng911\s+policy", "NG911.POLICY_ROUTING"),
+    (r"911\s+callback|callback\s+abandoned|disconnected\s+emergency\s+caller", "NG911.CALLBACK"),
+    (r"abandoned.{0,30}(911\s+)?calls?|silent\s+(911\s+)?calls?|incomplete\s+911", "NG911.ABANDONED_CALL"),
+    (r"\btty\b|\brtt\b|real[- ]time\s+text", "NG911.TTY_RTT"),
+    (r"language\s+interpret|interpreter\s+conference|non[- ]english\s+emergency", "NG911.LANGUAGE_INTERP"),
+    (r"transfer.{0,40}(psap|emergency\s+calls?)|conference.{0,40}(psap|secondary)", "NG911.TRANSFER_CONF"),
+    (r"911\s+(call\s+)?queue|\bacd\b|automatic\s+call\s+distribut", "NG911.QUEUE_ACD"),
+    (r"911\s+call\s+recording|emergency\s+call\s+recording|record(ing)?\s+emergency\s+call", "NG911.CALL_RECORDING"),
+    (r"wireless\s+phase\s*ii|phase\s*2\s+location|handset\s+location", "NG911.WIRELESS_PHASE2"),
+    (r"additional\s+data\s+repository|\badr\b|caller\s+additional\s+data", "NG911.ADDITIONAL_DATA"),
+    (r"border\s+control\s+function|\bbcf\b", "NG911.BCF_BORDER"),
+    (r"i3\s+(event\s+)?log|ng911\s+event\s+log", "NG911.I3_LOGGING"),
+    (r"psap\s+failover|call\s+overflow|alternate\s+psap", "NG911.PSAP_FAILOVER"),
+    (r"misdial|non[- ]emergency\s+(contact|filter)", "NG911.MISDIAL_FILTER"),
+    (r"telematics|automatic\s+crash\s+notification|\bacn\b", "NG911.TELEM_911"),
+    (r"ng911\s+call\s+data|hand\s*off.{0,30}into\s+cad|psap.{0,20}cad\s+handoff", "NG911.CAD_HANDOFF"),
+    (r"multi[- ]line\s+answer|multi[- ]agency\s+call\s+tak", "NG911.MULTI_LINE"),
+    (r"location\s+discrepan|discrepan.{0,40}(ali|aml|location)|reported.{0,20}verified\s+location", "NG911.LOCATION_DISCREP"),
+    (r"silent[- ]call\s+protocol|open[- ]line\s+call\s+protocol", "NG911.SILENT_CALL_PROTO"),
+    (r"rtt\s+transfer|transfer\s+real[- ]time\s+text|text\s+sessions?\s+between\s+psaps", "NG911.RTT_TRANSFER"),
+    (r"multimedia\s+retention|retain\s+ng911\s+multimedia|image/video.{0,30}retention", "NG911.MEDIA_RETENTION"),
+    (r"esrp\s+congestion|alternate\s+routing.{0,20}overflow|congestion.{0,30}esrp", "NG911.ESRP_CONGESTION"),
+    (r"selective[- ]router|legacy\s+e911\s+trunk|bridge\s+legacy.{0,20}ng911", "NG911.LEGACY_SR_BRIDGE"),
+    (r"orphan(ed)?\s+(or\s+stranded\s+)?(emergency\s+)?(call|session)|stranded\s+emergency", "NG911.ORPHAN_CALL"),
+    (r"poison\s+control|specialty\s+(advice\s+)?transfer", "NG911.POISON_TRANSFER"),
+    (r"\btls\b.{0,20}\bsrtp\b|\bsrtp\b|bcf.{0,20}(tls|srtp)|media\s+security.{0,20}border", "NG911.BCF_TLS_SRTP"),
+    (r"abandoned[- ]call\s+callback\s+policy|callback\s+policy.{0,30}abandoned", "NG911.ABANDONED_CB_POLICY"),
+    (r"fixed\s+cctv|\bcctv\b|fixed\s+camera", "VIDEO.FIXED_CCTV"),
+    (r"live\s+video\s+(shall\s+be\s+)?shar|share[sd]?\s+live\s+video|shared\s+into\s+(cad|eoc)", "VIDEO.LIVE_SHARE"),
+    (r"body[- ]worn\s+camera|\bbwc\b", "VIDEO.BODYWORN"),
+    (r"video\s+management\s+system|\bvms\b", "VIDEO.VMS"),
+    (r"vms\s+search|retrieve\s+recorded\s+video|search.{0,20}recorded\s+video", "VIDEO.VMS_SEARCH"),
+    (r"video\s+retention|retention\s+policy.{0,20}video", "VIDEO.VMS_RETENTION"),
+    (r"\bptz\b|pan[- ]tilt[- ]zoom", "VIDEO.CCTV_PTZ"),
+    (r"video\s+wall|ops\s+video\s+display|multi[- ]camera\s+layouts?", "VIDEO.VIDEO_WALL"),
+    (r"body[- ]worn\s+evidence|chain\s+of\s+custody", "VIDEO.BODYWORN_EVIDENCE"),
+    (r"livestream\s+to\s+(psap|cad)|stream\s+(live\s+)?video\s+into|live\s+video\s+shall\s+stream", "VIDEO.PSAP_LIVESTREAM"),
+    (r"video\s+analytics|object\s+detection.{0,20}video", "VIDEO.ANALYTICS_DETECT"),
+    (r"video\s+export|redact(ion)?\s+video|foia.{0,20}video", "VIDEO.EXPORT_REDAC"),
+    (r"alpr\s+hotlist|hotlist\s+match", "IOT.ALPR_HOTLIST"),
+    (r"\balpr\b|license\s+plate\s+reader|automated\s+license\s+plate", "IOT.ALPR"),
+    (r"gunshot.{0,30}(cad|incident)|create\s+or\s+enrich\s+cad.{0,20}gunshot", "IOT.GUNSHOT_CAD"),
+    (r"gunshot\s+detection|acoustic\s+gunshot|\bshotspotter\b", "IOT.GUNSHOT"),
+    (r"environmental\s+sensor|smart[- ]city\s+sensor", "IOT.ENVIRONMENTAL"),
+    (r"sensor\s+alerts?\s+shall\s+route|route.{0,30}sensor\s+alerts?|sensor\s+alert\s+rout", "IOT.SENSOR_ALERT_ROUTE"),
+    (r"traffic\s+sensor|roadway\s+sensor", "IOT.TRAFFIC_SENSOR"),
+    (r"multi[- ]sensor\s+fusion|sensor\s+fusion|correlate\s+video,\s*alpr", "IOT.SENSOR_FUSION"),
+    (r"drone\s+video\s+downlink|uas\s+video\s+downlink|video\s+downlink", "UAS.DRONE_DOWNLINK"),
+    (r"drone\s+geo[- ]?fence|uas\s+(geo[- ]?fence|airspace)|geo[- ]fence\s+and\s+airspace", "UAS.DRONE_GEO_FENCE"),
+    (r"\buas\b|\bdrone\b|dispatchable\s+(uas|drone|aircraft)", "UAS.DISPATCHABLE_AIRCRAFT"),
 ]
+
+
 
 
 def load_l1() -> tuple[dict[str, dict], dict[str, str]]:
@@ -209,34 +382,118 @@ def normalize_key(s: str) -> str:
     return s[:180]
 
 
+# TOC / headers / delivery boilerplate (Phase-2 FR-2)
+_ADMIN_BOILERPLATE_RE = re.compile(
+    r"(?i)("
+    r"table of contents|"
+    r"three-ring binder|hard copies|11\s*[x×]\s*17|microsoft visio|adobe pdf|"
+    r"title block|drawing number|paperwork and permits|local building codes|"
+    r"zoning|american welding|ansi/ieee|property of the county|"
+    r"file management|electronic files|centralized web|"
+    r"safety precautions|plainly indexed|native format|"
+    r"one complete set for a centralized location|"
+    r"personnel employed in the installation|"
+    r"conclusion of the radio (system )?installation milestone|"
+    r"sustainability approach|applicable codes|"
+    r"prior to contract award|proposed site locations|"
+    r"unless approved by the county"
+    r")"
+)
+_TOC_LEADER_RE = re.compile(r"\.{3,}|\.{2,}\s*\d+\s*$")
+_HEADER_FOOTER_RE = re.compile(
+    r"(?i)("
+    r"^erie county,\s*ny\s*$|"
+    r"trunked radio network infrastructure requirements|"
+    r"page\s+\d+(\s+of\s+\d+)?\s*$|"
+    r"^confidential\b|"
+    r"^draft\b"
+    r")"
+)
+_TRUNCATED_TAIL_RE = re.compile(
+    r"(?i)\b(each|the|a|an|for|to|and|or|of|in|on|with|by|via a)\s*[.]?\s*$"
+)
+_SECTION_HEADING_RE = re.compile(r"^\s*\d+(\.\d+)+\s+\S+")
+
+
+def strip_page_chrome(page_text: str) -> str:
+    """Drop repeating PDF headers/footers before phrase harvest."""
+    kept: list[str] = []
+    for line in page_text.splitlines():
+        s = line.strip()
+        if not s:
+            kept.append(line)
+            continue
+        if _HEADER_FOOTER_RE.search(s):
+            continue
+        if re.fullmatch(r"(?i)erie county,\s*ny", s):
+            continue
+        kept.append(line)
+    return "\n".join(kept)
+
+
+def is_boilerplate_phrase(phrase: str) -> bool:
+    """True if phrase is TOC/header/admin noise and should not enter match denom."""
+    p = normalize_phrase(phrase)
+    if len(p) < 25:
+        return True
+    low = p.lower()
+    if low.startswith("table of contents"):
+        return True
+    if _TOC_LEADER_RE.search(p):
+        return True
+    if p.count(".") >= 5 and "...." in p.replace(" ", ""):
+        return True
+    if _HEADER_FOOTER_RE.search(p) and not re.search(r"(?i)\b(shall|must)\b", p):
+        return True
+    if re.search(r"(?i)^erie county", p):
+        return True
+    if _ADMIN_BOILERPLATE_RE.search(p):
+        return True
+    if _TRUNCATED_TAIL_RE.search(p) and len(p) < 100:
+        return True
+    if _SECTION_HEADING_RE.match(p) and not re.search(r"(?i)\b(shall|must)\b", p):
+        return True
+    if not re.search(
+        r"(?i)\b(shall|must|will\s+(?:provide|support|include|be|have))\b",
+        p,
+    ):
+        return True
+    return False
+
+
 def harvest_phrases(page_text: str) -> list[str]:
+    page_text = strip_page_chrome(page_text)
     found: list[str] = []
     for rx in (SHALL_RE, BULLET_SHALL_RE, SIMPLE_SHALL_RE):
         for m in rx.finditer(page_text):
             phrase = normalize_phrase(m.group(1) if m.lastindex else m.group(0))
-            if len(phrase) < 20:
-                continue
-            if phrase.lower().startswith("table of contents"):
-                continue
-            if phrase.count(".") >= 5 and "...." in phrase.replace(" ", ""):
-                continue  # TOC leader dots
-            if re.search(r"\.{4,}", phrase):
+            if is_boilerplate_phrase(phrase):
                 continue
             found.append(phrase)
-    # Also keep short capability-like noun phrases containing seed keywords
+    # Also keep short capability-like lines containing requirement verbs / LMR cues
     for line in page_text.splitlines():
         line_n = normalize_phrase(line)
-        if 25 <= len(line_n) <= 160 and re.search(r"(?i)shall|must|provide|support|encrypt|simulcast|otar|issi|coverage|console|trunk", line_n):
+        if 25 <= len(line_n) <= 160 and re.search(
+            r"(?i)shall|must|provide|support|encrypt|simulcast|otar|issi|coverage|console|trunk|antenna|p25",
+            line_n,
+        ):
             if re.search(r"(?i)\b(shall|must|support|provide)\b", line_n):
-                found.append(line_n)
-    # dedupe preserve order
-    seen = set()
-    out = []
+                if not is_boilerplate_phrase(line_n):
+                    found.append(line_n)
+    # dedupe preserve order (exact + near-duplicate key)
+    seen_exact: set[str] = set()
+    seen_key: set[str] = set()
+    out: list[str] = []
     for p in found:
-        key = p.lower()
-        if key in seen:
+        exact = p.lower()
+        key = normalize_key(p)
+        if exact in seen_exact:
             continue
-        seen.add(key)
+        if key and key in seen_key:
+            continue
+        seen_exact.add(exact)
+        if key:
+            seen_key.add(key)
         out.append(p)
     return out
 

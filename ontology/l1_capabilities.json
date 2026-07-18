@@ -1,12 +1,18 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.14",
   "root": "PSERS",
-  "sprint": "S1",
+  "sprint": "P6-042",
+  "published_at": "2026-07-18",
+  "last_publish_tool": "ontology/publish_l1.py",
+  "last_priority_file": "ontology/top_ng911_wave2.json",
   "generated_by": "ontology/generate_l1.py",
   "counts": {
-    "total": 224,
-    "lmr_draft": 192,
-    "stubs": 32
+    "total": 319,
+    "draft": 125,
+    "published": 181,
+    "deprecated": 0,
+    "stubs": 13,
+    "lmr_draft": 306
   },
   "capabilities": [
     {
@@ -20,7 +26,7 @@
         "respond",
         "coordinate"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": "2.1.1.1"
     },
@@ -35,7 +41,7 @@
         "respond",
         "coordinate"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": "2.1.1.2"
     },
@@ -49,7 +55,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -63,7 +69,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -78,7 +84,7 @@
         "respond",
         "dispatch"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -92,7 +98,7 @@
       "mission_tags": [
         "coordinate"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -106,7 +112,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -120,7 +126,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -134,7 +140,7 @@
       "mission_tags": [
         "after_action"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -148,7 +154,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -162,7 +168,7 @@
       "mission_tags": [
         "coordinate"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": "2.1.1.3"
     },
@@ -176,7 +182,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -190,7 +196,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -204,7 +210,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -218,7 +224,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -232,7 +238,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -246,7 +252,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -261,7 +267,7 @@
         "respond",
         "coordinate"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -275,7 +281,7 @@
       "mission_tags": [
         "dispatch"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -289,7 +295,7 @@
       "mission_tags": [
         "coordinate"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -303,7 +309,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -317,7 +323,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -332,7 +338,7 @@
         "dispatch",
         "coordinate"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -347,7 +353,7 @@
         "dispatch",
         "coordinate"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -361,7 +367,7 @@
       "mission_tags": [
         "coordinate"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -376,7 +382,7 @@
         "respond",
         "coordinate"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -390,7 +396,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -404,7 +410,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -418,7 +424,7 @@
       "mission_tags": [
         "coordinate"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -432,7 +438,7 @@
       "mission_tags": [
         "after_action"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -460,7 +466,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -474,7 +480,7 @@
       "mission_tags": [
         "coordinate"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -489,7 +495,7 @@
         "coordinate",
         "dispatch"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -503,7 +509,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -517,7 +523,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -531,7 +537,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -546,7 +552,7 @@
         "respond",
         "coordinate"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -560,7 +566,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -574,7 +580,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -588,7 +594,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -602,7 +608,7 @@
       "mission_tags": [
         "after_action"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -644,7 +650,7 @@
       "mission_tags": [
         "after_action"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -686,7 +692,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -700,7 +706,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -714,7 +720,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -728,7 +734,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -756,7 +762,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -770,7 +776,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -784,7 +790,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -798,7 +804,7 @@
       "mission_tags": [
         "dispatch"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -826,7 +832,7 @@
       "mission_tags": [
         "after_action"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -840,7 +846,7 @@
       "mission_tags": [
         "after_action"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -869,7 +875,7 @@
         "respond",
         "dispatch"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -883,7 +889,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -898,7 +904,7 @@
         "respond",
         "dispatch"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -913,7 +919,7 @@
         "respond",
         "dispatch"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -928,7 +934,7 @@
         "dispatch",
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -1153,7 +1159,7 @@
         "respond",
         "dispatch"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -1182,7 +1188,7 @@
         "locate",
         "dispatch"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -1238,7 +1244,7 @@
       "mission_tags": [
         "after_action"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -1295,7 +1301,7 @@
         "respond",
         "coordinate"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -1324,7 +1330,7 @@
         "respond",
         "after_action"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -1338,7 +1344,7 @@
       "mission_tags": [
         "after_action"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -1352,7 +1358,7 @@
       "mission_tags": [
         "after_action"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -1464,7 +1470,7 @@
       "mission_tags": [
         "coordinate"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -1479,7 +1485,7 @@
         "dispatch",
         "coordinate"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -1507,7 +1513,7 @@
       "mission_tags": [
         "coordinate"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -1606,7 +1612,7 @@
       "mission_tags": [
         "dispatch"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -1649,7 +1655,7 @@
       "mission_tags": [
         "after_action"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -1804,7 +1810,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -1832,7 +1838,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -1944,7 +1950,7 @@
       "mission_tags": [
         "after_action"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -2085,7 +2091,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -2170,7 +2176,7 @@
         "respond",
         "coordinate"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -2452,7 +2458,7 @@
         "respond",
         "coordinate"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "LMR",
       "p25_ref": null
     },
@@ -2724,7 +2730,7 @@
     },
     {
       "id": "PSERS.PLAT.NG911.CALL_HANDLING",
-      "alias": null,
+      "alias": "NG911.CALL_HANDLING",
       "name": "NG911 call handling",
       "definition": "Receive and process emergency calls in NG911/i3 environment.",
       "stack_class": "PLAT",
@@ -2732,13 +2738,13 @@
       "mission_tags": [
         "call_take"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "NG911",
       "p25_ref": null
     },
     {
       "id": "PSERS.PLAT.NG911.EIDO_EXCHANGE",
-      "alias": null,
+      "alias": "NG911.EIDO_EXCHANGE",
       "name": "EIDO incident exchange",
       "definition": "Exchange Emergency Incident Data Objects with authorized FEs.",
       "stack_class": "PLAT",
@@ -2748,13 +2754,13 @@
         "dispatch",
         "coordinate"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "NG911",
       "p25_ref": null
     },
     {
       "id": "PSERS.PLAT.NG911.TEXT_TO_911",
-      "alias": null,
+      "alias": "NG911.TEXT_TO_911",
       "name": "Text-to-911",
       "definition": "Support SMS/text emergency contacts where deployed.",
       "stack_class": "PLAT",
@@ -2762,13 +2768,13 @@
       "mission_tags": [
         "call_take"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "NG911",
       "p25_ref": null
     },
     {
       "id": "PSERS.PLAT.NG911.MULTIMEDIA",
-      "alias": null,
+      "alias": "NG911.MULTIMEDIA",
       "name": "Multimedia to PSAP",
       "definition": "Accept multimedia (e.g. images/video) per NG911 capabilities.",
       "stack_class": "PLAT",
@@ -2776,13 +2782,13 @@
       "mission_tags": [
         "call_take"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "NG911",
       "p25_ref": null
     },
     {
       "id": "PSERS.PLAT.NG911.ALI_AML",
-      "alias": null,
+      "alias": "NG911.ALI_AML",
       "name": "Location for callers",
       "definition": "Acquire caller location (ALI/AML/civic/geodetic).",
       "stack_class": "PLAT",
@@ -2791,13 +2797,13 @@
         "locate",
         "call_take"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "NG911",
       "p25_ref": null
     },
     {
       "id": "PSERS.PLAT.CAD.INCIDENT_CREATE",
-      "alias": null,
+      "alias": "CAD.INCIDENT_CREATE",
       "name": "CAD incident creation",
       "definition": "Create and update incidents in Computer-Aided Dispatch.",
       "stack_class": "PLAT",
@@ -2805,13 +2811,13 @@
       "mission_tags": [
         "dispatch"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "CAD",
       "p25_ref": null
     },
     {
       "id": "PSERS.PLAT.CAD.UNIT_STATUS",
-      "alias": null,
+      "alias": "CAD.UNIT_STATUS",
       "name": "CAD unit status",
       "definition": "Track unit status and assignments in CAD.",
       "stack_class": "PLAT",
@@ -2820,13 +2826,13 @@
         "dispatch",
         "respond"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "CAD",
       "p25_ref": null
     },
     {
       "id": "PSERS.PLAT.CAD.RECOMMENDATION",
-      "alias": null,
+      "alias": "CAD.RECOMMENDATION",
       "name": "CAD unit recommendation",
       "definition": "Recommend units based on location/type/priority.",
       "stack_class": "PLAT",
@@ -2834,13 +2840,13 @@
       "mission_tags": [
         "dispatch"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "CAD",
       "p25_ref": null
     },
     {
       "id": "PSERS.PLAT.CAD.CAD_TO_CAD",
-      "alias": null,
+      "alias": "CAD.CAD_TO_CAD",
       "name": "CAD-to-CAD exchange",
       "definition": "Exchange incident/unit data with partner CAD systems.",
       "stack_class": "PLAT",
@@ -2848,13 +2854,13 @@
       "mission_tags": [
         "coordinate"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "CAD",
       "p25_ref": null
     },
     {
       "id": "PSERS.PLAT.CAD.AVL_DISPLAY",
-      "alias": null,
+      "alias": "CAD.AVL_DISPLAY",
       "name": "CAD AVL map display",
       "definition": "Display unit AVL on CAD maps.",
       "stack_class": "PLAT",
@@ -2863,7 +2869,7 @@
         "locate",
         "dispatch"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "CAD",
       "p25_ref": null
     },
@@ -2898,7 +2904,7 @@
     },
     {
       "id": "PSERS.PLAT.VMS.VIDEO_MANAGEMENT",
-      "alias": null,
+      "alias": "VIDEO.VMS",
       "name": "Video management system",
       "definition": "Manage and retrieve agency video streams/recordings.",
       "stack_class": "PLAT",
@@ -2907,13 +2913,13 @@
         "detect",
         "coordinate"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "VIDEO",
       "p25_ref": null
     },
     {
       "id": "PSERS.APP.FIELD.MOBILE_CAD",
-      "alias": null,
+      "alias": "CAD.MOBILE_CLIENT",
       "name": "Field mobile CAD client",
       "definition": "Mobile application for field CAD workflow.",
       "stack_class": "APP",
@@ -2922,7 +2928,7 @@
         "respond",
         "dispatch"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "FIELD",
       "p25_ref": null
     },
@@ -2984,7 +2990,7 @@
     },
     {
       "id": "PSERS.SENS.VIDEO.FIXED_CCTV",
-      "alias": null,
+      "alias": "VIDEO.FIXED_CCTV",
       "name": "Fixed CCTV camera",
       "definition": "Fixed camera sensor contributing video observations.",
       "stack_class": "SENS",
@@ -2992,13 +2998,13 @@
       "mission_tags": [
         "detect"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "VIDEO",
       "p25_ref": null
     },
     {
       "id": "PSERS.SENS.VIDEO.LIVE_SHARE",
-      "alias": null,
+      "alias": "VIDEO.LIVE_SHARE",
       "name": "Live video share to ops",
       "definition": "Share live video into CAD/EOC/console workflows.",
       "stack_class": "SENS",
@@ -3007,13 +3013,13 @@
         "coordinate",
         "detect"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "VIDEO",
       "p25_ref": null
     },
     {
       "id": "PSERS.SENS.VIDEO.BODYWORN",
-      "alias": null,
+      "alias": "VIDEO.BODYWORN",
       "name": "Body-worn camera",
       "definition": "Body-worn camera capture and evidence workflow.",
       "stack_class": "SENS",
@@ -3022,13 +3028,13 @@
         "respond",
         "after_action"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "VIDEO",
       "p25_ref": null
     },
     {
       "id": "PSERS.SENS.UAS.DISPATCHABLE_AIRCRAFT",
-      "alias": null,
+      "alias": "UAS.DISPATCHABLE_AIRCRAFT",
       "name": "Dispatchable UAS/drone",
       "definition": "Drone as a dispatchable aerial sensor/unit.",
       "stack_class": "SENS",
@@ -3037,13 +3043,13 @@
         "detect",
         "respond"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "UAS",
       "p25_ref": null
     },
     {
       "id": "PSERS.SENS.IOT.GUNSHOT",
-      "alias": null,
+      "alias": "IOT.GUNSHOT",
       "name": "Gunshot detection",
       "definition": "Acoustic gunshot detection feeding incidents.",
       "stack_class": "SENS",
@@ -3051,13 +3057,13 @@
       "mission_tags": [
         "detect"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "IOT",
       "p25_ref": null
     },
     {
       "id": "PSERS.SENS.IOT.ALPR",
-      "alias": null,
+      "alias": "IOT.ALPR",
       "name": "Automated license plate reader",
       "definition": "ALPR reads as observations linked to incidents.",
       "stack_class": "SENS",
@@ -3066,13 +3072,13 @@
         "detect",
         "locate"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "IOT",
       "p25_ref": null
     },
     {
       "id": "PSERS.SENS.IOT.ENVIRONMENTAL",
-      "alias": null,
+      "alias": "IOT.ENVIRONMENTAL",
       "name": "Environmental smart-city sensor",
       "definition": "Environmental/IoT sensors enriching situational awareness.",
       "stack_class": "SENS",
@@ -3080,7 +3086,7 @@
       "mission_tags": [
         "detect"
       ],
-      "status": "stub",
+      "status": "draft",
       "vertical": "IOT",
       "p25_ref": null
     },
@@ -3182,6 +3188,1411 @@
       ],
       "status": "stub",
       "vertical": "LOC",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.CALL_TYPE",
+      "alias": "CAD.CALL_TYPE",
+      "name": "CAD call / incident types",
+      "definition": "Configure and select call/incident types and natures for dispatch.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch",
+        "call_take"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.PRIORITY_SOP",
+      "alias": "CAD.PRIORITY_SOP",
+      "name": "CAD priority and SOP",
+      "definition": "Apply priority levels and standard operating procedures to incidents.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.PREMISE_HAZARD",
+      "alias": "CAD.PREMISE_HAZARD",
+      "name": "Premise / hazard notes",
+      "definition": "Store and present premise history, hazards, and officer-safety notes.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch",
+        "respond"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.CALL_STACK",
+      "alias": "CAD.CALL_STACK",
+      "name": "Call stacking / pending queue",
+      "definition": "Queue, stack, and prioritize pending calls awaiting assignment.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch",
+        "call_take"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.UNIT_RECOMMEND_GEO",
+      "alias": "CAD.UNIT_RECOMMEND_GEO",
+      "name": "Geo-aware unit recommendation",
+      "definition": "Recommend closest/appropriate units using location and resource type.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch",
+        "locate"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.BOLO_MESSAGE",
+      "alias": "CAD.BOLO_MESSAGE",
+      "name": "BOLO / broadcast messaging",
+      "definition": "Create and distribute BOLOs and broadcast messages to units/agencies.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch",
+        "inform"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.ROSTER_SCHEDULE",
+      "alias": "CAD.ROSTER_SCHEDULE",
+      "name": "Roster and schedule",
+      "definition": "Maintain unit/person roster, shifts, and on-duty schedule for dispatch.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.RMS_INTERFACE",
+      "alias": "CAD.RMS_INTERFACE",
+      "name": "CAD\u2013RMS interface",
+      "definition": "Interface CAD incidents/units with records management (RMS) systems.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "after_action",
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.NG911_TOUCH",
+      "alias": "CAD.NG911_TOUCH",
+      "name": "CAD\u2013NG911 call intake touchpoint",
+      "definition": "Receive NG911/PSAP call data into CAD (deep NG911 remains stub vertical).",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "call_take",
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.AUDIT_LOG",
+      "alias": "CAD.AUDIT_LOG",
+      "name": "CAD audit logging",
+      "definition": "Audit trail of CAD actions, status changes, and user activity.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.MAP_LAYERS",
+      "alias": "CAD.MAP_LAYERS",
+      "name": "CAD map layers",
+      "definition": "Display GIS/map layers (beats, hydrants, cameras) in the CAD map.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "locate",
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.TIMED_ALERT",
+      "alias": "CAD.TIMED_ALERT",
+      "name": "Timed alerts / rip-and-run",
+      "definition": "Timed reminders, rip-and-run sheets, and escalation alerts for units.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch",
+        "respond"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.MULTI_AGENCY",
+      "alias": "CAD.MULTI_AGENCY",
+      "name": "Multi-agency incident",
+      "definition": "Support multi-agency incidents with shared visibility and roles.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "coordinate",
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.RESOURCE_TYPE",
+      "alias": "CAD.RESOURCE_TYPE",
+      "name": "Resource typing",
+      "definition": "Type and filter resources (engine, medic, patrol) for recommendation.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.SHIFT_BRIEF",
+      "alias": "CAD.SHIFT_BRIEF",
+      "name": "Shift briefing",
+      "definition": "Shift briefing / pass-on notes for dispatch and field supervisors.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch",
+        "inform"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.PERSON_QUERY",
+      "alias": "CAD.PERSON_QUERY",
+      "name": "Person / vehicle query",
+      "definition": "Query person/vehicle databases from CAD and attach results to incidents.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch",
+        "locate"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.STATUS_MONITOR",
+      "alias": "CAD.STATUS_MONITOR",
+      "name": "Unit status monitor wall",
+      "definition": "Real-time unit status board / monitor for dispatch supervisors.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.INCIDENT_HISTORY",
+      "alias": "CAD.INCIDENT_HISTORY",
+      "name": "Incident history search",
+      "definition": "Search historical incidents by location, type, unit, or timeframe.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "after_action",
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.RADIO_INTEGRATION",
+      "alias": "CAD.RADIO_INTEGRATION",
+      "name": "CAD\u2013radio integration",
+      "definition": "Integrate CAD with radio/console events (status, emergency, ANI/ALI).",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch",
+        "respond"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.COMMAND_VIEW",
+      "alias": "CAD.COMMAND_VIEW",
+      "name": "Command / supervisory CAD view",
+      "definition": "Supervisory command view of active incidents and unit workload.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "coordinate",
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.DUPLICATE_CHECK",
+      "alias": "CAD.DUPLICATE_CHECK",
+      "name": "Duplicate call detection",
+      "definition": "Detect and link duplicate or related calls/incidents at intake.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "call_take",
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.TOW_IMPOUND",
+      "alias": "CAD.TOW_IMPOUND",
+      "name": "Tow / impound tracking",
+      "definition": "Track tow requests, impound status, and vehicle release from CAD.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch",
+        "after_action"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.WARRANT_CHECK",
+      "alias": "CAD.WARRANT_CHECK",
+      "name": "Warrant / wants check",
+      "definition": "Initiate warrant/wants/NCIC-class queries from CAD and attach results.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch",
+        "locate"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.MUTUAL_AID_REQ",
+      "alias": "CAD.MUTUAL_AID_REQ",
+      "name": "Mutual aid request workflow",
+      "definition": "Request and track mutual aid resources across agencies from CAD.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "coordinate",
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.FIRE_RUN_CARD",
+      "alias": "CAD.FIRE_RUN_CARD",
+      "name": "Fire run cards / pre-plans",
+      "definition": "Present fire run cards, pre-plans, and hydrant info to responding units.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "respond",
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.EMS_PROTOCOL",
+      "alias": "CAD.EMS_PROTOCOL",
+      "name": "EMS protocol / triage support",
+      "definition": "Support EMS dispatch protocols and triage guidance in CAD.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch",
+        "respond"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.HOSPITAL_STATUS",
+      "alias": "CAD.HOSPITAL_STATUS",
+      "name": "Hospital diversion / bed status",
+      "definition": "Display hospital diversion and bed/capacity status for EMS routing.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch",
+        "coordinate"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.TRAFFIC_STOP",
+      "alias": "CAD.TRAFFIC_STOP",
+      "name": "Traffic stop workflow",
+      "definition": "Support traffic stop / citation workflows with location and vehicle data.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "respond",
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.PURSUIT",
+      "alias": "CAD.PURSUIT",
+      "name": "Pursuit / chase tracking",
+      "definition": "Track pursuits with unit roles, route, and supervisory oversight.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "respond",
+        "coordinate"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.EVIDENCE_NOTE",
+      "alias": "CAD.EVIDENCE_NOTE",
+      "name": "Evidence / property notes",
+      "definition": "Capture evidence and property notes linked to CAD incidents.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "after_action",
+        "respond"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.MEDIA_HOLD",
+      "alias": "CAD.MEDIA_HOLD",
+      "name": "Media / PIO hold notes",
+      "definition": "Flag media holds and PIO notes on sensitive incidents.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "inform",
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.TRAINING_MODE",
+      "alias": "CAD.TRAINING_MODE",
+      "name": "CAD training / simulation mode",
+      "definition": "Training or simulation mode that does not affect live incident data.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "after_action",
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.FAILOVER_DR",
+      "alias": "CAD.FAILOVER_DR",
+      "name": "CAD failover / DR",
+      "definition": "Failover and disaster-recovery operation for CAD availability.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch",
+        "after_action"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.RBAC",
+      "alias": "CAD.RBAC",
+      "name": "CAD role-based access",
+      "definition": "Role-based access control for CAD functions and data visibility.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.CALLBACK_OT",
+      "alias": "CAD.CALLBACK_OT",
+      "name": "Overtime / callback roster",
+      "definition": "Manage overtime and callback rosters for staffing from CAD.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.VEHICLE_ASSIGN",
+      "alias": "CAD.VEHICLE_ASSIGN",
+      "name": "Unit\u2013vehicle assignment",
+      "definition": "Assign vehicles/apparatus to units and track current assignment.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch",
+        "respond"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.ALARM_INTERFACE",
+      "alias": "CAD.ALARM_INTERFACE",
+      "name": "Alarm monitoring interface",
+      "definition": "Receive and process alarm-monitoring events into CAD incidents.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "detect",
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.UNIT_CHAT",
+      "alias": "CAD.UNIT_CHAT",
+      "name": "Unit\u2013dispatch messaging",
+      "definition": "Secure messaging/chat between dispatch and field units in CAD.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch",
+        "respond"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.SIP_CALL_CONTROL",
+      "alias": "NG911.SIP_CALL_CONTROL",
+      "name": "NG911 SIP call control",
+      "definition": "Handle emergency SIP sessions (invite, hold, transfer) in an i3 NG911 environment.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.ESRP_ROUTING",
+      "alias": "NG911.ESRP_ROUTING",
+      "name": "Emergency call routing (ESRP)",
+      "definition": "Route emergency calls via Emergency Services Routing Proxy per policy and location.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take",
+        "locate"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.ECRF_LVF",
+      "alias": "NG911.ECRF_LVF",
+      "name": "ECRF / LVF location validation",
+      "definition": "Query ECRF and validate civic/geodetic location via LVF for routing.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "locate",
+        "call_take"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.POLICY_ROUTING",
+      "alias": "NG911.POLICY_ROUTING",
+      "name": "NG911 policy routing",
+      "definition": "Apply agency policy rules for call routing, overflow, and special handling.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take",
+        "coordinate"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.CALLBACK",
+      "alias": "NG911.CALLBACK",
+      "name": "911 callback",
+      "definition": "Callback abandoned or disconnected emergency callers with retained ANI/location.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.ABANDONED_CALL",
+      "alias": "NG911.ABANDONED_CALL",
+      "name": "Abandoned / silent call handling",
+      "definition": "Detect and process abandoned, silent, or incomplete 911 calls.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take",
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.TTY_RTT",
+      "alias": "NG911.TTY_RTT",
+      "name": "TTY / RTT accessibility",
+      "definition": "Support TTY and real-time text (RTT) for accessible emergency calling.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.LANGUAGE_INTERP",
+      "alias": "NG911.LANGUAGE_INTERP",
+      "name": "Language interpretation",
+      "definition": "Conference language interpretation for non-English emergency callers.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take",
+        "coordinate"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.TRANSFER_CONF",
+      "alias": "NG911.TRANSFER_CONF",
+      "name": "Call transfer / conference",
+      "definition": "Transfer and conference emergency calls to secondary PSAPs or agencies.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take",
+        "coordinate"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.QUEUE_ACD",
+      "alias": "NG911.QUEUE_ACD",
+      "name": "911 call queue / ACD",
+      "definition": "Queue and distribute emergency calls across call-takers (ACD).",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.CALL_RECORDING",
+      "alias": "NG911.CALL_RECORDING",
+      "name": "911 call recording",
+      "definition": "Record emergency call audio/media with retention and retrieval controls.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "after_action",
+        "call_take"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.WIRELESS_PHASE2",
+      "alias": "NG911.WIRELESS_PHASE2",
+      "name": "Wireless Phase II location",
+      "definition": "Acquire wireless Phase II / handset location for mobile 911 callers.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "locate",
+        "call_take"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.ADDITIONAL_DATA",
+      "alias": "NG911.ADDITIONAL_DATA",
+      "name": "Additional data (ADR)",
+      "definition": "Receive and display Additional Data Repository / caller additional data.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take",
+        "locate"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.BCF_BORDER",
+      "alias": "NG911.BCF_BORDER",
+      "name": "Border control function",
+      "definition": "Border Control Function for ingress/egress of NG911 SIP traffic.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.I3_LOGGING",
+      "alias": "NG911.I3_LOGGING",
+      "name": "i3 event logging",
+      "definition": "Log NG911 i3 functional-element events for audit and troubleshooting.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.PSAP_FAILOVER",
+      "alias": "NG911.PSAP_FAILOVER",
+      "name": "PSAP failover / overflow",
+      "definition": "Failover and overflow of emergency calls to alternate PSAPs.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take",
+        "coordinate"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.MISDIAL_FILTER",
+      "alias": "NG911.MISDIAL_FILTER",
+      "name": "Misdial / non-emergency filter",
+      "definition": "Filter or redirect obvious misdials and non-emergency contacts where policy allows.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.TELEM_911",
+      "alias": "NG911.TELEM_911",
+      "name": "Telematics / ACN to 911",
+      "definition": "Receive automatic crash notification / vehicle telematics into the PSAP.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take",
+        "detect"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.CAD_HANDOFF",
+      "alias": "NG911.CAD_HANDOFF",
+      "name": "NG911\u2013CAD call handoff",
+      "definition": "Hand off NG911 call/incident data into CAD (deep CAD remains separate vertical).",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take",
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.MULTI_LINE",
+      "alias": "NG911.MULTI_LINE",
+      "name": "Multi-line / multi-agency answer",
+      "definition": "Support multi-line answering and multi-agency call taking positions.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take",
+        "coordinate"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.SENS.VIDEO.VMS_SEARCH",
+      "alias": "VIDEO.VMS_SEARCH",
+      "name": "VMS search / retrieve",
+      "definition": "Search and retrieve recorded video by time, camera, and incident.",
+      "stack_class": "SENS",
+      "domain": "VIDEO",
+      "mission_tags": [
+        "after_action",
+        "locate"
+      ],
+      "status": "published",
+      "vertical": "VIDEO",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.SENS.VIDEO.VMS_RETENTION",
+      "alias": "VIDEO.VMS_RETENTION",
+      "name": "Video retention policy",
+      "definition": "Enforce retention, hold, and purge policies for agency video evidence.",
+      "stack_class": "SENS",
+      "domain": "VIDEO",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "VIDEO",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.SENS.VIDEO.CCTV_PTZ",
+      "alias": "VIDEO.CCTV_PTZ",
+      "name": "PTZ camera control",
+      "definition": "Pan-tilt-zoom control of fixed CCTV cameras from ops workstations.",
+      "stack_class": "SENS",
+      "domain": "VIDEO",
+      "mission_tags": [
+        "detect",
+        "coordinate"
+      ],
+      "status": "draft",
+      "vertical": "VIDEO",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.SENS.VIDEO.VIDEO_WALL",
+      "alias": "VIDEO.VIDEO_WALL",
+      "name": "Video wall / ops display",
+      "definition": "Display multi-camera layouts on ops/EOC video walls.",
+      "stack_class": "SENS",
+      "domain": "VIDEO",
+      "mission_tags": [
+        "coordinate",
+        "detect"
+      ],
+      "status": "draft",
+      "vertical": "VIDEO",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.SENS.VIDEO.BODYWORN_EVIDENCE",
+      "alias": "VIDEO.BODYWORN_EVIDENCE",
+      "name": "Body-worn evidence workflow",
+      "definition": "Upload, classify, and chain-of-custody body-worn camera evidence.",
+      "stack_class": "SENS",
+      "domain": "VIDEO",
+      "mission_tags": [
+        "after_action",
+        "respond"
+      ],
+      "status": "published",
+      "vertical": "VIDEO",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.SENS.VIDEO.PSAP_LIVESTREAM",
+      "alias": "VIDEO.PSAP_LIVESTREAM",
+      "name": "Livestream to PSAP / CAD",
+      "definition": "Stream live video into PSAP/CAD/EOC for situational awareness.",
+      "stack_class": "SENS",
+      "domain": "VIDEO",
+      "mission_tags": [
+        "coordinate",
+        "call_take"
+      ],
+      "status": "published",
+      "vertical": "VIDEO",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.SENS.IOT.ALPR_HOTLIST",
+      "alias": "IOT.ALPR_HOTLIST",
+      "name": "ALPR hotlist matching",
+      "definition": "Match ALPR reads against hotlists and alert ops in near real time.",
+      "stack_class": "SENS",
+      "domain": "IOT",
+      "mission_tags": [
+        "detect",
+        "locate"
+      ],
+      "status": "published",
+      "vertical": "IOT",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.SENS.IOT.GUNSHOT_CAD",
+      "alias": "IOT.GUNSHOT_CAD",
+      "name": "Gunshot \u2192 CAD incident",
+      "definition": "Create or enrich CAD incidents from gunshot detection alerts.",
+      "stack_class": "SENS",
+      "domain": "IOT",
+      "mission_tags": [
+        "detect",
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "IOT",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.SENS.IOT.SENSOR_ALERT_ROUTE",
+      "alias": "IOT.SENSOR_ALERT_ROUTE",
+      "name": "Sensor alert routing",
+      "definition": "Route IoT/sensor alerts to the correct PSAP/ops queue by policy.",
+      "stack_class": "SENS",
+      "domain": "IOT",
+      "mission_tags": [
+        "detect",
+        "dispatch"
+      ],
+      "status": "draft",
+      "vertical": "IOT",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.SENS.IOT.TRAFFIC_SENSOR",
+      "alias": "IOT.TRAFFIC_SENSOR",
+      "name": "Traffic / roadway sensors",
+      "definition": "Ingest traffic and roadway sensors for incident awareness.",
+      "stack_class": "SENS",
+      "domain": "IOT",
+      "mission_tags": [
+        "detect",
+        "locate"
+      ],
+      "status": "draft",
+      "vertical": "IOT",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.SENS.UAS.DRONE_DOWNLINK",
+      "alias": "UAS.DRONE_DOWNLINK",
+      "name": "UAS video downlink",
+      "definition": "Receive and display drone video downlink in ops/CAD workflows.",
+      "stack_class": "SENS",
+      "domain": "UAS",
+      "mission_tags": [
+        "detect",
+        "coordinate"
+      ],
+      "status": "published",
+      "vertical": "UAS",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.SENS.UAS.DRONE_GEO_FENCE",
+      "alias": "UAS.DRONE_GEO_FENCE",
+      "name": "UAS geo-fence / airspace",
+      "definition": "Enforce geo-fence and airspace constraints for dispatched UAS.",
+      "stack_class": "SENS",
+      "domain": "UAS",
+      "mission_tags": [
+        "respond",
+        "coordinate"
+      ],
+      "status": "published",
+      "vertical": "UAS",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.SENS.VIDEO.ANALYTICS_DETECT",
+      "alias": "VIDEO.ANALYTICS_DETECT",
+      "name": "Video analytics detection",
+      "definition": "Video analytics for object/person/vehicle detection feeding alerts.",
+      "stack_class": "SENS",
+      "domain": "VIDEO",
+      "mission_tags": [
+        "detect"
+      ],
+      "status": "draft",
+      "vertical": "VIDEO",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.SENS.IOT.SENSOR_FUSION",
+      "alias": "IOT.SENSOR_FUSION",
+      "name": "Multi-sensor fusion",
+      "definition": "Correlate multi-sensor events (video, ALPR, gunshot) into one picture.",
+      "stack_class": "SENS",
+      "domain": "IOT",
+      "mission_tags": [
+        "detect",
+        "coordinate"
+      ],
+      "status": "published",
+      "vertical": "IOT",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.SENS.VIDEO.EXPORT_REDAC",
+      "alias": "VIDEO.EXPORT_REDAC",
+      "name": "Video export / redaction",
+      "definition": "Export and redact video for discovery, FOIA, and court packages.",
+      "stack_class": "SENS",
+      "domain": "VIDEO",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "VIDEO",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.CIT_FLAG",
+      "alias": "CAD.CIT_FLAG",
+      "name": "CIT / mental-health flags",
+      "definition": "Flag incidents and subjects for CIT / mental-health response protocols.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch",
+        "respond"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.JUVENILE_FLAG",
+      "alias": "CAD.JUVENILE_FLAG",
+      "name": "Juvenile subject flags",
+      "definition": "Flag juvenile subjects and apply age-sensitive handling notes in CAD.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch",
+        "respond"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.GEO_FENCE_ALERT",
+      "alias": "CAD.GEO_FENCE_ALERT",
+      "name": "Geo-fence / zone alerts",
+      "definition": "Alert dispatch when units or incidents enter configured geo-fences or zones.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "locate",
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.INCIDENT_CLONE",
+      "alias": "CAD.INCIDENT_CLONE",
+      "name": "Incident clone / split",
+      "definition": "Clone or split incidents while preserving linked history and parties.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch",
+        "call_take"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.SUPERVISOR_OVERRIDE",
+      "alias": "CAD.SUPERVISOR_OVERRIDE",
+      "name": "Supervisor override",
+      "definition": "Allow authorized supervisors to override priority, assignment, or SOP locks.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "coordinate",
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.JAIL_COURT_IFACE",
+      "alias": "CAD.JAIL_COURT_IFACE",
+      "name": "Jail / court interface touch",
+      "definition": "Interface CAD bookings and court appearance touchpoints with jail/court systems.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "after_action",
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.WEATHER_ROAD",
+      "alias": "CAD.WEATHER_ROAD",
+      "name": "Weather / road closure layers",
+      "definition": "Display weather and road-closure layers affecting response routing.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "locate",
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.SKILL_RECOMMEND",
+      "alias": "CAD.SKILL_RECOMMEND",
+      "name": "Skill-based unit recommendation",
+      "definition": "Recommend units by certified skills (e.g. CIT, K9, bilingual) in addition to proximity.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.SCHEDULED_EVENT",
+      "alias": "CAD.SCHEDULED_EVENT",
+      "name": "Scheduled / planned events",
+      "definition": "Create and manage scheduled or planned events with pre-assigned resources.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch",
+        "coordinate"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.QUARANTINE_HOLD",
+      "alias": "CAD.QUARANTINE_HOLD",
+      "name": "Quarantine / information hold",
+      "definition": "Place sensitive incidents on quarantine or information-hold with restricted visibility.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch",
+        "inform"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.SHIFT_HANDOFF",
+      "alias": "CAD.SHIFT_HANDOFF",
+      "name": "Dispatcher shift handoff",
+      "definition": "Structured dispatcher shift handoff of active incidents and pending work.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch",
+        "inform"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.CAD.PERSON_ALERT",
+      "alias": "CAD.PERSON_ALERT",
+      "name": "Person-of-interest alerts",
+      "definition": "Alert when a person of interest or watchlist hit attaches to an incident or query.",
+      "stack_class": "PLAT",
+      "domain": "CAD",
+      "mission_tags": [
+        "dispatch",
+        "locate"
+      ],
+      "status": "published",
+      "vertical": "CAD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.LOCATION_DISCREP",
+      "alias": "NG911.LOCATION_DISCREP",
+      "name": "Location discrepancy handling",
+      "definition": "Detect and resolve discrepancies between reported, ALI/AML, and verified locations.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "locate",
+        "call_take"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.SILENT_CALL_PROTO",
+      "alias": "NG911.SILENT_CALL_PROTO",
+      "name": "Silent-call protocol",
+      "definition": "Apply silent/open-line call protocols including staged verification steps.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take",
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.RTT_TRANSFER",
+      "alias": "NG911.RTT_TRANSFER",
+      "name": "RTT / text transfer",
+      "definition": "Transfer real-time text (RTT) and text sessions between PSAPs without dropping media.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take",
+        "coordinate"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.MEDIA_RETENTION",
+      "alias": "NG911.MEDIA_RETENTION",
+      "name": "Multimedia retention policy",
+      "definition": "Retain NG911 multimedia (image/video) per agency retention and legal hold policy.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "after_action",
+        "call_take"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.ESRP_CONGESTION",
+      "alias": "NG911.ESRP_CONGESTION",
+      "name": "ESRP congestion / alternate route",
+      "definition": "Handle ESRP congestion with alternate routing and overflow policies.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take",
+        "coordinate"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.LEGACY_SR_BRIDGE",
+      "alias": "NG911.LEGACY_SR_BRIDGE",
+      "name": "Legacy selective-router bridge",
+      "definition": "Bridge legacy selective-router / E911 trunks into the NG911 i3 call path.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.ORPHAN_CALL",
+      "alias": "NG911.ORPHAN_CALL",
+      "name": "Orphan / stranded call recovery",
+      "definition": "Recover orphaned or stranded emergency sessions after network or FE failure.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take",
+        "after_action"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.POISON_TRANSFER",
+      "alias": "NG911.POISON_TRANSFER",
+      "name": "Poison control / specialty transfer",
+      "definition": "Transfer emergency callers to poison control or other specialty advice lines with location retained.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take",
+        "coordinate"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.BCF_TLS_SRTP",
+      "alias": "NG911.BCF_TLS_SRTP",
+      "name": "BCF TLS / SRTP media security",
+      "definition": "Enforce TLS signaling and SRTP media security at the Border Control Function.",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take"
+      ],
+      "status": "published",
+      "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.NG911.ABANDONED_CB_POLICY",
+      "alias": "NG911.ABANDONED_CB_POLICY",
+      "name": "Abandoned-call callback policy",
+      "definition": "Apply configurable abandoned-call callback policy (attempts, timers, disposition).",
+      "stack_class": "PLAT",
+      "domain": "NG911",
+      "mission_tags": [
+        "call_take",
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "NG911",
       "p25_ref": null
     }
   ]

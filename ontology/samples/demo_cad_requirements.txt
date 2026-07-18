@@ -1,0 +1,30 @@
+The CAD system shall create and update incidents in Computer-Aided Dispatch.
+Dispatchers shall track unit status and assignments in CAD.
+The system shall recommend units based on location, type, and priority.
+The solution shall support CAD-to-CAD exchange with partner agencies.
+CAD shall display unit AVL on the dispatch map.
+Field users shall access a mobile CAD client for field workflow.
+The CAD shall configure call and incident types for dispatch.
+Premise hazard and officer-safety notes shall be available to dispatchers.
+The CAD shall provide a pending call stack queue for unassigned incidents.
+The system shall support multi-agency incidents with shared visibility.
+The CAD shall detect duplicate or related calls at intake.
+Tow requests and impound status shall be tracked in CAD.
+Dispatchers shall initiate warrant checks from CAD and attach results.
+Fire run cards and pre-plans shall be presented to responding units.
+The CAD shall support EMS protocol and triage guidance.
+Hospital diversion and bed status shall be available for EMS routing.
+The system shall track pursuits with supervisory oversight.
+CAD shall provide training mode that does not affect live incident data.
+Alarm monitoring events shall create CAD incidents.
+Secure messaging shall be available between dispatch and field units.
+CAD shall flag incidents for CIT / mental-health response protocols.
+Juvenile subject flags shall apply age-sensitive handling notes in CAD.
+Geo-fence and zone alerts shall notify dispatch when units enter configured zones.
+Dispatchers shall clone or split incidents while preserving linked history.
+Authorized supervisors shall override priority, assignment, or SOP locks.
+Weather and road-closure layers shall display for response routing.
+Skill-based unit recommendation shall consider certified skills such as CIT.
+Scheduled or planned events shall support pre-assigned resources in CAD.
+Sensitive incidents shall support quarantine or information-hold visibility.
+Person-of-interest and watchlist hits shall alert when attached to an incident.

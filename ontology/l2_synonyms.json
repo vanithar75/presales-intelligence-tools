@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "sprint": "S2",
+  "sprint": "P2-003",
   "method": "deterministic_seed_and_name_match",
   "counts": {
-    "synonyms": 492,
+    "synonyms": 493,
     "holdout": 42,
     "unmapped_phrases": 3640,
-    "capabilities_with_synonyms": 58,
+    "capabilities_with_synonyms": 59,
     "documents": 3
   },
   "documents": [
@@ -5930,6 +5930,22 @@
       "confidence": 0.65,
       "match_method": "alias_code",
       "status": "auto_accepted"
+    },
+    {
+      "phrase": "P2-003 TEST: The radio system shall provide a geo-redundant core for feedback-loop verification only.",
+      "source_doc_id": "analyst_ui",
+      "source_file": "analyst_ui",
+      "page": null,
+      "phrase_id": "c18481e37a2d",
+      "capability_id": "PSERS.INFRA.CORE.GEO_REDUNDANT_CORE",
+      "capability_alias": "LMR.CORE.GEO_REDUNDANT_CORE",
+      "confidence": 0.95,
+      "match_method": "feedback",
+      "status": "analyst_accepted",
+      "feedback_action": "accept",
+      "feedback_note": "slice 003 test",
+      "feedback_ts": "2026-07-12T10:26:57.593990+00:00"
     }
-  ]
+  ],
+  "last_feedback_publish": "2026-07-12T10:27:08.244592+00:00"
 }

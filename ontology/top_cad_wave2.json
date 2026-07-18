@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "source": "CAD enrichment wave 2 — remaining drafts + new priority set",
+  "description": "Second CAD publish batch after Phase 4 Lite top-15.",
+  "aliases": [
+    "CAD.AUDIT_LOG",
+    "CAD.INCIDENT_HISTORY",
+    "CAD.MAP_LAYERS",
+    "CAD.NG911_TOUCH",
+    "CAD.PERSON_QUERY",
+    "CAD.RESOURCE_TYPE",
+    "CAD.RMS_INTERFACE",
+    "CAD.ROSTER_SCHEDULE",
+    "CAD.SHIFT_BRIEF",
+    "CAD.STATUS_MONITOR",
+    "CAD.TIMED_ALERT",
+    "CAD.DUPLICATE_CHECK",
+    "CAD.FIRE_RUN_CARD",
+    "CAD.EMS_PROTOCOL",
+    "CAD.HOSPITAL_STATUS",
+    "CAD.FAILOVER_DR",
+    "CAD.ALARM_INTERFACE",
+    "CAD.UNIT_CHAT",
+    "CAD.WARRANT_CHECK",
+    "CAD.MUTUAL_AID_REQ"
+  ]
+}

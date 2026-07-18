@@ -1,6 +1,6 @@
 # 002 — Match quality
 
-**Status:** Planned  
+**Status:** Done  
 **SPEC refs:** FR-2, NFR-1, NFR-4  
 **Owner:** engineering  
 
@@ -23,13 +23,6 @@ Deterministic matching works well on the demo fixture but underperforms on early
 3. Tune seed/name matching only as needed to hit targets **without** LLM by default.
 4. Document how to run eval in README or `docs/sprint` note; exit non-zero if below targets (or support `--soft` to report only).
 
-## Targets (from SPEC)
-
-| Suite | Target |
-|-------|--------|
-| Demo fixture | map_rate ≥ **0.80** |
-| Mid-doc Erie pages 21–40 | map_rate ≥ **0.50** |
-
 ## Out of scope
 
 - Enabling LLM matching by default
@@ -38,11 +31,11 @@ Deterministic matching works well on the demo fixture but underperforms on early
 
 ## Acceptance tests
 
-- [ ] `eval_match.py` runs and prints JSON or clear text summary with both suite scores
-- [ ] Demo suite ≥ 0.80
-- [ ] Mid-doc suite ≥ 0.50 **or** decision-log records a tracked gap with next actions (SPEC allows documenting gap if filed)
-- [ ] `validate_l1|l2|l3` still OK
-- [ ] Matcher still returns MSI coverage for mapped hits
+- [x] `eval_match.py` runs and prints JSON or clear text summary with both suite scores
+- [x] Demo suite ≥ 0.80
+- [x] Mid-doc suite ≥ 0.50 **or** decision-log records a tracked gap with next actions (SPEC allows documenting gap if filed)
+- [x] `validate_l1|l2|l3` still OK
+- [x] Matcher still returns MSI coverage for mapped hits
 
 ## Implementation notes (files)
 
@@ -52,7 +45,8 @@ Deterministic matching works well on the demo fixture but underperforms on early
 - New: `ontology/eval_match.py`
 - [ontology/samples/demo_requirements.txt](../ontology/samples/demo_requirements.txt)
 - [data/rfp/](../data/rfp/) (local PDFs required for mid-doc eval)
+- Write-up: [docs/sprint-p2-002-done.md](../docs/sprint-p2-002-done.md)
 
 ## Status
 
-Planned — not started.
+Done — 2026-07-12. Demo **1.00**, mid-doc **0.545**.

@@ -208,12 +208,69 @@
         body: JSON.stringify(payload),
       });
       if (!r.ok) throw new Error(await r.text());
-      $("#fbStatus").textContent = `Saved ${action} feedback.`;
+      const j = await r.json();
+      if (action === "reject") {
+        $("#fbStatus").textContent = "Saved reject (audit only — not queued for L2 publish).";
+      } else {
+        $("#fbStatus").textContent = `Saved ${action}; queued for L2 publish.`;
+      }
+      if (j.queued?.status) {
+        $("#fbStatus").textContent += ` [${j.queued.status}]`;
+      }
       $("#fbNote").value = "";
+      loadQueue();
     } catch (err) {
       $("#fbStatus").textContent = `Save failed: ${err.message || err}`;
     }
   });
+
+  async function loadQueue() {
+    try {
+      const r = await fetch("/api/review-queue");
+      if (!r.ok) throw new Error(await r.text());
+      const j = await r.json();
+      const c = j.counts || {};
+      $("#queueCounts").textContent =
+        `Pending ${c.pending || 0} · Published ${c.published || 0} · Rejected ${c.rejected || 0}`;
+      const items = j.items || [];
+      $("#queueBody").innerHTML = items.length
+        ? items
+            .map(
+              (it) => `<tr>
+                <td><span class="queue-status ${escapeAttr(it.status || "pending")}">${escapeHtml(it.status || "pending")}</span></td>
+                <td>${escapeHtml(it.action || "")}</td>
+                <td class="req">${escapeHtml(it.phrase || "")}</td>
+                <td><span class="alias">${escapeHtml(it.capability_alias || it.capability_id || "")}</span></td>
+              </tr>`
+            )
+            .join("")
+        : `<tr><td colspan="4" class="hint">Queue empty.</td></tr>`;
+    } catch (e) {
+      $("#queueCounts").textContent = `Queue load failed: ${e.message || e}`;
+    }
+  }
+
+  async function runPublish(dryRun) {
+    $("#queuePublishStatus").textContent = dryRun ? "Dry-run…" : "Publishing…";
+    try {
+      const r = await fetch(`/api/review-queue/publish?dry_run=${dryRun ? "true" : "false"}`, {
+        method: "POST",
+      });
+      if (!r.ok) throw new Error(await r.text());
+      const j = await r.json();
+      const s = j.summary || {};
+      $("#queuePublishStatus").textContent =
+        `${dryRun ? "Dry-run" : "Published"}: added=${s.added ?? 0}, dup=${s.skipped_dup ?? 0}, ` +
+        `reject=${s.skipped_reject ?? 0}, already=${s.skipped_published ?? 0}`;
+      if (!dryRun) await loadQueue();
+    } catch (e) {
+      $("#queuePublishStatus").textContent = `Publish failed: ${e.message || e}`;
+    }
+  }
+
+  $("#refreshQueue").addEventListener("click", () => loadQueue());
+  $("#dryPublishQueue").addEventListener("click", () => runPublish(true));
+  $("#publishQueue").addEventListener("click", () => runPublish(false));
 
   // preload capability datalist (lightweight)
   fetch("/api/capabilities?limit=200")
@@ -226,4 +283,5 @@
     .catch(() => {});
 
   checkHealth();
+  loadQueue();
 })();

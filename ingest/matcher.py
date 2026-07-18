@@ -13,7 +13,10 @@ ROOT = Path(__file__).resolve().parents[1]
 from ingest.extract_l2_synonyms import (  # noqa: E402
     SEED_PHRASES,
     harvest_phrases,
+    is_boilerplate_phrase,
+    normalize_key,
     normalize_phrase,
+    strip_page_chrome,
 )
 
 
@@ -89,18 +92,38 @@ def match_phrase(phrase: str, top_k: int = 3) -> list[MatchHit]:
         if re.search(pat, phrase, flags=re.I):
             cid = alias_to_id.get(alias)
             if cid:
-                add(cid, 0.92, "seed")
+                conf = 0.92
+                # Prefer vertical seeds when the phrase is clearly scoped
+                if alias.startswith("CAD.") and re.search(r"\bcad\b", phrase, flags=re.I):
+                    conf = 0.95
+                if alias.startswith("NG911."):
+                    conf = 0.96
+                if alias.startswith(("VIDEO.", "IOT.", "UAS.")):
+                    # Prefer more specific sensor aliases over broad ones on confidence ties
+                    conf = 0.96
+                    if alias in (
+                        "VIDEO.PSAP_LIVESTREAM",
+                        "VIDEO.LIVE_SHARE",
+                        "IOT.ALPR_HOTLIST",
+                        "IOT.GUNSHOT_CAD",
+                        "IOT.SENSOR_ALERT_ROUTE",
+                        "IOT.SENSOR_FUSION",
+                        "UAS.DRONE_DOWNLINK",
+                        "UAS.DRONE_GEO_FENCE",
+                    ):
+                        conf = 0.97
+                add(cid, conf, "seed")
 
-    # L2 synonym Jaccard
+    # L2 synonym Jaccard (slightly looser inter for Phase-2 mid-doc recall)
     q = _tokens(phrase)
     if q:
         for tokens, cid, base in syn_index:
             inter = len(q & tokens)
-            if inter < 3:
+            if inter < 2:
                 continue
             union = len(q | tokens)
             j = inter / union if union else 0.0
-            if j >= 0.35:
+            if j >= 0.28:
                 add(cid, min(0.9, 0.55 + j * 0.4) * (0.9 + 0.1 * base), "l2_overlap")
 
     # capability name contains
@@ -137,19 +160,26 @@ def msi_coverage(capability_ids: list[str]) -> list[dict]:
 
 def match_text(text: str, top_k: int = 3) -> list[dict]:
     results = []
+    text = strip_page_chrome(text)
     phrases = harvest_phrases(text)
     # also accept raw lines if harvest empty
     if not phrases:
         for line in text.splitlines():
             line = normalize_phrase(line)
-            if len(line) >= 25:
+            if len(line) >= 25 and not is_boilerplate_phrase(line):
                 phrases.append(line)
-    seen = set()
+    seen_exact: set[str] = set()
+    seen_key: set[str] = set()
     for phrase in phrases:
-        key = phrase.lower()
-        if key in seen:
+        exact = phrase.lower()
+        key = normalize_key(phrase)
+        if exact in seen_exact:
             continue
-        seen.add(key)
+        if key and key in seen_key:
+            continue
+        seen_exact.add(exact)
+        if key:
+            seen_key.add(key)
         hits = match_phrase(phrase, top_k=top_k)
         if not hits:
             results.append(
@@ -181,15 +211,31 @@ def match_text(text: str, top_k: int = 3) -> list[dict]:
     return results
 
 
-def match_pdf(pdf_path: Path, max_pages: int | None = None, top_k: int = 3) -> dict:
+def match_pdf(
+    pdf_path: Path,
+    max_pages: int | None = None,
+    top_k: int = 3,
+    *,
+    start_page: int = 1,
+    end_page: int | None = None,
+) -> dict:
+    """Match PDF pages. Pages are 1-indexed inclusive when start/end set."""
     from pypdf import PdfReader
 
     reader = PdfReader(str(pdf_path))
-    pages = reader.pages[: max_pages or len(reader.pages)]
+    total = len(reader.pages)
+    start = max(1, start_page)
+    if end_page is not None:
+        end = min(end_page, total)
+    elif max_pages is not None:
+        end = min(start + max_pages - 1, total)
+    else:
+        end = total
+
     all_rows = []
-    for i, page in enumerate(pages, start=1):
+    for i in range(start, end + 1):
         try:
-            text = page.extract_text() or ""
+            text = reader.pages[i - 1].extract_text() or ""
         except Exception:
             text = ""
         for row in match_text(text, top_k=top_k):
@@ -200,7 +246,8 @@ def match_pdf(pdf_path: Path, max_pages: int | None = None, top_k: int = 3) -> d
     unmapped = [r for r in all_rows if r["unmapped"]]
     return {
         "source_file": pdf_path.name,
-        "pages_processed": len(pages),
+        "pages_processed": max(0, end - start + 1),
+        "page_range": {"start": start, "end": end},
         "counts": {
             "requirements": len(all_rows),
             "mapped": len(mapped),
