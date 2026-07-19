@@ -2,7 +2,7 @@
 
 Cost-effective MVP: map RFP language → stable capabilities → Motorola Solutions (MSI) product coverage.
 
-**Product spec (authority for next work):** [SPEC.md](SPEC.md) — Phase 10 Lite L1-first complete; next expansion needs SPEC amendment  
+**Product spec (authority for next work):** [SPEC.md](SPEC.md) — Phase 11 Lite compliance workbook; next expansion needs SPEC amendment  
 **Feature slices:** [specs/](specs/)
 
 ## Ontology model
@@ -17,14 +17,15 @@ See [docs/psers-root.md](docs/psers-root.md) and [docs/decision-log.md](docs/dec
 ## Repo layout
 
 ```
-SPEC.md            # Product spec (Phase 4 Lite authority)
+SPEC.md            # Product spec
 specs/             # Feature slices for Cursor SDD
-ontology/          # L1 JSON + facets
+ontology/          # L1/L2/L3 capability JSON only
+samples/compliance/# Compliance workbook e2e artifacts (not ontology)
 sql/               # Postgres DDL
 data/rfp/          # Allowlisted RFP PDFs only
 docs/              # Architecture & decisions
-ingest/            # PDF → shall extract (Sprint 2+)
-app/               # Match UI (Sprint 3–4)
+ingest/            # PDF harvest, match, compliance export
+app/               # Match UI + API
 ```
 
 ## Sprint status
@@ -45,6 +46,7 @@ app/               # Match UI (Sprint 3–4)
 | **Phase 8 Lite** | **Done** — Coverage export + MCX Lite + thin ALERT; see [SPEC.md](SPEC.md) |
 | **Phase 9** | **Done** — Mid-doc lift, L3 fill, GIS, fullstack demo; see [docs/sprint-p9-done.md](docs/sprint-p9-done.md) |
 | **Phase 10 Lite** | **Done** — L1-first thoroughness (all drafts published); see [docs/sprint-p10-done.md](docs/sprint-p10-done.md) |
+| **Phase 11 Lite** | **Done** — compliance matrix `.xlsx` workbook; see [specs/100-compliance-matrix.md](specs/100-compliance-matrix.md) |
 
 See [docs/sprint-s0-s1-done.md](docs/sprint-s0-s1-done.md).
 
@@ -55,6 +57,8 @@ py -3.12 ontology/validate_l1.py
 py -3.12 ontology/validate_l2.py
 py -3.12 ontology/validate_l3.py
 py -3.12 ingest/match_rfp.py ontology/samples/demo_requirements.txt
+py -3.12 ingest/export_compliance.py ontology/samples/demo_requirements.txt -o samples/compliance/demo-compliance.xlsx
+py -3.12 ingest/e2e_compliance_pdf.py
 py -3.12 ontology/eval_match.py
 py -3.12 ingest/publish_l2_feedback.py --dry-run
 ```

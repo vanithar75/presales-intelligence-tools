@@ -27,16 +27,24 @@ SAMPLES = ROOT / "ontology" / "samples"
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+from ingest.compliance_matrix import build_workbook_bytes  # noqa: E402
 from ingest.extract_l2_synonyms import normalize_key  # noqa: E402
 from ingest.matcher import match_pdf, match_text, _load_ontology  # noqa: E402
 from ingest.publish_l2_feedback import load_review_queue, publish_review_queue  # noqa: E402
 
-app = FastAPI(title="PSERS Presales Intelligence", version="0.5.0")
+app = FastAPI(title="PSERS Presales Intelligence", version="0.5.1")
 
 
 class TextMatchRequest(BaseModel):
     text: str = Field(..., min_length=10)
     top_k: int = 3
+
+
+class ComplianceMatrixRequest(BaseModel):
+    """Build workbook from already-matched results (preserves PDF page refs)."""
+
+    results: list[dict] = Field(..., min_length=1)
+    source_file: str = ""
 
 
 class SynonymFeedback(BaseModel):
@@ -98,7 +106,7 @@ def _upsert_review_queue(record: dict) -> dict:
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "sprint": "P9-080", "ui": True}
+    return {"status": "ok", "sprint": "P11-100", "ui": True}
 
 
 @app.get("/api/ontology/summary")
@@ -283,7 +291,7 @@ def _coverage_csv(rows: list[dict]) -> str:
 
 @app.post("/api/match/export")
 def match_export(body: TextMatchRequest, format: str = "json"):
-    """Bid-desk coverage report: requirement → L1 → MSI (json or csv)."""
+    """Bid-desk coverage report: requirement → L1 → MSI (json, csv, or xlsx)."""
     rows = match_text(body.text, top_k=body.top_k)
     mapped = sum(1 for r in rows if not r["unmapped"])
     coverage = _coverage_rows(rows)
@@ -302,7 +310,37 @@ def match_export(body: TextMatchRequest, format: str = "json"):
                 "Content-Disposition": 'attachment; filename="psers-coverage.csv"'
             },
         )
+    if fmt == "xlsx":
+        content, _ = build_workbook_bytes(rows, source_file="paste")
+        return Response(
+            content=content,
+            media_type=(
+                "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            ),
+            headers={
+                "Content-Disposition": 'attachment; filename="psers-compliance.xlsx"'
+            },
+        )
     return {"counts": summary, "rows": coverage}
+
+
+@app.post("/api/compliance/matrix")
+def compliance_matrix(body: ComplianceMatrixRequest):
+    """Compliance workbook from prior match results (one row per requirement)."""
+    content, summary = build_workbook_bytes(
+        body.results, source_file=body.source_file or "match"
+    )
+    return Response(
+        content=content,
+        media_type=(
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        ),
+        headers={
+            "Content-Disposition": 'attachment; filename="psers-compliance.xlsx"',
+            "X-PSERS-Requirements": str(summary.get("requirements", 0)),
+            "X-PSERS-Map-Rate": str(summary.get("map_rate", 0)),
+        },
+    )
 
 
 @app.post("/api/match/pdf")

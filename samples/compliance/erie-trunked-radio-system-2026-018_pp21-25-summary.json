@@ -1,0 +1,17 @@
+{
+  "source_file": "erie-trunked-radio-system-2026-018.pdf",
+  "generated_at": "2026-07-19T07:56:51Z",
+  "requirements": 33,
+  "mapped": 33,
+  "unmapped": 0,
+  "map_rate": 1.0,
+  "suggested_c": 30,
+  "suggested_a": 0,
+  "blank_for_review": 3,
+  "page_range": {
+    "start": 21,
+    "end": 25
+  },
+  "pages_processed": 5,
+  "xlsx": "samples/compliance/erie-trunked-radio-system-2026-018_pp21-25-compliance.xlsx"
+}

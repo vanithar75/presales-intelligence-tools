@@ -309,3 +309,13 @@
 - Military / multi-vendor / L3 URL polish still deferred
 - **Stop** — further spend should stay under Cursor Pro **90%**
 
+## 2026-07-19 — Phase 11 Lite (compliance matrix workbook)
+
+- Bid-desk `.xlsx` export: one requirement → one row; Compliance / Summary / Gaps
+- Suggested compliance codes **C** (native) / **A** (option|partner); never auto-**N**
+- CLI `ingest/export_compliance.py`; `ingest/e2e_compliance_pdf.py`; samples under `samples/compliance/` (not ontology)
+- API `POST /api/compliance/matrix`; UI download
+- Google Sheets via File → Import (no Sheets API / credentials)
+- Narrative / pricing / multi-vendor still deferred
+- Sprint **P11-100**; SPEC **0.10.0-spec**
+

@@ -629,6 +629,10 @@ _TRUNCATED_TAIL_RE = re.compile(
     r"(?i)\b(each|the|a|an|for|to|and|or|of|in|on|with|by|via a)\s*[.]?\s*$"
 )
 _SECTION_HEADING_RE = re.compile(r"^\s*\d+(\.\d+)+\s+\S+")
+_SECTION_CAPTURE_RE = re.compile(r"^\s*(\d+(?:\.\d+)+)\s+(\S.*)$")
+_BULLET_PREFIX_RE = re.compile(
+    r"^\s*(?:\(([A-Za-z0-9]+)\)|([A-Z])\.|([0-9]+)\.)\s+(.*)$"
+)
 
 
 def strip_page_chrome(page_text: str) -> str:
@@ -677,17 +681,92 @@ def is_boilerplate_phrase(phrase: str) -> bool:
     return False
 
 
-def harvest_phrases(page_text: str) -> list[str]:
+def parse_section_heading(line: str) -> tuple[str, str] | None:
+    """Return (section_id, title) for lines like '4.6.6 Antenna Support…'."""
+    m = _SECTION_CAPTURE_RE.match(line.strip())
+    if not m:
+        return None
+    return m.group(1), m.group(2).strip()
+
+
+def _bullet_label(phrase: str) -> str:
+    m = _BULLET_PREFIX_RE.match(phrase.strip())
+    if not m:
+        return ""
+    return (m.group(1) or m.group(2) or m.group(3) or "").upper()
+
+
+def build_section_offset_index(
+    page_text: str,
+    *,
+    initial_section: tuple[str, str] = ("", ""),
+) -> tuple[list[tuple[int, str, str]], tuple[str, str]]:
+    """Map char offsets → active section; return ending section for page carry."""
+    sid, stitle = initial_section
+    index: list[tuple[int, str, str]] = [(0, sid, stitle)]
+    pos = 0
+    for line in page_text.splitlines(keepends=True):
+        parsed = parse_section_heading(line)
+        if parsed:
+            sid, stitle = parsed
+            index.append((pos, sid, stitle))
+        pos += len(line)
+    return index, (sid, stitle)
+
+
+def section_at(index: list[tuple[int, str, str]], char_pos: int) -> tuple[str, str]:
+    sid, stitle = "", ""
+    for off, s, t in index:
+        if off <= char_pos:
+            sid, stitle = s, t
+        else:
+            break
+    return sid, stitle
+
+
+def format_pdf_req_id(section_id: str, bullet: str = "", seq: int = 0) -> str:
+    """Build req_id from PDF section / bullet; empty if no PDF id available."""
+    section_id = (section_id or "").strip()
+    bullet = (bullet or "").strip().upper()
+    if not section_id and not bullet:
+        return ""
+    if section_id and bullet:
+        base = f"{section_id}-{bullet}"
+    elif section_id:
+        base = section_id
+    else:
+        base = bullet
+    if seq > 1 and not bullet:
+        return f"{base}-{seq:02d}"
+    return base
+
+
+def harvest_requirement_items(
+    page_text: str,
+    *,
+    initial_section: tuple[str, str] = ("", ""),
+    seq_by_section: dict[str, int] | None = None,
+) -> tuple[list[dict], tuple[str, str], dict[str, int]]:
+    """Harvest shall-phrases with PDF section/bullet req_ids.
+
+    Returns (items, ending_section, seq_by_section) — seq counters carry across pages.
+    Each item: phrase, req_id, section, section_title, bullet.
+    """
     page_text = strip_page_chrome(page_text)
-    found: list[str] = []
+    section_index, ending = build_section_offset_index(
+        page_text, initial_section=initial_section
+    )
+
+    candidates: list[tuple[int, str]] = []
     for rx in (SHALL_RE, BULLET_SHALL_RE, SIMPLE_SHALL_RE):
         for m in rx.finditer(page_text):
             phrase = normalize_phrase(m.group(1) if m.lastindex else m.group(0))
             if is_boilerplate_phrase(phrase):
                 continue
-            found.append(phrase)
-    # Also keep short capability-like lines containing requirement verbs / LMR cues
-    for line in page_text.splitlines():
+            candidates.append((m.start(), phrase))
+
+    line_pos = 0
+    for line in page_text.splitlines(keepends=True):
         line_n = normalize_phrase(line)
         if 25 <= len(line_n) <= 160 and re.search(
             r"(?i)shall|must|provide|support|encrypt|simulcast|otar|issi|coverage|console|trunk|antenna|p25",
@@ -695,14 +774,16 @@ def harvest_phrases(page_text: str) -> list[str]:
         ):
             if re.search(r"(?i)\b(shall|must|support|provide)\b", line_n):
                 if not is_boilerplate_phrase(line_n):
-                    found.append(line_n)
-    # dedupe preserve order (exact + near-duplicate key)
+                    candidates.append((line_pos, line_n))
+        line_pos += len(line)
+
     seen_exact: set[str] = set()
     seen_key: set[str] = set()
-    out: list[str] = []
-    for p in found:
-        exact = p.lower()
-        key = normalize_key(p)
+    counters: dict[str, int] = dict(seq_by_section or {})
+    out: list[dict] = []
+    for pos, phrase in sorted(candidates, key=lambda x: x[0]):
+        exact = phrase.lower()
+        key = normalize_key(phrase)
         if exact in seen_exact:
             continue
         if key and key in seen_key:
@@ -710,8 +791,28 @@ def harvest_phrases(page_text: str) -> list[str]:
         seen_exact.add(exact)
         if key:
             seen_key.add(key)
-        out.append(p)
-    return out
+
+        sid, stitle = section_at(section_index, pos)
+        bullet = _bullet_label(phrase)
+        seq_key = f"{sid}|{bullet}" if bullet else (sid or "_none_")
+        counters[seq_key] = counters.get(seq_key, 0) + 1
+        seq = counters[seq_key]
+        req_id = format_pdf_req_id(sid, bullet, seq)
+        out.append(
+            {
+                "phrase": phrase,
+                "req_id": req_id,
+                "section": sid,
+                "section_title": stitle,
+                "bullet": bullet,
+            }
+        )
+    return out, ending, counters
+
+
+def harvest_phrases(page_text: str) -> list[str]:
+    items, _, _ = harvest_requirement_items(page_text)
+    return [x["phrase"] for x in items]
 
 
 def build_token_index(by_id: dict[str, dict]) -> list[tuple[str, str, re.Pattern[str]]]:

@@ -1,9 +1,9 @@
 # PSERS Presales Intelligence — Product SPEC
 
-**Status:** Active (Phase 10 Lite — L1-first thoroughness; Pro burn ≤90%)  
-**Version:** 0.9.0-spec  
+**Status:** Active (Phase 11 Lite — compliance matrix workbook; Pro burn ≤90%)  
+**Version:** 0.10.0-spec  
 **Last updated:** 2026-07-19  
-**Authority:** This file is the source of truth through Phase 10 Lite. Feature slices live under [`specs/`](specs/). Next expansion requires amending this SPEC.
+**Authority:** This file is the source of truth through Phase 11 Lite. Feature slices live under [`specs/`](specs/). Next expansion requires amending this SPEC.
 
 ---
 
@@ -498,12 +498,34 @@ Aliases below map to full `PSERS.INFRA.*` IDs via L1 `alias` field. Wave 2 lives
 
 ---
 
+## 8j. Phase 11 Lite — Compliance matrix workbook (Pro budget aware)
+
+**Goal:** Turn match results into a bid-desk compliance workbook (one row per requirement) that analysts import into Google Sheets. Reuse deterministic match; no LLM; no Google Sheets API; no proposal narrative.
+
+| ID | Requirement |
+|----|-------------|
+| FR-P11.1 | `ingest/compliance_matrix.py` builds Compliance / Summary / Gaps `.xlsx` rows with suggested C/A (never auto-N) + stakeholder columns |
+| FR-P11.2 | CLI `ingest/export_compliance.py` for PDF/text → `.xlsx` |
+| FR-P11.3 | `POST /api/compliance/matrix` + UI **Download compliance workbook**; `export?format=xlsx` on text path |
+| FR-P11.4 | Playbook + decision-log; freeze |
+
+**Feature slice:** [specs/100-compliance-matrix.md](specs/100-compliance-matrix.md)
+
+### Phase 11 Lite Definition of Done
+
+- [x] Demo fixture → workbook with one row per requirement
+- [x] Suggested C/A only with MSI evidence; blanks for gaps
+- [x] Import path = `.xlsx` → Google Sheets (no Sheets API)
+- [x] Narrative / pricing / multi-vendor still out of scope
+
+---
+
 ## 9. Cursor agent protocol
 
 1. Read this `SPEC.md` and the relevant slice. Prefer Auto/Composer; keep Pro usage **under 90%**.  
 2. Implement only the requested slice; never run `generate_l1.py`.  
 3. Do not open military peer L1 / multi-vendor without SPEC amendment.
-4. Phase 10 priority: **L1 thoroughness first**; L3 only as thin coverage follow-on.
+4. Phase 11 priority: **compliance workbook export**; do not reopen L1 thoroughness unless regression.
 
 ---
 
@@ -515,5 +537,6 @@ Aliases below map to full `PSERS.INFRA.*` IDs via L1 `alias` field. Wave 2 lives
 - Broader RFP corpus / crawl  
 - Proposal generation, pricing, SSO  
 - L3 datasheet citation polish as a primary goal (deferred past Phase 10)
+- Google Sheets live API sync (workbook import is enough for Phase 11)
 
-When ready, amend this SPEC beyond Phase 10.
+When ready, amend this SPEC beyond Phase 11.
