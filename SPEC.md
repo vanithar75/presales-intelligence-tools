@@ -1,9 +1,9 @@
 # PSERS Presales Intelligence — Product SPEC
 
-**Status:** Active (Phase 7 Lite complete + slice 060 stakeholder visualization)  
-**Version:** 0.7.1-spec  
+**Status:** Active (Phase 8 Lite complete — MCX + coverage export; stay under Pro 90%)  
+**Version:** 0.8.0-spec  
 **Last updated:** 2026-07-19  
-**Authority:** This file is the source of truth through Phase 7 Lite + slice 060. Feature slices live under [`specs/`](specs/). Next expansion requires amending this SPEC.
+**Authority:** This file is the source of truth through Phase 8 Lite. Feature slices live under [`specs/`](specs/). Next expansion requires amending this SPEC.
 
 ---
 
@@ -37,9 +37,9 @@ Do not re-litigate MVP or Phase 2 scope. Agents must treat the following as curr
 
 | Layer | Current state | Location |
 |-------|---------------|----------|
-| L1 | **195** `published` + drafts + 10 stubs = 333 | [ontology/l1_capabilities.json](ontology/l1_capabilities.json) |
+| L1 | **211** `published` + drafts + 3 stubs = 347 | [ontology/l1_capabilities.json](ontology/l1_capabilities.json) |
 | L2 | 493 synonyms + 42 holdout; includes `analyst_accepted` from feedback | [ontology/l2_synonyms.json](ontology/l2_synonyms.json), [ontology/l2_synonyms_holdout.json](ontology/l2_synonyms_holdout.json) |
-| L3 | 20 MSI products, 223 mappings, 216 caps | [ontology/l3_msi_products.json](ontology/l3_msi_products.json), [ontology/l3_product_capabilities.json](ontology/l3_product_capabilities.json) |
+| L3 | 20 MSI products, 239 mappings, 232 caps | [ontology/l3_msi_products.json](ontology/l3_msi_products.json), [ontology/l3_product_capabilities.json](ontology/l3_product_capabilities.json) |
 | Match | Deterministic seeds + L2 overlap + name | [ingest/matcher.py](ingest/matcher.py) |
 | UI/API | FastAPI + static analyst UI | [app/match_api.py](app/match_api.py), [app/static/](app/static/) |
 | Schema | Postgres DDL + optional import CLI; runtime still JSON | [sql/schema.sql](sql/schema.sql), [ingest/load_postgres.py](ingest/load_postgres.py) |
@@ -50,15 +50,15 @@ Do not re-litigate MVP or Phase 2 scope. Agents must treat the following as curr
 - No broad RFP web crawl
 - L2 corpus = ECSO Jackson + Erie trunked 2026 + Erie subscriber 2026 only
 - L3 = MSI only
-- CAD = Phase 4 + Phase 6 deepen; NG911 = Phase 6; Sensors = Phase 5; Incident process (FIELD/RMS/EOC) = Phase 7 Lite; MCX = stub IDs only
+- CAD = Phase 4–6; NG911 = Phase 6; Sensors = Phase 5; Incident FIELD/RMS/EOC = Phase 7; MCX = Phase 8 Lite; ALERT = Phase 8 thin
 
-### Explicit non-goals (deferred past Phase 7 Lite)
+### Explicit non-goals (deferred past Phase 8 Lite)
 
 - Multi-vendor competitive matrix (L3Harris, Tait, etc.)
 - EIDO/IDX runtime bus
 - Proposal narrative generation / pricing BOM
 - Auth, multi-tenant SaaS, SOC2
-- Deep MCX ontology trees
+- Deep MCX beyond Lite (full 3GPP feature tree)
 - Military / defence as first-class peer L1 verticals (C2/C3/C4I = L2 crosswalk only)
 
 ---
@@ -438,27 +438,42 @@ Aliases below map to full `PSERS.INFRA.*` IDs via L1 `alias` field. Wave 2 lives
 
 ---
 
+## 8g. Phase 8 Lite — MCX + coverage export (Cursor Pro ≤90%)
+
+**Goal:** Highest remaining bid-desk value under a Pro usage cap: (1) coverage CSV/JSON export, (2) MCX Lite, (3) thin ALERT. No military peer L1; no L1 regenerate.
+
+| ID | Requirement |
+|----|-------------|
+| FR-P8.1 | Promote/append MCX ≥ **12** caps; `mcx_demo` ≥ **0.80** |
+| FR-P8.2 | Bid-desk coverage export (UI download + `POST /api/match/export`) |
+| FR-P8.3 | Thin ALERT publish; stub floor ≥ **3**; freeze |
+
+### Phase 8 Lite Definition of Done
+
+- [x] MCX Lite published (wave1); `mcx_demo` ≥ 0.80
+- [x] Coverage CSV/JSON download in analyst UI
+- [x] ALERT thin published; validators green; military still deferred
+
+---
+
 ## 9. Cursor agent protocol
 
-1. Read this `SPEC.md` and the single relevant [`specs/05x-*.md`](specs/) or [`specs/060-*.md`](specs/060-stakeholder-viz.md) slice.  
-2. Implement **only** that slice.  
+1. Read this `SPEC.md` and the single relevant slice under [`specs/`](specs/).  
+2. Implement **only** that slice. Prefer Auto/Composer; keep Pro usage **under 90%**.  
 3. Update the slice checklist / Status.  
 4. Run validators touched by the change.  
-5. Do **not** expand into MCX / military peer L1 / multi-vendor without amending this SPEC.  
-6. Prefer Auto/Composer; keep on-demand spend disabled unless the user enables it.  
-7. Cost: one slice per session; never run `generate_l1.py`.
-
-**Recommended order (ontology):** `050` → `051` → `052`. Visualization: `060`.
+5. Do **not** expand into military peer L1 / multi-vendor / deep MCX without amending this SPEC.  
+6. Cost: never run `generate_l1.py`.
 
 ---
 
 ## 10. Appendix — still out of scope
 
-- Deep MCX capability trees  
+- Deep MCX full 3GPP trees  
 - Military / defence peer L1 verticals  
 - Full interactive ontology graph explorer / graph DB  
 - Multi-vendor L3  
 - Broader RFP corpus / crawl  
 - Proposal generation, pricing, SSO  
 
-When ready, amend this SPEC with new slices beyond 060.
+When ready, amend this SPEC with new slices beyond Phase 8.

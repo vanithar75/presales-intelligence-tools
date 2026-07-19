@@ -19,5 +19,6 @@ Product authority: [`../SPEC.md`](../SPEC.md).
 | 040–042 | Phase 6 Lite CAD+NG911 | Done | — |
 | 050–052 | Phase 7 Lite Incident process | Done | — |
 | 060 | [060-stakeholder-viz.md](060-stakeholder-viz.md) | Done | Phase 7 |
+| 070–073 | [070-phase8-mcx-export.md](070-phase8-mcx-export.md) | Done | Phase 8 Lite |
 
-**Stop here for ontology expansion:** Military peer L1 / MCX / multi-vendor require a new SPEC amendment. Stakeholder visualization (060) is presentation-only.
+**Product freeze (MVP+):** Phase 8 Lite complete under Pro ≤90% guidance. Military peer L1 / multi-vendor / deep MCX / crawl still need SPEC amendment.

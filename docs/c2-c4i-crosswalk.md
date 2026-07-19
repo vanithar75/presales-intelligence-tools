@@ -6,7 +6,7 @@
 | Term (RFP / buyer language) | Meaning (short) | Primary PSERS L1 alias(es) | Notes |
 |----------------------------|-----------------|----------------------------|-------|
 | Command and Control (C2) | Coordinate + situational awareness | `CAD.COMMAND_VIEW`, `EOC.SIT_AWARENESS` | Public-safety = PSAP/EOC supervisor view |
-| C3 (Command, Control, Communications) | C2 + mission-critical voice/data | `CAD.COMMAND_VIEW`, LMR aliases, `CAD.RADIO_INTEGRATION` | MCX peer trees still stub / deferred |
+| C3 (Command, Control, Communications) | C2 + mission-critical voice/data | `CAD.COMMAND_VIEW`, LMR aliases, `CAD.RADIO_INTEGRATION`, **`MCX.MCPTT`** (Phase 8 Lite) | MCX Lite shipped; deep 3GPP tree still deferred |
 | C4I (… Computers, Intelligence) | C3 + platforms + intel/sensor feeds | `EOC.SIT_AWARENESS`, `EOC.COMMON_OP_PICTURE`, CAD/RMS/VMS, `IOT.SENSOR_FUSION` | Computers ≈ PLAT/APP; intel ≈ sensors + fusion |
 | C4ISR | C4I + reconnaissance/ISR collection | Above + `UAS.*`, `VIDEO.*`, `IOT.*` | ISR collection already partially in Sensors |
 | Common operating picture (COP) | Shared multi-source SA display | `EOC.COMMON_OP_PICTURE`, `EOC.SIT_AWARENESS` | Also “TOC COP” in defence RFPs → same L1 |

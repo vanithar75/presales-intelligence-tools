@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "source": "Phase 8 Lite MCX + ALERT publish",
+  "description": "First MCX Lite publish + thin ALERT batch.",
+  "aliases": [
+    "MCX.MCPTT",
+    "MCX.MCVIDEO",
+    "MCX.MCDATA",
+    "MCX.MCPTT_EMERG",
+    "MCX.LMR_IWF",
+    "MCX.AFFILIATION",
+    "MCX.PRIVATE_CALL",
+    "MCX.FLOOR_CONTROL",
+    "MCX.LOCATION",
+    "MCX.SDS",
+    "MCX.PRIORITY",
+    "MCX.MULTI_AGENCY",
+    "ALERT.MASS_NOTIFY",
+    "ALERT.IPAWS",
+    "ALERT.TARGETED_GEO",
+    "ALERT.CAP_RELAY"
+  ]
+}

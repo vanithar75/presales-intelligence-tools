@@ -3,7 +3,7 @@
   "sprint": "P5-032",
   "vendor_id": "MSI",
   "counts": {
-    "mappings": 223,
+    "mappings": 239,
     "capabilities_mapped": 166,
     "products_used": 19,
     "missing_aliases": []
@@ -2013,6 +2013,150 @@
       "capability_alias": "EOC.COMMON_OP_PICTURE",
       "support_level": "native",
       "notes": "CommandCentral EOC / C2 sit-awareness coverage (Phase 7 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.MCX.MCPTT",
+      "capability_alias": "MCX.MCPTT",
+      "support_level": "native",
+      "notes": "WAVE / MCX mission-critical services (Phase 8 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.MCX.MCVIDEO",
+      "capability_alias": "MCX.MCVIDEO",
+      "support_level": "native",
+      "notes": "WAVE / MCX mission-critical services (Phase 8 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.MCX.MCDATA",
+      "capability_alias": "MCX.MCDATA",
+      "support_level": "native",
+      "notes": "WAVE / MCX mission-critical services (Phase 8 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.MCX.MCPTT_EMERG",
+      "capability_alias": "MCX.MCPTT_EMERG",
+      "support_level": "native",
+      "notes": "WAVE / MCX mission-critical services (Phase 8 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.XCUT.IOP.LMR_MCX_IWF",
+      "capability_alias": "MCX.LMR_IWF",
+      "support_level": "native",
+      "notes": "WAVE / MCX mission-critical services (Phase 8 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.MCX.AFFILIATION",
+      "capability_alias": "MCX.AFFILIATION",
+      "support_level": "native",
+      "notes": "WAVE / MCX mission-critical services (Phase 8 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.MCX.PRIVATE_CALL",
+      "capability_alias": "MCX.PRIVATE_CALL",
+      "support_level": "native",
+      "notes": "WAVE / MCX mission-critical services (Phase 8 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.MCX.FLOOR_CONTROL",
+      "capability_alias": "MCX.FLOOR_CONTROL",
+      "support_level": "native",
+      "notes": "WAVE / MCX mission-critical services (Phase 8 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.MCX.LOCATION",
+      "capability_alias": "MCX.LOCATION",
+      "support_level": "native",
+      "notes": "WAVE / MCX mission-critical services (Phase 8 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.MCX.SDS",
+      "capability_alias": "MCX.SDS",
+      "support_level": "native",
+      "notes": "WAVE / MCX mission-critical services (Phase 8 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.MCX.PRIORITY",
+      "capability_alias": "MCX.PRIORITY",
+      "support_level": "native",
+      "notes": "WAVE / MCX mission-critical services (Phase 8 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.MCX.MULTI_AGENCY",
+      "capability_alias": "MCX.MULTI_AGENCY",
+      "support_level": "native",
+      "notes": "WAVE / MCX mission-critical services (Phase 8 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.APP.ALERT.MASS_NOTIFY",
+      "capability_alias": "ALERT.MASS_NOTIFY",
+      "support_level": "option",
+      "notes": "Public alerting / IPAWS (Phase 8 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.APP.ALERT.IPAWS",
+      "capability_alias": "ALERT.IPAWS",
+      "support_level": "option",
+      "notes": "Public alerting / IPAWS (Phase 8 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.APP.ALERT.TARGETED_GEO",
+      "capability_alias": "ALERT.TARGETED_GEO",
+      "support_level": "option",
+      "notes": "Public alerting / IPAWS (Phase 8 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.APP.ALERT.CAP_RELAY",
+      "capability_alias": "ALERT.CAP_RELAY",
+      "support_level": "option",
+      "notes": "Public alerting / IPAWS (Phase 8 Lite)",
       "source_url": "https://www.motorolasolutions.com",
       "status": "draft"
     }

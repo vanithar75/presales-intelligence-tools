@@ -3,6 +3,7 @@
   const $$ = (sel) => [...document.querySelectorAll(sel)];
 
   let lastResults = [];
+  let lastCounts = {};
   let filter = "all";
   let selectedFile = null;
 
@@ -128,10 +129,77 @@
 
   function showDoc(doc) {
     lastResults = doc.results || [];
+    lastCounts = doc.counts || {};
     $("#resultsSection").hidden = false;
-    renderMetrics(doc.counts || {});
+    renderMetrics(lastCounts);
     renderResults();
+    const has = lastResults.length > 0;
+    $("#downloadCsv").disabled = !has;
+    $("#downloadJson").disabled = !has;
   }
+
+  function coverageRows() {
+    return lastResults.map((r) => {
+      const m = r.matches?.[0];
+      const msi = r.msi_coverage || m?.msi_coverage || [];
+      const msiStr = Array.isArray(msi)
+        ? msi.map((x) => `${x.family || x.product_id || ""}:${x.support_level || ""}`).join("; ")
+        : "";
+      return {
+        requirement: r.requirement || "",
+        page: r.page ?? "",
+        mapped: !r.unmapped,
+        capability_id: m?.capability_id || "",
+        capability_alias: m?.capability_alias || "",
+        capability_name: m?.capability_name || "",
+        confidence: m?.confidence ?? "",
+        method: m?.method || "",
+        msi_coverage: msiStr,
+      };
+    });
+  }
+
+  function downloadBlob(filename, text, mime) {
+    const blob = new Blob([text], { type: mime });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    a.click();
+    URL.revokeObjectURL(url);
+  }
+
+  function toCsv(rows) {
+    const fields = [
+      "requirement",
+      "page",
+      "mapped",
+      "capability_id",
+      "capability_alias",
+      "capability_name",
+      "confidence",
+      "method",
+      "msi_coverage",
+    ];
+    const esc = (v) => `"${String(v ?? "").replaceAll('"', '""')}"`;
+    const lines = [fields.join(",")];
+    for (const row of rows) {
+      lines.push(fields.map((f) => esc(row[f])).join(","));
+    }
+    return lines.join("\n");
+  }
+
+  $("#downloadCsv")?.addEventListener("click", () => {
+    downloadBlob("psers-coverage.csv", toCsv(coverageRows()), "text/csv;charset=utf-8");
+  });
+  $("#downloadJson")?.addEventListener("click", () => {
+    const payload = { counts: lastCounts, rows: coverageRows() };
+    downloadBlob(
+      "psers-coverage.json",
+      JSON.stringify(payload, null, 2),
+      "application/json"
+    );
+  });
 
   $$(".chip").forEach((c) =>
     c.addEventListener("click", () => {

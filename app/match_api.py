@@ -14,7 +14,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from fastapi import FastAPI, File, HTTPException, UploadFile
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, Response
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
@@ -98,7 +98,7 @@ def _upsert_review_queue(record: dict) -> dict:
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "sprint": "P7-060", "ui": True}
+    return {"status": "ok", "sprint": "P8-072", "ui": True}
 
 
 @app.get("/api/ontology/summary")
@@ -221,6 +221,83 @@ def match_text_endpoint(body: TextMatchRequest):
     }
 
 
+def _coverage_rows(results: list[dict]) -> list[dict]:
+    """Flatten match results into bid-desk coverage rows."""
+    out = []
+    for r in results:
+        m = (r.get("matches") or [None])[0]
+        msi = r.get("msi_coverage") or (m.get("msi_coverage") if m else None) or []
+        if isinstance(msi, list) and msi:
+            msi_str = "; ".join(
+                f"{x.get('family') or x.get('product_id') or ''}:"
+                f"{x.get('support_level') or ''}"
+                for x in msi
+            )
+        else:
+            msi_str = ""
+        out.append(
+            {
+                "requirement": r.get("requirement") or "",
+                "page": r.get("page"),
+                "mapped": not r.get("unmapped"),
+                "capability_id": (m or {}).get("capability_id") or "",
+                "capability_alias": (m or {}).get("capability_alias") or "",
+                "capability_name": (m or {}).get("capability_name") or "",
+                "confidence": (m or {}).get("confidence"),
+                "method": (m or {}).get("method") or "",
+                "msi_coverage": msi_str,
+            }
+        )
+    return out
+
+
+def _coverage_csv(rows: list[dict]) -> str:
+    import csv
+    import io
+
+    buf = io.StringIO()
+    fields = [
+        "requirement",
+        "page",
+        "mapped",
+        "capability_id",
+        "capability_alias",
+        "capability_name",
+        "confidence",
+        "method",
+        "msi_coverage",
+    ]
+    w = csv.DictWriter(buf, fieldnames=fields, extrasaction="ignore")
+    w.writeheader()
+    for row in rows:
+        w.writerow(row)
+    return buf.getvalue()
+
+
+@app.post("/api/match/export")
+def match_export(body: TextMatchRequest, format: str = "json"):
+    """Bid-desk coverage report: requirement → L1 → MSI (json or csv)."""
+    rows = match_text(body.text, top_k=body.top_k)
+    mapped = sum(1 for r in rows if not r["unmapped"])
+    coverage = _coverage_rows(rows)
+    summary = {
+        "requirements": len(rows),
+        "mapped": mapped,
+        "unmapped": len(rows) - mapped,
+        "map_rate": round(mapped / len(rows), 3) if rows else 0.0,
+    }
+    fmt = (format or "json").lower().strip()
+    if fmt == "csv":
+        return Response(
+            content=_coverage_csv(coverage),
+            media_type="text/csv; charset=utf-8",
+            headers={
+                "Content-Disposition": 'attachment; filename="psers-coverage.csv"'
+            },
+        )
+    return {"counts": summary, "rows": coverage}
+
+
 @app.post("/api/match/pdf")
 async def match_pdf_endpoint(
     file: UploadFile = File(...),
@@ -279,6 +356,7 @@ def demo_fixture(name: str = "demo"):
         "cad": "demo_cad_requirements.txt",
         "ng911": "demo_ng911_requirements.txt",
         "sensors": "demo_sensors_requirements.txt",
+    "mcx": "demo_mcx_requirements.txt",
         "psap": "demo_psap_loop.txt",
     }
     filename = mapping.get(name.strip().lower(), "demo_requirements.txt")

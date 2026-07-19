@@ -42,6 +42,7 @@ app/               # Match UI (Sprint 3–4)
 | **Phase 5 Lite** | **Done** — Sensors foundation slices 030–032; see [SPEC.md](SPEC.md) |
 | **Phase 6 Lite** | **Done** — CAD + NG911 deepen slices 040–042; see [SPEC.md](SPEC.md) |
 | **Phase 7 Lite** | **Done** — Incident management (FIELD/RMS/EOC) slices 050–052; see [SPEC.md](SPEC.md) |
+| **Phase 8 Lite** | **Done** — Coverage export + MCX Lite + thin ALERT; see [SPEC.md](SPEC.md) |
 
 See [docs/sprint-s0-s1-done.md](docs/sprint-s0-s1-done.md).
 

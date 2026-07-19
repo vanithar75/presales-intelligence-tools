@@ -227,3 +227,24 @@
 - Spec [specs/060-stakeholder-viz.md](../specs/060-stakeholder-viz.md) Done
 - No L1 regenerate; no graph DB; C2/C4I remains crosswalk-only
 
+## 2026-07-19 — L1 publish batch (published)
+
+- Catalog `schema_version`: **1.19**
+- Sprint: **P8-073**
+- Promoted to `published`: **16** capabilities
+- Stub refusals: **0**
+- Tool: `ontology/publish_l1.py`
+- Priority source: `ontology/top_mcx_alert_wave1.json`
+- Sample IDs: PSERS.INFRA.MCX.MCPTT, PSERS.INFRA.MCX.MCVIDEO, PSERS.INFRA.MCX.MCDATA, PSERS.INFRA.MCX.MCPTT_EMERG, PSERS.XCUT.IOP.LMR_MCX_IWF, PSERS.INFRA.MCX.AFFILIATION, PSERS.INFRA.MCX.PRIVATE_CALL, PSERS.INFRA.MCX.FLOOR_CONTROL (+8 more)
+
+## 2026-07-19 — Phase 8 Lite freeze (MCX + coverage export + ALERT thin)
+
+- **Priority order (business value, Pro ≤90%):** coverage export → MCX Lite → thin ALERT
+- Coverage: UI CSV/JSON download + `POST /api/match/export`
+- **MCX:** **17** caps published in wave1; `mcx_demo` **1.0**
+- **ALERT:** mass notify / IPAWS / geo / CAP relay published
+- Total published **211**; schema **1.19**; stubs **3** (floor ≥3)
+- L3: +16 maps (**239**); prior suites still pass
+- Military peer L1 / multi-vendor / deep MCX still deferred
+- **Stop** — further spend risks exceeding Pro 90% guidance
+

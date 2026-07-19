@@ -1,18 +1,18 @@
 {
-  "schema_version": "1.16",
+  "schema_version": "1.19",
   "root": "PSERS",
-  "sprint": "P7-052",
+  "sprint": "P8-073",
   "published_at": "2026-07-19",
   "last_publish_tool": "ontology/publish_l1.py",
-  "last_priority_file": "ontology/top_incident_wave1.json",
+  "last_priority_file": "ontology/top_mcx_alert_wave1.json",
   "generated_by": "ontology/generate_l1.py",
   "counts": {
-    "total": 333,
-    "draft": 128,
-    "published": 195,
+    "total": 347,
+    "draft": 133,
+    "published": 211,
     "deprecated": 0,
-    "stubs": 10,
-    "lmr_draft": 323
+    "stubs": 3,
+    "lmr_draft": 344
   },
   "capabilities": [
     {
@@ -2948,7 +2948,7 @@
     },
     {
       "id": "PSERS.APP.ALERT.MASS_NOTIFY",
-      "alias": null,
+      "alias": "ALERT.MASS_NOTIFY",
       "name": "Mass notification",
       "definition": "Outbound public/employee mass notification.",
       "stack_class": "APP",
@@ -2956,13 +2956,13 @@
       "mission_tags": [
         "inform"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "ALERT",
       "p25_ref": null
     },
     {
       "id": "PSERS.APP.ALERT.IPAWS",
-      "alias": null,
+      "alias": "ALERT.IPAWS",
       "name": "IPAWS alerting",
       "definition": "Originate/relay IPAWS/CAP alerts.",
       "stack_class": "APP",
@@ -2970,7 +2970,7 @@
       "mission_tags": [
         "inform"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "ALERT",
       "p25_ref": null
     },
@@ -3092,7 +3092,7 @@
     },
     {
       "id": "PSERS.INFRA.MCX.MCPTT",
-      "alias": null,
+      "alias": "MCX.MCPTT",
       "name": "MCPTT group voice",
       "definition": "3GPP Mission-Critical Push-to-Talk group voice.",
       "stack_class": "INFRA",
@@ -3101,13 +3101,13 @@
         "respond",
         "coordinate"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "MCX",
       "p25_ref": null
     },
     {
       "id": "PSERS.INFRA.MCX.MCVIDEO",
-      "alias": null,
+      "alias": "MCX.MCVIDEO",
       "name": "MCVideo",
       "definition": "3GPP Mission-Critical Video service.",
       "stack_class": "INFRA",
@@ -3116,13 +3116,13 @@
         "respond",
         "coordinate"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "MCX",
       "p25_ref": null
     },
     {
       "id": "PSERS.INFRA.MCX.MCDATA",
-      "alias": null,
+      "alias": "MCX.MCDATA",
       "name": "MCData",
       "definition": "3GPP Mission-Critical Data service.",
       "stack_class": "INFRA",
@@ -3130,13 +3130,13 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "MCX",
       "p25_ref": null
     },
     {
       "id": "PSERS.INFRA.MCX.MCPTT_EMERG",
-      "alias": null,
+      "alias": "MCX.MCPTT_EMERG",
       "name": "MCPTT emergency calling",
       "definition": "MCX emergency calling / priority preemption behaviors.",
       "stack_class": "INFRA",
@@ -3144,13 +3144,13 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "MCX",
       "p25_ref": null
     },
     {
       "id": "PSERS.XCUT.IOP.LMR_MCX_IWF",
-      "alias": null,
+      "alias": "MCX.LMR_IWF",
       "name": "LMR\u2013MCX Interworking Function",
       "definition": "Interworking function bridging LMR and MCX domains.",
       "stack_class": "XCUT",
@@ -3158,8 +3158,8 @@
       "mission_tags": [
         "coordinate"
       ],
-      "status": "stub",
-      "vertical": "IOP",
+      "status": "published",
+      "vertical": "MCX",
       "p25_ref": null
     },
     {
@@ -4798,6 +4798,212 @@
       ],
       "status": "published",
       "vertical": "EOC",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.MCX.AFFILIATION",
+      "alias": "MCX.AFFILIATION",
+      "name": "MCX affiliation / group management",
+      "definition": "Affiliate users/devices to MCX groups and manage membership.",
+      "stack_class": "INFRA",
+      "domain": "MCX",
+      "mission_tags": [
+        "coordinate",
+        "respond"
+      ],
+      "status": "published",
+      "vertical": "MCX",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.MCX.PRIVATE_CALL",
+      "alias": "MCX.PRIVATE_CALL",
+      "name": "MCPTT private call",
+      "definition": "Support MCPTT private (one-to-one) calls between authorized users.",
+      "stack_class": "INFRA",
+      "domain": "MCX",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "published",
+      "vertical": "MCX",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.MCX.FLOOR_CONTROL",
+      "alias": "MCX.FLOOR_CONTROL",
+      "name": "MCPTT floor control",
+      "definition": "Floor control / talker arbitration for MCPTT group calls.",
+      "stack_class": "INFRA",
+      "domain": "MCX",
+      "mission_tags": [
+        "respond",
+        "coordinate"
+      ],
+      "status": "published",
+      "vertical": "MCX",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.MCX.LOCATION",
+      "alias": "MCX.LOCATION",
+      "name": "MCX location reporting",
+      "definition": "Report and display MCX user/device location to authorized consumers.",
+      "stack_class": "INFRA",
+      "domain": "MCX",
+      "mission_tags": [
+        "locate",
+        "respond"
+      ],
+      "status": "published",
+      "vertical": "MCX",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.MCX.SDS",
+      "alias": "MCX.SDS",
+      "name": "MCData short data / SDS",
+      "definition": "Send and receive MCData short data service (SDS) messages.",
+      "stack_class": "INFRA",
+      "domain": "MCX",
+      "mission_tags": [
+        "respond",
+        "inform"
+      ],
+      "status": "published",
+      "vertical": "MCX",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.MCX.FILE_DIST",
+      "alias": "MCX.FILE_DIST",
+      "name": "MCData file distribution",
+      "definition": "Distribute files over MCData to groups or individuals.",
+      "stack_class": "INFRA",
+      "domain": "MCX",
+      "mission_tags": [
+        "respond",
+        "inform"
+      ],
+      "status": "draft",
+      "vertical": "MCX",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.MCX.VIDEO_PULL",
+      "alias": "MCX.VIDEO_PULL",
+      "name": "MCVideo pull / remote view",
+      "definition": "Pull or remotely view MCVideo streams for authorized supervisors.",
+      "stack_class": "INFRA",
+      "domain": "MCX",
+      "mission_tags": [
+        "coordinate",
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "MCX",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.MCX.PRIORITY",
+      "alias": "MCX.PRIORITY",
+      "name": "MCX priority / preemption",
+      "definition": "Apply MCX priority levels and preemption policies for critical traffic.",
+      "stack_class": "INFRA",
+      "domain": "MCX",
+      "mission_tags": [
+        "respond",
+        "coordinate"
+      ],
+      "status": "published",
+      "vertical": "MCX",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.MCX.OFF_NETWORK",
+      "alias": "MCX.OFF_NETWORK",
+      "name": "MCX off-network / ProSe touch",
+      "definition": "Support off-network / proximity services touchpoints where specified.",
+      "stack_class": "INFRA",
+      "domain": "MCX",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "draft",
+      "vertical": "MCX",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.MCX.USER_AUTH",
+      "alias": "MCX.USER_AUTH",
+      "name": "MCX user authentication",
+      "definition": "Authenticate MCX users and bind identities to agency directories.",
+      "stack_class": "INFRA",
+      "domain": "MCX",
+      "mission_tags": [
+        "respond",
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "MCX",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.MCX.RECORDER",
+      "alias": "MCX.RECORDER",
+      "name": "MCX call recording",
+      "definition": "Record MCPTT/MCVideo sessions with retention controls.",
+      "stack_class": "INFRA",
+      "domain": "MCX",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "MCX",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.INFRA.MCX.MULTI_AGENCY",
+      "alias": "MCX.MULTI_AGENCY",
+      "name": "MCX multi-agency talkgroups",
+      "definition": "Support multi-agency MCX talkgroups and inter-agency affiliation.",
+      "stack_class": "INFRA",
+      "domain": "MCX",
+      "mission_tags": [
+        "coordinate",
+        "respond"
+      ],
+      "status": "published",
+      "vertical": "MCX",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.APP.ALERT.TARGETED_GEO",
+      "alias": "ALERT.TARGETED_GEO",
+      "name": "Geo-targeted public alerts",
+      "definition": "Originate geo-targeted public warning alerts to selected areas.",
+      "stack_class": "APP",
+      "domain": "ALERT",
+      "mission_tags": [
+        "inform",
+        "coordinate"
+      ],
+      "status": "published",
+      "vertical": "ALERT",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.APP.ALERT.CAP_RELAY",
+      "alias": "ALERT.CAP_RELAY",
+      "name": "CAP alert relay",
+      "definition": "Relay Common Alerting Protocol (CAP) messages to downstream channels.",
+      "stack_class": "APP",
+      "domain": "ALERT",
+      "mission_tags": [
+        "inform"
+      ],
+      "status": "published",
+      "vertical": "ALERT",
       "p25_ref": null
     }
   ]

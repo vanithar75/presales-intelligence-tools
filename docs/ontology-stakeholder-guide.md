@@ -92,6 +92,14 @@ Live demo: paste fixtures from `ontology/samples/demo_incident_mgmt.txt` in the 
 
 Live counts: `GET /api/ontology/summary` on the running API.
 
+### Bid-desk coverage export
+
+After a match, use **Download coverage CSV** / **JSON** in the UI, or:
+
+`POST /api/match/export?format=csv` with JSON body `{ "text": "…" }`.
+
+Columns: requirement → mapped → L1 id/alias → confidence → MSI coverage string.
+
 ---
 
 ## 4. Ten-minute demo script

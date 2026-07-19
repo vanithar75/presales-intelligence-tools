@@ -338,6 +338,28 @@ SEED_PHRASES: list[tuple[str, str]] = [
     (r"\bc3\b|command,?\s+control,?\s+and\s+communications|command\s+control\s+communications", "CAD.COMMAND_VIEW"),
     (r"\bc4i\b|\bc4isr\b|command,?\s+control,?\s+communications,?\s+computers", "EOC.SIT_AWARENESS"),
     (r"common\s+operating\s+picture|\bcop\b\s+(display|dashboard)|toc\s+common\s+operating", "EOC.COMMON_OP_PICTURE"),
+    # Phase 8 Lite — MCX
+    (r"\bmcptt\b|mission[- ]critical\s+push[- ]to[- ]talk|mcx\s+group\s+voice", "MCX.MCPTT"),
+    (r"\bmcvideo\b|mission[- ]critical\s+video", "MCX.MCVIDEO"),
+    (r"\bmcdata\b|mission[- ]critical\s+data", "MCX.MCDATA"),
+    (r"mcptt\s+emergency|mcx\s+emergency\s+call|priority\s+preemption.{0,20}mcx", "MCX.MCPTT_EMERG"),
+    (r"lmr[-–]?mcx\s+interwork|mcx\s+interworking\s+function|\biwf\b.{0,20}mcx|mcx.{0,20}\biwf\b", "MCX.LMR_IWF"),
+    (r"mcx\s+affiliation|affiliate.{0,30}mcx\s+groups?", "MCX.AFFILIATION"),
+    (r"mcptt\s+private\s+call|private\s+(one[- ]to[- ]one\s+)?mcptt", "MCX.PRIVATE_CALL"),
+    (r"floor\s+control|talker\s+arbitration", "MCX.FLOOR_CONTROL"),
+    (r"mcx\s+location|location\s+reporting.{0,20}mcx", "MCX.LOCATION"),
+    (r"\bsds\b|short\s+data\s+service|mcdata\s+short\s+data", "MCX.SDS"),
+    (r"mcdata\s+file|file\s+distribution.{0,20}mcdata", "MCX.FILE_DIST"),
+    (r"mcvideo\s+pull|remote\s+view.{0,20}mcvideo", "MCX.VIDEO_PULL"),
+    (r"mcx\s+priority|preemption\s+policies?.{0,20}mcx", "MCX.PRIORITY"),
+    (r"off[- ]network|proximity\s+services?.{0,20}mcx|\bprose\b", "MCX.OFF_NETWORK"),
+    (r"mcx\s+user\s+auth|authenticate\s+mcx\s+users", "MCX.USER_AUTH"),
+    (r"mcx\s+call\s+recording|record\s+mcptt", "MCX.RECORDER"),
+    (r"multi[- ]agency\s+mcx|mcx\s+multi[- ]agency\s+talkgroups?", "MCX.MULTI_AGENCY"),
+    (r"mass\s+notif|public\s+warning\s+notification|mass\s+notification", "ALERT.MASS_NOTIFY"),
+    (r"\bipaws\b|cap\s+alerts?|integrated\s+public\s+alert", "ALERT.IPAWS"),
+    (r"geo[- ]targeted\s+(public\s+)?alerts?|targeted\s+public\s+warning", "ALERT.TARGETED_GEO"),
+    (r"cap\s+alert\s+relay|relay\s+common\s+alerting", "ALERT.CAP_RELAY"),
 ]
 
 

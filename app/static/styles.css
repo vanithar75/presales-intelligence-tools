@@ -316,6 +316,8 @@ footer {
   padding: 0 1rem 2rem;
 }
 
+.export-row { margin-top: 0.75rem; }
+
 .linkish {
   border: 0;
   background: none;
@@ -325,3 +327,4 @@ footer {
   padding: 0;
   text-decoration: underline;
 }
+

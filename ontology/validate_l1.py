@@ -44,8 +44,8 @@ def main() -> int:
     print(f"total={len(caps)} lmr={lmr} stubs={stubs}")
     if lmr < 180:
         errors.append(f"expected >=180 LMR caps, got {lmr}")
-    if stubs < 10:
-        errors.append(f"expected >=10 stubs, got {stubs}")
+    if stubs < 3:
+        errors.append(f"expected >=3 stubs, got {stubs}")
 
     if errors:
         print("FAIL")

@@ -1,0 +1,12 @@
+The system shall provide MCPTT group voice for mission-critical push-to-talk.
+MCVideo mission-critical video shall be supported for authorized users.
+MCData shall provide mission-critical data services.
+MCPTT emergency calling with priority preemption shall be supported.
+An LMR–MCX interworking function shall bridge radio and MCX domains.
+MCX affiliation shall manage membership in MCX groups.
+MCPTT private calls shall be supported between authorized users.
+Floor control / talker arbitration shall apply to MCPTT group calls.
+MCX location reporting shall be available to authorized consumers.
+MCData short data service (SDS) messages shall be supported.
+MCData file distribution shall deliver files to groups or individuals.
+MCX priority and preemption policies shall apply to critical traffic.
