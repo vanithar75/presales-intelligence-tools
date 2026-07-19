@@ -1,9 +1,9 @@
 # PSERS Presales Intelligence — Product SPEC
 
-**Status:** Active (Phase 8 Lite complete — MCX + coverage export; stay under Pro 90%)  
-**Version:** 0.8.0-spec  
+**Status:** Active (Phase 9 high-value pack — mid-doc lift, L3 fill, GIS, maturity UI)  
+**Version:** 0.9.0-spec  
 **Last updated:** 2026-07-19  
-**Authority:** This file is the source of truth through Phase 8 Lite. Feature slices live under [`specs/`](specs/). Next expansion requires amending this SPEC.
+**Authority:** This file is the source of truth through Phase 9. Feature slices live under [`specs/`](specs/). Next expansion requires amending this SPEC.
 
 ---
 
@@ -37,9 +37,9 @@ Do not re-litigate MVP or Phase 2 scope. Agents must treat the following as curr
 
 | Layer | Current state | Location |
 |-------|---------------|----------|
-| L1 | **211** `published` + drafts + 3 stubs = 347 | [ontology/l1_capabilities.json](ontology/l1_capabilities.json) |
+| L1 | **223** `published` + drafts + 0 stubs = 351 | [ontology/l1_capabilities.json](ontology/l1_capabilities.json) |
 | L2 | 493 synonyms + 42 holdout; includes `analyst_accepted` from feedback | [ontology/l2_synonyms.json](ontology/l2_synonyms.json), [ontology/l2_synonyms_holdout.json](ontology/l2_synonyms_holdout.json) |
-| L3 | 20 MSI products, 239 mappings, 232 caps | [ontology/l3_msi_products.json](ontology/l3_msi_products.json), [ontology/l3_product_capabilities.json](ontology/l3_product_capabilities.json) |
+| L3 | 20 MSI products, 285 mappings, 278 caps | [ontology/l3_msi_products.json](ontology/l3_msi_products.json), [ontology/l3_product_capabilities.json](ontology/l3_product_capabilities.json) |
 | Match | Deterministic seeds + L2 overlap + name | [ingest/matcher.py](ingest/matcher.py) |
 | UI/API | FastAPI + static analyst UI | [app/match_api.py](app/match_api.py), [app/static/](app/static/) |
 | Schema | Postgres DDL + optional import CLI; runtime still JSON | [sql/schema.sql](sql/schema.sql), [ingest/load_postgres.py](ingest/load_postgres.py) |
@@ -456,24 +456,39 @@ Aliases below map to full `PSERS.INFRA.*` IDs via L1 `alias` field. Wave 2 lives
 
 ---
 
+## 8h. Phase 9 — High-value pack (Pro burn, ≤90%)
+
+**Goal:** Spend remaining Pro budget on bid-desk ROI: mid-doc lift, L3 completeness, GIS/IAM, full-stack demo, maturity UI, gap report CLI.
+
+| ID | Requirement |
+|----|-------------|
+| FR-P9.1 | Mid-doc map rate ≥ **0.70** (boilerplate filter + site RF seeds) |
+| FR-P9.2 | Fill MSI maps for published caps; GIS/IAM/WEA publish |
+| FR-P9.3 | `fullstack_demo` ≥ 0.80; gap report CLI; maturity table in UI |
+
+**Details:** [docs/sprint-p9-done.md](docs/sprint-p9-done.md)
+
+### Phase 9 Definition of Done
+
+- [x] Mid-doc ≥ 0.70; L3 gap-fill; GIS published; fullstack demo green
+- [x] Military / multi-vendor still deferred
+
+---
+
 ## 9. Cursor agent protocol
 
-1. Read this `SPEC.md` and the single relevant slice under [`specs/`](specs/).  
-2. Implement **only** that slice. Prefer Auto/Composer; keep Pro usage **under 90%**.  
-3. Update the slice checklist / Status.  
-4. Run validators touched by the change.  
-5. Do **not** expand into military peer L1 / multi-vendor / deep MCX without amending this SPEC.  
-6. Cost: never run `generate_l1.py`.
+1. Read this `SPEC.md` and the relevant slice. Prefer Auto/Composer; keep Pro usage **under 90%**.  
+2. Implement only the requested slice; never run `generate_l1.py`.  
+3. Do not open military peer L1 / multi-vendor without SPEC amendment.
 
 ---
 
 ## 10. Appendix — still out of scope
 
-- Deep MCX full 3GPP trees  
 - Military / defence peer L1 verticals  
-- Full interactive ontology graph explorer / graph DB  
 - Multi-vendor L3  
+- Full interactive ontology graph explorer  
 - Broader RFP corpus / crawl  
 - Proposal generation, pricing, SSO  
 
-When ready, amend this SPEC with new slices beyond Phase 8.
+When ready, amend this SPEC beyond Phase 9.

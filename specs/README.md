@@ -20,5 +20,6 @@ Product authority: [`../SPEC.md`](../SPEC.md).
 | 050–052 | Phase 7 Lite Incident process | Done | — |
 | 060 | [060-stakeholder-viz.md](060-stakeholder-viz.md) | Done | Phase 7 |
 | 070–073 | [070-phase8-mcx-export.md](070-phase8-mcx-export.md) | Done | Phase 8 Lite |
+| 080 | [080-phase9-high-value.md](080-phase9-high-value.md) | Done | Phase 9 |
 
-**Product freeze (MVP+):** Phase 8 Lite complete under Pro ≤90% guidance. Military peer L1 / multi-vendor / deep MCX / crawl still need SPEC amendment.
+**Product freeze:** Phase 9 high-value pack complete. Military peer L1 / multi-vendor / crawl still need SPEC amendment. Keep Cursor Pro under **90%**.

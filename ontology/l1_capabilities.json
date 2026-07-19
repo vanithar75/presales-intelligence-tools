@@ -1,18 +1,18 @@
 {
-  "schema_version": "1.19",
+  "schema_version": "1.22",
   "root": "PSERS",
-  "sprint": "P8-073",
+  "sprint": "P9-081",
   "published_at": "2026-07-19",
   "last_publish_tool": "ontology/publish_l1.py",
-  "last_priority_file": "ontology/top_mcx_alert_wave1.json",
+  "last_priority_file": "ontology/top_mcx_wave2.json",
   "generated_by": "ontology/generate_l1.py",
   "counts": {
-    "total": 347,
-    "draft": 133,
-    "published": 211,
+    "total": 351,
+    "draft": 128,
+    "published": 223,
     "deprecated": 0,
-    "stubs": 3,
-    "lmr_draft": 344
+    "stubs": 0,
+    "lmr_draft": 351
   },
   "capabilities": [
     {
@@ -2889,7 +2889,7 @@
     },
     {
       "id": "PSERS.PLAT.GIS.COMMON_MAP",
-      "alias": null,
+      "alias": "GIS.COMMON_MAP",
       "name": "Common operational map",
       "definition": "Shared GIS/map layers for dispatch and field.",
       "stack_class": "PLAT",
@@ -2898,7 +2898,7 @@
         "locate",
         "coordinate"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "GIS",
       "p25_ref": null
     },
@@ -3164,7 +3164,7 @@
     },
     {
       "id": "PSERS.XCUT.SEC.ENTERPRISE_IAM",
-      "alias": null,
+      "alias": "SEC.ENTERPRISE_IAM",
       "name": "Enterprise identity for PS apps",
       "definition": "SSO/IAM across CAD/mobile/command applications.",
       "stack_class": "XCUT",
@@ -3172,13 +3172,13 @@
       "mission_tags": [
         "after_action"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "SEC",
       "p25_ref": null
     },
     {
       "id": "PSERS.XCUT.LOC.INDOOR_LOCATION",
-      "alias": null,
+      "alias": "LOC.INDOOR_LOCATION",
       "name": "Indoor location services",
       "definition": "Indoor caller/unit location beyond outdoor GNSS.",
       "stack_class": "XCUT",
@@ -3186,7 +3186,7 @@
       "mission_tags": [
         "locate"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "LOC",
       "p25_ref": null
     },
@@ -4885,7 +4885,7 @@
         "respond",
         "inform"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "MCX",
       "p25_ref": null
     },
@@ -4900,7 +4900,7 @@
         "coordinate",
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "MCX",
       "p25_ref": null
     },
@@ -4929,7 +4929,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "MCX",
       "p25_ref": null
     },
@@ -4944,7 +4944,7 @@
         "respond",
         "after_action"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "MCX",
       "p25_ref": null
     },
@@ -4958,7 +4958,7 @@
       "mission_tags": [
         "after_action"
       ],
-      "status": "draft",
+      "status": "published",
       "vertical": "MCX",
       "p25_ref": null
     },
@@ -4997,6 +4997,65 @@
       "alias": "ALERT.CAP_RELAY",
       "name": "CAP alert relay",
       "definition": "Relay Common Alerting Protocol (CAP) messages to downstream channels.",
+      "stack_class": "APP",
+      "domain": "ALERT",
+      "mission_tags": [
+        "inform"
+      ],
+      "status": "published",
+      "vertical": "ALERT",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.GIS.LAYER_MGR",
+      "alias": "GIS.LAYER_MGR",
+      "name": "GIS layer management",
+      "definition": "Manage and toggle operational GIS layers for dispatch and EOC maps.",
+      "stack_class": "PLAT",
+      "domain": "GIS",
+      "mission_tags": [
+        "locate",
+        "coordinate"
+      ],
+      "status": "published",
+      "vertical": "GIS",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.GIS.GEOCODE",
+      "alias": "GIS.GEOCODE",
+      "name": "Geocode / reverse geocode",
+      "definition": "Geocode addresses and reverse-geocode coordinates for incident location.",
+      "stack_class": "PLAT",
+      "domain": "GIS",
+      "mission_tags": [
+        "locate",
+        "call_take"
+      ],
+      "status": "published",
+      "vertical": "GIS",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.GIS.ROUTING",
+      "alias": "GIS.ROUTING",
+      "name": "Response routing / ETA",
+      "definition": "Compute response routes and ETA using GIS network data.",
+      "stack_class": "PLAT",
+      "domain": "GIS",
+      "mission_tags": [
+        "locate",
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "GIS",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.APP.ALERT.WEA_TOUCH",
+      "alias": "ALERT.WEA_TOUCH",
+      "name": "WEA / wireless emergency alert touch",
+      "definition": "Touchpoint to originate or relay Wireless Emergency Alerts (WEA).",
       "stack_class": "APP",
       "domain": "ALERT",
       "mission_tags": [

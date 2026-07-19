@@ -248,3 +248,23 @@
 - Military peer L1 / multi-vendor / deep MCX still deferred
 - **Stop** — further spend risks exceeding Pro 90% guidance
 
+## 2026-07-19 — L1 publish batch (published)
+
+- Catalog `schema_version`: **1.21**
+- Sprint: **P9-080**
+- Promoted to `published`: **7** capabilities
+- Stub refusals: **0**
+- Tool: `ontology/publish_l1.py`
+- Priority source: `ontology/top_gis_wave1.json`
+- Sample IDs: PSERS.PLAT.GIS.COMMON_MAP, PSERS.PLAT.GIS.LAYER_MGR, PSERS.PLAT.GIS.GEOCODE, PSERS.PLAT.GIS.ROUTING, PSERS.XCUT.SEC.ENTERPRISE_IAM, PSERS.XCUT.LOC.INDOOR_LOCATION, PSERS.APP.ALERT.WEA_TOUCH
+
+## 2026-07-19 — L1 publish batch (published)
+
+- Catalog `schema_version`: **1.22**
+- Sprint: **P9-081**
+- Promoted to `published`: **5** capabilities
+- Stub refusals: **0**
+- Tool: `ontology/publish_l1.py`
+- Priority source: `ontology/top_mcx_wave2.json`
+- Sample IDs: PSERS.INFRA.MCX.FILE_DIST, PSERS.INFRA.MCX.VIDEO_PULL, PSERS.INFRA.MCX.OFF_NETWORK, PSERS.INFRA.MCX.USER_AUTH, PSERS.INFRA.MCX.RECORDER
+

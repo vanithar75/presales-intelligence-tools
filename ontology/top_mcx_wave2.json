@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "source": "Phase 9 MCX remainder publish",
+  "aliases": [
+    "MCX.FILE_DIST",
+    "MCX.VIDEO_PULL",
+    "MCX.OFF_NETWORK",
+    "MCX.USER_AUTH",
+    "MCX.RECORDER"
+  ]
+}

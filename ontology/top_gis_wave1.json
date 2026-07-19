@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "source": "Phase 9 GIS + IAM + indoor + WEA publish",
+  "aliases": [
+    "GIS.COMMON_MAP",
+    "GIS.LAYER_MGR",
+    "GIS.GEOCODE",
+    "GIS.ROUTING",
+    "SEC.ENTERPRISE_IAM",
+    "LOC.INDOOR_LOCATION",
+    "ALERT.WEA_TOUCH"
+  ]
+}

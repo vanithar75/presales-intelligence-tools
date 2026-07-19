@@ -3,7 +3,7 @@
   "sprint": "P5-032",
   "vendor_id": "MSI",
   "counts": {
-    "mappings": 239,
+    "mappings": 285,
     "capabilities_mapped": 166,
     "products_used": 19,
     "missing_aliases": []
@@ -2157,6 +2157,420 @@
       "capability_alias": "ALERT.CAP_RELAY",
       "support_level": "option",
       "notes": "Public alerting / IPAWS (Phase 8 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.STD.ANALOG_INTEROP",
+      "capability_alias": "LMR.STD.ANALOG_INTEROP",
+      "support_level": "native",
+      "notes": "ASTRO / LMR portfolio gap-fill via CommandCentral map (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.STD.TIA102_SUITE",
+      "capability_alias": "LMR.STD.TIA102_SUITE",
+      "support_level": "native",
+      "notes": "ASTRO / LMR portfolio gap-fill via CommandCentral map (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.STD.COMMON_CHANNEL_OPS",
+      "capability_alias": "LMR.STD.COMMON_CHANNEL_OPS",
+      "support_level": "native",
+      "notes": "ASTRO / LMR portfolio gap-fill via CommandCentral map (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.STD.MIXED_FLEET",
+      "capability_alias": "LMR.STD.MIXED_FLEET",
+      "support_level": "native",
+      "notes": "ASTRO / LMR portfolio gap-fill via CommandCentral map (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.RF.BAND_900",
+      "capability_alias": "LMR.RF.BAND_900",
+      "support_level": "native",
+      "notes": "ASTRO / LMR portfolio gap-fill via CommandCentral map (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.RF.CHANNEL_CAPACITY",
+      "capability_alias": "LMR.RF.CHANNEL_CAPACITY",
+      "support_level": "native",
+      "notes": "ASTRO / LMR portfolio gap-fill via CommandCentral map (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.RF.FCC_IOP_CHANNELS",
+      "capability_alias": "LMR.RF.FCC_IOP_CHANNELS",
+      "support_level": "native",
+      "notes": "ASTRO / LMR portfolio gap-fill via CommandCentral map (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.RF.NARROWBAND",
+      "capability_alias": "LMR.RF.NARROWBAND",
+      "support_level": "native",
+      "notes": "ASTRO / LMR portfolio gap-fill via CommandCentral map (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.RF.FREQUENCY_REUSE",
+      "capability_alias": "LMR.RF.FREQUENCY_REUSE",
+      "support_level": "native",
+      "notes": "ASTRO / LMR portfolio gap-fill via CommandCentral map (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.SITE.MULTICAST",
+      "capability_alias": "LMR.SITE.MULTICAST",
+      "support_level": "native",
+      "notes": "ASTRO / LMR portfolio gap-fill via CommandCentral map (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.SITE.ANTENNA_SYSTEM",
+      "capability_alias": "LMR.SITE.ANTENNA_SYSTEM",
+      "support_level": "native",
+      "notes": "ASTRO / LMR portfolio gap-fill via CommandCentral map (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.COV.COV_95_POP",
+      "capability_alias": "LMR.COV.COV_95_POP",
+      "support_level": "native",
+      "notes": "ASTRO / LMR portfolio gap-fill via CommandCentral map (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.COV.MOBILE_ON_STREET",
+      "capability_alias": "LMR.COV.MOBILE_ON_STREET",
+      "support_level": "native",
+      "notes": "ASTRO / LMR portfolio gap-fill via CommandCentral map (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.COV.PORTABLE_ON_STREET",
+      "capability_alias": "LMR.COV.PORTABLE_ON_STREET",
+      "support_level": "native",
+      "notes": "ASTRO / LMR portfolio gap-fill via CommandCentral map (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.GIS.COMMON_MAP",
+      "capability_alias": "GIS.COMMON_MAP",
+      "support_level": "native",
+      "notes": "CommandCentral coverage gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.XCUT.SEC.ENTERPRISE_IAM",
+      "capability_alias": "SEC.ENTERPRISE_IAM",
+      "support_level": "native",
+      "notes": "CommandCentral coverage gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.XCUT.LOC.INDOOR_LOCATION",
+      "capability_alias": "LOC.INDOOR_LOCATION",
+      "support_level": "native",
+      "notes": "CommandCentral coverage gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.PREMISE_HAZARD",
+      "capability_alias": "CAD.PREMISE_HAZARD",
+      "support_level": "native",
+      "notes": "CommandCentral CAD gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.UNIT_RECOMMEND_GEO",
+      "capability_alias": "CAD.UNIT_RECOMMEND_GEO",
+      "support_level": "native",
+      "notes": "CommandCentral CAD gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.BOLO_MESSAGE",
+      "capability_alias": "CAD.BOLO_MESSAGE",
+      "support_level": "native",
+      "notes": "CommandCentral CAD gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.ROSTER_SCHEDULE",
+      "capability_alias": "CAD.ROSTER_SCHEDULE",
+      "support_level": "native",
+      "notes": "CommandCentral CAD gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.RMS_INTERFACE",
+      "capability_alias": "CAD.RMS_INTERFACE",
+      "support_level": "native",
+      "notes": "CommandCentral CAD gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.NG911_TOUCH",
+      "capability_alias": "CAD.NG911_TOUCH",
+      "support_level": "native",
+      "notes": "CommandCentral CAD gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.AUDIT_LOG",
+      "capability_alias": "CAD.AUDIT_LOG",
+      "support_level": "native",
+      "notes": "CommandCentral CAD gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.TIMED_ALERT",
+      "capability_alias": "CAD.TIMED_ALERT",
+      "support_level": "native",
+      "notes": "CommandCentral CAD gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.RESOURCE_TYPE",
+      "capability_alias": "CAD.RESOURCE_TYPE",
+      "support_level": "native",
+      "notes": "CommandCentral CAD gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.SHIFT_BRIEF",
+      "capability_alias": "CAD.SHIFT_BRIEF",
+      "support_level": "native",
+      "notes": "CommandCentral CAD gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.PERSON_QUERY",
+      "capability_alias": "CAD.PERSON_QUERY",
+      "support_level": "native",
+      "notes": "CommandCentral CAD gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.INCIDENT_HISTORY",
+      "capability_alias": "CAD.INCIDENT_HISTORY",
+      "support_level": "native",
+      "notes": "CommandCentral CAD gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.WARRANT_CHECK",
+      "capability_alias": "CAD.WARRANT_CHECK",
+      "support_level": "native",
+      "notes": "CommandCentral CAD gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.MUTUAL_AID_REQ",
+      "capability_alias": "CAD.MUTUAL_AID_REQ",
+      "support_level": "native",
+      "notes": "CommandCentral CAD gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.CAD.HOSPITAL_STATUS",
+      "capability_alias": "CAD.HOSPITAL_STATUS",
+      "support_level": "native",
+      "notes": "CommandCentral CAD gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.SIP_CALL_CONTROL",
+      "capability_alias": "NG911.SIP_CALL_CONTROL",
+      "support_level": "native",
+      "notes": "CommandCentral NG911 gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.POLICY_ROUTING",
+      "capability_alias": "NG911.POLICY_ROUTING",
+      "support_level": "native",
+      "notes": "CommandCentral NG911 gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.CALLBACK",
+      "capability_alias": "NG911.CALLBACK",
+      "support_level": "native",
+      "notes": "CommandCentral NG911 gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.ABANDONED_CALL",
+      "capability_alias": "NG911.ABANDONED_CALL",
+      "support_level": "native",
+      "notes": "CommandCentral NG911 gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.NG911.TELEM_911",
+      "capability_alias": "NG911.TELEM_911",
+      "support_level": "native",
+      "notes": "CommandCentral NG911 gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.GIS.LAYER_MGR",
+      "capability_alias": "GIS.LAYER_MGR",
+      "support_level": "native",
+      "notes": "CommandCentral coverage gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.GIS.GEOCODE",
+      "capability_alias": "GIS.GEOCODE",
+      "support_level": "native",
+      "notes": "CommandCentral coverage gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.GIS.ROUTING",
+      "capability_alias": "GIS.ROUTING",
+      "support_level": "native",
+      "notes": "CommandCentral coverage gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.APP.ALERT.WEA_TOUCH",
+      "capability_alias": "ALERT.WEA_TOUCH",
+      "support_level": "native",
+      "notes": "CommandCentral coverage gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.MCX.FILE_DIST",
+      "capability_alias": "MCX.FILE_DIST",
+      "support_level": "native",
+      "notes": "WAVE / MCX gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.MCX.VIDEO_PULL",
+      "capability_alias": "MCX.VIDEO_PULL",
+      "support_level": "native",
+      "notes": "WAVE / MCX gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.MCX.OFF_NETWORK",
+      "capability_alias": "MCX.OFF_NETWORK",
+      "support_level": "native",
+      "notes": "WAVE / MCX gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.MCX.USER_AUTH",
+      "capability_alias": "MCX.USER_AUTH",
+      "support_level": "native",
+      "notes": "WAVE / MCX gap-fill (Phase 9)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.INFRA.MCX.RECORDER",
+      "capability_alias": "MCX.RECORDER",
+      "support_level": "native",
+      "notes": "WAVE / MCX gap-fill (Phase 9)",
       "source_url": "https://www.motorolasolutions.com",
       "status": "draft"
     }

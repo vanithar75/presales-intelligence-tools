@@ -98,7 +98,7 @@ def _upsert_review_queue(record: dict) -> dict:
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "sprint": "P8-072", "ui": True}
+    return {"status": "ok", "sprint": "P9-080", "ui": True}
 
 
 @app.get("/api/ontology/summary")
@@ -123,6 +123,8 @@ def ontology_summary():
             return "FIELD"
         if alias.startswith("LMR."):
             return "LMR"
+        if alias.startswith("MCX.") or c["id"].startswith("PSERS.INFRA.MCX."):
+            return "MCX"
         return str(c.get("domain") or "OTHER")
 
     for c in caps:
@@ -141,6 +143,10 @@ def ontology_summary():
         if st in ("published", "draft", "stub", "deprecated"):
             bucket[st] += 1
 
+    maturity = []
+    for vert, bucket in sorted(by_vertical.items(), key=lambda x: (-x[1]["published"], x[0])):
+        maturity.append({"vertical": vert, **bucket})
+
     return {
         "schema_version": doc.get("schema_version"),
         "sprint": doc.get("sprint"),
@@ -148,6 +154,7 @@ def ontology_summary():
         "status": status_counts,
         "by_vertical": dict(sorted(by_vertical.items())),
         "by_stack": dict(sorted(by_stack.items())),
+        "maturity": maturity,
         "guide": "docs/ontology-stakeholder-guide.md",
     }
 
@@ -356,7 +363,8 @@ def demo_fixture(name: str = "demo"):
         "cad": "demo_cad_requirements.txt",
         "ng911": "demo_ng911_requirements.txt",
         "sensors": "demo_sensors_requirements.txt",
-    "mcx": "demo_mcx_requirements.txt",
+        "mcx": "demo_mcx_requirements.txt",
+        "fullstack": "demo_fullstack.txt",
         "psap": "demo_psap_loop.txt",
     }
     filename = mapping.get(name.strip().lower(), "demo_requirements.txt")

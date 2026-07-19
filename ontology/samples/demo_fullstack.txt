@@ -1,0 +1,15 @@
+The PSAP shall receive and process emergency calls in an NG911/i3 environment.
+NG911 call data shall hand off into CAD for dispatch.
+The CAD system shall create and update incidents in Computer-Aided Dispatch.
+Dispatchers shall track unit status and assignments in CAD.
+Field users shall access a mobile CAD client for field workflow.
+The field app shall capture photos from the field device into the evidence workflow.
+Body-worn camera evidence shall support chain of custody.
+RMS shall provide records management for incident reports and evidence metadata.
+EOC situational awareness tools shall support command coordination.
+The system shall provide MCPTT group voice for mission-critical push-to-talk.
+An LMR–MCX interworking function shall bridge radio and MCX domains.
+A common operational map shall be shared across CAD and EOC.
+IPAWS alerting shall originate or relay public warning messages.
+Wireless Emergency Alerts (WEA) touchpoints shall be supported.
+The LMR system shall support P25 Phase 1 trunked voice.

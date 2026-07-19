@@ -64,11 +64,18 @@
 
   function renderResults() {
     const body = $("#resultsBody");
-    const rows = lastResults.filter((r) => {
-      if (filter === "mapped") return !r.unmapped;
-      if (filter === "unmapped") return r.unmapped;
-      return true;
-    });
+    let rows;
+    if (filter === "gaps") {
+      rows = [...lastResults].sort(
+        (a, b) => Number(!!b.unmapped) - Number(!!a.unmapped)
+      );
+    } else {
+      rows = lastResults.filter((r) => {
+        if (filter === "mapped") return !r.unmapped;
+        if (filter === "unmapped") return r.unmapped;
+        return true;
+      });
+    }
     body.innerHTML = rows
       .map((r) => {
         const m = r.matches?.[0];
@@ -298,6 +305,20 @@
           )
           .join("");
       }
+      const mat = $("#maturityBody");
+      if (mat) {
+        const rows = (j.maturity || []).slice(0, 16);
+        mat.innerHTML = rows
+          .map(
+            (r) => `<tr>
+              <td>${escapeHtml(r.vertical)}</td>
+              <td>${r.published ?? 0}</td>
+              <td>${r.draft ?? 0}</td>
+              <td>${r.total ?? 0}</td>
+            </tr>`
+          )
+          .join("");
+      }
     } catch {
       if (meta) meta.textContent = "Ontology summary unavailable (is the API up?)";
     }
@@ -310,6 +331,10 @@
 
   $("#loadIncidentDemo")?.addEventListener("click", () => loadFixture("incident"));
   $("#loadIncidentDemo2")?.addEventListener("click", () => loadFixture("incident"));
+  $("#loadMcxDemo")?.addEventListener("click", () => loadFixture("mcx"));
+  $("#loadMcxDemo2")?.addEventListener("click", () => loadFixture("mcx"));
+  $("#loadFullstackDemo")?.addEventListener("click", () => loadFixture("fullstack"));
+  $("#loadFullstackDemo2")?.addEventListener("click", () => loadFixture("fullstack"));
   $("#jumpPaste")?.addEventListener("click", jumpToPaste);
 
   $("#feedbackForm").addEventListener("submit", async (e) => {

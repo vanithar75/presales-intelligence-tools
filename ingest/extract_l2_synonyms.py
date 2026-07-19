@@ -292,6 +292,18 @@ SEED_PHRASES: list[tuple[str, str]] = [
     (r"poison\s+control|specialty\s+(advice\s+)?transfer", "NG911.POISON_TRANSFER"),
     (r"\btls\b.{0,20}\bsrtp\b|\bsrtp\b|bcf.{0,20}(tls|srtp)|media\s+security.{0,20}border", "NG911.BCF_TLS_SRTP"),
     (r"abandoned[- ]call\s+callback\s+policy|callback\s+policy.{0,30}abandoned", "NG911.ABANDONED_CB_POLICY"),
+    # Phase 9 — site / RF install functional (not construction noise)
+    (r"\bvswr\b|voltage\s+standing\s+wave", "LMR.SITE.ANTENNA_SYSTEM"),
+    (r"\beme\b|electromagnetic\s+energy|rf\s+exposure|limit\s+exposure\s+to\s+electromagnetic", "LMR.SITE.SITE_GROUNDING"),
+    (r"site\s+grounding|grounding\s+system", "LMR.SITE.SITE_GROUNDING"),
+    (r"tower\s+top\s+amplifier|\btta\b", "LMR.SITE.TTA"),
+    (r"common\s+operational\s+map|shared\s+gis\s+map|agency[- ]wide\s+map", "GIS.COMMON_MAP"),
+    (r"gis\s+layer|map\s+layer\s+management|toggle\s+operational\s+gis", "GIS.LAYER_MGR"),
+    (r"geocode|reverse[- ]geocode", "GIS.GEOCODE"),
+    (r"response\s+rout(e|ing)|gis\s+network.{0,20}eta|\beta\b.{0,30}(route|gis)", "GIS.ROUTING"),
+    (r"indoor\s+location|in[- ]building\s+location", "LOC.INDOOR_LOCATION"),
+    (r"enterprise\s+identity|single\s+sign[- ]on|\bsso\b.{0,20}(ps|public\s+safety)|iam\s+for\s+ps", "SEC.ENTERPRISE_IAM"),
+    (r"\bwea\b|wireless\s+emergency\s+alerts?", "ALERT.WEA_TOUCH"),
     (r"fixed\s+cctv|\bcctv\b|fixed\s+camera", "VIDEO.FIXED_CCTV"),
     (r"live\s+video\s+(shall\s+be\s+)?shar|share[sd]?\s+live\s+video|shared\s+into\s+(cad|eoc)", "VIDEO.LIVE_SHARE"),
     (r"body[- ]worn\s+camera|\bbwc\b", "VIDEO.BODYWORN"),
@@ -320,7 +332,7 @@ SEED_PHRASES: list[tuple[str, str]] = [
     (r"mobile\s+incident\s+capture|capture\s+and\s+update\s+incident\s+details\s+from\s+(a\s+)?field", "FIELD.INCIDENT_CAPTURE"),
     (r"field\s+(narrative|forms?)|electronic\s+forms?\s+linked\s+to\s+incidents?", "FIELD.FIELD_FORMS"),
     (r"field\s+apps?\s+offline|offline\s+sync|synchronize\s+when\s+connectivity", "FIELD.OFFLINE_SYNC"),
-    (r"field\s+digital\s+evidence|capture\s+photos?,?\s+video.{0,40}field\s+device|evidence\s+capture\s+from\s+the\s+field", "FIELD.EVIDENCE_CAPTURE"),
+    (r"field\s+digital\s+evidence|capture\s+photos?(?:,?\s*video)?.{0,40}field\s+device|photos?\s+from\s+the\s+field\s+device|evidence\s+capture\s+from\s+the\s+field", "FIELD.EVIDENCE_CAPTURE"),
     (r"field\s+person\s*/?\s*vehicle|person/vehicle\s+identification\s+from\s+the\s+field", "FIELD.PERSON_VEHICLE_ID"),
     (r"\becitation\b|electronic\s+citations?", "FIELD.ECITATION"),
     (r"field\s+supervisor\s+approv|supervisors?\s+to\s+review\s+and\s+approve\s+(reports?|evidence)", "FIELD.SUPERVISOR_APPROVE"),
@@ -441,7 +453,24 @@ _ADMIN_BOILERPLATE_RE = re.compile(
     r"conclusion of the radio (system )?installation milestone|"
     r"sustainability approach|applicable codes|"
     r"prior to contract award|proposed site locations|"
-    r"unless approved by the county"
+    r"unless approved by the county|"
+    # Phase 9 — construction / logistics noise (mid-doc lift)
+    r"engineering drawings|"
+    r"providing its own transportation|"
+    r"free of debris and hazards|"
+    r"easy preventive maintenance and servicing|"
+    r"securely mounted to the floor|"
+    r"concrete pad|"
+    r"equipment shelter|"
+    r"strict and comprehensive labeling scheme|"
+    r"runs shall be labeled|"
+    r"shall be labeled, at minimum|"
+    r"final installation shall be according|"
+    r"server equipment is typically replaced|"
+    r"additional (one-half )?rack|"
+    r"at least (two|one) additional ports?|"
+    r"spaces, or integrates into existing|"
+    r"create new or update existing"
     r")"
 )
 _TOC_LEADER_RE = re.compile(r"\.{3,}|\.{2,}\s*\d+\s*$")

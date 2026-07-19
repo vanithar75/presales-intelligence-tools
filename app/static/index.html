@@ -65,9 +65,20 @@
 
       <h3 class="explain-h">3. Technical — stacks &amp; status</h3>
       <div class="stack-grid" id="stackGrid"></div>
+      <h3 class="explain-h">Vertical maturity</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Vertical</th><th>Published</th><th>Draft</th><th>Total</th></tr>
+          </thead>
+          <tbody id="maturityBody"></tbody>
+        </table>
+      </div>
       <p class="hint">Full narrative: <code>docs/ontology-stakeholder-guide.md</code> · C2/C4I terms: <code>docs/c2-c4i-crosswalk.md</code></p>
       <div class="row">
         <button type="button" class="btn primary" id="loadIncidentDemo">Load incident-mgmt demo</button>
+        <button type="button" class="btn ghost" id="loadMcxDemo">Load MCX demo</button>
+        <button type="button" class="btn ghost" id="loadFullstackDemo">Load full-stack demo</button>
         <button type="button" class="btn ghost" id="jumpPaste">Open paste tab</button>
       </div>
     </section>
@@ -99,6 +110,8 @@
           <div class="row">
             <button type="button" class="btn ghost" id="loadDemo">Load LMR demo</button>
             <button type="button" class="btn ghost" id="loadIncidentDemo2">Load incident demo</button>
+            <button type="button" class="btn ghost" id="loadMcxDemo2">Load MCX demo</button>
+            <button type="button" class="btn ghost" id="loadFullstackDemo2">Load full-stack</button>
             <button type="button" class="btn primary" id="runText">Run match</button>
           </div>
         </div>
@@ -113,6 +126,7 @@
           <button type="button" class="chip active" data-filter="all">All</button>
           <button type="button" class="chip" data-filter="mapped">Mapped</button>
           <button type="button" class="chip" data-filter="unmapped">Unmapped</button>
+          <button type="button" class="chip" data-filter="gaps">Gaps first</button>
         </div>
         <div class="row export-row">
           <button type="button" class="btn primary" id="downloadCsv" disabled>Download coverage CSV</button>
