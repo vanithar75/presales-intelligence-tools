@@ -45,6 +45,7 @@ app/               # Match UI (Sprint 3–4)
 | **Phase 8 Lite** | **Done** — Coverage export + MCX Lite + thin ALERT; see [SPEC.md](SPEC.md) |
 | **Phase 9** | **Done** — Mid-doc lift, L3 fill, GIS, fullstack demo; see [docs/sprint-p9-done.md](docs/sprint-p9-done.md) |
 | **Phase 10 Lite** | **Done** — L1-first thoroughness (all drafts published); see [docs/sprint-p10-done.md](docs/sprint-p10-done.md) |
+| **Phase 11 Lite** | **Done** — compliance matrix `.xlsx` workbook; see [specs/100-compliance-matrix.md](specs/100-compliance-matrix.md) |
 
 See [docs/sprint-s0-s1-done.md](docs/sprint-s0-s1-done.md).
 
@@ -55,6 +56,7 @@ py -3.12 ontology/validate_l1.py
 py -3.12 ontology/validate_l2.py
 py -3.12 ontology/validate_l3.py
 py -3.12 ingest/match_rfp.py ontology/samples/demo_requirements.txt
+py -3.12 ingest/export_compliance.py ontology/samples/demo_requirements.txt -o out/demo-compliance.xlsx
 py -3.12 ontology/eval_match.py
 py -3.12 ingest/publish_l2_feedback.py --dry-run
 ```

@@ -4,6 +4,7 @@
 
   let lastResults = [];
   let lastCounts = {};
+  let lastSourceFile = "match";
   let filter = "all";
   let selectedFile = null;
 
@@ -137,11 +138,13 @@
   function showDoc(doc) {
     lastResults = doc.results || [];
     lastCounts = doc.counts || {};
+    lastSourceFile = doc.source_file || selectedFile?.name || "match";
     $("#resultsSection").hidden = false;
     renderMetrics(lastCounts);
     renderResults();
     const has = lastResults.length > 0;
     $("#downloadCsv").disabled = !has;
+    $("#downloadXlsx").disabled = !has;
     $("#downloadJson").disabled = !has;
   }
 
@@ -198,6 +201,29 @@
 
   $("#downloadCsv")?.addEventListener("click", () => {
     downloadBlob("psers-coverage.csv", toCsv(coverageRows()), "text/csv;charset=utf-8");
+  });
+  $("#downloadXlsx")?.addEventListener("click", async () => {
+    if (!lastResults.length) return;
+    try {
+      const r = await fetch("/api/compliance/matrix", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          results: lastResults,
+          source_file: lastSourceFile || "match",
+        }),
+      });
+      if (!r.ok) throw new Error(await r.text());
+      const blob = await r.blob();
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "psers-compliance.xlsx";
+      a.click();
+      URL.revokeObjectURL(url);
+    } catch (e) {
+      console.warn("xlsx export failed", e);
+    }
   });
   $("#downloadJson")?.addEventListener("click", () => {
     const payload = { counts: lastCounts, rows: coverageRows() };

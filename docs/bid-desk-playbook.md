@@ -99,14 +99,23 @@ Load from the Paste tab (UI buttons) or `GET /api/demo/fixture?name=<key>`.
 
 Filters: **All** · **Mapped** · **Unmapped** · **Gaps first** (unmapped on top for triage).
 
-### Coverage CSV/JSON in bid response
+### Coverage CSV/JSON / compliance workbook in bid response
 
-Columns: `requirement` · `page` · `mapped` · `capability_id` · `capability_alias` · `capability_name` · `confidence` · `method` · `msi_coverage`
+Columns (CSV): `requirement` · `page` · `mapped` · `capability_id` · `capability_alias` · `capability_name` · `confidence` · `method` · `msi_coverage`
+
+**Compliance workbook (.xlsx)** — one row per requirement; import into Google Sheets (File → Import). Sheets: `Compliance` · `Summary` · `Gaps`. Suggested `compliance_code` is **C** (native MSI) or **A** (option/partner); blanks need human review; never auto-**N**.
+
+```powershell
+py -3.12 ingest/export_compliance.py ontology/samples/demo_requirements.txt -o out/demo-compliance.xlsx
+```
+
+UI: **Download compliance workbook** (or `POST /api/compliance/matrix` with prior match `results`).
 
 1. **Compliance matrix** — filter `mapped=true`; group by L1 or MSI family.  
 2. **Executive summary** — use map rate as first-pass addressability.  
-3. **Gap table** — filter `mapped=false`; classify (synonym fix, roadmap, partner, defer).  
-4. **Low-confidence review** — re-check weak matches before claiming full compliance.
+3. **Gap table** — filter `mapped=false` or open the `Gaps` sheet; classify (synonym fix, roadmap, partner, defer).  
+4. **Low-confidence review** — re-check weak matches before claiming full compliance.  
+5. **Stakeholder fields** — fill `owner` / `due_date` / `status` / `response_notes` in Sheets after import.
 
 ### `POST /api/match/export`
 

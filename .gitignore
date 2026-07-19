@@ -10,3 +10,4 @@ ontology/l2_feedback.jsonl
 dist/
 .next/
 *.log
+out/
