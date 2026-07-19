@@ -66,6 +66,8 @@ NG911 call handling: [docs/sprint-p4-ng911.md](docs/sprint-p4-ng911.md).
 Sensors Phase 5: [docs/sprint-p5-031-done.md](docs/sprint-p5-031-done.md).  
 Phase 6 CAD+NG911: [docs/sprint-p6-041-done.md](docs/sprint-p6-041-done.md).  
 Phase 7 incident mgmt: [docs/sprint-p7-051-done.md](docs/sprint-p7-051-done.md).  
+Phase 9 high-value: [docs/sprint-p9-done.md](docs/sprint-p9-done.md).  
+Bid-desk playbook: [docs/bid-desk-playbook.md](docs/bid-desk-playbook.md).  
 Stakeholder ontology guide: [docs/ontology-stakeholder-guide.md](docs/ontology-stakeholder-guide.md).  
 C2/C4I crosswalk: [docs/c2-c4i-crosswalk.md](docs/c2-c4i-crosswalk.md).  
 Feedback loop: [docs/sprint-p2-003-done.md](docs/sprint-p2-003-done.md).  
