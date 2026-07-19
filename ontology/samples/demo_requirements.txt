@@ -8,3 +8,10 @@ Dispatch console positions shall support emergency alarm display and talkgroup p
 APX-class multiband portables shall be proposed for law enforcement users.
 The solution shall support SmartConnect-class LMR to LTE broadband PTT bridging.
 Grade of Service shall be less than or equal to 1 percent.
+The system shall support all-call and announcement group voice features.
+Dispatch consoles shall provide instant recall and console patch capability.
+The NMS shall provide real-time monitoring and SNMP alarms.
+Subscriber units shall support unit inhibit and radio check.
+The contractor shall provide acceptance testing, training, and warranty support.
+The system shall support packet data and location on PTT.
+Backhaul shall meet stated capacity requirements.

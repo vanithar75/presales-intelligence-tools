@@ -1,9 +1,9 @@
 # PSERS Presales Intelligence — Product SPEC
 
-**Status:** Active (Phase 9 high-value pack — mid-doc lift, L3 fill, GIS, maturity UI)  
+**Status:** Active (Phase 10 Lite — L1-first thoroughness; Pro burn ≤90%)  
 **Version:** 0.9.0-spec  
 **Last updated:** 2026-07-19  
-**Authority:** This file is the source of truth through Phase 9. Feature slices live under [`specs/`](specs/). Next expansion requires amending this SPEC.
+**Authority:** This file is the source of truth through Phase 10 Lite. Feature slices live under [`specs/`](specs/). Next expansion requires amending this SPEC.
 
 ---
 
@@ -50,7 +50,7 @@ Do not re-litigate MVP or Phase 2 scope. Agents must treat the following as curr
 - No broad RFP web crawl
 - L2 corpus = ECSO Jackson + Erie trunked 2026 + Erie subscriber 2026 only
 - L3 = MSI only
-- CAD = Phase 4–6; NG911 = Phase 6; Sensors = Phase 5; Incident FIELD/RMS/EOC = Phase 7; MCX = Phase 8 Lite; ALERT = Phase 8 thin
+- CAD = Phase 4–6; NG911 = Phase 6; Sensors = Phase 5; Incident FIELD/RMS/EOC = Phase 7; MCX = Phase 8 Lite; ALERT = Phase 8 thin; LMR draft thoroughness = Phase 10 Lite
 
 ### Explicit non-goals (deferred past Phase 8 Lite)
 
@@ -475,11 +475,35 @@ Aliases below map to full `PSERS.INFRA.*` IDs via L1 `alias` field. Wave 2 lives
 
 ---
 
+## 8i. Phase 10 Lite — L1-first thoroughness (Pro ≤90%)
+
+**Goal:** Make **L1** robust before further L3 polish. Prioritize LMR draft→publish, residual VIDEO/IOT/FIELD drafts, L1 quality audit, and L2 seeds so new L1 is matchable. Thin L3 gap-fill only for newly published IDs. No `generate_l1.py`; no military peer L1; no L3 citation campaign.
+
+| ID | Requirement |
+|----|-------------|
+| FR-P10.1 | Promote **≥80** high-RFP LMR drafts (VOICE→SUB→DISP→LIFE→NMS→SEC→IOP→DATA→BH…) |
+| FR-P10.2 | L1 quality / coverage audit CLI; alias + mission + description checks on promoted set |
+| FR-P10.3 | Publish residual VIDEO/IOT/FIELD drafts (**≥8**) |
+| FR-P10.4 | Mid-doc / L2 seeds so robust L1 is matchable (target mid_doc ≥ **0.78** when PDFs present) |
+| FR-P10.5 | Thin L3 fill for newly published L1 only; freeze |
+
+**Details:** [specs/090-phase10-l1-thorough.md](specs/090-phase10-l1-thorough.md)
+
+### Phase 10 Lite Definition of Done
+
+- [x] ≥80 LMR drafts published; residual VIDEO/IOT/FIELD largely published
+- [x] `ontology/l1_coverage_audit.py` exists and promoted set is clean
+- [x] Thin L3 gap-fill for new published IDs; prior eval suites green
+- [x] Decision-log freeze; military / multi-vendor still deferred
+
+---
+
 ## 9. Cursor agent protocol
 
 1. Read this `SPEC.md` and the relevant slice. Prefer Auto/Composer; keep Pro usage **under 90%**.  
 2. Implement only the requested slice; never run `generate_l1.py`.  
 3. Do not open military peer L1 / multi-vendor without SPEC amendment.
+4. Phase 10 priority: **L1 thoroughness first**; L3 only as thin coverage follow-on.
 
 ---
 
@@ -490,5 +514,6 @@ Aliases below map to full `PSERS.INFRA.*` IDs via L1 `alias` field. Wave 2 lives
 - Full interactive ontology graph explorer  
 - Broader RFP corpus / crawl  
 - Proposal generation, pricing, SSO  
+- L3 datasheet citation polish as a primary goal (deferred past Phase 10)
 
-When ready, amend this SPEC beyond Phase 9.
+When ready, amend this SPEC beyond Phase 10.

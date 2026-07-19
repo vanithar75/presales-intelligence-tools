@@ -268,3 +268,44 @@
 - Priority source: `ontology/top_mcx_wave2.json`
 - Sample IDs: PSERS.INFRA.MCX.FILE_DIST, PSERS.INFRA.MCX.VIDEO_PULL, PSERS.INFRA.MCX.OFF_NETWORK, PSERS.INFRA.MCX.USER_AUTH, PSERS.INFRA.MCX.RECORDER
 
+## 2026-07-19 — L1 publish batch (published)
+
+- Catalog `schema_version`: **1.23**
+- Sprint: **P10-091**
+- Promoted to `published`: **85** capabilities
+- Stub refusals: **0**
+- Tool: `ontology/publish_l1.py`
+- Priority source: `ontology/top_lmr_wave3.json`
+- Sample IDs: PSERS.INFRA.VOICE.ALL_CALL, PSERS.INFRA.VOICE.ANNOUNCEMENT_GROUP, PSERS.INFRA.VOICE.BROADCAST_CALL, PSERS.INFRA.VOICE.BUSY_LOCKOUT, PSERS.INFRA.VOICE.CALL_ALERT, PSERS.INFRA.VOICE.DTMF_OVERDIAL, PSERS.INFRA.VOICE.HANGTIME, PSERS.INFRA.VOICE.PRIORITY_LEVELS (+77 more)
+
+## 2026-07-19 — L1 publish batch (published)
+
+- Catalog `schema_version`: **1.24**
+- Sprint: **P10-093**
+- Promoted to `published`: **11** capabilities
+- Stub refusals: **0**
+- Tool: `ontology/publish_l1.py`
+- Priority source: `ontology/top_residual_wave1.json`
+- Sample IDs: PSERS.APP.FIELD.ECITATION, PSERS.APP.FIELD.PERSON_VEHICLE_ID, PSERS.APP.FIELD.SUPERVISOR_APPROVE, PSERS.SENS.IOT.ENVIRONMENTAL, PSERS.SENS.IOT.SENSOR_ALERT_ROUTE, PSERS.SENS.IOT.TRAFFIC_SENSOR, PSERS.SENS.VIDEO.ANALYTICS_DETECT, PSERS.SENS.VIDEO.CCTV_PTZ (+3 more)
+
+## 2026-07-19 — L1 publish batch (published)
+
+- Catalog `schema_version`: **1.25**
+- Sprint: **P10-091b**
+- Promoted to `published`: **32** capabilities
+- Stub refusals: **0**
+- Tool: `ontology/publish_l1.py`
+- Priority source: `ontology/top_lmr_wave4.json`
+- Sample IDs: PSERS.INFRA.BB.CONVERGED_DEVICE, PSERS.INFRA.BB.FIRSTNET_READY, PSERS.INFRA.BB.MODEM_TETHER, PSERS.INFRA.BB.PTT_APP_INTEROP, PSERS.INFRA.BB.SMART_LOCATE, PSERS.INFRA.BB.SMART_PROGRAMMING, PSERS.INFRA.BB.WIFI_CONNECTIVITY, PSERS.INFRA.BH.BH_NMS_INTEGRATION (+24 more)
+
+## 2026-07-19 — Phase 10 Lite freeze (L1-first thoroughness)
+
+- **Priority:** L1 robust before L3 polish (user direction)
+- LMR drafts cleared: **117** published (wave3+wave4); residual VIDEO/IOT/FIELD **11** published
+- Catalog: **351** published · **0** draft · **0** stub · schema **1.25**
+- `ontology/l1_coverage_audit.py` shipped; quality issues **0**
+- Mid-doc **0.781**; `MID_DOC_TARGET` raised to **0.78**
+- Thin L3 gap-fill only (**358** maps) — no citation campaign
+- Military / multi-vendor / L3 URL polish still deferred
+- **Stop** — further spend should stay under Cursor Pro **90%**
+

@@ -33,7 +33,7 @@ ERIE_PDF = ROOT / "data" / "rfp" / "erie-trunked-radio-system-2026-018.pdf"
 ECSO_PDF = ROOT / "data" / "rfp" / "ecso-jackson-p25-functional-spec.pdf"
 
 DEMO_TARGET = 0.80
-MID_DOC_TARGET = 0.70
+MID_DOC_TARGET = 0.78
 CAD_DEMO_TARGET = 0.80
 NG911_DEMO_TARGET = 0.80
 SENSORS_DEMO_TARGET = 0.80

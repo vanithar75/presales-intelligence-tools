@@ -127,7 +127,7 @@ UI **accept/correct** → pending review queue. **Reject** is audit-only. SME **
 
 PSERS is a **capability ontology**, not a product catalog. Buyer RFP language (L2) maps to stable capabilities (L1), then to MSI products (L3). Never skip L1.
 
-**Catalog snapshot (Phase 9):** 351 L1 capabilities — **223 published**, 0 stubs · 493 L2 synonyms · **285** L3 mappings (20 MSI products).
+**Catalog snapshot (Phase 10):** 351 L1 capabilities — **351 published**, 0 draft, 0 stubs · 493 L2 synonyms · **358** L3 mappings (20 MSI products).
 
 ### Mission swimlane — where verticals sit
 
@@ -152,9 +152,9 @@ detect → call_take → locate → dispatch → respond → coordinate → info
 
 | Vertical | Bid-desk status |
 |----------|-----------------|
-| **LMR** | Published — primary |
+| **LMR** | Published — primary (**192**/192; Phase 10 cleared drafts) |
 | **CAD / NG911** | Published |
-| **Sensors** | Published (lite) |
+| **Sensors** | Published |
 | **FIELD / RMS / EOC** | Published — incident process |
 | **MCX** | Published Lite — deep 3GPP deferred |
 | **GIS / ALERT** | Published (thin waves) |

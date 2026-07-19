@@ -21,5 +21,6 @@ Product authority: [`../SPEC.md`](../SPEC.md).
 | 060 | [060-stakeholder-viz.md](060-stakeholder-viz.md) | Done | Phase 7 |
 | 070–073 | [070-phase8-mcx-export.md](070-phase8-mcx-export.md) | Done | Phase 8 Lite |
 | 080 | [080-phase9-high-value.md](080-phase9-high-value.md) | Done | Phase 9 |
+| 090–095 | [090-phase10-l1-thorough.md](090-phase10-l1-thorough.md) | Done | Phase 10 Lite L1-first |
 
-**Product freeze:** Phase 9 high-value pack complete. Military peer L1 / multi-vendor / crawl still need SPEC amendment. Keep Cursor Pro under **90%**.
+**Product freeze:** Phase 10 Lite L1-first complete (all L1 published). Military peer L1 / multi-vendor / L3 citation polish / crawl still need SPEC amendment. Keep Cursor Pro under **90%**.
