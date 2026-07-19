@@ -77,7 +77,7 @@ def main() -> int:
     ap.add_argument(
         "--out-dir",
         type=Path,
-        default=ROOT / "ontology" / "samples" / "e2e_compliance",
+        default=ROOT / "samples" / "compliance",
     )
     args = ap.parse_args()
 

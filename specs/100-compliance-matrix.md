@@ -7,9 +7,10 @@
 
 - [x] `ingest/compliance_matrix.py` — one row per requirement; C/A suggest; never auto-N
 - [x] `ingest/export_compliance.py` CLI → `.xlsx` (Compliance / Summary / Gaps)
+- [x] E2E samples live under `samples/compliance/` (not `ontology/`)
 - [x] `POST /api/compliance/matrix` + UI download; `export?format=xlsx`
 - [x] Bid-desk playbook updated; SPEC Phase 11 Lite
 
 ## Status
 
-Done — 2026-07-19. Sprint **P11-100**.
+Done — 2026-07-19. Sprint **P11-100**. Sample artifact: `samples/compliance/erie-trunked-radio-system-2026-018_pp21-25-compliance.xlsx`.
