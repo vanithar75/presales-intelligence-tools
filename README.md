@@ -2,15 +2,15 @@
 
 Cost-effective MVP: map RFP language → stable capabilities → Motorola Solutions (MSI) product coverage.
 
-**Product spec (authority for next work):** [SPEC.md](SPEC.md) — Phase 7 Lite complete; next expansion needs SPEC amendment  
+**Product spec (authority for next work):** [SPEC.md](SPEC.md) — Phase 10 Lite L1-first complete; next expansion needs SPEC amendment  
 **Feature slices:** [specs/](specs/)
 
 ## Ontology model
 
 - **Root:** `PSERS` — Public Safety Emergency Response System (of Systems)
-- **L1:** Canonical capabilities (LMR + CAD/NG911 + Sensors + FIELD/RMS/EOC incident process; MCX stubs)
-- **L2:** Synonyms from 3 allowlisted LMR RFPs (Sprint 2) + vertical seeds
-- **L3:** MSI product mappings (Sprint 3)
+- **L1:** Canonical capabilities — **351 published** (LMR thorough + CAD/NG911/Sensors/FIELD/RMS/EOC/MCX/GIS/ALERT)
+- **L2:** Synonyms from 3 allowlisted LMR RFPs + vertical seeds
+- **L3:** MSI product mappings (thin gap-fill; citation polish deferred)
 
 See [docs/psers-root.md](docs/psers-root.md) and [docs/decision-log.md](docs/decision-log.md).
 
@@ -44,6 +44,7 @@ app/               # Match UI (Sprint 3–4)
 | **Phase 7 Lite** | **Done** — Incident management (FIELD/RMS/EOC) slices 050–052; see [SPEC.md](SPEC.md) |
 | **Phase 8 Lite** | **Done** — Coverage export + MCX Lite + thin ALERT; see [SPEC.md](SPEC.md) |
 | **Phase 9** | **Done** — Mid-doc lift, L3 fill, GIS, fullstack demo; see [docs/sprint-p9-done.md](docs/sprint-p9-done.md) |
+| **Phase 10 Lite** | **Done** — L1-first thoroughness (all drafts published); see [docs/sprint-p10-done.md](docs/sprint-p10-done.md) |
 
 See [docs/sprint-s0-s1-done.md](docs/sprint-s0-s1-done.md).
 
@@ -67,6 +68,7 @@ Sensors Phase 5: [docs/sprint-p5-031-done.md](docs/sprint-p5-031-done.md).
 Phase 6 CAD+NG911: [docs/sprint-p6-041-done.md](docs/sprint-p6-041-done.md).  
 Phase 7 incident mgmt: [docs/sprint-p7-051-done.md](docs/sprint-p7-051-done.md).  
 Phase 9 high-value: [docs/sprint-p9-done.md](docs/sprint-p9-done.md).  
+Phase 10 L1-first: [docs/sprint-p10-done.md](docs/sprint-p10-done.md).  
 Bid-desk playbook: [docs/bid-desk-playbook.md](docs/bid-desk-playbook.md).  
 Stakeholder ontology guide: [docs/ontology-stakeholder-guide.md](docs/ontology-stakeholder-guide.md).  
 C2/C4I crosswalk: [docs/c2-c4i-crosswalk.md](docs/c2-c4i-crosswalk.md).  

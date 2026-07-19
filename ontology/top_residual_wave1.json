@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "source": "Phase 10 residual VIDEO/IOT/FIELD",
+  "description": "Publish remaining non-LMR drafts",
+  "aliases": [
+    "FIELD.ECITATION",
+    "FIELD.PERSON_VEHICLE_ID",
+    "FIELD.SUPERVISOR_APPROVE",
+    "IOT.ENVIRONMENTAL",
+    "IOT.SENSOR_ALERT_ROUTE",
+    "IOT.TRAFFIC_SENSOR",
+    "VIDEO.ANALYTICS_DETECT",
+    "VIDEO.CCTV_PTZ",
+    "VIDEO.EXPORT_REDAC",
+    "VIDEO.VIDEO_WALL",
+    "VIDEO.VMS_RETENTION"
+  ]
+}
