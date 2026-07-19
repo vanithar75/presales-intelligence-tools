@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 from ingest.extract_l2_synonyms import (  # noqa: E402
     SEED_PHRASES,
     harvest_phrases,
+    harvest_requirement_items,
     is_boilerplate_phrase,
     normalize_key,
     normalize_phrase,
@@ -158,19 +159,39 @@ def msi_coverage(capability_ids: list[str]) -> list[dict]:
     return rows
 
 
-def match_text(text: str, top_k: int = 3) -> list[dict]:
+def match_text_with_carry(
+    text: str,
+    top_k: int = 3,
+    *,
+    initial_section: tuple[str, str] = ("", ""),
+    seq_by_section: dict[str, int] | None = None,
+) -> tuple[list[dict], tuple[str, str], dict[str, int]]:
+    """Like match_text but also returns ending section + seq counters for page carry."""
     results = []
-    text = strip_page_chrome(text)
-    phrases = harvest_phrases(text)
+    items, ending, counters = harvest_requirement_items(
+        text,
+        initial_section=initial_section,
+        seq_by_section=seq_by_section,
+    )
     # also accept raw lines if harvest empty
-    if not phrases:
+    if not items:
+        text = strip_page_chrome(text)
         for line in text.splitlines():
             line = normalize_phrase(line)
             if len(line) >= 25 and not is_boilerplate_phrase(line):
-                phrases.append(line)
+                items.append(
+                    {
+                        "phrase": line,
+                        "req_id": "",
+                        "section": initial_section[0],
+                        "section_title": initial_section[1],
+                        "bullet": "",
+                    }
+                )
     seen_exact: set[str] = set()
     seen_key: set[str] = set()
-    for phrase in phrases:
+    for item in items:
+        phrase = item["phrase"]
         exact = phrase.lower()
         key = normalize_key(phrase)
         if exact in seen_exact:
@@ -181,19 +202,19 @@ def match_text(text: str, top_k: int = 3) -> list[dict]:
         if key:
             seen_key.add(key)
         hits = match_phrase(phrase, top_k=top_k)
+        base = {
+            "requirement": phrase,
+            "req_id": item.get("req_id") or "",
+            "section": item.get("section") or "",
+            "section_title": item.get("section_title") or "",
+        }
         if not hits:
-            results.append(
-                {
-                    "requirement": phrase,
-                    "matches": [],
-                    "unmapped": True,
-                }
-            )
+            results.append({**base, "matches": [], "unmapped": True})
             continue
         cap_ids = [h.capability_id for h in hits]
         results.append(
             {
-                "requirement": phrase,
+                **base,
                 "unmapped": False,
                 "matches": [
                     {
@@ -208,7 +229,18 @@ def match_text(text: str, top_k: int = 3) -> list[dict]:
                 "msi_coverage": msi_coverage(cap_ids),
             }
         )
-    return results
+    return results, ending, counters
+
+
+def match_text(
+    text: str,
+    top_k: int = 3,
+    *,
+    initial_section: tuple[str, str] = ("", ""),
+) -> list[dict]:
+    """Match requirements in text. Returns result rows (PDF section ids when present)."""
+    rows, _, _ = match_text_with_carry(text, top_k=top_k, initial_section=initial_section)
+    return rows
 
 
 def match_pdf(
@@ -233,14 +265,21 @@ def match_pdf(
         end = total
 
     all_rows = []
+    carry: tuple[str, str] = ("", "")
+    seq_counters: dict[str, int] = {}
     for i in range(start, end + 1):
         try:
             text = reader.pages[i - 1].extract_text() or ""
         except Exception:
             text = ""
-        for row in match_text(text, top_k=top_k):
-            row = {**row, "page": i}
-            all_rows.append(row)
+        rows, carry, seq_counters = match_text_with_carry(
+            text,
+            top_k=top_k,
+            initial_section=carry,
+            seq_by_section=seq_counters,
+        )
+        for row in rows:
+            all_rows.append({**row, "page": i})
 
     mapped = [r for r in all_rows if not r["unmapped"]]
     unmapped = [r for r in all_rows if r["unmapped"]]

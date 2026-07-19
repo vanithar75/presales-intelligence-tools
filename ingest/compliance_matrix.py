@@ -15,6 +15,8 @@ CONFIDENCE_FLOOR = 0.75
 
 COMPLIANCE_FIELDS = [
     "req_id",
+    "section",
+    "section_title",
     "source_file",
     "page",
     "requirement",
@@ -37,7 +39,7 @@ COMPLIANCE_FIELDS = [
 ]
 
 
-def _req_id(requirement: str, page: Any, index: int) -> str:
+def _fallback_req_id(requirement: str, page: Any, index: int) -> str:
     digest = hashlib.sha1(
         f"{page or ''}|{requirement}".encode("utf-8", errors="ignore")
     ).hexdigest()[:10]
@@ -111,9 +113,13 @@ def build_compliance_rows(
             risk = "High"
         elif confidence is not None and float(confidence) < CONFIDENCE_FLOOR:
             risk = "Medium"
+        pdf_req_id = (r.get("req_id") or "").strip()
         rows.append(
             {
-                "req_id": _req_id(r.get("requirement") or "", r.get("page"), i),
+                "req_id": pdf_req_id
+                or _fallback_req_id(r.get("requirement") or "", r.get("page"), i),
+                "section": r.get("section") or "",
+                "section_title": r.get("section_title") or "",
                 "source_file": source_file,
                 "page": r.get("page") if r.get("page") is not None else "",
                 "requirement": r.get("requirement") or "",

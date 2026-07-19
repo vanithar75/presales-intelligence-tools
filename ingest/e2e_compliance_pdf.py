@@ -49,15 +49,16 @@ def write_preview_md(path: Path, summary: dict, rows: list[dict], limit: int = 1
         "",
         "## Sample rows (first {})".format(min(limit, len(rows))),
         "",
-        "| page | code | L1 alias | requirement (truncated) |",
-        "|------|------|----------|------------------------|",
+        "| req_id | page | code | L1 alias | requirement (truncated) |",
+        "|--------|------|------|----------|------------------------|",
     ]
     for r in rows[:limit]:
         req = (r.get("requirement") or "").replace("|", "/").replace("\n", " ")
         if len(req) > 90:
             req = req[:87] + "..."
         lines.append(
-            f"| {r.get('page')} | {r.get('compliance_code') or '—'} | "
+            f"| `{r.get('req_id') or '—'}` | {r.get('page')} | "
+            f"{r.get('compliance_code') or '—'} | "
             f"`{r.get('capability_alias') or '—'}` | {req} |"
         )
     gaps = [r for r in rows if not r.get("mapped") or not r.get("compliance_code")]
