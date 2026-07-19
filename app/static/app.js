@@ -185,12 +185,64 @@
   });
 
   $("#loadDemo").addEventListener("click", async () => {
-    const r = await fetch("/api/demo/fixture");
-    const j = await r.json();
-    $("#textInput").value = j.text;
-    setTab("paste");
-    $("#runHint").textContent = "Demo fixture loaded — click Run match.";
+    await loadFixture("demo");
   });
+
+  async function loadFixture(name) {
+    try {
+      const r = await fetch(`/api/demo/fixture?name=${encodeURIComponent(name)}`);
+      if (!r.ok) throw new Error(await r.text());
+      const j = await r.json();
+      $("#textInput").value = j.text;
+      setTab("paste");
+      $("#runHint").textContent = `${j.filename} loaded — click Run match.`;
+      document.getElementById("workspace")?.scrollIntoView({ behavior: "smooth" });
+    } catch (e) {
+      $("#runHint").textContent = `Fixture error: ${e.message || e}`;
+    }
+  }
+
+  async function loadOntologySummary() {
+    const metrics = $("#ontologyMetrics");
+    const meta = $("#ontologyMeta");
+    const grid = $("#stackGrid");
+    if (!metrics) return;
+    try {
+      const r = await fetch("/api/ontology/summary");
+      if (!r.ok) throw new Error(await r.text());
+      const j = await r.json();
+      const st = j.status || {};
+      metrics.innerHTML = `
+        <div class="metric"><b>${st.published ?? 0}</b><span>Published</span></div>
+        <div class="metric"><b>${st.draft ?? 0}</b><span>Draft</span></div>
+        <div class="metric"><b>${st.stub ?? 0}</b><span>Stub</span></div>
+        <div class="metric"><b>${j.total ?? 0}</b><span>Total L1</span></div>
+      `;
+      if (meta) {
+        meta.textContent = `schema ${j.schema_version || "—"} · sprint ${j.sprint || "—"}`;
+      }
+      if (grid) {
+        const stacks = j.by_stack || {};
+        grid.innerHTML = Object.entries(stacks)
+          .map(
+            ([k, n]) =>
+              `<div class="stack-card"><b>${escapeHtml(String(n))}</b><span>${escapeHtml(k)}</span></div>`
+          )
+          .join("");
+      }
+    } catch {
+      if (meta) meta.textContent = "Ontology summary unavailable (is the API up?)";
+    }
+  }
+
+  function jumpToPaste() {
+    setTab("paste");
+    document.getElementById("workspace")?.scrollIntoView({ behavior: "smooth" });
+  }
+
+  $("#loadIncidentDemo")?.addEventListener("click", () => loadFixture("incident"));
+  $("#loadIncidentDemo2")?.addEventListener("click", () => loadFixture("incident"));
+  $("#jumpPaste")?.addEventListener("click", jumpToPaste);
 
   $("#feedbackForm").addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -284,4 +336,5 @@
 
   checkHealth();
   loadQueue();
+  loadOntologySummary();
 })();

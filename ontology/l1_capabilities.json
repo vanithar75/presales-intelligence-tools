@@ -1,18 +1,18 @@
 {
-  "schema_version": "1.14",
+  "schema_version": "1.16",
   "root": "PSERS",
-  "sprint": "P6-042",
-  "published_at": "2026-07-18",
+  "sprint": "P7-052",
+  "published_at": "2026-07-19",
   "last_publish_tool": "ontology/publish_l1.py",
-  "last_priority_file": "ontology/top_ng911_wave2.json",
+  "last_priority_file": "ontology/top_incident_wave1.json",
   "generated_by": "ontology/generate_l1.py",
   "counts": {
-    "total": 319,
-    "draft": 125,
-    "published": 181,
+    "total": 333,
+    "draft": 128,
+    "published": 195,
     "deprecated": 0,
-    "stubs": 13,
-    "lmr_draft": 306
+    "stubs": 10,
+    "lmr_draft": 323
   },
   "capabilities": [
     {
@@ -2875,7 +2875,7 @@
     },
     {
       "id": "PSERS.PLAT.RMS.INCIDENT_REPORT",
-      "alias": null,
+      "alias": "RMS.INCIDENT_REPORT",
       "name": "RMS incident reporting",
       "definition": "Records management for incident reports and evidence metadata.",
       "stack_class": "PLAT",
@@ -2883,7 +2883,7 @@
       "mission_tags": [
         "after_action"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "RMS",
       "p25_ref": null
     },
@@ -2934,7 +2934,7 @@
     },
     {
       "id": "PSERS.APP.FIELD.MDT",
-      "alias": null,
+      "alias": "FIELD.MDT",
       "name": "Mobile data terminal app",
       "definition": "In-vehicle MDT application suite.",
       "stack_class": "APP",
@@ -2942,7 +2942,7 @@
       "mission_tags": [
         "respond"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "FIELD",
       "p25_ref": null
     },
@@ -2976,7 +2976,7 @@
     },
     {
       "id": "PSERS.APP.EOC.SIT_AWARENESS",
-      "alias": null,
+      "alias": "EOC.SIT_AWARENESS",
       "name": "EOC situational awareness",
       "definition": "EOC common operating picture / sitrep tools.",
       "stack_class": "APP",
@@ -2984,7 +2984,7 @@
       "mission_tags": [
         "coordinate"
       ],
-      "status": "stub",
+      "status": "published",
       "vertical": "EOC",
       "p25_ref": null
     },
@@ -4593,6 +4593,211 @@
       ],
       "status": "published",
       "vertical": "NG911",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.APP.FIELD.INCIDENT_CAPTURE",
+      "alias": "FIELD.INCIDENT_CAPTURE",
+      "name": "Mobile incident capture",
+      "definition": "Capture and update incident details from a field mobile application.",
+      "stack_class": "APP",
+      "domain": "FIELD",
+      "mission_tags": [
+        "respond",
+        "after_action"
+      ],
+      "status": "published",
+      "vertical": "FIELD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.APP.FIELD.FIELD_FORMS",
+      "alias": "FIELD.FIELD_FORMS",
+      "name": "Field narrative / forms",
+      "definition": "Complete structured field narratives and electronic forms linked to incidents.",
+      "stack_class": "APP",
+      "domain": "FIELD",
+      "mission_tags": [
+        "respond",
+        "after_action"
+      ],
+      "status": "published",
+      "vertical": "FIELD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.APP.FIELD.OFFLINE_SYNC",
+      "alias": "FIELD.OFFLINE_SYNC",
+      "name": "Field offline sync",
+      "definition": "Operate field apps offline and synchronize when connectivity returns.",
+      "stack_class": "APP",
+      "domain": "FIELD",
+      "mission_tags": [
+        "respond"
+      ],
+      "status": "published",
+      "vertical": "FIELD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.APP.FIELD.EVIDENCE_CAPTURE",
+      "alias": "FIELD.EVIDENCE_CAPTURE",
+      "name": "Field digital evidence capture",
+      "definition": "Capture photos, video, and files from the field device into the evidence workflow.",
+      "stack_class": "APP",
+      "domain": "FIELD",
+      "mission_tags": [
+        "respond",
+        "after_action"
+      ],
+      "status": "published",
+      "vertical": "FIELD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.APP.FIELD.PERSON_VEHICLE_ID",
+      "alias": "FIELD.PERSON_VEHICLE_ID",
+      "name": "Field person / vehicle identification",
+      "definition": "Query and attach person/vehicle identification results from the field app.",
+      "stack_class": "APP",
+      "domain": "FIELD",
+      "mission_tags": [
+        "respond",
+        "locate"
+      ],
+      "status": "draft",
+      "vertical": "FIELD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.APP.FIELD.ECITATION",
+      "alias": "FIELD.ECITATION",
+      "name": "eCitation / electronic citation",
+      "definition": "Issue electronic citations from the field and link them to the incident/case.",
+      "stack_class": "APP",
+      "domain": "FIELD",
+      "mission_tags": [
+        "respond",
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "FIELD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.APP.FIELD.SUPERVISOR_APPROVE",
+      "alias": "FIELD.SUPERVISOR_APPROVE",
+      "name": "Field supervisor approval",
+      "definition": "Allow field supervisors to review and approve reports or evidence packages.",
+      "stack_class": "APP",
+      "domain": "FIELD",
+      "mission_tags": [
+        "respond",
+        "after_action"
+      ],
+      "status": "draft",
+      "vertical": "FIELD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.APP.FIELD.CAD_STATUS_PUSH",
+      "alias": "FIELD.CAD_STATUS_PUSH",
+      "name": "Field\u2013CAD status push",
+      "definition": "Push unit and incident status updates from the field app into CAD.",
+      "stack_class": "APP",
+      "domain": "FIELD",
+      "mission_tags": [
+        "respond",
+        "dispatch"
+      ],
+      "status": "published",
+      "vertical": "FIELD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.APP.FIELD.BWC_UPLOAD_TRIGGER",
+      "alias": "FIELD.BWC_UPLOAD_TRIGGER",
+      "name": "Field\u2013BWC upload trigger",
+      "definition": "Trigger or confirm body-worn camera media upload from the field workflow.",
+      "stack_class": "APP",
+      "domain": "FIELD",
+      "mission_tags": [
+        "respond",
+        "after_action"
+      ],
+      "status": "published",
+      "vertical": "FIELD",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.RMS.CASE_PACKAGE",
+      "alias": "RMS.CASE_PACKAGE",
+      "name": "RMS case / incident packaging",
+      "definition": "Package case and incident records for prosecution, records, and sharing.",
+      "stack_class": "PLAT",
+      "domain": "RMS",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "published",
+      "vertical": "RMS",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.RMS.EVIDENCE_PROPERTY",
+      "alias": "RMS.EVIDENCE_PROPERTY",
+      "name": "Evidence / property room link",
+      "definition": "Link RMS cases to evidence and property-room custody records.",
+      "stack_class": "PLAT",
+      "domain": "RMS",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "published",
+      "vertical": "RMS",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.RMS.SUPPLEMENTAL_REPORT",
+      "alias": "RMS.SUPPLEMENTAL_REPORT",
+      "name": "RMS supplemental reports",
+      "definition": "Create and manage supplemental / follow-up reports on an incident case.",
+      "stack_class": "PLAT",
+      "domain": "RMS",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "published",
+      "vertical": "RMS",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.PLAT.RMS.LEGAL_HOLD",
+      "alias": "RMS.LEGAL_HOLD",
+      "name": "RMS retention / legal hold",
+      "definition": "Apply retention schedules and legal holds to RMS records and evidence metadata.",
+      "stack_class": "PLAT",
+      "domain": "RMS",
+      "mission_tags": [
+        "after_action"
+      ],
+      "status": "published",
+      "vertical": "RMS",
+      "p25_ref": null
+    },
+    {
+      "id": "PSERS.APP.EOC.COMMON_OP_PICTURE",
+      "alias": "EOC.COMMON_OP_PICTURE",
+      "name": "EOC common operating picture",
+      "definition": "Present a multi-source common operating picture for EOC / C2 coordination.",
+      "stack_class": "APP",
+      "domain": "EOC",
+      "mission_tags": [
+        "coordinate",
+        "inform"
+      ],
+      "status": "published",
+      "vertical": "EOC",
       "p25_ref": null
     }
   ]

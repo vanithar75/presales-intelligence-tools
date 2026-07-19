@@ -1,0 +1,14 @@
+The CAD system shall create and update incidents in Computer-Aided Dispatch.
+Field users shall access a mobile CAD client for field workflow.
+The field app shall capture and update incident details from a field mobile application.
+Field narrative and electronic forms shall be linked to incidents.
+Field apps shall operate offline and synchronize when connectivity returns.
+Photos and video shall be captured from the field device into the evidence workflow.
+Body-worn camera evidence shall support chain of custody upload and classify.
+Body-worn camera media upload shall be confirmed from the field workflow.
+RMS shall provide records management for incident reports and evidence metadata.
+The RMS shall package case and incident records for prosecution and sharing.
+Evidence and property-room custody records shall link to RMS cases.
+EOC situational awareness / sitrep tools shall support command coordination.
+A multi-source common operating picture shall be presented for EOC / C2 coordination.
+Command and control (C2) supervisory views shall show active incidents and unit workload.

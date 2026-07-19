@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "source": "Phase 7 Lite incident management publish priority",
+  "description": "FIELD + RMS + EOC first publish batch for respond → after_action path.",
+  "aliases": [
+    "FIELD.MDT",
+    "FIELD.INCIDENT_CAPTURE",
+    "FIELD.FIELD_FORMS",
+    "FIELD.OFFLINE_SYNC",
+    "FIELD.EVIDENCE_CAPTURE",
+    "FIELD.CAD_STATUS_PUSH",
+    "FIELD.BWC_UPLOAD_TRIGGER",
+    "RMS.INCIDENT_REPORT",
+    "RMS.CASE_PACKAGE",
+    "RMS.EVIDENCE_PROPERTY",
+    "RMS.SUPPLEMENTAL_REPORT",
+    "RMS.LEGAL_HOLD",
+    "EOC.SIT_AWARENESS",
+    "EOC.COMMON_OP_PICTURE"
+  ]
+}

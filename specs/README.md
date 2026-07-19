@@ -5,7 +5,7 @@ Product authority: [`../SPEC.md`](../SPEC.md).
 ## How to use with Cursor
 
 1. Open `SPEC.md` and pick the next open slice.
-2. Ask the agent: *Implement `specs/04x-….md` only; Phase 6 Lite CAD+NG911; no LLM; no generate_l1; no MCX; no Sensors rework.*
+2. Ask the agent: *Implement `specs/05x-….md` or `060-….md` only; no LLM; no generate_l1; no MCX; no military L1.*
 3. Agent updates Status when done.
 
 ## Slice index
@@ -16,8 +16,8 @@ Product authority: [`../SPEC.md`](../SPEC.md).
 | 010–013 | Phase 3 Lite | Done | — |
 | 020–023 | Phase 4 Lite CAD | Done | — |
 | 030–032 | Phase 5 Lite Sensors | Done | — |
-| 040 | [040-cad-ng911-ontology.md](040-cad-ng911-ontology.md) | Done | Phase 5 |
-| 041 | [041-cad-ng911-match.md](041-cad-ng911-match.md) | Done | 040 |
-| 042 | [042-cad-ng911-publish.md](042-cad-ng911-publish.md) | Done | 040–041 |
+| 040–042 | Phase 6 Lite CAD+NG911 | Done | — |
+| 050–052 | Phase 7 Lite Incident process | Done | — |
+| 060 | [060-stakeholder-viz.md](060-stakeholder-viz.md) | Done | Phase 7 |
 
-**Stop here:** Phase 6 Lite CAD+NG911 complete. MCX / multi-vendor / broader corpus require a new SPEC amendment.
+**Stop here for ontology expansion:** Military peer L1 / MCX / multi-vendor require a new SPEC amendment. Stakeholder visualization (060) is presentation-only.

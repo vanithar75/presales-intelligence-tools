@@ -98,7 +98,58 @@ def _upsert_review_queue(record: dict) -> dict:
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "sprint": "P3-012", "ui": True}
+    return {"status": "ok", "sprint": "P7-060", "ui": True}
+
+
+@app.get("/api/ontology/summary")
+def ontology_summary():
+    """Lightweight L1 status counts for the stakeholder explainer UI."""
+    l1_path = ROOT / "ontology" / "l1_capabilities.json"
+    if not l1_path.exists():
+        raise HTTPException(status_code=404, detail="l1_capabilities.json missing")
+    doc = json.loads(l1_path.read_text(encoding="utf-8"))
+    caps = list(doc.get("capabilities") or [])
+    status_counts = {"published": 0, "draft": 0, "stub": 0, "deprecated": 0, "other": 0}
+    by_vertical: dict[str, dict[str, int]] = {}
+    by_stack: dict[str, int] = {}
+
+    def vertical_of(c: dict) -> str:
+        if c.get("vertical"):
+            return str(c["vertical"])
+        alias = c.get("alias") or ""
+        if alias.startswith("CAD.") or alias == "CAD.MOBILE_CLIENT":
+            return "CAD"
+        if alias.startswith("FIELD.") or c["id"].startswith("PSERS.APP.FIELD."):
+            return "FIELD"
+        if alias.startswith("LMR."):
+            return "LMR"
+        return str(c.get("domain") or "OTHER")
+
+    for c in caps:
+        st = c.get("status") or "other"
+        if st in status_counts:
+            status_counts[st] += 1
+        else:
+            status_counts["other"] += 1
+        stack = str(c.get("stack_class") or "OTHER")
+        by_stack[stack] = by_stack.get(stack, 0) + 1
+        vert = vertical_of(c)
+        bucket = by_vertical.setdefault(
+            vert, {"published": 0, "draft": 0, "stub": 0, "deprecated": 0, "total": 0}
+        )
+        bucket["total"] += 1
+        if st in ("published", "draft", "stub", "deprecated"):
+            bucket[st] += 1
+
+    return {
+        "schema_version": doc.get("schema_version"),
+        "sprint": doc.get("sprint"),
+        "total": len(caps),
+        "status": status_counts,
+        "by_vertical": dict(sorted(by_vertical.items())),
+        "by_stack": dict(sorted(by_stack.items())),
+        "guide": "docs/ontology-stakeholder-guide.md",
+    }
 
 
 @app.get("/api/review-queue")
@@ -217,10 +268,23 @@ def synonym_feedback(body: SynonymFeedback):
 
 
 @app.get("/api/demo/fixture")
-def demo_fixture():
-    path = SAMPLES / "demo_requirements.txt"
+def demo_fixture(name: str = "demo"):
+    """Load a sample requirements fixture for the Paste tab.
+
+    name: demo | incident | cad | ng911 | sensors | psap
+    """
+    mapping = {
+        "demo": "demo_requirements.txt",
+        "incident": "demo_incident_mgmt.txt",
+        "cad": "demo_cad_requirements.txt",
+        "ng911": "demo_ng911_requirements.txt",
+        "sensors": "demo_sensors_requirements.txt",
+        "psap": "demo_psap_loop.txt",
+    }
+    filename = mapping.get(name.strip().lower(), "demo_requirements.txt")
+    path = SAMPLES / filename
     if not path.exists():
-        raise HTTPException(status_code=404, detail="demo fixture missing")
+        raise HTTPException(status_code=404, detail=f"fixture missing: {filename}")
     return {"filename": path.name, "text": path.read_text(encoding="utf-8")}
 
 

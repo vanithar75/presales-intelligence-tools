@@ -3,7 +3,7 @@
   "sprint": "P5-032",
   "vendor_id": "MSI",
   "counts": {
-    "mappings": 209,
+    "mappings": 223,
     "capabilities_mapped": 166,
     "products_used": 19,
     "missing_aliases": []
@@ -1887,6 +1887,132 @@
       "capability_alias": "NG911.ABANDONED_CB_POLICY",
       "support_level": "native",
       "notes": "CommandCentral NG911/PSAP call-handling coverage (Phase 6 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.APP.FIELD.MDT",
+      "capability_alias": "FIELD.MDT",
+      "support_level": "native",
+      "notes": "CommandCentral field / mobile incident apps (Phase 7 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.APP.FIELD.INCIDENT_CAPTURE",
+      "capability_alias": "FIELD.INCIDENT_CAPTURE",
+      "support_level": "native",
+      "notes": "CommandCentral field / mobile incident apps (Phase 7 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.APP.FIELD.FIELD_FORMS",
+      "capability_alias": "FIELD.FIELD_FORMS",
+      "support_level": "native",
+      "notes": "CommandCentral field / mobile incident apps (Phase 7 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.APP.FIELD.OFFLINE_SYNC",
+      "capability_alias": "FIELD.OFFLINE_SYNC",
+      "support_level": "native",
+      "notes": "CommandCentral field / mobile incident apps (Phase 7 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.APP.FIELD.EVIDENCE_CAPTURE",
+      "capability_alias": "FIELD.EVIDENCE_CAPTURE",
+      "support_level": "native",
+      "notes": "CommandCentral field / mobile incident apps (Phase 7 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.APP.FIELD.CAD_STATUS_PUSH",
+      "capability_alias": "FIELD.CAD_STATUS_PUSH",
+      "support_level": "native",
+      "notes": "CommandCentral field / mobile incident apps (Phase 7 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.APP.FIELD.BWC_UPLOAD_TRIGGER",
+      "capability_alias": "FIELD.BWC_UPLOAD_TRIGGER",
+      "support_level": "native",
+      "notes": "CommandCentral field / mobile incident apps (Phase 7 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.RMS.INCIDENT_REPORT",
+      "capability_alias": "RMS.INCIDENT_REPORT",
+      "support_level": "native",
+      "notes": "CommandCentral / RMS records coverage (Phase 7 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.RMS.CASE_PACKAGE",
+      "capability_alias": "RMS.CASE_PACKAGE",
+      "support_level": "native",
+      "notes": "CommandCentral / RMS records coverage (Phase 7 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.RMS.EVIDENCE_PROPERTY",
+      "capability_alias": "RMS.EVIDENCE_PROPERTY",
+      "support_level": "native",
+      "notes": "CommandCentral / RMS records coverage (Phase 7 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.RMS.SUPPLEMENTAL_REPORT",
+      "capability_alias": "RMS.SUPPLEMENTAL_REPORT",
+      "support_level": "native",
+      "notes": "CommandCentral / RMS records coverage (Phase 7 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.PLAT.RMS.LEGAL_HOLD",
+      "capability_alias": "RMS.LEGAL_HOLD",
+      "support_level": "native",
+      "notes": "CommandCentral / RMS records coverage (Phase 7 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.APP.EOC.SIT_AWARENESS",
+      "capability_alias": "EOC.SIT_AWARENESS",
+      "support_level": "native",
+      "notes": "CommandCentral EOC / C2 sit-awareness coverage (Phase 7 Lite)",
+      "source_url": "https://www.motorolasolutions.com",
+      "status": "draft"
+    },
+    {
+      "product_id": "MSI.CC.COMMAND",
+      "capability_id": "PSERS.APP.EOC.COMMON_OP_PICTURE",
+      "capability_alias": "EOC.COMMON_OP_PICTURE",
+      "support_level": "native",
+      "notes": "CommandCentral EOC / C2 sit-awareness coverage (Phase 7 Lite)",
       "source_url": "https://www.motorolasolutions.com",
       "status": "draft"
     }

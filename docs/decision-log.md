@@ -199,3 +199,31 @@
 - Details: [docs/sprint-p6-041-done.md](sprint-p6-041-done.md)
 - **Stop here** — next expansion requires amending `SPEC.md`
 
+## 2026-07-19 — L1 publish batch (published)
+
+- Catalog `schema_version`: **1.16**
+- Sprint: **P7-052**
+- Promoted to `published`: **14** capabilities
+- Stub refusals: **0**
+- Tool: `ontology/publish_l1.py`
+- Priority source: `ontology/top_incident_wave1.json`
+- Sample IDs: PSERS.APP.FIELD.MDT, PSERS.APP.FIELD.INCIDENT_CAPTURE, PSERS.APP.FIELD.FIELD_FORMS, PSERS.APP.FIELD.OFFLINE_SYNC, PSERS.APP.FIELD.EVIDENCE_CAPTURE, PSERS.APP.FIELD.CAD_STATUS_PUSH, PSERS.APP.FIELD.BWC_UPLOAD_TRIGGER, PSERS.PLAT.RMS.INCIDENT_REPORT (+6 more)
+
+## 2026-07-19 — Phase 7 Lite freeze (Incident management process)
+
+- Promoted MDT / RMS incident report / EOC sit-awareness; appended **14** FIELD/RMS/EOC drafts (`expand_incident_l1.py`)
+- **FIELD:** **11** caps, **8** published; **RMS:** **5** / **5**; **EOC:** **2** / **2**
+- Total published **195**; schema **1.16**; stubs **10** (floor ≥10)
+- incident_mgmt **0.929**; prior suites still pass; C2/C4I = L2 crosswalk only
+- L3: +14 CommandCentral field/RMS/EOC maps (**223** mappings)
+- Slices **050–052** Done; military peer L1 / **MCX** still deferred
+- Details: [docs/sprint-p7-051-done.md](sprint-p7-051-done.md), [docs/c2-c4i-crosswalk.md](c2-c4i-crosswalk.md)
+- **Stop here** — next expansion requires amending `SPEC.md`
+
+## 2026-07-19 — Slice 060 stakeholder visualization
+
+- Added [docs/ontology-stakeholder-guide.md](ontology-stakeholder-guide.md): business swimlane, L2→L1→L3 bridge, stack/status legend, 10-min demo script
+- Analyst UI: Ontology explainer section; `GET /api/ontology/summary`; incident-mgmt demo load
+- Spec [specs/060-stakeholder-viz.md](../specs/060-stakeholder-viz.md) Done
+- No L1 regenerate; no graph DB; C2/C4I remains crosswalk-only
+

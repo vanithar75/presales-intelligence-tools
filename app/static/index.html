@@ -26,9 +26,53 @@
     <section class="hero">
       <h1>Match RFP language to capabilities and MSI coverage</h1>
       <p class="lede">Upload a public-safety radio RFP or paste requirements. The matcher maps shall-statements to the PSERS L1 ontology, then shows Motorola Solutions product coverage.</p>
+      <p class="hero-links"><a href="#explain">Ontology explainer</a> · business journey → L2–L1–L3 bridge → technical model</p>
     </section>
 
-    <section class="workspace">
+    <section class="explain panel" id="explain">
+      <div class="explain-head">
+        <h2>Ontology explainer</h2>
+        <a class="btn ghost" href="#workspace">Try a live match</a>
+      </div>
+      <p class="lede explain-lede">We map buyer RFP language to stable capabilities (L1), then to Motorola Solutions products (L3)—never RFP text straight to SKUs.</p>
+      <div class="metrics" id="ontologyMetrics" aria-live="polite">
+        <div class="metric"><b>—</b><span>Published</span></div>
+        <div class="metric"><b>—</b><span>Draft</span></div>
+        <div class="metric"><b>—</b><span>Stub</span></div>
+        <div class="metric"><b>—</b><span>Total L1</span></div>
+      </div>
+      <p class="hint" id="ontologyMeta"></p>
+
+      <h3 class="explain-h">1. Business — incident journey</h3>
+      <ol class="swimlane" aria-label="Incident mission swimlane">
+        <li><strong>detect</strong><span>Sensors / BWC / ALPR</span></li>
+        <li><strong>call_take</strong><span>NG911 PSAP</span></li>
+        <li><strong>dispatch</strong><span>CAD</span></li>
+        <li><strong>respond</strong><span>FIELD mobile apps</span></li>
+        <li><strong>after_action</strong><span>RMS / evidence</span></li>
+        <li><strong>coordinate</strong><span>EOC / C2 view</span></li>
+      </ol>
+
+      <h3 class="explain-h">2. Bid desk — matching bridge</h3>
+      <div class="bridge" aria-label="L2 to L1 to L3">
+        <div class="bridge-step"><strong>L2</strong><span>RFP phrase</span></div>
+        <span class="bridge-arrow" aria-hidden="true">→</span>
+        <div class="bridge-step"><strong>L1</strong><span>Capability</span></div>
+        <span class="bridge-arrow" aria-hidden="true">→</span>
+        <div class="bridge-step"><strong>L3</strong><span>MSI product</span></div>
+      </div>
+      <p class="hint">Example: “capture photos from the field device” → <code>FIELD.EVIDENCE_CAPTURE</code> → CommandCentral mapping.</p>
+
+      <h3 class="explain-h">3. Technical — stacks &amp; status</h3>
+      <div class="stack-grid" id="stackGrid"></div>
+      <p class="hint">Full narrative: <code>docs/ontology-stakeholder-guide.md</code> · C2/C4I terms: <code>docs/c2-c4i-crosswalk.md</code></p>
+      <div class="row">
+        <button type="button" class="btn primary" id="loadIncidentDemo">Load incident-mgmt demo</button>
+        <button type="button" class="btn ghost" id="jumpPaste">Open paste tab</button>
+      </div>
+    </section>
+
+    <section class="workspace" id="workspace">
       <div class="panel input-panel">
         <div class="tabs" role="tablist">
           <button type="button" class="tab active" data-tab="upload" role="tab" aria-selected="true">Upload PDF</button>
@@ -53,7 +97,8 @@
         <div id="pane-paste" class="pane hidden">
           <textarea id="textInput" rows="10" placeholder="Paste shall-statements or requirements…"></textarea>
           <div class="row">
-            <button type="button" class="btn ghost" id="loadDemo">Load demo fixture</button>
+            <button type="button" class="btn ghost" id="loadDemo">Load LMR demo</button>
+            <button type="button" class="btn ghost" id="loadIncidentDemo2">Load incident demo</button>
             <button type="button" class="btn primary" id="runText">Run match</button>
           </div>
         </div>
@@ -143,7 +188,7 @@
   </main>
 
   <footer>
-    <p>PSERS MVP · LMR vertical · Phase 3 Lite · Ontology routes through L1 only</p>
+    <p>PSERS · Phase 7 Lite · Ontology routes through L1 only · <a href="#explain">Explainer</a></p>
   </footer>
   <script src="/static/app.js"></script>
 </body>

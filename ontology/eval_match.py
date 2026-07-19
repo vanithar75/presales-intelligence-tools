@@ -1,7 +1,7 @@
-"""Match quality eval (LMR + CAD + NG911 + Sensors + PSAP loop).
+"""Match quality eval (LMR + CAD + NG911 + Sensors + PSAP loop + incident mgmt).
 
 Suites:
-  - demo / mid_doc / cad_demo / ng911_demo / sensors_demo / psap_loop / holdout
+  - demo / mid_doc / cad_demo / ng911_demo / sensors_demo / psap_loop / incident_mgmt / holdout
 
 Usage:
   py -3.12 ontology/eval_match.py
@@ -25,6 +25,7 @@ CAD_DEMO_PATH = ROOT / "ontology" / "samples" / "demo_cad_requirements.txt"
 NG911_DEMO_PATH = ROOT / "ontology" / "samples" / "demo_ng911_requirements.txt"
 SENSORS_DEMO_PATH = ROOT / "ontology" / "samples" / "demo_sensors_requirements.txt"
 PSAP_LOOP_PATH = ROOT / "ontology" / "samples" / "demo_psap_loop.txt"
+INCIDENT_MGMT_PATH = ROOT / "ontology" / "samples" / "demo_incident_mgmt.txt"
 HOLDOUT_PATH = ROOT / "ontology" / "l2_synonyms_holdout.json"
 ERIE_PDF = ROOT / "data" / "rfp" / "erie-trunked-radio-system-2026-018.pdf"
 ECSO_PDF = ROOT / "data" / "rfp" / "ecso-jackson-p25-functional-spec.pdf"
@@ -35,6 +36,7 @@ CAD_DEMO_TARGET = 0.80
 NG911_DEMO_TARGET = 0.80
 SENSORS_DEMO_TARGET = 0.80
 PSAP_LOOP_TARGET = 0.80
+INCIDENT_MGMT_TARGET = 0.80
 
 
 def _eval_line_fixture(path: Path, suite: str, target: float) -> dict:
@@ -113,6 +115,10 @@ def eval_psap_loop() -> dict:
     return _eval_line_fixture(PSAP_LOOP_PATH, "psap_loop", PSAP_LOOP_TARGET)
 
 
+def eval_incident_mgmt() -> dict:
+    return _eval_line_fixture(INCIDENT_MGMT_PATH, "incident_mgmt", INCIDENT_MGMT_TARGET)
+
+
 def eval_mid_doc() -> dict:
     if ERIE_PDF.exists():
         pdf = ERIE_PDF
@@ -177,7 +183,7 @@ def eval_holdout() -> dict:
 
 def main() -> int:
     ap = argparse.ArgumentParser(
-        description="PSERS match quality eval (LMR + CAD + NG911 + Sensors + PSAP loop)"
+        description="PSERS match quality eval (LMR + CAD + NG911 + Sensors + PSAP + incident)"
     )
     ap.add_argument("--soft", action="store_true", help="Always exit 0; report only")
     ap.add_argument("--json", action="store_true", help="Print JSON summary only")
@@ -190,6 +196,7 @@ def main() -> int:
         "ng911_demo": eval_ng911_demo(),
         "sensors_demo": eval_sensors_demo(),
         "psap_loop": eval_psap_loop(),
+        "incident_mgmt": eval_incident_mgmt(),
         "holdout": eval_holdout(),
     }
     hard_pass = (
@@ -199,6 +206,7 @@ def main() -> int:
         and bool(report["ng911_demo"].get("pass"))
         and bool(report["sensors_demo"].get("pass"))
         and bool(report["psap_loop"].get("pass"))
+        and bool(report["incident_mgmt"].get("pass"))
     )
     report["overall_pass"] = hard_pass
     report["targets"] = {
@@ -208,12 +216,15 @@ def main() -> int:
         "ng911_demo": NG911_DEMO_TARGET,
         "sensors_demo": SENSORS_DEMO_TARGET,
         "psap_loop": PSAP_LOOP_TARGET,
+        "incident_mgmt": INCIDENT_MGMT_TARGET,
     }
 
     if args.json:
         print(json.dumps(report, indent=2))
     else:
-        print("=== Match quality eval (LMR + CAD + NG911 + Sensors + PSAP loop) ===")
+        print(
+            "=== Match quality eval (LMR + CAD + NG911 + Sensors + PSAP + incident) ==="
+        )
         for key in (
             "demo",
             "mid_doc",
@@ -221,6 +232,7 @@ def main() -> int:
             "ng911_demo",
             "sensors_demo",
             "psap_loop",
+            "incident_mgmt",
             "holdout",
         ):
             s = report[key]

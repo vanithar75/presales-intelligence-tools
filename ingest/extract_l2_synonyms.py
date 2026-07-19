@@ -315,6 +315,29 @@ SEED_PHRASES: list[tuple[str, str]] = [
     (r"drone\s+video\s+downlink|uas\s+video\s+downlink|video\s+downlink", "UAS.DRONE_DOWNLINK"),
     (r"drone\s+geo[- ]?fence|uas\s+(geo[- ]?fence|airspace)|geo[- ]fence\s+and\s+airspace", "UAS.DRONE_GEO_FENCE"),
     (r"\buas\b|\bdrone\b|dispatchable\s+(uas|drone|aircraft)", "UAS.DISPATCHABLE_AIRCRAFT"),
+    # Phase 7 Lite — FIELD / RMS / EOC incident process
+    (r"\bmdt\b|mobile\s+data\s+terminal", "FIELD.MDT"),
+    (r"mobile\s+incident\s+capture|capture\s+and\s+update\s+incident\s+details\s+from\s+(a\s+)?field", "FIELD.INCIDENT_CAPTURE"),
+    (r"field\s+(narrative|forms?)|electronic\s+forms?\s+linked\s+to\s+incidents?", "FIELD.FIELD_FORMS"),
+    (r"field\s+apps?\s+offline|offline\s+sync|synchronize\s+when\s+connectivity", "FIELD.OFFLINE_SYNC"),
+    (r"field\s+digital\s+evidence|capture\s+photos?,?\s+video.{0,40}field\s+device|evidence\s+capture\s+from\s+the\s+field", "FIELD.EVIDENCE_CAPTURE"),
+    (r"field\s+person\s*/?\s*vehicle|person/vehicle\s+identification\s+from\s+the\s+field", "FIELD.PERSON_VEHICLE_ID"),
+    (r"\becitation\b|electronic\s+citations?", "FIELD.ECITATION"),
+    (r"field\s+supervisor\s+approv|supervisors?\s+to\s+review\s+and\s+approve\s+(reports?|evidence)", "FIELD.SUPERVISOR_APPROVE"),
+    (r"field[-–]?cad\s+status|push\s+unit\s+and\s+incident\s+status.{0,30}cad|status\s+updates?\s+from\s+the\s+field\s+app\s+into\s+cad", "FIELD.CAD_STATUS_PUSH"),
+    (r"bwc\s+upload\s+trigger|body[- ]worn.{0,30}upload\s+from\s+the\s+field|confirm\s+body[- ]worn\s+camera\s+media\s+upload", "FIELD.BWC_UPLOAD_TRIGGER"),
+    (r"rms\s+incident\s+report|records\s+management\s+for\s+incident|incident\s+reports?\s+and\s+evidence\s+metadata", "RMS.INCIDENT_REPORT"),
+    (r"case\s*/?\s*incident\s+packag|package\s+case\s+and\s+incident\s+records", "RMS.CASE_PACKAGE"),
+    (r"evidence\s*/?\s*property\s+room|property[- ]room\s+custody|link\s+rms\s+cases?\s+to\s+evidence", "RMS.EVIDENCE_PROPERTY"),
+    (r"supplemental\s+reports?|follow[- ]up\s+reports?\s+on\s+an\s+incident", "RMS.SUPPLEMENTAL_REPORT"),
+    (r"rms\s+retention|legal\s+holds?\s+to\s+rms|retention\s+schedules?\s+and\s+legal\s+holds?", "RMS.LEGAL_HOLD"),
+    (r"eoc\s+situational\s+awareness|eoc\s+common\s+operating\s+picture\s*/?\s*sitrep|sitrep\s+tools?", "EOC.SIT_AWARENESS"),
+    (r"eoc\s+common\s+operating\s+picture|multi[- ]source\s+common\s+operating\s+picture|common\s+operating\s+picture\s+for\s+eoc", "EOC.COMMON_OP_PICTURE"),
+    # C2 / C3 / C4I terminology → PSERS L1 (crosswalk; no military peer trees)
+    (r"command\s+and\s+control|\bc2\b\s+(workstation|system|console)|c2\s+situational", "CAD.COMMAND_VIEW"),
+    (r"\bc3\b|command,?\s+control,?\s+and\s+communications|command\s+control\s+communications", "CAD.COMMAND_VIEW"),
+    (r"\bc4i\b|\bc4isr\b|command,?\s+control,?\s+communications,?\s+computers", "EOC.SIT_AWARENESS"),
+    (r"common\s+operating\s+picture|\bcop\b\s+(display|dashboard)|toc\s+common\s+operating", "EOC.COMMON_OP_PICTURE"),
 ]
 
 
